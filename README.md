@@ -2,7 +2,7 @@
 
 Dynamic, randomized 3D positional sound samples for units
 
-Author: 654wak654, the0utsider
+Authors: 654wak654, the0utsider
 
 Features:
 - Positional in-game audio for units, for each faction, randomized
