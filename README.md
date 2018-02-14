@@ -1,7 +1,7 @@
 # Goko Unit Voiceovers
 
 Dynamic, randomized 3D positional sound samples for units
-Authors: 654wak654, the0utsider
+Author: 654wak654, the0utsider
 Features:
 - Positional in-game audio for units, for each faction, randomized
 - Using 'say3D' and 'playsound3D' for realistic volume simulation
