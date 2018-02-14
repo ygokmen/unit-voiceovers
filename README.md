@@ -1,7 +1,7 @@
 # Goko Unit Voiceovers
 
-Dynamic, randomized 3D-positional sound samples for units
-
+Dynamic, randomized 3D positional sound samples for units
+Author: 654wak654, the0utsider
 Features:
 - Positional in-game audio for units, for each faction, randomized
 - Using 'say3D' and 'playsound3D' for realistic volume simulation
@@ -30,7 +30,7 @@ Using NWI's iconic game 'insurgency' sound samples, this add-on created to impro
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Gokmen 'the0utsider'
+Copyright (c) 2018 654wak654 & Gokmen 'the0utsider'
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
