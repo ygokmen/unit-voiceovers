@@ -23,7 +23,7 @@ Features:
 
 **Installation:**
 
- Subscrive via steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1248372833
+ Subscribe via steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1248372833
 
 Description:
 Using NWI's iconic game 'insurgency' sound samples, this add-on created to improve overall experience and bring dynamism to expressionless Arma3 models. I always imagined this to be something similar to st_hud but an aural one instead of visual. Each faction has their own sounds, with samples played on certain actions to increase situational awareness, to simulate better close quarters combat.
