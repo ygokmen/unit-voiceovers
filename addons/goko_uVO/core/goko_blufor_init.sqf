@@ -8,4 +8,6 @@ if (local _unit) then {
 	_unit addeventhandler ["fired", {_this call goko_fnc_bsmokefx}];
 	_unit addeventhandler ["fired", {_this call goko_fnc_bfragfx}];
 	_unit addeventhandler ["fired", {_this call goko_fnc_bexplsvfx}];
+	_unit addeventhandler ["fired", {_this call goko_fnc_b_acem84}];
+	_unit addeventhandler ["fired", {_this call goko_fnc_b_aceM14}];
 };
