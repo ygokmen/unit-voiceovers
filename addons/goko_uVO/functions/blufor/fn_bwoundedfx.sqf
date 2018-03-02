@@ -1,7 +1,4 @@
-goko_bmandownchance = 50;
-// goko_bkillconfirmchance = 50;
-// obsolete, gonna use new method with new name in gokoVo_cbaSettings.sqf
-
+goko_bmandownchance = 67;
 
 goko_fnc_bdmgwoundsys = 
 {
@@ -9,19 +6,19 @@ goko_fnc_bdmgwoundsys =
 
 	if (side _shooter == west) then 
 		{
-		private _fsounds = ["bwatchfire01", "bwatchfire02", "bwatchfire03", "bwatchfire04", "bwatchfire05", "bwatchfire06", "bwatchfire07", "bwatchfire08","bwatchfire09", "bwatchfire10", "bwatchfire11", "bwatchfire12", "bwatchfire13", "bwatchfire14", "bwatchfire15"];
-		private _fsound = selectRandom _fsounds;
+		 _fsounds = ["bwatchfire01", "bwatchfire02", "bwatchfire03", "bwatchfire04", "bwatchfire05", "bwatchfire06", "bwatchfire07", "bwatchfire08","bwatchfire09", "bwatchfire10", "bwatchfire11", "bwatchfire12", "bwatchfire13", "bwatchfire14", "bwatchfire15"];
+		 _fsound = selectRandom _fsounds;
 		[_victim, [_fsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		};
 	
 	if (_damage < 0.2) exitWith {};
-	private _wsounds = ["bwounded01", "bwounded02", "bwounded03", "bwounded04", "bwounded05", "bwounded06", "bwounded07", "bwounded08", "bwounded09", "bwounded10", "bwounded11", "bwounded12", "bwounded13", "bwounded14", "bwounded15", "bwounded16", "bwounded17", "bwounded18", "bwounded19", "bwounded20", "bwounded21", "bwounded22", "bwounded23", "bwounded24", "bwounded25", "bwounded26", "bwounded27", "bwounded28", "bwounded29", "bwounded30", "bwounded31", "bwounded32", "bwounded33", "bwounded34", "bwounded35", "bwounded36", "bwounded37", "bwounded38", "bwounded39", "bwounded40", "bwounded41", "bwounded42", "bwounded43", "bwounded44", "bwounded45", "bwounded46", "bwounded47", "bwounded48", "bwounded49", "bwounded50", "bwounded51", "bwounded52"];
-	private _wsound = selectRandom _wsounds;
+	 _wsounds = ["bwounded01", "bwounded02", "bwounded03", "bwounded04", "bwounded05", "bwounded06", "bwounded07", "bwounded08", "bwounded09", "bwounded10", "bwounded11", "bwounded12", "bwounded13", "bwounded14", "bwounded15", "bwounded16", "bwounded17", "bwounded18", "bwounded19", "bwounded20", "bwounded21", "bwounded22", "bwounded23", "bwounded24", "bwounded25", "bwounded26", "bwounded27", "bwounded28", "bwounded29", "bwounded30", "bwounded31", "bwounded32", "bwounded33", "bwounded34", "bwounded35", "bwounded36", "bwounded37", "bwounded38", "bwounded39", "bwounded40", "bwounded41", "bwounded42", "bwounded43", "bwounded44", "bwounded45", "bwounded46", "bwounded47", "bwounded48", "bwounded49", "bwounded50", "bwounded51", "bwounded52"];
+	 _wsound = selectRandom _wsounds;
 	[_victim, [_wsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 			
 	if (!alive _victim) then {
-	private _meters = round (_victim distance _shooter);
-	private _deathsArray = [
+	 _meters = round (_victim distance _shooter);
+	 _deathsArray = [
 "goko_uVO\sounds\pl_deathshout_01.wav",
 "goko_uVO\sounds\pl_deathshout_02.wav",
 "goko_uVO\sounds\pl_deathshout_03.wav",
@@ -75,41 +72,41 @@ goko_fnc_bdmgwoundsys =
 "goko_uVO\sounds\pl_deathshout_51.wav",
 "goko_uVO\sounds\pl_deathshout_52.wav"
 				];
-		private _deathsound = selectRandom _deathsArray;
-		playsound3d [format ["%1",_deathsound], _victim, false, getPosASL _victim, goko_vo_deathshouts_volume, 1, 420];
+		 _deathsound = selectRandom _deathsArray;
+		playsound3d [format ["%1",_deathsound], _victim, false, getPosASL _victim, goko_vo_deathshouts_volume, 1, goko_vo_deathshouts_diameter];
 		
 		if (round (random 100) < goko_bmandownchance) then {
 
-		_abow = nearestObjects [_victim, ["B_Soldier_base_F"], 100]; 
-		private _obara = selectRandom _abow; 
+		_abow = nearestObjects [_victim, ["B_Soldier_base_F"], 80]; 
+		 _obara = selectRandom _abow; 
 		
-		private _subdowns = ["bsubdown01", "bsubdown02", "bsubdown03", "bsubdown04", "bsubdown05", "bsubdown06", "bsubdown07", "bsubdown08", "bsubdown09", "bsubdown10", "bsubdown11", "bsubdown12", "bsubdown13", "bsubdown14", "bsubdown15", "bsubdown16", "bsubdown17", "bsubdown18", "bsubdown19", "bsubdown20", "bsubdown21", "bsubdown22", "bsubdown23", "bsubdown24", "bsubdown25", "bsubdown26", "bsubdown27", "bsubdown28", "bsubdown29", "bsubdown30", "bsubdown31", "bsubdown32", "bsubdown33", "bsubdown34", "bsubdown35", "bsubdown36", "bsubdown37", "bsubdown38", "bsubdown39", "bsubdown40", "bsubdown41", "bsubdown42", "bsubdown43", "bsubdown44", "bsubdown45", "bsubdown46", "bsubdown47", "bsubdown48", "bsubdown49", "bsubdown50", "bsubdown51", "bsubdown52", "bsubdown53", "bsubdown54", "bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", "bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"];
-		private _subdown = selectRandom _subdowns;
+		 _subdowns = ["bsubdown01", "bsubdown02", "bsubdown03", "bsubdown04", "bsubdown05", "bsubdown06", "bsubdown07", "bsubdown08", "bsubdown09", "bsubdown10", "bsubdown11", "bsubdown12", "bsubdown13", "bsubdown14", "bsubdown15", "bsubdown16", "bsubdown17", "bsubdown18", "bsubdown19", "bsubdown20", "bsubdown21", "bsubdown22", "bsubdown23", "bsubdown24", "bsubdown25", "bsubdown26", "bsubdown27", "bsubdown28", "bsubdown29", "bsubdown30", "bsubdown31", "bsubdown32", "bsubdown33", "bsubdown34", "bsubdown35", "bsubdown36", "bsubdown37", "bsubdown38", "bsubdown39", "bsubdown40", "bsubdown41", "bsubdown42", "bsubdown43", "bsubdown44", "bsubdown45", "bsubdown46", "bsubdown47", "bsubdown48", "bsubdown49", "bsubdown50", "bsubdown51", "bsubdown52", "bsubdown53", "bsubdown54", "bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", "bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"];
+		 _subdown = selectRandom _subdowns;
 		[_obara, [_subdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		};
 		
 		if (round (random 100) > goko_vo_killconfirmratio) exitWith {};
 		if (side _shooter == east) then {
-			private _otargetdowns = ["otarget01", "otarget02", "otarget03", "otarget04", "otarget05", "otarget06", "otarget07", "otarget08", "otarget09", "otarget10"];
-			private _otargetdown = selectRandom _otargetdowns;
+			 _otargetdowns = ["otarget01", "otarget02", "otarget03", "otarget04", "otarget05", "otarget06", "otarget07", "otarget08", "otarget09", "otarget10"];
+			 _otargetdown = selectRandom _otargetdowns;
 				
-			private _suppotargetdowns = ["osupptarget01", "osupptarget02", "osupptarget03", "osupptarget04", "osupptarget05", "osupptarget06", "osupptarget07", "osupptarget08", "osupptarget09", "osupptarget10"];
-			private _suppotargetdown = selectRandom _suppotargetdowns;
+			 _suppotargetdowns = ["osupptarget01", "osupptarget02", "osupptarget03", "osupptarget04", "osupptarget05", "osupptarget06", "osupptarget07", "osupptarget08", "osupptarget09", "osupptarget10"];
+			 _suppotargetdown = selectRandom _suppotargetdowns;
 				
-			if (_meters > 150) then {
+			if (_meters > 100) then {
 				[_shooter, [_otargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 				} else {
 				[_shooter, [_suppotargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 				};
 		};
 		if (side _shooter == independent) then {
-			private _intargetdowns = ["intarget01", "intarget02", "intarget03", "intarget04", "intarget05", "intarget06", "intarget07", "intarget08", "intarget09", "intarget10"];
-			private _intargetdown = selectRandom _intargetdowns;
+			 _intargetdowns = ["intarget01", "intarget02", "intarget03", "intarget04", "intarget05", "intarget06", "intarget07", "intarget08", "intarget09", "intarget10"];
+			 _intargetdown = selectRandom _intargetdowns;
 				
-			private _suppintargetdowns = ["insupptarget01", "insupptarget02", "insupptarget03", "insupptarget04", "insupptarget05", "insupptarget06", "insupptarget07", "insupptarget08", "insupptarget09", "insupptarget10"];
-			private _suppintargetdown = selectRandom _suppintargetdowns;
+			 _suppintargetdowns = ["insupptarget01", "insupptarget02", "insupptarget03", "insupptarget04", "insupptarget05", "insupptarget06", "insupptarget07", "insupptarget08", "insupptarget09", "insupptarget10"];
+			 _suppintargetdown = selectRandom _suppintargetdowns;
 				
-			if (_meters > 150) then {
+			if (_meters > 100) then {
 				[_shooter, [_intargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 				} else {
 				[_shooter, [_suppintargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
