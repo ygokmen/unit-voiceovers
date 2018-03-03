@@ -41,5 +41,13 @@ class CfgFunctions
 				preInit = 1
 			};
 		};
+		class optionalCBA
+		{
+			class uvoCBAsettings
+			{
+				file = "goko_uVO\functions\fn_gokovo_settings.sqf";
+				preInit = 1
+			};
+		};
 	};
 };

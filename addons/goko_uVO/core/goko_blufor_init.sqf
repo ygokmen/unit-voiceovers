@@ -2,10 +2,13 @@ if(is3DEN) exitWith {};
 
 _unit = _this select 0;
 
-if (local _unit) then {
+if (local _unit) then 
+{
 	_unit addEventHandler ["hit", {_this call goko_fnc_bdmgwoundsys}];
 	_unit addEventHandler ["reloaded", {_this call goko_fnc_breloadedfx}];
 	_unit addeventhandler ["fired", {_this call goko_fnc_bsmokefx}];
 	_unit addeventhandler ["fired", {_this call goko_fnc_bfragfx}];
-	_unit addeventhandler ["fired", {_this call goko_fnc_bexplsvfx}];
+	_unit addeventhandler ["fired", {_this call goko_fnc_bexplosvfx}];
+	_unit addeventhandler ["fired", {_this call goko_fnc_b_acem84}];
+	_unit addeventhandler ["fired", {_this call goko_fnc_b_aceM14}];
 };
