@@ -18,9 +18,6 @@ goko_vo_deathshouts_volume = profileNamespace getVariable ["goko_vo_deathshouts_
 goko_vo_deathshouts_diameter = profileNamespace getVariable ["goko_vo_deathshouts_diameter", 300];
 goko_vo_killconfirmratio = profileNamespace getVariable ["goko_vo_killconfirmratio", 50];
 
-
-
-
 if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then 
 {
 	[] spawn 
