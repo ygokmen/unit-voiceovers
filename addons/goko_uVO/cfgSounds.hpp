@@ -1235,6 +1235,92 @@ class CfgSounds
 		sound[] = {"goko_uVO\sounds\opfor\explosive17.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
+	
+	
+	class oflash01
+	{
+		name = "opfor flash01";
+		sound[] = {"goko_uVO\sounds\opfor\flash1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oflash02
+	{
+		name = "opfor flash02";
+		sound[] = {"goko_uVO\sounds\opfor\flash2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oflash03
+	{
+		name = "opfor flash03";
+		sound[] = {"goko_uVO\sounds\opfor\flash3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oflash04
+	{
+		name = "opfor flash04";
+		sound[] = {"goko_uVO\sounds\opfor\flash4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oflash05
+	{
+		name = "opfor flash05";
+		sound[] = {"goko_uVO\sounds\opfor\flash5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oflash06
+	{
+		name = "opfor flash06";
+		sound[] = {"goko_uVO\sounds\opfor\flash6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oflash07
+	{
+		name = "opfor flash07";
+		sound[] = {"goko_uVO\sounds\opfor\flash7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oIncgren01
+	{
+		name = "opfor incGren1";
+		sound[] = {"goko_uVO\sounds\opfor\incendiarythrow1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oIncgren02
+	{
+		name = "opfor incGren2";
+		sound[] = {"goko_uVO\sounds\opfor\incendiarythrow2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oIncgren03
+	{
+		name = "opfor incGren3";
+		sound[] = {"goko_uVO\sounds\opfor\incendiarythrow3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oIncgren04
+	{
+		name = "opfor incGren4";
+		sound[] = {"goko_uVO\sounds\opfor\incendiarythrow4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oIncgren05
+	{
+		name = "opfor incGren5";
+		sound[] = {"goko_uVO\sounds\opfor\incendiarythrow5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oIncgren06
+	{
+		name = "opfor incGren6";
+		sound[] = {"goko_uVO\sounds\opfor\incendiarythrow6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class oIncgren07
+	{
+		name = "opfor incGren7";
+		sound[] = {"goko_uVO\sounds\opfor\incendiarythrow7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};	
 /////WEST sound effects library/////
 	class bIncgren01
 	{
@@ -2707,6 +2793,90 @@ class CfgSounds
 		titles[] = {};
 	};
 /////Independent sound effects library/////
+	class InIncgren01
+	{
+		name = "Independent inc01";
+		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InIncgren02
+	{
+		name = "Independent inc02";
+		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InIncgren03
+	{
+		name = "Independent inc03";
+		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InIncgren04
+	{
+		name = "Independent inc04";
+		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InIncgren05
+	{
+		name = "Independent inc05";
+		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InIncgren06
+	{
+		name = "Independent inc06";
+		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InIncgren07
+	{
+		name = "Independent inc07";
+		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};	
+	class inflash01
+	{
+		name = "Independent flash01";
+		sound[] = {"goko_uVO\sounds\Independent\flash1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class inflash02
+	{
+		name = "Independent flash02";
+		sound[] = {"goko_uVO\sounds\Independent\flash2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class inflash03
+	{
+		name = "Independent flash03";
+		sound[] = {"goko_uVO\sounds\Independent\flash3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class inflash04
+	{
+		name = "Independent flash04";
+		sound[] = {"goko_uVO\sounds\Independent\flash4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class inflash05
+	{
+		name = "Independent flash05";
+		sound[] = {"goko_uVO\sounds\Independent\flash5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class inflash06
+	{
+		name = "Independent flash06";
+		sound[] = {"goko_uVO\sounds\Independent\flash6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class inflash07
+	{
+		name = "Independent flash07";
+		sound[] = {"goko_uVO\sounds\Independent\flash7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
 	class intarget01
 	{
 		name = "Independent target01";
