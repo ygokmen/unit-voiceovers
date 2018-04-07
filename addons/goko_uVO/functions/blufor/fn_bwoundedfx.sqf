@@ -4,6 +4,7 @@ goko_fnc_bdmgwoundsys =
 {
 	params ["_victim", "_causedBy", "_damage", "_shooter"];
 
+	if (_damage < 0.16) exitWith {};
 	if (side _shooter == west) then
 	{
 		_fsounds = ["bwatchfire01", "bwatchfire02", "bwatchfire03", "bwatchfire04", "bwatchfire05", "bwatchfire06", "bwatchfire07", "bwatchfire08","bwatchfire09", "bwatchfire10", "bwatchfire11", "bwatchfire12", "bwatchfire13", "bwatchfire14", "bwatchfire15"];
