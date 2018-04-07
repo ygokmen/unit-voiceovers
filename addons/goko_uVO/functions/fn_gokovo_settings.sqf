@@ -11,10 +11,10 @@
 //			} // function that will be executed once on mission start and every time the setting is changed.
 //		] call CBA_Settings_fnc_init;
 
-goko_vo_soundsdiameter = profileNamespace getVariable ["goko_vo_soundsdiameter",300];
-goko_vo_playeronoffswitch = profileNamespace getVariable ["goko_vo_playeronoffswitch",true];
-goko_vo_soundsamplepitch = profileNamespace getVariable ["goko_vo_soundsamplepitch",1];
-goko_vo_deathshouts_volume = profileNamespace getVariable ["goko_vo_deathshouts_volume", 3];
+goko_vo_soundsdiameter = profileNamespace getVariable ["goko_vo_soundsdiameter", 300];
+goko_vo_playeronoffswitch = profileNamespace getVariable ["goko_vo_playeronoffswitch", true];
+goko_vo_soundsamplepitch = profileNamespace getVariable ["goko_vo_soundsamplepitch", 1];
+goko_vo_deathshouts_volume = profileNamespace getVariable ["goko_vo_deathshouts_volume", 3.15];
 goko_vo_deathshouts_diameter = profileNamespace getVariable ["goko_vo_deathshouts_diameter", 300];
 goko_vo_killconfirmratio = profileNamespace getVariable ["goko_vo_killconfirmratio", 50];
 
