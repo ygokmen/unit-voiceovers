@@ -38,7 +38,7 @@ if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then
 			"LIST", // setting type
 			["Shout volume","Pain shouts played upon unit death"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 			"Goko Unit VO's", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-			[[0,2,2.4,3,3.4,4],["Disabled","Very Low","Low","Normal","High", "Very high"],3], // default
+			[[0,2,2.4,3.15,3.5,3.8],["Disabled","Very Low","Low","Normal","High", "Very high"],3], // default
 			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
 			{
 			} // function that will be executed once on mission start and every time the setting is changed.
