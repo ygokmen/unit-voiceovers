@@ -28,16 +28,29 @@ class CfgFunctions
 				preInit = 1
 			};
 		};
-		class independent
+		class Inde
 		{
 			class Inwoundedfx
 			{
-				file = "goko_uVO\functions\Independent\fn_inwoundedfx.sqf";
+				file = "goko_uVO\functions\Inde\fn_inwoundedfx.sqf";
 				preInit = 1
 			};
 			class Inresponds
 			{
-				file = "goko_uVO\functions\Independent\fn_inresponds.sqf";
+				file = "goko_uVO\functions\Inde\fn_inresponds.sqf";
+				preInit = 1
+			};
+		};
+		class Insurgents
+		{
+			class Insurwoundedfx
+			{
+				file = "goko_uVO\functions\Insurgents\fn_insurwoundedfx.sqf";
+				preInit = 1
+			};
+			class Insurresponds
+			{
+				file = "goko_uVO\functions\Insurgents\fn_insurresponds.sqf";
 				preInit = 1
 			};
 		};
@@ -47,6 +60,14 @@ class CfgFunctions
 			{
 				file = "goko_uVO\functions\fn_gokovo_settings.sqf";
 				preInit = 1
+			};
+		};
+		class unoPostinit
+		{
+			class uvoKeybinds
+			{
+				file = "goko_uVO\functions\fn_callouts_postinit.sqf";
+				postInit = 1
 			};
 		};
 	};
