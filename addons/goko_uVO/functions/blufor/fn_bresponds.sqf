@@ -1,273 +1,332 @@
-goko_fnc_b_acem84 = 
-{
-	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
-	
-	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
-	
-	if !(_magazine in ["ACE_M84"]) exitWith {};
-	_baceflashsounds = 
-	[
-		"bflash01",
-		"bflash02",
-		"bflash03",
-		"bflash04",
-		"bflash05",
-		"bflash06",
-		"bflash07"
-	];
-	_baceflashsound = selectRandom _baceflashsounds;
-	[_shooter, [_baceflashsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-	[_shooter] remoteExecCall ["goko_fnc_movelips"];
-};
+goko_randomizeblu = 67;
 
-goko_fnc_b_aceM14 = 
+goko_fnc_bdmgwoundsys = 
 {
-	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
-	
-	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
-	if !(_magazine in ["ACE_M14"]) exitWith {};
-	_baceincendierysounds = 
-	[
-		"bIncgren01",
-		"bIncgren02",
-		"bIncgren03",
-		"bIncgren04",
-		"bIncgren05",
-		"bIncgren06",
-		"bIncgren07"
-	];
-	_baceincendierysound = selectRandom _baceincendierysounds;
-	[_shooter, [_baceincendierysound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-	[_shooter] remoteExecCall ["goko_fnc_movelips"];
-};
+	params ["_victim", "_causedBy", "_damage", "_shooter"];
 
-goko_fnc_bexplosvfx = 
-{
-	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
+	if (goko_var_cltalking) exitWith {};
 	
-	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
-	if !(_magazine in ["SatchelCharge_Remote_Mag", "DemoCharge_Remote_Mag", "ATMine_Range_Mag", "APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag", "APERSTripMine_Wire_Mag", "ClaymoreDirectionalMine_Remote_Mag", "IEDUrbanBig_Remote_Mag", "IEDLandBig_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "IEDLandSmall_Remote_Mag"]) exitWith {};
-	 _plantsounds = 
-	 [
-		"bexpls01",
-		"bexpls02",
-		"bexpls03",
-		"bexpls04",
-		"bexpls05",
-		"bexpls06",
-		"bexpls07",
-		"bexpls08",
-		"bexpls09",
-		"bexpls10",
-		"bexpls11",
-		"bexpls12",
-		"bexpls13", 
-		"bexpls14"
-	];
-	_plantsound = selectRandom _plantsounds;
-	[_shooter, [_plantsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-	[_shooter] remoteExecCall ["goko_fnc_movelips"];
-};
-
-goko_fnc_bfragfx = 
-{
-	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
-	
-	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
-	if !(_magazine in ["HandGrenade", "MiniGrenade"]) exitWith {};
-	_fragsounds = 
-	[
-		"bfrag01", 
-		"bfrag02", 
-		"bfrag03", 
-		"bfrag04", 
-		"bfrag05", 
-		"bfrag06", 
-		"bfrag07", 
-		"bfrag08", 
-		"bfrag09", 
-		"bfrag10", 
-		"bfrag11", 
-		"bfrag12", 
-		"bfrag13", 
-		"bfrag14"
-	];
-	_fragsound = selectRandom _fragsounds;
-	[_shooter, [_fragsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-	[_shooter] remoteExecCall ["goko_fnc_movelips"];
-	
-	_null = _this spawn 
+	if (side _shooter == west) then
 	{
-		_frag = _this select 6; 
-		waitUntil 
-		{
-			_mspeed = velocity _frag select 2; 
-
-			sleep 0.7;
-			if (_mspeed < 0.0001) exitWith {true};
-		};
-		
-		_findnearby = _frag nearEntities [["I_Soldier_base_F", "O_Soldier_base_F"], 16];
-		if (_findnearby isequalto []) exitwith{};
-		_nearby = selectRandom _findnearby; 
-		_cansee = [objNull, "ifire"] checkVisibility [getposasl _frag, eyePos _nearby];
-
-		
-		if (_cansee != 0) then
-		{
-			if (side _nearby == independent) then 
-			{
-				_inspottedfrag = ["Inspotnade01", "Inspotnade02", "Inspotnade03", "Inspotnade04", "Inspotnade05", "Inspotnade06", "Inspotnade07", "Inspotnade08", "Inspotnade09", "Inspotnade10", "Inspotnade11", "Inspotnade12", "Inspotnade13", "Inspotnade14", "Inspotnade15", "Inspotnade16", "Inspotnade17", "Inspotnade18"];
-				_infrag = selectRandom _inspottedfrag;
-
-				[_nearby, [_infrag, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-			};
-			
-			if (side _nearby == east) then 
-			{
-				_ospottedfrag = ["ospotnade01", "ospotnade02", "ospotnade03", "ospotnade04", "ospotnade05", "ospotnade06", "ospotnade07", "ospotnade08", "ospotnade09", "ospotnade10", "ospotnade11", "ospotnade12", "ospotnade13", "ospotnade14", "ospotnade15", "ospotnade16", "ospotnade17", "ospotnade18", "ospotnade19", "ospotnade20", "ospotnade21", "ospotnade22", "ospotnade23"];
-				_ofrag = selectRandom _ospottedfrag;
-
-				[_nearby, [_ofrag, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-			};
-		};
-	};
-};
-
-goko_fnc_bsmokefx = 
-{
-	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
-	
-	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
-	if !(_magazine in ["SmokeShellOrange", "SmokeShellBlue", "SmokeShellPurple", "SmokeShellYellow", "SmokeShellGreen", "SmokeShellRed", "SmokeShell"]) exitWith {};
-	 _smokesounds = 
-	 [
-		"bsmoke01", 
-		"bsmoke02", 
-		"bsmoke03", 
-		"bsmoke04", 
-		"bsmoke05", 
-		"bsmoke06", 
-		"bsmoke07", 
-		"bsmoke08", 
-		"bsmoke09"
-	];
-	 _smokesound = selectRandom _smokesounds;
-	[_shooter, [_smokesound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-	[_shooter] remoteExecCall ["goko_fnc_movelips"];
-};
-
-goko_fnc_breloadedfx = 
-{
-	params ["_unit", "_weapon", "_muzzle", "_newmag", "_oldmag"];
-	
-	if ((hasinterface && !goko_vo_playeronoffswitch) || _weapon != _muzzle || !isnil "ace_arsenal_camera" || !isnil "RSCDisplayArsenal") exitWith {}; 
-	if !(isNil (_unit getVariable "Achilles_var_suppressiveFire_ready") && (_unit getVariable "Achilles_var_suppressiveFire_ready")) exitWith {}; 
-
-	private _countMagz = {
-	_x == currentMagazine _unit
-	}count (magazines _unit);
-	
-	if (_countMagz != 0) then 
-	{
-		_null = _this spawn 
-		{
-			_rsounds = 
-			[
-				"brel01",
-				"brel02",
-				"brel03",
-				"brel04",
-				"brel05",
-				"brel06",
-				"brel07",
-				"brel08",
-				"brel09",
-				"brel10",
-				"brel11",
-				"brel12",
-				"brel13",
-				"brel14",
-				"brel15",
-				"brel16",
-				"brel17",
-				"brel18",
-				"brel19",
-				"brel20",
-				"brel21",
-				"brel22",
-				"brel23",
-				"brel24",
-				"brel25",
-				"brel26",
-				"brel27",
-				"brel28",
-				"brel29",
-				"brel30",
-				"brel31"
-			];
-
-			_duder = _this select 0;
-			_dudermuzzle = _this select 2;
-			private _storeMagID = if (currentMagazineDetail _duder isEqualTo "") then {""} else  
-			{currentMagazineDetail _duder splitString "[]:/" select 4};  
-			_chamber = 999;
-			
-			waitUntil 
-			{
-				sleep 1;
-				_chamber = _duder ammo _dudermuzzle;
-				private _checkMagIDs = if (currentMagazineDetail _duder isEqualTo "") then {""} else  
-				{currentMagazineDetail _duder splitString "[]:/" select 4};  
-				if (_chamber == 0 || _storeMagID != _checkMagIDs || !alive _duder) exitWith {true};
-				false //<-- boolean at the end of the scope
-			};
-			if !(alive _duder) exitWith {};
-			
-			_checkMagIDs = if (currentMagazineDetail _duder isEqualTo "") then {""} else  
-			{currentMagazineDetail _duder splitString "[]:/" select 4};  
-			if (_storeMagID != _checkMagIDs) exitWith {};
-			
-			_rsound = selectRandom _rsounds;
-			[_duder, [_rsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D"]; 
-			[_duder] remoteExecCall ["goko_fnc_movelips"];
-			
-			waitUntil
-			{
-				sleep 1.5;
-				true;
-			};
-			
-			if (round (random 100) < goko_randomizeblu) then
-			{	
-				_bluforsels = _duder nearEntities [["B_Soldier_base_F"], 30] - [_duder]; 
-				if (_bluforsels isequalto []) exitwith{};
-				_bluforsele = selectRandom _bluforsels; 
-			
-				_bcoverus = ["bcover01", "bcover02", "bcover03", "bcover04", "bcover05", "bcover06", "bcover07", "bcover08", "bcover09", "bcover10", "bcover11", "bcover12", "bcover13", "bcover14", "bcover15", "bcover16", "bcover17"];
-				_bcoveru = selectRandom _bcoverus;
-				[_bluforsele, [_bcoveru, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-			};
-		};
-
+		_fsounds = ["bwatchfire01", "bwatchfire02", "bwatchfire03", "bwatchfire04", "bwatchfire05", "bwatchfire06", "bwatchfire07", "bwatchfire08","bwatchfire09", "bwatchfire10", "bwatchfire11", "bwatchfire12", "bwatchfire13", "bwatchfire14", "bwatchfire15"];
+		_fsound = selectRandom _fsounds;
+		[_victim, [_fsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		[_victim] remoteExecCall ["goko_fnc_movelips"];
 	} else
 	{
-		if (currentweapon _unit != secondaryweapon _unit) then
-		{
-			_lowsounds = ["blowammo01", "blowammo02", "blowammo03", "blowammo04", "blowammo05", "blowammo06"];
-			_lowsound = selectRandom _lowsounds;
-			[_unit, [_lowsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D"];
-			[_unit] remoteExecCall ["goko_fnc_movelips"];
-		} else
-		{
-			_bluforsels = _unit nearEntities [["B_Soldier_base_F"], 30] - [_unit]; 
-			if (_bluforsels isequalto []) exitwith{};
-			_bluforsele = selectRandom _bluforsels; 
+		_wsounds = ["bwounded01", "bwounded02", "bwounded03", "bwounded04", "bwounded05", "bwounded06", "bwounded07", "bwounded08", "bwounded09", "bwounded10", "bwounded11", "bwounded12", "bwounded13", "bwounded14", "bwounded15", "bwounded16", "bwounded17", "bwounded18", "bwounded19", "bwounded20", "bwounded21", "bwounded22", "bwounded23", "bwounded24", "bwounded25", "bwounded26", "bwounded27", "bwounded28", "bwounded29", "bwounded30", "bwounded31", "bwounded32", "bwounded33", "bwounded34", "bwounded35", "bwounded36", "bwounded37", "bwounded38", "bwounded39", "bwounded40", "bwounded41", "bwounded42", "bwounded43", "bwounded44", "bwounded45", "bwounded46", "bwounded47", "bwounded48", "bwounded49", "bwounded50", "bwounded51", "bwounded52"];
+		_wsound = selectRandom _wsounds;
+		[_victim, [_wsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		[_victim] remoteExecCall ["goko_fnc_movelips"];
+	};
+};
+
+goko_fnc_bdeath =
+{
+	params ["_unit", "_shooter", "_killer"];
+
+	_meters = round (_unit distance _killer);
+	_deathsArray = 
+	[
+		"goko_uVO\sounds\pl_deathshout_01.wav",
+		"goko_uVO\sounds\pl_deathshout_02.wav",
+		"goko_uVO\sounds\pl_deathshout_03.wav",
+		"goko_uVO\sounds\pl_deathshout_04.wav",
+		"goko_uVO\sounds\pl_deathshout_05.wav",
+		"goko_uVO\sounds\pl_deathshout_06.wav",
+		"goko_uVO\sounds\pl_deathshout_07.wav",
+		"goko_uVO\sounds\pl_deathshout_08.wav",
+		"goko_uVO\sounds\pl_deathshout_09.wav",
+		"goko_uVO\sounds\pl_deathshout_10.wav",
+		"goko_uVO\sounds\pl_deathshout_11.wav",
+		"goko_uVO\sounds\pl_deathshout_12.wav",
+		"goko_uVO\sounds\pl_deathshout_13.wav",
+		"goko_uVO\sounds\pl_deathshout_14.wav",
+		"goko_uVO\sounds\pl_deathshout_15.wav",
+		"goko_uVO\sounds\pl_deathshout_16.wav",
+		"goko_uVO\sounds\pl_deathshout_17.wav",
+		"goko_uVO\sounds\pl_deathshout_18.wav",
+		"goko_uVO\sounds\pl_deathshout_19.wav",
+		"goko_uVO\sounds\pl_deathshout_20.wav",
+		"goko_uVO\sounds\pl_deathshout_21.wav",
+		"goko_uVO\sounds\pl_deathshout_22.wav",
+		"goko_uVO\sounds\pl_deathshout_23.wav",
+		"goko_uVO\sounds\pl_deathshout_24.wav",
+		"goko_uVO\sounds\pl_deathshout_25.wav",
+		"goko_uVO\sounds\pl_deathshout_26.wav",
+		"goko_uVO\sounds\pl_deathshout_27.wav",
+		"goko_uVO\sounds\pl_deathshout_28.wav",
+		"goko_uVO\sounds\pl_deathshout_29.wav",
+		"goko_uVO\sounds\pl_deathshout_30.wav",
+		"goko_uVO\sounds\pl_deathshout_31.wav",
+		"goko_uVO\sounds\pl_deathshout_32.wav",
+		"goko_uVO\sounds\pl_deathshout_33.wav",
+		"goko_uVO\sounds\pl_deathshout_34.wav",
+		"goko_uVO\sounds\pl_deathshout_35.wav",
+		"goko_uVO\sounds\pl_deathshout_36.wav",
+		"goko_uVO\sounds\pl_deathshout_37.wav",
+		"goko_uVO\sounds\pl_deathshout_38.wav",
+		"goko_uVO\sounds\pl_deathshout_39.wav",
+		"goko_uVO\sounds\pl_deathshout_40.wav",
+		"goko_uVO\sounds\pl_deathshout_41.wav",
+		"goko_uVO\sounds\pl_deathshout_42.wav",
+		"goko_uVO\sounds\pl_deathshout_43.wav",
+		"goko_uVO\sounds\pl_deathshout_44.wav",
+		"goko_uVO\sounds\pl_deathshout_45.wav",
+		"goko_uVO\sounds\pl_deathshout_46.wav",
+		"goko_uVO\sounds\pl_deathshout_47.wav",
+		"goko_uVO\sounds\pl_deathshout_48.wav",
+		"goko_uVO\sounds\pl_deathshout_49.wav"
+	];
+	
+	_deathsound = selectRandom _deathsArray;
+	playsound3d [format ["%1",_deathsound], _unit, false, getPosASL _unit, goko_vo_deathshouts_volume, 1, goko_vo_deathshouts_diameter];
+	
+	if (round (random 100) < goko_randomizeblu) then 
+	{
+		_abowb = _unit nearEntities [["B_Soldier_base_F"], 50]; 
+		if (_abowb isequalto [] || _abowb isequalto [_unit]) exitwith{};
+		_obarab = selectRandom _abowb; 
+		
+		_bsubdowns = ["bsubdown01", "bsubdown02", "bsubdown03", "bsubdown04", "bsubdown05", "bsubdown06", "bsubdown07", "bsubdown08", "bsubdown09", "bsubdown10", "bsubdown11", "bsubdown12", "bsubdown13", "bsubdown14", "bsubdown15", "bsubdown16", "bsubdown17", "bsubdown18", "bsubdown19", "bsubdown20", "bsubdown21", "bsubdown22", "bsubdown23", "bsubdown24", "bsubdown25", "bsubdown26", "bsubdown27", "bsubdown28", "bsubdown29", "bsubdown30", "bsubdown31", "bsubdown32", "bsubdown33", "bsubdown34", "bsubdown35", "bsubdown36", "bsubdown37", "bsubdown38", "bsubdown39", "bsubdown40", "bsubdown41", "bsubdown42", "bsubdown43", "bsubdown44", "bsubdown45", "bsubdown46", "bsubdown47", "bsubdown48", "bsubdown49", "bsubdown50", "bsubdown51", "bsubdown52", "bsubdown53", "bsubdown54", "bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", "bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"];
+		_bsubdown = selectRandom _bsubdowns;
+		[_obarab, [_bsubdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+	};
+	if (round (random 100) > goko_vo_killconfirmratio) exitWith {};
+	
+	if (side _killer == east) then 
+	{
+		_otargetdowns = ["otarget01", "otarget02", "otarget03", "otarget04", "otarget05", "otarget06", "otarget07", "otarget08", "otarget09", "otarget10"];
+		_otargetdown = selectRandom _otargetdowns;
 			
-			_bcoverusrpg = ["bcover01", "bcover02", "bcover03", "bcover04", "bcover10", "bcover11", "bcover12", "bcover13"];
-			_bcoverurpg = selectRandom _bcoverusrpg;
-			[_bluforsele, [_bcoverurpg, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-			[_bluforsele] remoteExecCall ["goko_fnc_movelips"];
+		_suppotargetdowns = ["osupptarget01", "osupptarget02", "osupptarget03", "osupptarget04", "osupptarget05", "osupptarget06", "osupptarget07", "osupptarget08", "osupptarget09", "osupptarget10"];
+		_suppotargetdown = selectRandom _suppotargetdowns;
+			
+		if (_meters > 100) then 
+		{
+			[_killer, [_otargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		} else 
+		{
+			[_killer, [_suppotargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		};
+	};
+	
+	if (side _killer == independent) then 
+	{
+		_intargetdowns = ["intarget01", "intarget02", "intarget03", "intarget04", "intarget05", "intarget06", "intarget07", "intarget08", "intarget09", "intarget10"];
+		_intargetdown = selectRandom _intargetdowns;
+			
+		_suppintargetdowns = ["insupptarget01", "insupptarget02", "insupptarget03", "insupptarget04", "insupptarget05", "insupptarget06", "insupptarget07", "insupptarget08", "insupptarget09", "insupptarget10"];
+		_suppintargetdown = selectRandom _suppintargetdowns;
+			
+		if (_meters > 100) then 
+		{
+			[_killer, [_intargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		} else 
+		{
+			[_killer, [_suppintargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		};
 	};
 };
+
+goko_fnc_bdeath_ace3 =
+{
+	params ["_unit"];
+	
+	_killer = _unit getVariable "ace_medical_lastDamageSource";
+
+	_meters = round (_unit distance _killer);
+	_deathsArray = 
+	[
+		"goko_uVO\sounds\pl_deathshout_01.wav",
+		"goko_uVO\sounds\pl_deathshout_02.wav",
+		"goko_uVO\sounds\pl_deathshout_03.wav",
+		"goko_uVO\sounds\pl_deathshout_04.wav",
+		"goko_uVO\sounds\pl_deathshout_05.wav",
+		"goko_uVO\sounds\pl_deathshout_06.wav",
+		"goko_uVO\sounds\pl_deathshout_07.wav",
+		"goko_uVO\sounds\pl_deathshout_08.wav",
+		"goko_uVO\sounds\pl_deathshout_09.wav",
+		"goko_uVO\sounds\pl_deathshout_10.wav",
+		"goko_uVO\sounds\pl_deathshout_11.wav",
+		"goko_uVO\sounds\pl_deathshout_12.wav",
+		"goko_uVO\sounds\pl_deathshout_13.wav",
+		"goko_uVO\sounds\pl_deathshout_14.wav",
+		"goko_uVO\sounds\pl_deathshout_15.wav",
+		"goko_uVO\sounds\pl_deathshout_16.wav",
+		"goko_uVO\sounds\pl_deathshout_17.wav",
+		"goko_uVO\sounds\pl_deathshout_18.wav",
+		"goko_uVO\sounds\pl_deathshout_19.wav",
+		"goko_uVO\sounds\pl_deathshout_20.wav",
+		"goko_uVO\sounds\pl_deathshout_21.wav",
+		"goko_uVO\sounds\pl_deathshout_22.wav",
+		"goko_uVO\sounds\pl_deathshout_23.wav",
+		"goko_uVO\sounds\pl_deathshout_24.wav",
+		"goko_uVO\sounds\pl_deathshout_25.wav",
+		"goko_uVO\sounds\pl_deathshout_26.wav",
+		"goko_uVO\sounds\pl_deathshout_27.wav",
+		"goko_uVO\sounds\pl_deathshout_28.wav",
+		"goko_uVO\sounds\pl_deathshout_29.wav",
+		"goko_uVO\sounds\pl_deathshout_30.wav",
+		"goko_uVO\sounds\pl_deathshout_31.wav",
+		"goko_uVO\sounds\pl_deathshout_32.wav",
+		"goko_uVO\sounds\pl_deathshout_33.wav",
+		"goko_uVO\sounds\pl_deathshout_34.wav",
+		"goko_uVO\sounds\pl_deathshout_35.wav",
+		"goko_uVO\sounds\pl_deathshout_36.wav",
+		"goko_uVO\sounds\pl_deathshout_37.wav",
+		"goko_uVO\sounds\pl_deathshout_38.wav",
+		"goko_uVO\sounds\pl_deathshout_39.wav",
+		"goko_uVO\sounds\pl_deathshout_40.wav",
+		"goko_uVO\sounds\pl_deathshout_41.wav",
+		"goko_uVO\sounds\pl_deathshout_42.wav",
+		"goko_uVO\sounds\pl_deathshout_43.wav",
+		"goko_uVO\sounds\pl_deathshout_44.wav",
+		"goko_uVO\sounds\pl_deathshout_45.wav",
+		"goko_uVO\sounds\pl_deathshout_46.wav",
+		"goko_uVO\sounds\pl_deathshout_47.wav",
+		"goko_uVO\sounds\pl_deathshout_48.wav",
+		"goko_uVO\sounds\pl_deathshout_49.wav"
+	];
+	
+	_deathsound = selectRandom _deathsArray;
+	playsound3d [format ["%1",_deathsound], _unit, false, getPosASL _unit, goko_vo_deathshouts_volume, 1, goko_vo_deathshouts_diameter];
+	
+	if (round (random 100) < goko_randomizeblu) then 
+	{
+		_abowb = _unit nearEntities [["B_Soldier_base_F"], 50]; 
+		if (_abowb isequalto [] || _abowb isequalto [_unit]) exitwith{};
+		_obarab = selectRandom _abowb;
+		
+		_bsubdowns = ["bsubdown01", "bsubdown02", "bsubdown03", "bsubdown04", "bsubdown05", "bsubdown06", "bsubdown07", "bsubdown08", "bsubdown09", "bsubdown10", "bsubdown11", "bsubdown12", "bsubdown13", "bsubdown14", "bsubdown15", "bsubdown16", "bsubdown17", "bsubdown18", "bsubdown19", "bsubdown20", "bsubdown21", "bsubdown22", "bsubdown23", "bsubdown24", "bsubdown25", "bsubdown26", "bsubdown27", "bsubdown28", "bsubdown29", "bsubdown30", "bsubdown31", "bsubdown32", "bsubdown33", "bsubdown34", "bsubdown35", "bsubdown36", "bsubdown37", "bsubdown38", "bsubdown39", "bsubdown40", "bsubdown41", "bsubdown42", "bsubdown43", "bsubdown44", "bsubdown45", "bsubdown46", "bsubdown47", "bsubdown48", "bsubdown49", "bsubdown50", "bsubdown51", "bsubdown52", "bsubdown53", "bsubdown54", "bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", "bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"];
+		_bsubdown = selectRandom _bsubdowns;
+		[_obarab, [_bsubdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+	};
+	if (round (random 100) > goko_vo_killconfirmratio) exitWith {};
+	
+	if (side _killer == east) then 
+	{
+		_otargetdowns = ["otarget01", "otarget02", "otarget03", "otarget04", "otarget05", "otarget06", "otarget07", "otarget08", "otarget09", "otarget10"];
+		_otargetdown = selectRandom _otargetdowns;
+			
+		_suppotargetdowns = ["osupptarget01", "osupptarget02", "osupptarget03", "osupptarget04", "osupptarget05", "osupptarget06", "osupptarget07", "osupptarget08", "osupptarget09", "osupptarget10"];
+		_suppotargetdown = selectRandom _suppotargetdowns;
+			
+		if (_meters > 100) then 
+		{
+			[_killer, [_otargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		} else 
+		{
+			[_killer, [_suppotargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		};
+	};
+	
+	if (side _killer == independent) then 
+	{
+		_intargetdowns = ["intarget01", "intarget02", "intarget03", "intarget04", "intarget05", "intarget06", "intarget07", "intarget08", "intarget09", "intarget10"];
+		_intargetdown = selectRandom _intargetdowns;
+			
+		_suppintargetdowns = ["insupptarget01", "insupptarget02", "insupptarget03", "insupptarget04", "insupptarget05", "insupptarget06", "insupptarget07", "insupptarget08", "insupptarget09", "insupptarget10"];
+		_suppintargetdown = selectRandom _suppintargetdowns;
+			
+		if (_meters > 100) then 
+		{
+			[_killer, [_intargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		} else 
+		{
+			[_killer, [_suppintargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		};
+	};
+};
+
+goko_fnc_bCallDir =   
+{ 
+	params ["_unit"]; 
+	_cTar = cursortarget;
+	_knowabouts = _unit knowsabout _cTar; 
+	if (_unit == player && _knowabouts > 0 && _cTar iskindof "MAN" && alive _cTar) then 
+	{ 
+ 
+		if (side _unit != side _cTar) then 
+		{ 
+			_azimuth = getDir _unit; 
+			_direction = lolo; 
+			switch (true) do 
+			{ 
+				case (_azimuth >= 337.5 ) : {_direction = "N" }; 
+				case (_azimuth >= 22.5 and _azimuth < 67.5) : {_direction = "NE" }; 
+				case (_azimuth >= 67.5 and _azimuth < 112.5) : {_direction = "E"; }; 
+				case (_azimuth >= 112.5 and _azimuth < 157.5) : {_direction = "SE" }; 
+				case (_azimuth >= 157.5 and _azimuth < 202.5) : {_direction = "S" }; 
+				case (_azimuth >= 202.5 and _azimuth < 247.5) : {_direction = "SW" }; 
+				case (_azimuth >= 247.5 and _azimuth < 292.5) : {_direction = "W" }; 
+				case (_azimuth >= 292.5 and _azimuth < 337.5) : {_direction = "NW" }; 
+			}; 
+
+			if (_direction == "N") then 
+			{ 
+				_dirsounds = ["Benemynorth01", "Benemynorth02", "Benemynorth03", "Benemynorth04", "Benemynorth05", "Benemynorth06"]; 
+				_dirsound = selectRandom _dirsounds; 
+				[_unit, [_dirsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0]; 
+				[_unit] remoteExecCall ["goko_fnc_movelips"]; 
+			}; 
+
+			if (_direction == "NE") then 
+			{ 
+				_dirsounds = ["BenemyNE01", "BenemyNE02", "BenemyNE03", "BenemyNE04", "BenemyNE05", "BenemyNE06"]; 
+				_dirsound = selectRandom _dirsounds; 
+				[_unit, [_dirsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0]; 
+				[_unit] remoteExecCall ["goko_fnc_movelips"]; 
+			}; 
+
+			if (_direction == "E") then 
+			{ 
+				_dirsounds = ["Benemyeast01", "Benemyeast02", "Benemyeast03", "Benemyeast04", "Benemyeast05", "Benemyeast06"]; 
+				_dirsound = selectRandom _dirsounds; 
+				[_unit, [_dirsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0]; 
+				[_unit] remoteExecCall ["goko_fnc_movelips"]; 
+			}; 
+
+			if (_direction == "SE") then 
+			{ 
+				_dirsounds = ["BenemySE01", "BenemySE02", "BenemySE03", "BenemySE04", "BenemySE05", "BenemySE06"]; 
+				_dirsound = selectRandom _dirsounds; 
+				[_unit, [_dirsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0]; 
+				[_unit] remoteExecCall ["goko_fnc_movelips"]; 
+			}; 
+
+			if (_direction == "S") then 
+			{ 
+				_dirsounds = ["Benemysouth01", "Benemysouth02", "Benemysouth03", "Benemysouth04", "Benemysouth05", "Benemysouth06"]; 
+				_dirsound = selectRandom _dirsounds; 
+				[_unit, [_dirsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0]; 
+				[_unit] remoteExecCall ["goko_fnc_movelips"]; 
+
+			}; 
+
+			if (_direction == "SW") then 
+			{ 
+				_dirsounds = ["BenemySW01", "BenemySW02", "BenemySW03", "BenemySW04", "BenemySW05", "BenemySW06"]; 
+				_dirsound = selectRandom _dirsounds; 
+				[_unit, [_dirsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0]; 
+				[_unit] remoteExecCall ["goko_fnc_movelips"]; 
+			}; 
+
+			if (_direction == "W") then 
+			{ 
+				_dirsounds = ["Benemywest01", "Benemywest02", "Benemywest03", "Benemywest04", "Benemywest05", "Benemywest06"]; 
+				_dirsound = selectRandom _dirsounds; 
+				[_unit, [_dirsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0]; 
+				[_unit] remoteExecCall ["goko_fnc_movelips"]; 
+			}; 
+
+			if (_direction == "NW") then 
+			{ 
+				_dirsounds = ["BenemyNW01", "BenemyNW02", "BenemyNW03", "BenemyNW04", "BenemyNW05", "BenemyNW06"]; 
+				_dirsound = selectRandom _dirsounds; 
+				[_unit, [_dirsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0]; 
+				[_unit] remoteExecCall ["goko_fnc_movelips"]; 
+			}; 
+		}; 
+	}; 
+}; 
