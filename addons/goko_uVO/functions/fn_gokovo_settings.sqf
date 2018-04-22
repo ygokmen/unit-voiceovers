@@ -89,3 +89,24 @@ if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then
 		] call CBA_Settings_fnc_init;
 	};	
 };
+
+goko_var_cltalking = false;
+goko_fnc_movelips = 
+{	
+	_null = _this spawn  
+	{
+		_unit = _this select 0;
+		_rndm = (1.5 + random 0.5);
+
+		_unit setrandomlip true;
+		goko_var_cltalking = true;
+		
+		waitUntil
+		{
+			sleep _rndm;
+			true;
+		};
+		goko_var_cltalking = false;
+		_unit setrandomlip false;
+	};
+};
