@@ -2,6 +2,396 @@ class CfgSounds
 {
 /////EAST sound effects library/////
 	sounds[] = {};
+	class Oenemyeast01
+	{
+		name = "ospot ENEMYeast1";
+		sound[] = {"goko_uVO\sounds\opfor\east1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemyeast02
+	{
+		name = "ospot ENEMYeast2";
+		sound[] = {"goko_uVO\sounds\opfor\east2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemyeast03
+	{
+		name = "ospot ENEMYeast3";
+		sound[] = {"goko_uVO\sounds\opfor\east3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemynorth01
+	{
+		name = "ospot ENEMYnorth1";
+		sound[] = {"goko_uVO\sounds\opfor\north1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemynorth02
+	{
+		name = "ospot ENEMYnorth2";
+		sound[] = {"goko_uVO\sounds\opfor\north2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemynorth03
+	{
+		name = "ospot ENEMYnorth3";
+		sound[] = {"goko_uVO\sounds\opfor\north3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemyNE01
+	{
+		name = "ospot ENEMYne1";
+		sound[] = {"goko_uVO\sounds\opfor\northeast1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemyNE02
+	{
+		name = "ospot ENEMYne2";
+		sound[] = {"goko_uVO\sounds\opfor\northeast2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemyNE03
+	{
+		name = "ospot ENEMY3";
+		sound[] = {"goko_uVO\sounds\opfor\northeast3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemyNW01
+	{
+		name = "ospot ENEMY1";
+		sound[] = {"goko_uVO\sounds\opfor\northwest1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemyNW02
+	{
+		name = "ospot ENEMYNW2";
+		sound[] = {"goko_uVO\sounds\opfor\northwest2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemynw03
+	{
+		name = "ospot ENEMY3";
+		sound[] = {"goko_uVO\sounds\opfor\northwest3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemysouth01
+	{
+		name = "ospot ENEMYsouth1";
+		sound[] = {"goko_uVO\sounds\opfor\south1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemysouth02
+	{
+		name = "ospot ENEMYsouth2";
+		sound[] = {"goko_uVO\sounds\opfor\south2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemysouth03
+	{
+		name = "ospot ENEMYsouth3";
+		sound[] = {"goko_uVO\sounds\opfor\south3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemySE01
+	{
+		name = "ospot ENEMYse1";
+		sound[] = {"goko_uVO\sounds\opfor\southeast1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemySE02
+	{
+		name = "ospot ENEMYse2";
+		sound[] = {"goko_uVO\sounds\opfor\southeast2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemySE03
+	{
+		name = "ospot ENEMYse3";
+		sound[] = {"goko_uVO\sounds\opfor\southeast3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class OenemySW01
+	{
+		name = "ospot ENEMYsw1";
+		sound[] = {"goko_uVO\sounds\opfor\southwest1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemysw02
+	{
+		name = "ospot ENEMY2";
+		sound[] = {"goko_uVO\sounds\opfor\southwest2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemysw03
+	{
+		name = "ospot ENEMYsw3";
+		sound[] = {"goko_uVO\sounds\opfor\southwest3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemywest01
+	{
+		name = "ospot ENEMYwest1";
+		sound[] = {"goko_uVO\sounds\opfor\west1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemywest02
+	{
+		name = "ospot ENEMYwest2";
+		sound[] = {"goko_uVO\sounds\opfor\west2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Oenemywest03
+	{
+		name = "ospot ENEMYwest3";
+		sound[] = {"goko_uVO\sounds\opfor\west3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade01
+	{
+		name = "ospotnade01";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade02
+	{
+		name = "ospotnade02";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade03
+	{
+		name = "ospotnade03";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade04
+	{
+		name = "ospotnade04";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade05
+	{
+		name = "ospotnade05";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade8.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade06
+	{
+		name = "ospotnade06";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade9.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade07
+	{
+		name = "ospotnade07";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade11.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade08
+	{
+		name = "ospotnade08";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade12.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade09
+	{
+		name = "ospotnade09";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade13.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade10
+	{
+		name = "ospotnade10";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade14.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade11
+	{
+		name = "ospotnade11";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade18.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade12
+	{
+		name = "ospotnade12";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade20.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade13
+	{
+		name = "ospotnade13";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade21.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade14
+	{
+		name = "ospotnade14";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade22.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade15
+	{
+		name = "ospotnade15";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade23.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade16
+	{
+		name = "ospotnade16";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade24.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade17
+	{
+		name = "ospotnade17";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade25.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade18
+	{
+		name = "ospotnade18";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade26.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade19
+	{
+		name = "ospotnade19";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade29.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade20
+	{
+		name = "ospotnade20";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade31.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade21
+	{
+		name = "ospotnade21";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade32.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade22
+	{
+		name = "ospotnade22";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade33.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class ospotnade23
+	{
+		name = "ospotnade23";
+		sound[] = {"goko_uVO\sounds\opfor\incominggrenade34.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover01
+	{
+		name = "opfor acknowledge01";
+		sound[] = {"goko_uVO\sounds\opfor\yeee1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover02
+	{
+		name = "opfor acknowledge02";
+		sound[] = {"goko_uVO\sounds\opfor\yeee2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover03
+	{
+		name = "opfor acknowledge03";
+		sound[] = {"goko_uVO\sounds\opfor\yeee3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover04
+	{
+		name = "opfor acknowledge04";
+		sound[] = {"goko_uVO\sounds\opfor\yeee4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover05
+	{
+		name = "opfor acknowledge05";
+		sound[] = {"goko_uVO\sounds\opfor\yeee5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover06
+	{
+		name = "opfor acknowledge06";
+		sound[] = {"goko_uVO\sounds\opfor\yeee6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover07
+	{
+		name = "opfor acknowledge07";
+		sound[] = {"goko_uVO\sounds\opfor\yeee7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover08
+	{
+		name = "opfor acknowledge08";
+		sound[] = {"goko_uVO\sounds\opfor\yeee8.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover09
+	{
+		name = "opfor acknowledge09";
+		sound[] = {"goko_uVO\sounds\opfor\yeee9.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover10
+	{
+		name = "opfor acknowledge10";
+		sound[] = {"goko_uVO\sounds\opfor\yeee10.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover11
+	{
+		name = "opfor acknowledge11";
+		sound[] = {"goko_uVO\sounds\opfor\yeee11.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover12
+	{
+		name = "opfor acknowledge12";
+		sound[] = {"goko_uVO\sounds\opfor\yeee12.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover13
+	{
+		name = "opfor acknowledge13";
+		sound[] = {"goko_uVO\sounds\opfor\yeee13.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover14
+	{
+		name = "opfor acknowledge14";
+		sound[] = {"goko_uVO\sounds\opfor\yeee14.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover15
+	{
+		name = "opfor acknowledge15";
+		sound[] = {"goko_uVO\sounds\opfor\yeee15.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover16
+	{
+		name = "opfor acknowledge16";
+		sound[] = {"goko_uVO\sounds\opfor\yeee16.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover17
+	{
+		name = "opfor acknowledge17";
+		sound[] = {"goko_uVO\sounds\opfor\yeee17.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class opcover18
+	{
+		name = "opfor acknowledge18";
+		sound[] = {"goko_uVO\sounds\opfor\yeee18.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};	
 	class otarget01
 	{
 		name = "opfor target01";
@@ -1322,6 +1712,516 @@ class CfgSounds
 		titles[] = {};
 	};	
 /////WEST sound effects library/////
+	class Benemyeast01
+	{
+		name = "blufor enemyspoteast1";
+		sound[] = {"goko_uVO\sounds\blufor\east1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemyeast02
+	{
+		name = "blufor enemyspoteast2";
+		sound[] = {"goko_uVO\sounds\blufor\east2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemyeast03
+	{
+		name = "blufor enemyspoteast3";
+		sound[] = {"goko_uVO\sounds\blufor\east3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemyeast04
+	{
+		name = "blufor enemyspoteast4";
+		sound[] = {"goko_uVO\sounds\blufor\east4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemyeast05
+	{
+		name = "blufor enemyspoteast5";
+		sound[] = {"goko_uVO\sounds\blufor\east5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemyeast06
+	{
+		name = "blufor enemyspot6";
+		sound[] = {"goko_uVO\sounds\blufor\east6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemynorth01
+	{
+		name = "blufor enemyspotnorth1";
+		sound[] = {"goko_uVO\sounds\blufor\north1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemynorth02
+	{
+		name = "blufor enemyspotnorth2";
+		sound[] = {"goko_uVO\sounds\blufor\north2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemynorth03
+	{
+		name = "blufor enemyspotnorth3";
+		sound[] = {"goko_uVO\sounds\blufor\north3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemynorth04
+	{
+		name = "blufor enemyspotnorth4";
+		sound[] = {"goko_uVO\sounds\blufor\north4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemynorth05
+	{
+		name = "blufor enemyspotnorth5";
+		sound[] = {"goko_uVO\sounds\blufor\north5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemynorth06
+	{
+		name = "blufor enemyspotnorth6";
+		sound[] = {"goko_uVO\sounds\blufor\north6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNE01
+	{
+		name = "blufor enemyspotne1";
+		sound[] = {"goko_uVO\sounds\blufor\northeast1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNE02
+	{
+		name = "blufor enemyspotNE2";
+		sound[] = {"goko_uVO\sounds\blufor\northeast2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNE03
+	{
+		name = "blufor enemyspotNE3";
+		sound[] = {"goko_uVO\sounds\blufor\northeast3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNE04
+	{
+		name = "blufor enemyspotNE4";
+		sound[] = {"goko_uVO\sounds\blufor\northeast4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNE05
+	{
+		name = "blufor enemyspotNE5";
+		sound[] = {"goko_uVO\sounds\blufor\northeast5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNE06
+	{
+		name = "blufor enemyspotNE6";
+		sound[] = {"goko_uVO\sounds\blufor\northeast6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNW01
+	{
+		name = "blufor enemyspotNW1";
+		sound[] = {"goko_uVO\sounds\blufor\northwest1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNW02
+	{
+		name = "blufor enemyspotNW2";
+		sound[] = {"goko_uVO\sounds\blufor\northwest2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNW03
+	{
+		name = "blufor enemyspotNW3";
+		sound[] = {"goko_uVO\sounds\blufor\northwest3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNW04
+	{
+		name = "blufor enemyspotNW4";
+		sound[] = {"goko_uVO\sounds\blufor\northwest4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNW05
+	{
+		name = "blufor enemyspotNW5";
+		sound[] = {"goko_uVO\sounds\blufor\northwest5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemyNW06
+	{
+		name = "blufor enemyspotNW6";
+		sound[] = {"goko_uVO\sounds\blufor\northwest6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemysouth01
+	{
+		name = "blufor enemyspotsouth1";
+		sound[] = {"goko_uVO\sounds\blufor\south1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemysouth02
+	{
+		name = "blufor enemyspotsouth2";
+		sound[] = {"goko_uVO\sounds\blufor\south2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemysouth03
+	{
+		name = "blufor enemyspotsouth3";
+		sound[] = {"goko_uVO\sounds\blufor\south3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemysouth04
+	{
+		name = "blufor enemyspotsouth4";
+		sound[] = {"goko_uVO\sounds\blufor\south4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemysouth05
+	{
+		name = "blufor enemyspotsouth5";
+		sound[] = {"goko_uVO\sounds\blufor\south5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemysouth06
+	{
+		name = "blufor enemyspotsouth6";
+		sound[] = {"goko_uVO\sounds\blufor\south6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySW01
+	{
+		name = "blufor enemyspotSW1";
+		sound[] = {"goko_uVO\sounds\blufor\southwest1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySW02
+	{
+		name = "blufor enemyspotSW2";
+		sound[] = {"goko_uVO\sounds\blufor\southwest2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySW03
+	{
+		name = "blufor enemyspotSW3";
+		sound[] = {"goko_uVO\sounds\blufor\southwest3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySW04
+	{
+		name = "blufor enemyspotSW4";
+		sound[] = {"goko_uVO\sounds\blufor\southwest4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySW05
+	{
+		name = "blufor enemyspotSW5";
+		sound[] = {"goko_uVO\sounds\blufor\southwest5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySW06
+	{
+		name = "blufor enemyspotSW6";
+		sound[] = {"goko_uVO\sounds\blufor\southwest6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySE01
+	{
+		name = "blufor enemyspotSE1";
+		sound[] = {"goko_uVO\sounds\blufor\southeast1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySE02
+	{
+		name = "blufor enemyspotse2";
+		sound[] = {"goko_uVO\sounds\blufor\southeast2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySE03
+	{
+		name = "blufor enemyspotse3";
+		sound[] = {"goko_uVO\sounds\blufor\southeast3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySE04
+	{
+		name = "blufor enemyspotse4";
+		sound[] = {"goko_uVO\sounds\blufor\southeast4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySE05
+	{
+		name = "blufor enemyspotse5";
+		sound[] = {"goko_uVO\sounds\blufor\southeast5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class BenemySE06
+	{
+		name = "blufor enemyspotse6";
+		sound[] = {"goko_uVO\sounds\blufor\southeast6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemywest01
+	{
+		name = "blufor enemyspotwest1";
+		sound[] = {"goko_uVO\sounds\blufor\west1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemywest02
+	{
+		name = "blufor enemyspotwest2";
+		sound[] = {"goko_uVO\sounds\blufor\west2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemywest03
+	{
+		name = "blufor enemyspotwest3";
+		sound[] = {"goko_uVO\sounds\blufor\west3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemywest04
+	{
+		name = "blufor enemyspotwest4";
+		sound[] = {"goko_uVO\sounds\blufor\west4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemywest05
+	{
+		name = "blufor enemyspotwest5";
+		sound[] = {"goko_uVO\sounds\blufor\west5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Benemywest06
+	{
+		name = "blufor enemyspotwest6";
+		sound[] = {"goko_uVO\sounds\blufor\west6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade01
+	{
+		name = "blufor spotgren01";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade02
+	{
+		name = "blufor spotgren02";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade8.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade03
+	{
+		name = "blufor spotgren03";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade9.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade04
+	{
+		name = "blufor spotgren04";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade10.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade05
+	{
+		name = "blufor spotgren05";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade11.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade06
+	{
+		name = "blufor spotgren06";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade12.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade07
+	{
+		name = "blufor spotgren07";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade13.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade08
+	{
+		name = "blufor spotgren08";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade14.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade09
+	{
+		name = "blufor spotgren09";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade16.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade10
+	{
+		name = "blufor spotgren10";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade17.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade11
+	{
+		name = "blufor spotgren11";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade18.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade12
+	{
+		name = "blufor spotgren12";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade20.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade13
+	{
+		name = "blufor spotgren13";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade22.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade14
+	{
+		name = "blufor spotgren14";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade25.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade15
+	{
+		name = "blufor spotgren15";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade28.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade16
+	{
+		name = "blufor spotgren16";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade29.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade17
+	{
+		name = "blufor spotgren17";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade30.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade18
+	{
+		name = "blufor spotgren18";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade31.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade19
+	{
+		name = "blufor spotgren19";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade33.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Bspotnade20
+	{
+		name = "blufor spotgren20";
+		sound[] = {"goko_uVO\sounds\blufor\incominggrenade34.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover01
+	{
+		name = "blufor acknowledge01";
+		sound[] = {"goko_uVO\sounds\blufor\yeee1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover02
+	{
+		name = "blufor acknowledge02";
+		sound[] = {"goko_uVO\sounds\blufor\yeee2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover03
+	{
+		name = "blufor acknowledge03";
+		sound[] = {"goko_uVO\sounds\blufor\yeee3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover04
+	{
+		name = "blufor acknowledge04";
+		sound[] = {"goko_uVO\sounds\blufor\yeee4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover05
+	{
+		name = "blufor acknowledge05";
+		sound[] = {"goko_uVO\sounds\blufor\yeee5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover06
+	{
+		name = "blufor acknowledge06";
+		sound[] = {"goko_uVO\sounds\blufor\yeee6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover07
+	{
+		name = "blufor acknowledge07";
+		sound[] = {"goko_uVO\sounds\blufor\yeee7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover08
+	{
+		name = "blufor acknowledge08";
+		sound[] = {"goko_uVO\sounds\blufor\yeee8.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover09
+	{
+		name = "blufor acknowledge09";
+		sound[] = {"goko_uVO\sounds\blufor\yeee9.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover10
+	{
+		name = "blufor acknowledge10";
+		sound[] = {"goko_uVO\sounds\blufor\yeee10.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover11
+	{
+		name = "blufor acknowledge11";
+		sound[] = {"goko_uVO\sounds\blufor\yeee11.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover12
+	{
+		name = "blufor acknowledge12";
+		sound[] = {"goko_uVO\sounds\blufor\yeee12.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover13
+	{
+		name = "blufor acknowledge13";
+		sound[] = {"goko_uVO\sounds\blufor\yeee13.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover14
+	{
+		name = "blufor acknowledge14";
+		sound[] = {"goko_uVO\sounds\blufor\yeee14.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover15
+	{
+		name = "blufor acknowledge15";
+		sound[] = {"goko_uVO\sounds\blufor\yeee15.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover16
+	{
+		name = "blufor acknowledge16";
+		sound[] = {"goko_uVO\sounds\blufor\yeee16.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class bcover17
+	{
+		name = "blufor acknowledge17";
+		sound[] = {"goko_uVO\sounds\blufor\yeee17.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
 	class bIncgren01
 	{
 		name = "blufor incendiery01";
@@ -2793,646 +3693,1030 @@ class CfgSounds
 		titles[] = {};
 	};
 /////Independent sound effects library/////
+	class Inenemyeast01
+	{
+		name = "Independent enemyeast1";
+		sound[] = {"goko_uVO\sounds\Inde\east1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemyeast02
+	{
+		name = "Independent enemyeast2";
+		sound[] = {"goko_uVO\sounds\Inde\east2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemyeast03
+	{
+		name = "Independent enemyeast3";
+		sound[] = {"goko_uVO\sounds\Inde\east3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemynorth01
+	{
+		name = "Independent enemynorth1";
+		sound[] = {"goko_uVO\sounds\Inde\north1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemynorth02
+	{
+		name = "Independent enemynorth2";
+		sound[] = {"goko_uVO\sounds\Inde\north2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemynorth03
+	{
+		name = "Independent enemynorth3";
+		sound[] = {"goko_uVO\sounds\Inde\north3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemyNE01
+	{
+		name = "Independent enemyne1";
+		sound[] = {"goko_uVO\sounds\Inde\northeast1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemyNE02
+	{
+		name = "Independent enemyne2";
+		sound[] = {"goko_uVO\sounds\Inde\northeast2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemyNE03
+	{
+		name = "Independent enemyne3";
+		sound[] = {"goko_uVO\sounds\Inde\northeast3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemyNW01
+	{
+		name = "Independent enemyNW1";
+		sound[] = {"goko_uVO\sounds\Inde\northwest1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemyNW02
+	{
+		name = "Independent enemyNW2";
+		sound[] = {"goko_uVO\sounds\Inde\northwest2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemyNW03
+	{
+		name = "Independent enemyNW3";
+		sound[] = {"goko_uVO\sounds\Inde\northwest3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemysouth01
+	{
+		name = "Independent enemysouth1";
+		sound[] = {"goko_uVO\sounds\Inde\south1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemysouth02
+	{
+		name = "Independent enemysouth2";
+		sound[] = {"goko_uVO\sounds\Inde\south2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemysouth03
+	{
+		name = "Independent enemysouth3";
+		sound[] = {"goko_uVO\sounds\Inde\south3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemySE01
+	{
+		name = "Independent enemySE1";
+		sound[] = {"goko_uVO\sounds\Inde\southeast1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemySE02
+	{
+		name = "Independent enemyse2";
+		sound[] = {"goko_uVO\sounds\Inde\southeast2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemySE03
+	{
+		name = "Independent enemyse3";
+		sound[] = {"goko_uVO\sounds\Inde\southeast3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemySW01
+	{
+		name = "Independent enemySW1";
+		sound[] = {"goko_uVO\sounds\Inde\southwest1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class InenemySW02
+	{
+		name = "Independent enemysw2";
+		sound[] = {"goko_uVO\sounds\Inde\southwest2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemysw03
+	{
+		name = "Independent enemysw3";
+		sound[] = {"goko_uVO\sounds\Inde\southwest3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemywest01
+	{
+		name = "Independent enemywest1";
+		sound[] = {"goko_uVO\sounds\Inde\west1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemywest02
+	{
+		name = "Independent enemywest2";
+		sound[] = {"goko_uVO\sounds\Inde\west2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inenemywest03
+	{
+		name = "Independent enemywest3";
+		sound[] = {"goko_uVO\sounds\Inde\west3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade01
+	{
+		name = "Independent spotnade01";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade02
+	{
+		name = "Independent spotnade02";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade03
+	{
+		name = "Independent spotnade03";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade04
+	{
+		name = "Independent spotnade04";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade05
+	{
+		name = "Independent spotnade05";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade06
+	{
+		name = "Independent spotnade06";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade8.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade07
+	{
+		name = "Independent spotnade07";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade9.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade08
+	{
+		name = "Independent spotnade08";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade10.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade09
+	{
+		name = "Independent spotnade09";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade11.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade10
+	{
+		name = "Independent spotnade10";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade13.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade11
+	{
+		name = "Independent spotnade11";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade14.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade12
+	{
+		name = "Independent spotnade12";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade15.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade13
+	{
+		name = "Independent spotnade13";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade16.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade14
+	{
+		name = "Independent spotnade14";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade19.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade15
+	{
+		name = "Independent spotnade15";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade21.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade16
+	{
+		name = "Independent spotnade16";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade22.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade17
+	{
+		name = "Independent spotnade17";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade27.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Inspotnade18
+	{
+		name = "Independent spotnade18";
+		sound[] = {"goko_uVO\sounds\Inde\incominggrenade28.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover01
+	{
+		name = "Independent acknowledge01";
+		sound[] = {"goko_uVO\sounds\Inde\yeee1.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover02
+	{
+		name = "Independent acknowledge02";
+		sound[] = {"goko_uVO\sounds\Inde\yeee2.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover03
+	{
+		name = "Independent acknowledge03";
+		sound[] = {"goko_uVO\sounds\Inde\yeee3.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover04
+	{
+		name = "Independent acknowledge04";
+		sound[] = {"goko_uVO\sounds\Inde\yeee4.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover05
+	{
+		name = "Independent acknowledge05";
+		sound[] = {"goko_uVO\sounds\Inde\yeee5.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover06
+	{
+		name = "Independent acknowledge06";
+		sound[] = {"goko_uVO\sounds\Inde\yeee6.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover07
+	{
+		name = "Independent acknowledge07";
+		sound[] = {"goko_uVO\sounds\Inde\yeee7.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover08
+	{
+		name = "Independent acknowledge08";
+		sound[] = {"goko_uVO\sounds\Inde\yeee8.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover09
+	{
+		name = "Independent acknowledge09";
+		sound[] = {"goko_uVO\sounds\Inde\yeee9.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover10
+	{
+		name = "Independent acknowledge10";
+		sound[] = {"goko_uVO\sounds\Inde\yeee10.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover11
+	{
+		name = "Independent acknowledge11";
+		sound[] = {"goko_uVO\sounds\Inde\yeee11.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover12
+	{
+		name = "Independent acknowledge12";
+		sound[] = {"goko_uVO\sounds\Inde\yeee12.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover13
+	{
+		name = "Independent acknowledge13";
+		sound[] = {"goko_uVO\sounds\Inde\yeee13.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover14
+	{
+		name = "Independent acknowledge14";
+		sound[] = {"goko_uVO\sounds\Inde\yeee14.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover15
+	{
+		name = "Independent acknowledge15";
+		sound[] = {"goko_uVO\sounds\Inde\yeee15.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover16
+	{
+		name = "Independent acknowledge16";
+		sound[] = {"goko_uVO\sounds\Inde\yeee16.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover17
+	{
+		name = "Independent acknowledge17";
+		sound[] = {"goko_uVO\sounds\Inde\yeee17.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover18
+	{
+		name = "Independent acknowledge18";
+		sound[] = {"goko_uVO\sounds\Inde\yeee18.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover19
+	{
+		name = "Independent acknowledge19";
+		sound[] = {"goko_uVO\sounds\Inde\yeee19.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover20
+	{
+		name = "Independent acknowledge20";
+		sound[] = {"goko_uVO\sounds\Inde\yeee20.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover21
+	{
+		name = "Independent acknowledge21";
+		sound[] = {"goko_uVO\sounds\Inde\yeee22.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
+	class Incover22
+	{
+		name = "Independent acknowledge22";
+		sound[] = {"goko_uVO\sounds\Inde\yeee23.ogg", 2.5, 1, 100};
+		titles[] = {};
+	};
 	class InIncgren01
 	{
 		name = "Independent inc01";
-		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\incendiarythrow1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class InIncgren02
 	{
 		name = "Independent inc02";
-		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\incendiarythrow2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class InIncgren03
 	{
 		name = "Independent inc03";
-		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\incendiarythrow3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class InIncgren04
 	{
 		name = "Independent inc04";
-		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\incendiarythrow4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class InIncgren05
 	{
 		name = "Independent inc05";
-		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\incendiarythrow5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class InIncgren06
 	{
 		name = "Independent inc06";
-		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\incendiarythrow6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class InIncgren07
 	{
 		name = "Independent inc07";
-		sound[] = {"goko_uVO\sounds\Independent\incendiarythrow7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\incendiarythrow7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};	
 	class inflash01
 	{
 		name = "Independent flash01";
-		sound[] = {"goko_uVO\sounds\Independent\flash1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\flash1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inflash02
 	{
 		name = "Independent flash02";
-		sound[] = {"goko_uVO\sounds\Independent\flash2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\flash2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inflash03
 	{
 		name = "Independent flash03";
-		sound[] = {"goko_uVO\sounds\Independent\flash3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\flash3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inflash04
 	{
 		name = "Independent flash04";
-		sound[] = {"goko_uVO\sounds\Independent\flash4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\flash4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inflash05
 	{
 		name = "Independent flash05";
-		sound[] = {"goko_uVO\sounds\Independent\flash5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\flash5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inflash06
 	{
 		name = "Independent flash06";
-		sound[] = {"goko_uVO\sounds\Independent\flash6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\flash6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inflash07
 	{
 		name = "Independent flash07";
-		sound[] = {"goko_uVO\sounds\Independent\flash7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\flash7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget01
 	{
 		name = "Independent target01";
-		sound[] = {"goko_uVO\sounds\Independent\target1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget02
 	{
 		name = "Independent target02";
-		sound[] = {"goko_uVO\sounds\Independent\target2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget03
 	{
 		name = "Independent target03";
-		sound[] = {"goko_uVO\sounds\Independent\target3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget04
 	{
 		name = "Independent target04";
-		sound[] = {"goko_uVO\sounds\Independent\target4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget05
 	{
 		name = "Independent target05";
-		sound[] = {"goko_uVO\sounds\Independent\target5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget06
 	{
 		name = "Independent target06";
-		sound[] = {"goko_uVO\sounds\Independent\target6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget07
 	{
 		name = "Independent target07";
-		sound[] = {"goko_uVO\sounds\Independent\target7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget08
 	{
 		name = "Independent target08";
-		sound[] = {"goko_uVO\sounds\Independent\target8.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target8.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget09
 	{
 		name = "Independent target09";
-		sound[] = {"goko_uVO\sounds\Independent\target9.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target9.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class intarget10
 	{
 		name = "Independent target10";
-		sound[] = {"goko_uVO\sounds\Independent\target10.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\target10.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget01
 	{
 		name = "Independent supptarget01";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget02
 	{
 		name = "Independent supptarget02";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget03
 	{
 		name = "Independent supptarget03";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget04
 	{
 		name = "Independent supptarget04";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget05
 	{
 		name = "Independent supptarget05";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget06
 	{
 		name = "Independent supptarget06";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget07
 	{
 		name = "Independent supptarget07";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget08
 	{
 		name = "Independent supptarget08";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget8.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget8.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget09
 	{
 		name = "Independent supptarget09";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget9.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget9.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insupptarget10
 	{
 		name = "Independent supptarget10";
-		sound[] = {"goko_uVO\sounds\Independent\supptarget10.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\supptarget10.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};	
 	class infrag01
 	{
 		name = "Independent frag01";
-		sound[] = {"goko_uVO\sounds\Independent\frag01.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag01.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag02
 	{
 		name = "Independent frag02";
-		sound[] = {"goko_uVO\sounds\Independent\frag02.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag02.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag03
 	{
 		name = "Independent frag03";
-		sound[] = {"goko_uVO\sounds\Independent\frag03.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag03.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag04
 	{
 		name = "Independent frag04";
-		sound[] = {"goko_uVO\sounds\Independent\frag04.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag04.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag05
 	{
 		name = "Independent frag05";
-		sound[] = {"goko_uVO\sounds\Independent\frag05.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag05.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag06
 	{
 		name = "Independent frag06";
-		sound[] = {"goko_uVO\sounds\Independent\frag06.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag06.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag07
 	{
 		name = "Independent frag07";
-		sound[] = {"goko_uVO\sounds\Independent\frag07.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag07.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag08
 	{
 		name = "Independent frag08";
-		sound[] = {"goko_uVO\sounds\Independent\frag08.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag08.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag09
 	{
 		name = "Independent frag09";
-		sound[] = {"goko_uVO\sounds\Independent\frag09.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag09.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag10
 	{
 		name = "Independent frag10";
-		sound[] = {"goko_uVO\sounds\Independent\frag10.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag10.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag11
 	{
 		name = "Independent frag11";
-		sound[] = {"goko_uVO\sounds\Independent\frag11.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag11.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag12
 	{
 		name = "Independent frag12";
-		sound[] = {"goko_uVO\sounds\Independent\frag12.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag12.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag13
 	{
 		name = "Independent frag13";
-		sound[] = {"goko_uVO\sounds\Independent\frag13.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag13.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class infrag14
 	{
 		name = "Independent frag14";
-		sound[] = {"goko_uVO\sounds\Independent\frag14.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\frag14.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded01
 	{
 		name = "Independent wounded01";
-		sound[] = {"goko_uVO\sounds\Independent\wounded1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded02
 	{
 		name = "Independent wounded02";
-		sound[] = {"goko_uVO\sounds\Independent\wounded2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded03
 	{
 		name = "Independent wounded03";
-		sound[] = {"goko_uVO\sounds\Independent\wounded3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded04
 	{
 		name = "Independent wounded04";
-		sound[] = {"goko_uVO\sounds\Independent\wounded4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded05
 	{
 		name = "Independent wounded05";
-		sound[] = {"goko_uVO\sounds\Independent\wounded5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded06
 	{
 		name = "Independent wounded06";
-		sound[] = {"goko_uVO\sounds\Independent\wounded6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded07
 	{
 		name = "Independent wounded07";
-		sound[] = {"goko_uVO\sounds\Independent\wounded7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded08
 	{
 		name = "Independent wounded08";
-		sound[] = {"goko_uVO\sounds\Independent\wounded8.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded8.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded09
 	{
 		name = "Independent wounded09";
-		sound[] = {"goko_uVO\sounds\Independent\wounded9.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded9.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded10
 	{
 		name = "Independent wounded10";
-		sound[] = {"goko_uVO\sounds\Independent\wounded10.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded10.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded11
 	{
 		name = "Independent wounded11";
-		sound[] = {"goko_uVO\sounds\Independent\wounded11.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded11.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded12
 	{
 		name = "Independent wounded12";
-		sound[] = {"goko_uVO\sounds\Independent\wounded12.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded12.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded13
 	{
 		name = "Independent wounded13";
-		sound[] = {"goko_uVO\sounds\Independent\wounded13.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded13.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded14
 	{
 		name = "Independent wounded14";
-		sound[] = {"goko_uVO\sounds\Independent\wounded14.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded14.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded15
 	{
 		name = "Independent wounded15";
-		sound[] = {"goko_uVO\sounds\Independent\wounded15.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded15.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded16
 	{
 		name = "Independent wounded16";
-		sound[] = {"goko_uVO\sounds\Independent\wounded16.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded16.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded17
 	{
 		name = "Independent wounded17";
-		sound[] = {"goko_uVO\sounds\Independent\wounded17.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded17.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded18
 	{
 		name = "Independent wounded18";
-		sound[] = {"goko_uVO\sounds\Independent\wounded18.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded18.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded19
 	{
 		name = "Independent wounded19";
-		sound[] = {"goko_uVO\sounds\Independent\wounded19.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded19.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded20
 	{
 		name = "Independent wounded20";
-		sound[] = {"goko_uVO\sounds\Independent\wounded20.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded20.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded21
 	{
 		name = "Independent wounded21";
-		sound[] = {"goko_uVO\sounds\Independent\wounded21.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded21.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded22
 	{
 		name = "Independent wounded22";
-		sound[] = {"goko_uVO\sounds\Independent\wounded22.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded22.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded23
 	{
 		name = "Independent wounded23";
-		sound[] = {"goko_uVO\sounds\Independent\wounded23.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded23.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded24
 	{
 		name = "Independent wounded24";
-		sound[] = {"goko_uVO\sounds\Independent\wounded24.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded24.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded25
 	{
 		name = "Independent wounded25";
-		sound[] = {"goko_uVO\sounds\Independent\wounded25.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded25.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded26
 	{
 		name = "Independent wounded26";
-		sound[] = {"goko_uVO\sounds\Independent\wounded26.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded26.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded27
 	{
 		name = "Independent wounded27";
-		sound[] = {"goko_uVO\sounds\Independent\wounded27.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded27.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded28
 	{
 		name = "Independent wounded28";
-		sound[] = {"goko_uVO\sounds\Independent\wounded28.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded28.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded29
 	{
 		name = "Independent wounded29";
-		sound[] = {"goko_uVO\sounds\Independent\wounded29.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded29.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded30
 	{
 		name = "Independent wounded30";
-		sound[] = {"goko_uVO\sounds\Independent\wounded30.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded30.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded31
 	{
 		name = "Independent wounded31";
-		sound[] = {"goko_uVO\sounds\Independent\wounded31.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded31.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded32
 	{
 		name = "Independent wounded32";
-		sound[] = {"goko_uVO\sounds\Independent\wounded32.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded32.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded33
 	{
 		name = "Independent wounded33";
-		sound[] = {"goko_uVO\sounds\Independent\wounded33.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded33.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded34
 	{
 		name = "Independent wounded34";
-		sound[] = {"goko_uVO\sounds\Independent\wounded34.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded34.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded35
 	{
 		name = "Independent wounded35";
-		sound[] = {"goko_uVO\sounds\Independent\wounded35.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded35.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded36
 	{
 		name = "Independent wounded36";
-		sound[] = {"goko_uVO\sounds\Independent\wounded36.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded36.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded37
 	{
 		name = "Independent wounded37";
-		sound[] = {"goko_uVO\sounds\Independent\wounded37.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded37.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded38
 	{
 		name = "Independent wounded38";
-		sound[] = {"goko_uVO\sounds\Independent\wounded38.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded38.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded39
 	{
 		name = "Independent wounded39";
-		sound[] = {"goko_uVO\sounds\Independent\wounded39.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded39.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded40
 	{
 		name = "Independent wounded40";
-		sound[] = {"goko_uVO\sounds\Independent\wounded40.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded40.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded41
 	{
 		name = "Independent wounded41";
-		sound[] = {"goko_uVO\sounds\Independent\wounded41.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded41.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded42
 	{
 		name = "Independent wounded42";
-		sound[] = {"goko_uVO\sounds\Independent\wounded42.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded42.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded43
 	{
 		name = "Independent wounded43";
-		sound[] = {"goko_uVO\sounds\Independent\wounded43.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded43.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded44
 	{
 		name = "Independent wounded44";
-		sound[] = {"goko_uVO\sounds\Independent\wounded44.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded44.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded45
 	{
 		name = "Independent wounded45";
-		sound[] = {"goko_uVO\sounds\Independent\wounded45.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded45.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded46
 	{
 		name = "Independent wounded46";
-		sound[] = {"goko_uVO\sounds\Independent\wounded46.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded46.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded47
 	{
 		name = "Independent wounded47";
-		sound[] = {"goko_uVO\sounds\Independent\wounded47.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded47.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded48
 	{
 		name = "Independent wounded48";
-		sound[] = {"goko_uVO\sounds\Independent\wounded48.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded48.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded49
 	{
 		name = "Independent wounded49";
-		sound[] = {"goko_uVO\sounds\Independent\wounded49.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded49.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded50
 	{
 		name = "Independent wounded50";
-		sound[] = {"goko_uVO\sounds\Independent\wounded50.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded50.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded51
 	{
 		name = "Independent wounded51";
-		sound[] = {"goko_uVO\sounds\Independent\wounded51.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded51.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded52
 	{
 		name = "Independent wounded52";
-		sound[] = {"goko_uVO\sounds\Independent\wounded52.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded52.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded53
 	{
 		name = "Independent wounded53";
-		sound[] = {"goko_uVO\sounds\Independent\wounded53.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded53.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded54
 	{
 		name = "Independent wounded54";
-		sound[] = {"goko_uVO\sounds\Independent\wounded54.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded54.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded55
 	{
 		name = "Independent wounded55";
-		sound[] = {"goko_uVO\sounds\Independent\wounded55.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded55.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded56
 	{
 		name = "Independent wounded56";
-		sound[] = {"goko_uVO\sounds\Independent\wounded56.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded56.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded57
 	{
 		name = "Independent wounded57";
-		sound[] = {"goko_uVO\sounds\Independent\wounded57.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded57.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded58
 	{
 		name = "Independent wounded58";
-		sound[] = {"goko_uVO\sounds\Independent\wounded58.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded58.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwounded59
 	{
 		name = "Independent wounded59";
-		sound[] = {"goko_uVO\sounds\Independent\wounded59.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\wounded59.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	
@@ -3441,655 +4725,655 @@ class CfgSounds
 	class inwatchfire01
 	{
 		name = "Independent friendlyfire01";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire02
 	{
 		name = "Independent friendlyfire02";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire03
 	{
 		name = "Independent friendlyfire03";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire04
 	{
 		name = "Independent friendlyfire04";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire05
 	{
 		name = "Independent friendlyfire05";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire06
 	{
 		name = "Independent friendlyfire06";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire07
 	{
 		name = "Independent friendlyfire07";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire08
 	{
 		name = "Independent friendlyfire08";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire8.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire8.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire09
 	{
 		name = "Independent friendlyfire09";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire9.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire9.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire10
 	{
 		name = "Independent friendlyfire10";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire10.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire10.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inwatchfire11
 	{
 		name = "Independent friendlyfire11";
-		sound[] = {"goko_uVO\sounds\Independent\watchfire11.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\watchfire11.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel01
 	{
 		name = "Independent reloading01";
-		sound[] = {"goko_uVO\sounds\Independent\reloading1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel02
 	{
 		name = "Independent reloading02";
-		sound[] = {"goko_uVO\sounds\Independent\reloading2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel03
 	{
 		name = "Independent reloading03";
-		sound[] = {"goko_uVO\sounds\Independent\reloading3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel04
 	{
 		name = "Independent reloading04";
-		sound[] = {"goko_uVO\sounds\Independent\reloading4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel05
 	{
 		name = "Independent reloading05";
-		sound[] = {"goko_uVO\sounds\Independent\reloading5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel06
 	{
 		name = "Independent reloading06";
-		sound[] = {"goko_uVO\sounds\Independent\reloading6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel07
 	{
 		name = "Independent reloading07";
-		sound[] = {"goko_uVO\sounds\Independent\reloading7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel08
 	{
 		name = "Independent reloading08";
-		sound[] = {"goko_uVO\sounds\Independent\reloading8.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading8.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel09
 	{
 		name = "Independent reloading09";
-		sound[] = {"goko_uVO\sounds\Independent\reloading9.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading9.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel10
 	{
 		name = "Independent reloading10";
-		sound[] = {"goko_uVO\sounds\Independent\reloading10.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading10.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel11
 	{
 		name = "Independent reloading11";
-		sound[] = {"goko_uVO\sounds\Independent\reloading11.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading11.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel12
 	{
 		name = "Independent reloading12";
-		sound[] = {"goko_uVO\sounds\Independent\reloading12.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading12.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel13
 	{
 		name = "Independent reloading13";
-		sound[] = {"goko_uVO\sounds\Independent\reloading13.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading13.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel14
 	{
 		name = "Independent reloading14";
-		sound[] = {"goko_uVO\sounds\Independent\reloading14.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading14.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel15
 	{
 		name = "Independent reloading15";
-		sound[] = {"goko_uVO\sounds\Independent\reloading15.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading15.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel16
 	{
 		name = "Independent reloading16";
-		sound[] = {"goko_uVO\sounds\Independent\reloading16.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading16.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel17
 	{
 		name = "Independent reloading17";
-		sound[] = {"goko_uVO\sounds\Independent\reloading17.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading17.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel18
 	{
 		name = "Independent reloading18";
-		sound[] = {"goko_uVO\sounds\Independent\reloading18.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading18.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel19
 	{
 		name = "Independent reloading19";
-		sound[] = {"goko_uVO\sounds\Independent\reloading19.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading19.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel20
 	{
 		name = "Independent reloading20";
-		sound[] = {"goko_uVO\sounds\Independent\reloading20.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading20.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel21
 	{
 		name = "Independent reloading21";
-		sound[] = {"goko_uVO\sounds\Independent\reloading21.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading21.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel22
 	{
 		name = "Independent reloading22";
-		sound[] = {"goko_uVO\sounds\Independent\reloading22.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading22.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel23
 	{
 		name = "Independent reloading23";
-		sound[] = {"goko_uVO\sounds\Independent\reloading23.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading23.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel24
 	{
 		name = "Independent reloading24";
-		sound[] = {"goko_uVO\sounds\Independent\reloading24.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading24.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel25
 	{
 		name = "Independent reloading25";
-		sound[] = {"goko_uVO\sounds\Independent\reloading25.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading25.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel26
 	{
 		name = "Independent reloading26";
-		sound[] = {"goko_uVO\sounds\Independent\reloading26.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading26.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel27
 	{
 		name = "Independent reloading27";
-		sound[] = {"goko_uVO\sounds\Independent\reloading27.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading27.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel28
 	{
 		name = "Independent reloading28";
-		sound[] = {"goko_uVO\sounds\Independent\reloading28.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading28.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel29
 	{
 		name = "Independent reloading29";
-		sound[] = {"goko_uVO\sounds\Independent\reloading29.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading29.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel30
 	{
 		name = "Independent reloading30";
-		sound[] = {"goko_uVO\sounds\Independent\reloading30.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading30.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel31
 	{
 		name = "Independent reloading31";
-		sound[] = {"goko_uVO\sounds\Independent\reloading31.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading31.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel32
 	{
 		name = "Independent reloading32";
-		sound[] = {"goko_uVO\sounds\Independent\reloading32.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading32.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel33
 	{
 		name = "Independent reloading33";
-		sound[] = {"goko_uVO\sounds\Independent\reloading33.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading33.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel34
 	{
 		name = "Independent reloading34";
-		sound[] = {"goko_uVO\sounds\Independent\reloading34.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading34.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel35
 	{
 		name = "Independent reloading35";
-		sound[] = {"goko_uVO\sounds\Independent\reloading35.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading35.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel36
 	{
 		name = "Independent reloading36";
-		sound[] = {"goko_uVO\sounds\Independent\reloading36.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading36.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel37
 	{
 		name = "Independent reloading37";
-		sound[] = {"goko_uVO\sounds\Independent\reloading37.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading37.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel38
 	{
 		name = "Independent reloading38";
-		sound[] = {"goko_uVO\sounds\Independent\reloading38.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading38.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inrel39
 	{
 		name = "Independent reloading39";
-		sound[] = {"goko_uVO\sounds\Independent\reloading39.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\reloading39.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};	
 	class insmoke01
 	{
 		name = "Independent smoke01";
-		sound[] = {"goko_uVO\sounds\Independent\smoke1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insmoke02
 	{
 		name = "Independent smoke02";
-		sound[] = {"goko_uVO\sounds\Independent\smoke2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insmoke03
 	{
 		name = "Independent smoke03";
-		sound[] = {"goko_uVO\sounds\Independent\smoke3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insmoke04
 	{
 		name = "Independent smoke04";
-		sound[] = {"goko_uVO\sounds\Independent\smoke4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insmoke05
 	{
 		name = "Independent smoke05";
-		sound[] = {"goko_uVO\sounds\Independent\smoke5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insmoke06
 	{
 		name = "Independent smoke06";
-		sound[] = {"goko_uVO\sounds\Independent\smoke6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insmoke07
 	{
 		name = "Independent smoke07";
-		sound[] = {"goko_uVO\sounds\Independent\smoke7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insmoke08
 	{
 		name = "Independent smoke08";
-		sound[] = {"goko_uVO\sounds\Independent\smoke8.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke8.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insmoke09
 	{
 		name = "Independent smoke09";
-		sound[] = {"goko_uVO\sounds\Independent\smoke9.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\smoke9.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown01
 	{
 		name = "Independent subordinatedown01";
-		sound[] = {"goko_uVO\sounds\Independent\subdown1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown02
 	{
 		name = "Independent subordinatedown02";
-		sound[] = {"goko_uVO\sounds\Independent\subdown2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown03
 	{
 		name = "Independent subordinatedown03";
-		sound[] = {"goko_uVO\sounds\Independent\subdown3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown04
 	{
 		name = "Independent subordinatedown04";
-		sound[] = {"goko_uVO\sounds\Independent\subdown4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown05
 	{
 		name = "Independent subordinatedown05";
-		sound[] = {"goko_uVO\sounds\Independent\subdown5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown06
 	{
 		name = "Independent subordinatedown06";
-		sound[] = {"goko_uVO\sounds\Independent\subdown6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown07
 	{
 		name = "Independent subordinatedown07";
-		sound[] = {"goko_uVO\sounds\Independent\subdown7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown08
 	{
 		name = "Independent subordinatedown08";
-		sound[] = {"goko_uVO\sounds\Independent\subdown8.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown8.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown09
 	{
 		name = "Independent subordinatedown09";
-		sound[] = {"goko_uVO\sounds\Independent\subdown9.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown9.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown10
 	{
 		name = "Independent subordinatedown10";
-		sound[] = {"goko_uVO\sounds\Independent\subdown10.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown10.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown11
 	{
 		name = "Independent subordinatedown11";
-		sound[] = {"goko_uVO\sounds\Independent\subdown11.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown11.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown12
 	{
 		name = "Independent subordinatedown12";
-		sound[] = {"goko_uVO\sounds\Independent\subdown12.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown12.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown13
 	{
 		name = "Independent subordinatedown13";
-		sound[] = {"goko_uVO\sounds\Independent\subdown13.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown13.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown14
 	{
 		name = "Independent subordinatedown14";
-		sound[] = {"goko_uVO\sounds\Independent\subdown14.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown14.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown15
 	{
 		name = "Independent subordinatedown15";
-		sound[] = {"goko_uVO\sounds\Independent\subdown15.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown15.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown16
 	{
 		name = "Independent subordinatedown16";
-		sound[] = {"goko_uVO\sounds\Independent\subdown16.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown16.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown17
 	{
 		name = "Independent subordinatedown17";
-		sound[] = {"goko_uVO\sounds\Independent\subdown17.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown17.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown18
 	{
 		name = "Independent subordinatedown18";
-		sound[] = {"goko_uVO\sounds\Independent\subdown18.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown18.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown19
 	{
 		name = "Independent subordinatedown19";
-		sound[] = {"goko_uVO\sounds\Independent\subdown19.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown19.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown20
 	{
 		name = "Independent subordinatedown20";
-		sound[] = {"goko_uVO\sounds\Independent\subdown20.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown20.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown21
 	{
 		name = "Independent subordinatedown21";
-		sound[] = {"goko_uVO\sounds\Independent\subdown21.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown21.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown22
 	{
 		name = "Independent subordinatedown22";
-		sound[] = {"goko_uVO\sounds\Independent\subdown22.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown22.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown23
 	{
 		name = "Independent subordinatedown23";
-		sound[] = {"goko_uVO\sounds\Independent\subdown23.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown23.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown24
 	{
 		name = "Independent subordinatedown24";
-		sound[] = {"goko_uVO\sounds\Independent\subdown24.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown24.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown25
 	{
 		name = "Independent subordinatedown25";
-		sound[] = {"goko_uVO\sounds\Independent\subdown25.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown25.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown26
 	{
 		name = "Independent subordinatedown26";
-		sound[] = {"goko_uVO\sounds\Independent\subdown26.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown26.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class insubdown27
 	{
 		name = "Independent subordinatedown27";
-		sound[] = {"goko_uVO\sounds\Independent\subdown27.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\subdown27.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};	
 	class inlowammo01
 	{
 		name = "Independent ammo low01";
-		sound[] = {"goko_uVO\sounds\Independent\ammolow1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\ammolow1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inlowammo02
 	{
 		name = "Independent ammo low02";
-		sound[] = {"goko_uVO\sounds\Independent\ammolow2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\ammolow2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inlowammo03
 	{
 		name = "Independent ammo low03";
-		sound[] = {"goko_uVO\sounds\Independent\ammolow3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\ammolow3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inlowammo04
 	{
 		name = "Independent ammo low04";
-		sound[] = {"goko_uVO\sounds\Independent\ammolow4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\ammolow4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inlowammo05
 	{
 		name = "Independent ammo low05";
-		sound[] = {"goko_uVO\sounds\Independent\ammolow5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\ammolow5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inlowammo06
 	{
 		name = "Independent ammo low06";
-		sound[] = {"goko_uVO\sounds\Independent\ammolow6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\ammolow6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls01
 	{
 		name = "Independent c401";
-		sound[] = {"goko_uVO\sounds\Independent\explosive1.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive1.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls02
 	{
 		name = "Independent c402";
-		sound[] = {"goko_uVO\sounds\Independent\explosive2.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive2.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls03
 	{
 		name = "Independent c403";
-		sound[] = {"goko_uVO\sounds\Independent\explosive3.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive3.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls04
 	{
 		name = "Independent c404";
-		sound[] = {"goko_uVO\sounds\Independent\explosive4.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive4.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls05
 	{
 		name = "Independent c405";
-		sound[] = {"goko_uVO\sounds\Independent\explosive5.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive5.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls06
 	{
 		name = "Independent c406";
-		sound[] = {"goko_uVO\sounds\Independent\explosive6.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive6.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls07
 	{
 		name = "Independent c407";
-		sound[] = {"goko_uVO\sounds\Independent\explosive7.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive7.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls08
 	{
 		name = "Independent c408";
-		sound[] = {"goko_uVO\sounds\Independent\explosive8.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive8.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls09
 	{
 		name = "Independent c409";
-		sound[] = {"goko_uVO\sounds\Independent\explosive9.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive9.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls10
 	{
 		name = "Independent c410";
-		sound[] = {"goko_uVO\sounds\Independent\explosive10.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive10.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls11
 	{
 		name = "Independent c411";
-		sound[] = {"goko_uVO\sounds\Independent\explosive11.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive11.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls12
 	{
 		name = "Independent c412";
-		sound[] = {"goko_uVO\sounds\Independent\explosive12.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive12.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls13
 	{
 		name = "Independent c413";
-		sound[] = {"goko_uVO\sounds\Independent\explosive13.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive13.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls14
 	{
 		name = "Independent c414";
-		sound[] = {"goko_uVO\sounds\Independent\explosive14.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive14.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls15
 	{
 		name = "Independent c415";
-		sound[] = {"goko_uVO\sounds\Independent\explosive15.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive15.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls16
 	{
 		name = "Independent c416";
-		sound[] = {"goko_uVO\sounds\Independent\explosive16.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive16.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 	class inexpls17
 	{
 		name = "Independent c417";
-		sound[] = {"goko_uVO\sounds\Independent\explosive17.ogg", 2.5, 1, 100};
+		sound[] = {"goko_uVO\sounds\Inde\explosive17.ogg", 2.5, 1, 100};
 		titles[] = {};
 	};
 };

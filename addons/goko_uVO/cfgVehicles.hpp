@@ -25,24 +25,28 @@ class CfgVehicles
 			};
 		};	
 	};
-	class SoldierGR: CAManBase
-	{
-		class EventHandlers: EventHandlers
-		{
-			class goko_svo_independent
-			{
-				init = "_this execVM '\goko_uVO\core\goko_independent_init.sqf'";
-			};
-		};	
-	};
 	class SoldierGB: CAManBase
 	{
+		class EventHandlers;
+	};
+	class I_G_Soldier_base_F: SoldierGB
+	{
+		class EventHandlers: EventHandlers
+		{
+			class goko_svo_insurgents
+			{
+				init = "_this execVM '\goko_uVO\core\goko_insurgents_init.sqf'";
+			};
+		};
+	};
+	class I_Soldier_base_F: SoldierGB
+	{
 		class EventHandlers: EventHandlers
 		{
 			class goko_svo_independent
 			{
-				init = "_this execVM '\goko_uVO\core\goko_independent_init.sqf'";
+				init = "_this execVM '\goko_uVO\core\goko_inde_init.sqf'";
 			};
-		};	
+		};
 	};
 };
