@@ -2,7 +2,8 @@ goko_fnc_o_acem84 =
 {
 	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
 	
-	if (hasinterface && !goko_vo_playeronoffswitch) exitWith {};
+	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
+	
 	if !(_magazine in ["ACE_M84"]) exitWith {};
 	_Oaceflashsounds = 
 	[
@@ -16,13 +17,14 @@ goko_fnc_o_acem84 =
 	];
 	_Oaceflashsound = selectRandom _Oaceflashsounds;
 	[_shooter, [_Oaceflashsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+	[_shooter] remoteExecCall ["goko_fnc_movelips"];
 };
 
 goko_fnc_o_aceM14 = 
 {
 	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
 	
-	if (hasinterface && !goko_vo_playeronoffswitch) exitWith {};
+	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
 	if !(_magazine in ["ACE_M14"]) exitWith {};
 	_Oaceincendierysounds = 
 	[
@@ -36,13 +38,14 @@ goko_fnc_o_aceM14 =
 	];
 	_Oaceincendierysound = selectRandom _Oaceincendierysounds;
 	[_shooter, [_Oaceincendierysound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+	[_shooter] remoteExecCall ["goko_fnc_movelips"];
 };
 
 goko_fnc_oexplosvfx = 
 {
 	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
 	
-	if (hasinterface && !goko_vo_playeronoffswitch) exitWith {};
+	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
 	if !(_magazine in ["SatchelCharge_Remote_Mag", "DemoCharge_Remote_Mag", "ATMine_Range_Mag", "APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag", "APERSTripMine_Wire_Mag", "ClaymoreDirectionalMine_Remote_Mag", "IEDUrbanBig_Remote_Mag", "IEDLandBig_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "IEDLandSmall_Remote_Mag"]) exitWith {};
 	_sounds = 
 	[
@@ -66,13 +69,14 @@ goko_fnc_oexplosvfx =
 	];
 	_sound = selectRandom _sounds;
 	[_shooter, [_sound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D"];
+	[_shooter] remoteExecCall ["goko_fnc_movelips"];
 };
 
 goko_fnc_ofragfx = 
 {
 	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
 	
-	if (hasinterface && !goko_vo_playeronoffswitch) exitWith {};
+	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
 	if !(_magazine in ["HandGrenade", "MiniGrenade"]) exitWith {};
 	_sounds = 
 	[
@@ -93,13 +97,51 @@ goko_fnc_ofragfx =
 	];
 	_sound = selectRandom _sounds;
 	[_shooter, [_sound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D"];
+	[_shooter] remoteExecCall ["goko_fnc_movelips"];
+	
+	_null = _this spawn 
+	{
+		_frag = _this select 6; 
+		waitUntil 
+		{
+			_mspeed = velocity _frag select 2; 
+
+			sleep 0.7;
+			if (_mspeed < 0.0001) exitWith {true};
+		};
+		
+		_findnearby = _frag nearEntities [["I_Soldier_base_F", "B_Soldier_base_F"], 16];
+		if (_findnearby isequalto []) exitwith{};
+		_nearby = selectRandom _findnearby; 
+		_cansee = [objNull, "ifire"] checkVisibility [getposasl _frag, eyePos _nearby];
+
+		
+		if (_cansee != 0) then
+		{
+			if (side _nearby == independent) then 
+			{
+				_inspottedfrag = ["Inspotnade01", "Inspotnade02", "Inspotnade03", "Inspotnade04", "Inspotnade05", "Inspotnade06", "Inspotnade07", "Inspotnade08", "Inspotnade09", "Inspotnade10", "Inspotnade11", "Inspotnade12", "Inspotnade13", "Inspotnade14", "Inspotnade15", "Inspotnade16", "Inspotnade17", "Inspotnade18"];
+				_infrag = selectRandom _inspottedfrag;
+
+				[_nearby, [_infrag, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+			};
+			
+			if (side _nearby == west) then 
+			{
+				_bspottedfrag = ["Bspotnade01", "Bspotnade02", "Bspotnade03", "Bspotnade04", "Bspotnade05", "Bspotnade06", "Bspotnade07", "Bspotnade08", "Bspotnade09", "Bspotnade10", "Bspotnade11", "Bspotnade12", "Bspotnade13", "Bspotnade14", "Bspotnade15", "Bspotnade16", "Bspotnade17", "Bspotnade18", "Bspotnade19", "Bspotnade20"];
+				_bfrag = selectRandom _bspottedfrag;
+
+				[_nearby, [_bfrag, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+			};
+		};
+	};
 };
 
 goko_fnc_osmokefx = 
 {
 	params ["_shooter","_weapon", "_muzzle", "_mode", "_ammo", "_magazine"];
 	
-	if (hasinterface && !goko_vo_playeronoffswitch) exitWith {};
+	if (hasinterface && !goko_vo_playeronoffswitch || goko_var_cltalking) exitWith {};
 	if !(_magazine in ["SmokeShellOrange", "SmokeShellBlue", "SmokeShellPurple", "SmokeShellYellow", "SmokeShellGreen", "SmokeShellRed", "SmokeShell"]) exitWith {};
 	_sounds = 
 	[
@@ -115,14 +157,15 @@ goko_fnc_osmokefx =
 	];
 	_sound = selectRandom _sounds;
 	[_shooter, [_sound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D"];
+	[_shooter] remoteExecCall ["goko_fnc_movelips"];
 };
 
 goko_fnc_oreloadedfx = 
 {
 	params ["_unit", "_weapon", "_muzzle", "_newmag", "_oldmag"];
 	
-	if (hasinterface && !goko_vo_playeronoffswitch) exitWith {};
-	if !(_weapon == _muzzle ) exitWith {};
+	if ((hasinterface && !goko_vo_playeronoffswitch) || _weapon != _muzzle || !isnil "ace_arsenal_camera" || !isnil "RSCDisplayArsenal") exitWith {}; 
+	if !(isNil (_unit getVariable "Achilles_var_suppressiveFire_ready") && (_unit getVariable "Achilles_var_suppressiveFire_ready")) exitWith {}; 
 
 	private _countMagz = {
 	_x == currentMagazine _unit
@@ -189,12 +232,44 @@ goko_fnc_oreloadedfx =
 
 			_rsound = selectRandom _rsounds;
 			[_duder, [_rsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D"]; 
+			[_duder] remoteExecCall ["goko_fnc_movelips"];
+			
+			waitUntil
+			{
+				sleep 1.5;
+				true;
+			};
+			
+			if (round (random 100) < goko_randomizeopfor) then
+			{
+				_opforsels = _duder nearEntities [["O_Soldier_base_F"], 30] - [_duder]; 
+				if (_opforsels isEqualTo []) exitWith {};
+				_opforsel = selectrandom _opforsels;
+				
+				_opcoverus = ["opcover01", "opcover02", "opcover03", "opcover04", "opcover05", "opcover06", "opcover07", "opcover08", "opcover09", "opcover10", "opcover11", "opcover12", "opcover13", "opcover14", "opcover15", "opcover16", "opcover17", "opcover18"];
+				_opcoveru = selectrandom _opcoverus;
+				[_opforsel, [_opcoveru, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+			};
 		};
-
+		
 	} else
 	{
-		_lowsounds = ["olowammo01", "olowammo02", "olowammo03", "olowammo04", "olowammo05"];
-		_lowsound = selectRandom _lowsounds;
-		[_unit, [_lowsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D"];
+		if (currentweapon _unit != secondaryweapon _unit) then
+		{
+			_lowsounds = ["olowammo01", "olowammo02", "olowammo03", "olowammo04", "olowammo05"];
+			_lowsound = selectRandom _lowsounds;
+			[_unit, [_lowsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D"];
+			[_unit] remoteExecCall ["goko_fnc_movelips"];
+		} else
+		{
+			_opforsels = _unit nearEntities [["O_Soldier_base_F"], 30] - [_unit];
+			if (_opforsels isEqualTo []) exitWith {};
+			_opforsel = selectrandom _opforsels;
+			
+			_opcoverusrpg = ["opcover01", "opcover02", "opcover03", "opcover14", "opcover15", "opcover16", "opcover17", "opcover18"];
+			_opcoverurpg = selectRandom _opcoverusrpg;
+			[_opforsel, [_opcoverurpg, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+			[_opforsel] remoteExecCall ["goko_fnc_movelips"];
+		};
 	};
 };
