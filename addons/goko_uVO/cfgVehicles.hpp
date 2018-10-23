@@ -1,3 +1,10 @@
+/*
+	goko unit voice-overs addon class definitions
+	author: gökmen
+	website: https://github.com/the0utsider
+	description: initialise addon functions for types
+*/
+
 class CfgVehicles
 {
 	class Man;
@@ -9,9 +16,9 @@ class CfgVehicles
 	{
 		class EventHandlers: EventHandlers
 		{
-			class goko_svo_opfor
+			class gokovo_opfor
 			{
-				init = "_this execVM '\goko_uVO\core\goko_opfor_init.sqf'";
+				init = "_this execVM '\goko_uVO\initialise\opfor_class_init.sqf'";
 			};
 		};
 	};	
@@ -19,34 +26,21 @@ class CfgVehicles
 	{
 		class EventHandlers: EventHandlers
 		{
-			class goko_svo_blufor
+			class gokovo_blufor
 			{
-				init = "_this execVM '\goko_uVO\core\goko_blufor_init.sqf'";
+				init = "_this execVM '\goko_uVO\initialise\blufor_class_init.sqf'";
 			};
 		};	
 	};
 	class SoldierGB: CAManBase
 	{
-		class EventHandlers;
-	};
-	class I_G_Soldier_base_F: SoldierGB
-	{
 		class EventHandlers: EventHandlers
 		{
-			class goko_svo_insurgents
+			class gokovo_independent
 			{
-				init = "_this execVM '\goko_uVO\core\goko_insurgents_init.sqf'";
+				init = "_this execVM '\goko_uVO\initialise\independent_class_init.sqf'";
 			};
-		};
-	};
-	class I_Soldier_base_F: SoldierGB
-	{
-		class EventHandlers: EventHandlers
-		{
-			class goko_svo_independent
-			{
-				init = "_this execVM '\goko_uVO\core\goko_inde_init.sqf'";
-			};
-		};
+		};	
 	};
 };
+	

@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class goko_uvo
+	class goko_uVO
 	{
 		units[] = {};
 		weapons[]={};

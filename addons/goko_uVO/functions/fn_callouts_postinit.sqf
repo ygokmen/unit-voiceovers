@@ -8,13 +8,12 @@ if(!hasInterface) exitWith {};
 		{
 			_targetCallouts = ["Goko Unit VO's", "enemy_callout", "Revealed Enemies Direction",
 			{
-				_pSide = side player;
 				_activefaction = lelz;
 				switch (true) do 
 				{ 
-					case (_pSide == WEST ) : {_activefaction = goko_fnc_bCallDir }; 
-					case (_pSide == Independent ) : {_activefaction = goko_fnc_indeCallDir }; 
-					case (_pSide == EAST ) : {_activefaction = goko_fnc_opfCallDir }; 
+					case (side player == WEST ) : {_activefaction = gokoVO_fnc_calloutBlufor }; 
+					case (side player == Independent ) : {_activefaction = gokoVO_fnc_calloutInde }; 
+					case (side player == EAST ) : {_activefaction = gokoVO_fnc_calloutOpfor }; 
 				}; 
 				player call _activefaction;
 		
@@ -60,13 +59,12 @@ if(!hasInterface) exitWith {};
 					goko_bcallout_keydown = true;
 					if (!_ctrl && !_shift && !_alt) then
 					{
-						_pSide = side player;
 						_activefaction = lelz;
 						switch (true) do 
 						{ 
-							case (_pSide == WEST ) : {_activefaction = goko_fnc_bCallDir }; 
-							case (_pSide == Independent ) : {_activefaction = goko_fnc_indeCallDir }; 
-							case (_pSide == EAST ) : {_activefaction = goko_fnc_opfCallDir }; 
+							case (side player == WEST ) : {_activefaction = gokoVO_fnc_calloutBlufor }; 
+							case (side player == Independent ) : {_activefaction = gokoVO_fnc_calloutInde };
+							case (side player == EAST ) : {_activefaction = gokoVO_fnc_calloutOpfor }; 
 						}; 
 						player call _activefaction;
 					};
