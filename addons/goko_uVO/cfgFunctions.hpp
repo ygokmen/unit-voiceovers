@@ -1,57 +1,101 @@
 class CfgFunctions
 {
-	class goko
+	class gokoVO
 	{
 		class opfor
 		{
-			class owoundedfx
+			class calloutOpfor
 			{
-				file = "goko_uVO\functions\opfor\fn_owoundedfx.sqf";
+				file = "goko_uVO\functions\opfor\fn_calloutEnemy.sqf";
+			};
+			class opforConfirmKill
+			{
+				file = "goko_uVO\functions\opfor\fn_ebKillConfirm.sqf";
+			};
+			class killedOpfor
+			{
+				file = "goko_uVO\functions\opfor\fn_killed.sqf";
+			};
+			class killedOpforACE3
+			{
+				file = "goko_uVO\functions\opfor\fn_killed_ACE3.sqf";
+			};
+			class reloadingOpfor
+			{
+				file = "goko_uVO\functions\opfor\fn_reload.sqf";
+			};
+			class throwEventsOpfor
+			{
+				file = "goko_uVO\functions\opfor\fn_throwables.sqf";
 				preInit = 1
 			};
-			class oresponds
+			class woundedOpfor
 			{
-				file = "goko_uVO\functions\opfor\fn_oresponds.sqf";
-				preInit = 1
+				file = "goko_uVO\functions\opfor\fn_wounded.sqf";
 			};
 		};
 		class blufor
 		{
-			class bwoundedfx
+			class calloutBlufor
 			{
-				file = "goko_uVO\functions\blufor\fn_bwoundedfx.sqf";
+				file = "goko_uVO\functions\blufor\fn_calloutEnemy.sqf";
+			};
+			class bluforConfirmKill
+			{
+				file = "goko_uVO\functions\blufor\fn_wbKillConfirm.sqf";
+			};
+			class killedBlufor
+			{
+				file = "goko_uVO\functions\blufor\fn_killed.sqf";
+			};
+			class killedBluforACE3
+			{
+				file = "goko_uVO\functions\blufor\fn_killed_ACE3.sqf";
+			};
+			class reloadingBlufor
+			{
+				file = "goko_uVO\functions\blufor\fn_reload.sqf";
+			};
+			class throwEventsBlufor
+			{
+				file = "goko_uVO\functions\blufor\fn_throwables.sqf";
 				preInit = 1
 			};
-			class bresponds
+			class woundedBlufor
 			{
-				file = "goko_uVO\functions\blufor\fn_bresponds.sqf";
-				preInit = 1
+				file = "goko_uVO\functions\blufor\fn_wounded.sqf";
 			};
 		};
 		class Inde
 		{
-			class Inwoundedfx
+			class calloutInde
 			{
-				file = "goko_uVO\functions\Inde\fn_inwoundedfx.sqf";
+				file = "goko_uVO\functions\Inde\fn_calloutEnemy.sqf";
+			};
+			class IndependentConfirmKill
+			{
+				file = "goko_uVO\functions\Inde\fn_gbKillConfirm.sqf";
+			};
+			class killedInde
+			{
+				file = "goko_uVO\functions\Inde\fn_killed.sqf";
+			};
+			class killedIndeACE3
+			{
+				file = "goko_uVO\functions\Inde\fn_killed_ACE3.sqf";
+			};
+			class reloadingInde
+			{
+				file = "goko_uVO\functions\Inde\fn_reload.sqf";
+			};
+			class throwEventsInde
+			{
+				file = "goko_uVO\functions\Inde\fn_throwables.sqf";
 				preInit = 1
 			};
-			class Inresponds
+			class woundedInde
 			{
-				file = "goko_uVO\functions\Inde\fn_inresponds.sqf";
-				preInit = 1
-			};
-		};
-		class Insurgents
-		{
-			class Insurwoundedfx
-			{
-				file = "goko_uVO\functions\Insurgents\fn_insurwoundedfx.sqf";
-				preInit = 1
-			};
-			class Insurresponds
-			{
-				file = "goko_uVO\functions\Insurgents\fn_insurresponds.sqf";
-				preInit = 1
+				file = "goko_uVO\functions\Inde\fn_wounded.sqf";
 			};
 		};
 		class optionalCBA
@@ -68,6 +112,13 @@ class CfgFunctions
 			{
 				file = "goko_uVO\functions\fn_callouts_postinit.sqf";
 				postInit = 1
+			};
+		};
+		class emitSound
+		{
+			class globalsay3d
+			{
+				file = "goko_uVO\functions\fn_globalSay3d.sqf";
 			};
 		};
 	};

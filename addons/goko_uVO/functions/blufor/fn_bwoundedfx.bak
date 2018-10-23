@@ -1,16 +1,16 @@
-goko_randomizeindi = 77;
+goko_randomizeblu = 77;
 
-goko_fnc_Indmgwoundsys = 
+goko_fnc_bdmgwoundsys = 
 {
 	params ["_victim", "_causedBy", "_damage", "_shooter"];
-	
+
 	if (goko_var_cltalking) exitWith {};
-	if ((_shooter iskindof "soldiergb" && goko_vo_INDIcompatibility) || faction _victim == faction _shooter) then
+	if ((_shooter iskindof "soldierwb" && goko_vo_BLUFORcompatibility) || faction _victim == faction _shooter) then
 	{
 		_fsounds = 
 		[
-			"inwatchfire01", "inwatchfire02", "inwatchfire03", "inwatchfire04", "inwatchfire05", "inwatchfire06", 
-			"inwatchfire07", "inwatchfire08","inwatchfire09", "inwatchfire10", "inwatchfire11"
+			"bwatchfire01", "bwatchfire02", "bwatchfire03", "bwatchfire04", "bwatchfire05", "bwatchfire06", "bwatchfire07", "bwatchfire08","bwatchfire09", "bwatchfire10", "bwatchfire11", "bwatchfire12", 
+			"bwatchfire13", "bwatchfire14", "bwatchfire15"
 		];
 		_fsound = selectRandom _fsounds;
 		[_victim, [_fsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
@@ -19,12 +19,10 @@ goko_fnc_Indmgwoundsys =
 	{
 		_wsounds = 
 		[
-			"inwounded01", "inwounded02", "inwounded03", "inwounded04", "inwounded05", "inwounded06", "inwounded07", "inwounded08", "inwounded09", "inwounded10", "inwounded11", 
-			"inwounded12", "inwounded13", "inwounded14", "inwounded15", "inwounded16", "inwounded17", "inwounded18", "inwounded19", "inwounded20", "inwounded21", "inwounded22", 
-			"inwounded23", "inwounded24", "inwounded25", "inwounded26", "inwounded27", "inwounded28", "inwounded29", "inwounded30", "inwounded31", "inwounded32", "inwounded33", 
-			"inwounded34", "inwounded35", "inwounded36", "inwounded37", "inwounded38", "inwounded39", "inwounded40", "inwounded41", "inwounded42", "inwounded43", "inwounded44", 
-			"inwounded45", "inwounded46", "inwounded47", "inwounded48", "inwounded49", "inwounded50", "inwounded51", "inwounded52", "inwounded53", "inwounded54", "inwounded55", 
-			"inwounded56", "inwounded57", "inwounded58", "inwounded59"
+			"bwounded01", "bwounded02", "bwounded03", "bwounded04", "bwounded05", "bwounded06", "bwounded07", "bwounded08", "bwounded09", "bwounded10", "bwounded11", "bwounded12", "bwounded13",
+			"bwounded14", "bwounded15", "bwounded16", "bwounded17", "bwounded18", "bwounded19", "bwounded20", "bwounded21", "bwounded22", "bwounded23", "bwounded24", "bwounded25", "bwounded26", 
+			"bwounded27", "bwounded28", "bwounded29", "bwounded30", "bwounded31", "bwounded32", "bwounded33", "bwounded34", "bwounded35", "bwounded36", "bwounded37", "bwounded38", "bwounded39", 
+			"bwounded40", "bwounded41", "bwounded42", "bwounded43", "bwounded44", "bwounded45", "bwounded46", "bwounded47", "bwounded48", "bwounded49", "bwounded50", "bwounded51", "bwounded52"
 		];
 		_wsound = selectRandom _wsounds;
 		[_victim, [_wsound, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
@@ -32,10 +30,10 @@ goko_fnc_Indmgwoundsys =
 	};
 };
 
-goko_fnc_Indeath =
+goko_fnc_bdeath =
 {
 	params ["_unit", "_shooter", "_killer"];
-	
+
 	_meters = round (_unit distance _killer);
 	_deathsArray = 
 	[
@@ -55,13 +53,13 @@ goko_fnc_Indeath =
 	_deathsound = selectRandom _deathsArray;
 	playsound3d [format ["%1",_deathsound], _unit, false, getPosASL _unit, goko_vo_deathshouts_volume, 1, goko_vo_deathshouts_diameter];
 	
-	if (round (random 100) < goko_randomizeindi) then 
+	if (random 100 < goko_randomizeblu) then 
 	{
 		_null = _this spawn
 		{
 			_unit = _this select 0;
 			
-			_findfriendly = _unit nearEntities [["soldiergb"], 50]; 
+			_findfriendly = _unit nearEntities [["soldierwb"], 50]; 
 			_findfriendly deleteat 0; 
 			if (isnil {_findfriendly # 0}) exitwith {}; 
 			_pickfriendly = selectRandom _findfriendly; 
@@ -71,10 +69,10 @@ goko_fnc_Indeath =
 				sleep 1 + random 5;
 				true;
 			};
-		
-			_insubdowns = ["insubdown01", "insubdown02", "insubdown03", "insubdown04", "insubdown05", "insubdown06", "insubdown07", "insubdown08", "insubdown09", "insubdown10", "insubdown11", "insubdown12", "insubdown13", "insubdown14", "insubdown15", "insubdown16", "insubdown17", "insubdown18", "insubdown19", "insubdown20", "insubdown21", "insubdown22", "insubdown23", "insubdown24", "insubdown25", "insubdown26", "insubdown27"];
-			_insubdown = selectRandom _insubdowns;
-			[_pickfriendly, [_insubdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+			
+			_bsubdowns = ["bsubdown01", "bsubdown02", "bsubdown03", "bsubdown04", "bsubdown05", "bsubdown06", "bsubdown07", "bsubdown08", "bsubdown09", "bsubdown10", "bsubdown11", "bsubdown12", "bsubdown13", "bsubdown14", "bsubdown15", "bsubdown16", "bsubdown17", "bsubdown18", "bsubdown19", "bsubdown20", "bsubdown21", "bsubdown22", "bsubdown23", "bsubdown24", "bsubdown25", "bsubdown26", "bsubdown27", "bsubdown28", "bsubdown29", "bsubdown30", "bsubdown31", "bsubdown32", "bsubdown33", "bsubdown34", "bsubdown35", "bsubdown36", "bsubdown37", "bsubdown38", "bsubdown39", "bsubdown40", "bsubdown41", "bsubdown42", "bsubdown43", "bsubdown44", "bsubdown45", "bsubdown46", "bsubdown47", "bsubdown48", "bsubdown49", "bsubdown50", "bsubdown51", "bsubdown52", "bsubdown53", "bsubdown54", "bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", "bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"];
+			_bsubdown = selectRandom _bsubdowns;
+			[_pickfriendly, [_bsubdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		};
 	};
 	
@@ -97,24 +95,7 @@ goko_fnc_Indeath =
 		};
 	};
 	
-	if (_killer iskindof "soldierwb") then 
-	{
-		_btargetdowns = ["btarget01", "btarget02", "btarget03", "btarget04", "btarget05", "btarget06", "btarget07", "btarget08", "btarget09", "btarget10"];
-		_btargetdown = selectRandom _btargetdowns;
-			
-		_suppbtargetdowns = ["bsupptarget01", "bsupptarget02", "bsupptarget03", "bsupptarget04", "bsupptarget05", "bsupptarget06", "bsupptarget07", "bsupptarget08", "bsupptarget09", "bsupptarget10"];
-		_suppbtargetdown = selectRandom _suppbtargetdowns;
-			
-		if (_meters > 100) then 
-		{
-			[_killer, [_btargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-		} else 
-		{
-			[_killer, [_suppbtargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-		};
-	};
-	
-	if !(goko_vo_INDIcompatibility && faction _victim == faction _killer) then 
+	if (_killer iskindof "soldiergb") then 
 	{
 		_intargetdowns = ["intarget01", "intarget02", "intarget03", "intarget04", "intarget05", "intarget06", "intarget07", "intarget08", "intarget09", "intarget10"];
 		_intargetdown = selectRandom _intargetdowns;
@@ -130,14 +111,31 @@ goko_fnc_Indeath =
 			[_killer, [_suppintargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		};
 	};
+	
+	if !(goko_vo_BLUFORcompatibility && faction _victim == faction _killer) then 
+	{
+		_btargetdowns = ["btarget01", "btarget02", "btarget03", "btarget04", "btarget05", "btarget06", "btarget07", "btarget08", "btarget09", "btarget10"];
+		_btargetdown = selectRandom _btargetdowns;
+			
+		_suppbtargetdowns = ["bsupptarget01", "bsupptarget02", "bsupptarget03", "bsupptarget04", "bsupptarget05", "bsupptarget06", "bsupptarget07", "bsupptarget08", "bsupptarget09", "bsupptarget10"];
+		_suppbtargetdown = selectRandom _suppbtargetdowns;
+			
+		if (_meters > 100) then 
+		{
+			[_killer, [_btargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		} else 
+		{
+			[_killer, [_suppbtargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		};
+	};	
 };
 
-goko_fnc_Indeath_ace3 =
+goko_fnc_bdeath_ace3 =
 {
 	params ["_unit"];
 	
 	_killer = _unit getVariable "ace_medical_lastDamageSource";
-	
+
 	_meters = round (_unit distance _killer);
 	_deathsArray = 
 	[
@@ -157,13 +155,13 @@ goko_fnc_Indeath_ace3 =
 	_deathsound = selectRandom _deathsArray;
 	playsound3d [format ["%1",_deathsound], _unit, false, getPosASL _unit, goko_vo_deathshouts_volume, 1, goko_vo_deathshouts_diameter];
 	
-	if (round (random 100) < goko_randomizeindi) then 
+	if (random 100 < goko_randomizeblu) then 
 	{
 		_null = _this spawn
 		{
 			_unit = _this select 0;
 			
-			_findfriendly = _unit nearEntities [["soldiergb"], 50]; 
+			_findfriendly = _unit nearEntities [["soldierwb"], 50]; 
 			_findfriendly deleteat 0; 
 			if (isnil {_findfriendly # 0}) exitwith {}; 
 			_pickfriendly = selectRandom _findfriendly; 
@@ -173,10 +171,10 @@ goko_fnc_Indeath_ace3 =
 				sleep 1 + random 5;
 				true;
 			};
-		
-			_insubdowns = ["insubdown01", "insubdown02", "insubdown03", "insubdown04", "insubdown05", "insubdown06", "insubdown07", "insubdown08", "insubdown09", "insubdown10", "insubdown11", "insubdown12", "insubdown13", "insubdown14", "insubdown15", "insubdown16", "insubdown17", "insubdown18", "insubdown19", "insubdown20", "insubdown21", "insubdown22", "insubdown23", "insubdown24", "insubdown25", "insubdown26", "insubdown27"];
-			_insubdown = selectRandom _insubdowns;
-			[_pickfriendly, [_insubdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+			
+			_bsubdowns = ["bsubdown01", "bsubdown02", "bsubdown03", "bsubdown04", "bsubdown05", "bsubdown06", "bsubdown07", "bsubdown08", "bsubdown09", "bsubdown10", "bsubdown11", "bsubdown12", "bsubdown13", "bsubdown14", "bsubdown15", "bsubdown16", "bsubdown17", "bsubdown18", "bsubdown19", "bsubdown20", "bsubdown21", "bsubdown22", "bsubdown23", "bsubdown24", "bsubdown25", "bsubdown26", "bsubdown27", "bsubdown28", "bsubdown29", "bsubdown30", "bsubdown31", "bsubdown32", "bsubdown33", "bsubdown34", "bsubdown35", "bsubdown36", "bsubdown37", "bsubdown38", "bsubdown39", "bsubdown40", "bsubdown41", "bsubdown42", "bsubdown43", "bsubdown44", "bsubdown45", "bsubdown46", "bsubdown47", "bsubdown48", "bsubdown49", "bsubdown50", "bsubdown51", "bsubdown52", "bsubdown53", "bsubdown54", "bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", "bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"];
+			_bsubdown = selectRandom _bsubdowns;
+			[_pickfriendly, [_bsubdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		};
 	};
 	
@@ -199,24 +197,7 @@ goko_fnc_Indeath_ace3 =
 		};
 	};
 	
-	if (_killer iskindof "soldierwb") then 
-	{
-		_btargetdowns = ["btarget01", "btarget02", "btarget03", "btarget04", "btarget05", "btarget06", "btarget07", "btarget08", "btarget09", "btarget10"];
-		_btargetdown = selectRandom _btargetdowns;
-			
-		_suppbtargetdowns = ["bsupptarget01", "bsupptarget02", "bsupptarget03", "bsupptarget04", "bsupptarget05", "bsupptarget06", "bsupptarget07", "bsupptarget08", "bsupptarget09", "bsupptarget10"];
-		_suppbtargetdown = selectRandom _suppbtargetdowns;
-			
-		if (_meters > 100) then 
-		{
-			[_killer, [_btargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-		} else 
-		{
-			[_killer, [_suppbtargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
-		};
-	};
-	
-	if !(goko_vo_INDIcompatibility && faction _victim == faction _killer) then 
+	if (_killer iskindof "soldiergb") then 
 	{
 		_intargetdowns = ["intarget01", "intarget02", "intarget03", "intarget04", "intarget05", "intarget06", "intarget07", "intarget08", "intarget09", "intarget10"];
 		_intargetdown = selectRandom _intargetdowns;
@@ -230,6 +211,23 @@ goko_fnc_Indeath_ace3 =
 		} else 
 		{
 			[_killer, [_suppintargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		};
+	};
+	
+	if !(goko_vo_BLUFORcompatibility && faction _victim == faction _killer) then 
+	{
+		_btargetdowns = ["btarget01", "btarget02", "btarget03", "btarget04", "btarget05", "btarget06", "btarget07", "btarget08", "btarget09", "btarget10"];
+		_btargetdown = selectRandom _btargetdowns;
+			
+		_suppbtargetdowns = ["bsupptarget01", "bsupptarget02", "bsupptarget03", "bsupptarget04", "bsupptarget05", "bsupptarget06", "bsupptarget07", "bsupptarget08", "bsupptarget09", "bsupptarget10"];
+		_suppbtargetdown = selectRandom _suppbtargetdowns;
+			
+		if (_meters > 100) then 
+		{
+			[_killer, [_btargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+		} else 
+		{
+			[_killer, [_suppbtargetdown, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		};
 	};
 };

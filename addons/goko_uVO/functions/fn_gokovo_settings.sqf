@@ -11,17 +11,65 @@
 //			} // function that will be executed once on mission start and every time the setting is changed.
 //		] call CBA_Settings_fnc_init;
 
+goko_vo_BLUFORcompatibility = profileNamespace getVariable ["goko_vo_BLUFORcompatibility", true];
+goko_vo_OPFORcompatibility = profileNamespace getVariable ["goko_vo_OPFORcompatibility", true];
+goko_vo_INDIcompatibility = profileNamespace getVariable ["goko_vo_INDIcompatibility", true];
+
 goko_vo_soundsdiameter = profileNamespace getVariable ["goko_vo_soundsdiameter", 300];
-goko_vo_playeronoffswitch = profileNamespace getVariable ["goko_vo_playeronoffswitch", true];
 goko_vo_soundsamplepitch = profileNamespace getVariable ["goko_vo_soundsamplepitch", 1];
 goko_vo_deathshouts_volume = profileNamespace getVariable ["goko_vo_deathshouts_volume", 3.15];
 goko_vo_deathshouts_diameter = profileNamespace getVariable ["goko_vo_deathshouts_diameter", 300];
-goko_vo_killconfirmratio = profileNamespace getVariable ["goko_vo_killconfirmratio", 50];
 
 if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then 
 {
 	[] spawn 
 	{
+		[
+			"gokoVO_var_enableSentences", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+			"CHECKBOX", // setting type
+			["Game voiceovers","A3 default voices and chatter. Disabled by default for better experience"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+			"Goko Unit VO's Compatibility settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+			false, // default
+			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+			{
+				params ["_boolean"];
+				enableSentences _boolean;
+			} // function that will be executed once on mission start and every time the setting is changed.
+		] call CBA_Settings_fnc_init;
+		
+		[
+			"goko_vo_BLUFORcompatibility", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+			"CHECKBOX", // setting type
+			["SoldierWB factions are friendly between each other","Disable if you have factions inheriting from SoldierWB fighting against each other in scenario"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+			"Goko Unit VO's Compatibility settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+			true, // default
+			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+			{
+			} // function that will be executed once on mission start and every time the setting is changed.
+		] call CBA_Settings_fnc_init;
+		
+		[
+			"goko_vo_OPFORcompatibility", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+			"CHECKBOX", // setting type
+			["SoldierEB factions are friendly between each other","Disable if you have factions inheriting from SoldierEB fighting against each other in scenario"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+			"Goko Unit VO's Compatibility settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+			true, // default
+			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+			{
+			} // function that will be executed once on mission start and every time the setting is changed.
+		] call CBA_Settings_fnc_init;
+		
+		[
+			"goko_vo_INDIcompatibility", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+			"CHECKBOX", // setting type
+			["SoldierGB factions are friendly between each other","Disable if you have factions inheriting from SoldierGB fighting against each other in scenario"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+			"Goko Unit VO's Compatibility settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+			true, // default
+			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+			{
+			} // function that will be executed once on mission start and every time the setting is changed.
+		] call CBA_Settings_fnc_init;
+		
 		[
 			"goko_vo_soundsdiameter", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 			"SLIDER", // setting type
@@ -36,7 +84,7 @@ if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then
 		[
 			"goko_vo_deathshouts_volume", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 			"LIST", // setting type
-			["Shout volume","Pain shouts played upon unit death"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+			["Death scream volume","Pain shouts played upon unit death"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 			"Goko Unit VO's", // Pretty name of the category where the setting can be found. Can be stringtable entry.
 			[[0,2,2.4,3.15,3.5,3.8],["Disabled","Very Low","Low","Normal","High", "Very high"],3], // default
 			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
@@ -47,35 +95,13 @@ if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then
 		[
 			"goko_vo_deathshouts_diameter", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 			"SLIDER", // setting type
-			["Shouts travel distance (meters)","It represents a fade-out diameter with unit at centre; 300 will give you 150m max sound travel distance."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+			["Death screams travel distance (meters)","It represents a fade-out diameter with unit at centre; 300 will give you 150m max sound travel distance."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 			"Goko Unit VO's", // Pretty name of the category where the setting can be found. Can be stringtable entry.
 			[150,420,300,0], // default
 			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
 			{
 			} // function that will be executed once on mission start and every time the setting is changed.
 		] call CBA_Settings_fnc_init;		
-				
-		[
-			"goko_vo_killconfirmratio", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-			"LIST", // setting type
-			["Vocal kill-confirms","Say something whenever you get a kill or not"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-			"Goko Unit VO's", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-			[[0,33,66,99],["Never","Rare","Sometimes","Always"],1], // default
-			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-			{
-			} // function that will be executed once on mission start and every time the setting is changed.
-		] call CBA_Settings_fnc_init;	
-		
-		[
-			"goko_vo_playeronoffswitch", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-			"CHECKBOX", // setting type
-			["Enable voice-overs for player","Uncheck to disable VO for player"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-			"Goko Unit VO's", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-			true, // default
-			false, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-			{
-			} // function that will be executed once on mission start and every time the setting is changed.
-		] call CBA_Settings_fnc_init;
 		
 		[
 			"goko_vo_soundsamplepitch", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
@@ -88,25 +114,4 @@ if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then
 			} // function that will be executed once on mission start and every time the setting is changed.
 		] call CBA_Settings_fnc_init;
 	};	
-};
-
-goko_var_cltalking = false;
-goko_fnc_movelips = 
-{	
-	_null = _this spawn  
-	{
-		_unit = _this select 0;
-		_rndm = (1.5 + random 0.5);
-
-		_unit setrandomlip true;
-		goko_var_cltalking = true;
-		
-		waitUntil
-		{
-			sleep _rndm;
-			true;
-		};
-		goko_var_cltalking = false;
-		_unit setrandomlip false;
-	};
 };
