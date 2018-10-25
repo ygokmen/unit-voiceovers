@@ -26,9 +26,9 @@ _null = _this spawn {
 
 	waitUntil { 
 		sleep _saveCycles;
+		!alive _actor;
 		if (inputaction "reloadmagazine" > 0 && ((_actor ammo _muzzle) == 0 || _muzzle != currentMuzzle _actor)) exitWith {true};
 		if (!isplayer _actor && (_actor ammo _muzzle) == 0 ) exitWith {true};
-		!alive _actor;
 	};
 	if (!alive _actor) exitwith{};
 
