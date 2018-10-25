@@ -800,12 +800,6 @@ class CfgSounds
 		sound[] = {"goko_uVO\sounds\opfor\wounded34.ogg", 2.6, 1, 100};
 		titles[] = {};
 	};
-	class owounded35
-	{
-		name = "opfor wounded35";
-		sound[] = {"goko_uVO\sounds\opfor\wounded35.ogg", 2.6, 1, 100};
-		titles[] = {};
-	};
 	class owounded36
 	{
 		name = "opfor wounded36";
@@ -1478,12 +1472,6 @@ class CfgSounds
 		sound[] = {"goko_uVO\sounds\opfor\subdown26.ogg", 2.6, 1, 100};
 		titles[] = {};
 	};
-	class osubdown27
-	{
-		name = "opfor subordinatedown27";
-		sound[] = {"goko_uVO\sounds\opfor\subdown27.ogg", 2.6, 1, 100};
-		titles[] = {};
-	};	
 	class olowammo01
 	{
 		name = "opfor ammo low01";
