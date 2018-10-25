@@ -24,6 +24,10 @@ class CfgFunctions
 			{
 				file = "goko_uVO\functions\opfor\fn_reload.sqf";
 			};
+			class ammoLowOpfor
+			{
+				file = "goko_uVO\functions\opfor\fn_reload_sub.sqf";
+			};
 			class throwEventsOpfor
 			{
 				file = "goko_uVO\functions\opfor\fn_throwables.sqf";
@@ -56,6 +60,10 @@ class CfgFunctions
 			{
 				file = "goko_uVO\functions\blufor\fn_reload.sqf";
 			};
+			class ammoLowBlufor
+			{
+				file = "goko_uVO\functions\blufor\fn_reload_sub.sqf";
+			};
 			class throwEventsBlufor
 			{
 				file = "goko_uVO\functions\blufor\fn_throwables.sqf";
@@ -87,6 +95,10 @@ class CfgFunctions
 			class reloadingInde
 			{
 				file = "goko_uVO\functions\Inde\fn_reload.sqf";
+			};
+			class ammoLowInde
+			{
+				file = "goko_uVO\functions\Inde\fn_reload_sub.sqf";
 			};
 			class throwEventsInde
 			{
