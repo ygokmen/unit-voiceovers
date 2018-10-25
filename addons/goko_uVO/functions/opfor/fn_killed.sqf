@@ -23,9 +23,7 @@ if !(isnil {_searchFriendly #0}) then
 			"osubdown01", "osubdown02", "osubdown03", "osubdown04", "osubdown05", "osubdown06", "osubdown07", 
 			"osubdown08", "osubdown09", "osubdown10", "osubdown11", "osubdown12", "osubdown13", "osubdown14", 
 			"osubdown15", "osubdown16", "osubdown17", "osubdown18", "osubdown19", "osubdown20", "osubdown21", 
-			"osubdown22", "osubdown23", "osubdown24", "osubdown25", "osubdown26", "osubdown27"
-			
-			
+			"osubdown22", "osubdown23", "osubdown24", "osubdown25", "osubdown26"
 		];
 		[_this, _manDown] call gokovo_fnc_globalSay3d;
 	};
