@@ -24,7 +24,7 @@ _null = _this spawn {
 		sleep 0.4 + random 2;
 		true; 
 	};
-	/*	add delay, find distance of unit. */
+	/*	find distance of unit. */
 	if ((_localActor distance _victim) > 200) then
 	{
 		_soundSample = selectRandom ["intarget01", "intarget02", "intarget03", "intarget04", 

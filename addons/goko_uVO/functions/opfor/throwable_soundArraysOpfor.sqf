@@ -4,7 +4,6 @@ _fragGrenadeSample = selectRandom [
 	"ofrag03",
 	"ofrag04",
 	"ofrag05",
-	"ofrag06",
 	"ofrag07",
 	"ofrag08",
 	"ofrag09",
