@@ -29,6 +29,7 @@ _null = _this spawn {
 	{
 		_soundSample = selectRandom ["btarget01", "btarget02", "btarget03", "btarget04",
 		"btarget05", "btarget06", "btarget07", "btarget08", "btarget09", "btarget10"];
+		
 		/*	calm kill confirm sounds beyond 200m range. */
 		[_localActor, [_soundSample, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		[_localActor, true] remoteExec ["setRandomLip", 0];
@@ -38,6 +39,7 @@ _null = _this spawn {
 		_soundSample = selectRandom ["bsupptarget01", "bsupptarget02", "bsupptarget03", "bsupptarget04", 
 		"bsupptarget05", "bsupptarget06", "bsupptarget07", "bsupptarget08", "bsupptarget09", "bsupptarget10", 
 		"bsupptarget11", "bsupptarget12", "bsupptarget13"];
+		
 		/*	dramatic, panicked kill confirm sound samples at close range. */
 		[_localActor, [_soundSample, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		[_localActor, true] remoteExec ["setRandomLip", 0];

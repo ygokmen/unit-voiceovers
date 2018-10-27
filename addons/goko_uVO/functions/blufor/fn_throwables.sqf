@@ -49,6 +49,7 @@ gokoVO_blufor_thrown_frag =
 			_independentReactingGrenade = selectRandom ["Inspotnade01", "Inspotnade02", "Inspotnade03", "Inspotnade04",
 			"Inspotnade05", "Inspotnade06", "Inspotnade07", "Inspotnade08", "Inspotnade09", "Inspotnade10", "Inspotnade11",
 			"Inspotnade12", "Inspotnade13", "Inspotnade14", "Inspotnade15", "Inspotnade16", "Inspotnade17", "Inspotnade18"];
+			
 			[_enemy, _independentReactingGrenade] call gokovo_fnc_globalSay3d;
 		};
 		if (_enemy iskindof "soldiereb") then
@@ -57,6 +58,7 @@ gokoVO_blufor_thrown_frag =
 			"ospotnade06", "ospotnade07", "ospotnade08", "ospotnade09", "ospotnade10", "ospotnade11", "ospotnade12",
 			"ospotnade13", "ospotnade14", "ospotnade15", "ospotnade16", "ospotnade17", "ospotnade18", "ospotnade19",
 			"ospotnade20", "ospotnade21", "ospotnade22", "ospotnade23"];
+			
 			[_enemy, _opforReactingGrenade] call gokovo_fnc_globalSay3d;
 		};
 	};

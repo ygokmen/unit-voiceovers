@@ -13,6 +13,7 @@ if (currentweapon _unit != secondaryweapon _unit) then
 {
 	_unitAmmoLowSample = selectRandom ["blowammo01", "blowammo02", "blowammo03", 
 	"blowammo04", "blowammo05", "blowammo06"];
+	
 	[_unit, _unitAmmoLowSample] call gokovo_fnc_globalSay3d;
 }
 else
@@ -20,5 +21,6 @@ else
 	_yanci = selectrandom _getFriends;
 	_friendlyCoveringSample = selectRandom ["bcover01", "bcover02", "bcover03",
 	"bcover04", "bcover10", "bcover11", "bcover12", "bcover13"];
+	
 	[_yanci, _friendlyCoveringSample] call gokovo_fnc_globalSay3d;
 };

@@ -20,6 +20,7 @@ _southWest = selectRandom ["BenemySW01", "BenemySW02", "BenemySW03", "BenemySW04
 _west = selectRandom ["Benemywest01", "Benemywest02", "Benemywest03", "Benemywest04", "Benemywest05", "Benemywest06"];
 _northWest = selectRandom ["BenemyNW01", "BenemyNW02", "BenemyNW03", "BenemyNW04", "BenemyNW05", "BenemyNW06"];
 _north = selectRandom ["Benemynorth01", "Benemynorth02", "Benemynorth03", "Benemynorth04", "Benemynorth05", "Benemynorth06"];
+
 if (side _unit != side cursorTarget ) then
 {
 	_azimuth = getDir _unit;
