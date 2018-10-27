@@ -7,14 +7,17 @@
 	
 	example: [cursortarget, "Alarm"] call gokovo_fnc_globalSay3d;
 */
-
 Params ["_actor", "_soundSample"];
 
-isTalking = _actor getVariable ["gokovo_var_randomLip", false];
+if isNil {_actor getVariable "gokovo_var_randomLip"} then {
+	_actor setVariable ["gokovo_var_randomLip", false];
+};
+isTalking = _actor getVariable "gokovo_var_randomLip";
 
-if (inputAction "pushToTalk" > 0 || isTalking ) exitWith{};
+if (inputAction "pushToTalk" > 0 || isTalking) exitWith{};
 
 [_actor, [_soundSample, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
+_actor setVariable ["goko_var_lastTickTime", time];
 
 _actor spawn {
 	_this setVariable ["gokovo_var_randomLip", true];
