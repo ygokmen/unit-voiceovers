@@ -23,35 +23,41 @@ _null = _this spawn {
 	_oldMagID = _this#4#2 - 1e+007;
 	_saveCycles = 1.0;
 	if (isPlayer _actor) then {_saveCycles = 0.2};
-
-	waitUntil { 
+	waitUntil {
 		sleep _saveCycles;
 		!alive _actor;
 		if (inputaction "reloadmagazine" > 0 && ((_actor ammo _muzzle) == 0 || _muzzle != currentMuzzle _actor)) exitWith {true};
 		if (!isplayer _actor && (_actor ammo _muzzle) == 0 ) exitWith {true};
 	};
 	if (!alive _actor) exitwith{};
-
+	
 	_getMagID = if (currentMagazineDetail _actor isEqualTo "") then {0} else  
 	{(parseNumber (currentMagazineDetail _actor splitString "[]:/" select 4)) - 1e+007};  
 	if (_getMagID != _newMagID) exitWith {};
 	
+<<<<<<< Updated upstream
 	_reloadingSample =  selectrandom [
 		"brel01", "brel02", "brel03", "brel04", "brel05", "brel06", "brel07", "brel08", "brel09", "brel10",	"brel11",
 		"brel12", "brel13",	"brel14", "brel15", "brel16", "brel17",	"brel18", "brel19", "brel20", "brel21",	"brel22",
 		"brel23", "brel24",	"brel25", "brel26",	"brel27", "brel28",	"brel29", "brel30",	"brel31"
 	];
+=======
+	_reloadingSample = selectrandom ["brel01", "brel02", "brel03", 
+	"brel04", "brel05", "brel06", "brel07", "brel08", "brel09", "brel10", 
+	"brel11", "brel12", "brel13", "brel14", "brel15", "brel16", "brel17", 
+	"brel18", "brel19", "brel20", "brel21", "brel22", "brel23", "brel24", 
+	"brel25", "brel26", "brel27", "brel28", "brel29", "brel30", "brel31"]; 
+>>>>>>> Stashed changes
 	[_actor, _reloadingSample] call gokovo_fnc_globalSay3d;
 	
 	_getFriends = (_actor nearEntities [["soldierwb"], 50]) - [_actor];
 	if (isnil{_getFriends #0}) exitwith {};
 	_yanci = selectrandom _getFriends;
-	_friendlySupportingSample = selectRandom [
-		"bcover01", "bcover02", "bcover03", "bcover04", "bcover05", "bcover06", "bcover07", "bcover08", 
-		"bcover09", "bcover10", "bcover11", "bcover12", "bcover13", "bcover14", "bcover15", "bcover16", "bcover17"
-	];
-	waitUntil {	
-		sleep (2 + random 3);
+	_friendlySupportingSample = selectRandom ["bcover01", "bcover02", "bcover03", 
+	"bcover04", "bcover05", "bcover06", "bcover07", "bcover08", "bcover09", "bcover10", 
+	"bcover11", "bcover12", "bcover13", "bcover14", "bcover15", "bcover16", "bcover17"];
+	waitUntil {
+		sleep 2 + random 3;
 		true 
 	};
 	[_yanci, _friendlySupportingSample] call gokovo_fnc_globalSay3d;

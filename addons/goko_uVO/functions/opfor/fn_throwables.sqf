@@ -2,7 +2,8 @@
 	goko unit voice-overs addon throw & put weapon function 
 	author: gökmen
 	website: https://github.com/the0utsider
-	description: filters throw/put weapon types on fired EH, plays sound sample accordingly
+	description: filters throw/put weapon types on fired EH, plays sound sample accordingly.
+	thrown_frag uses hacky 'isTouchingGround' method to trigger voiceFx according to soldier type.
 */
 gokoVO_fnc_throwablesOpfor = 
 {
@@ -31,10 +32,13 @@ gokoVO_opfor_thrown_frag =
 
 	_thrownGrenade spawn {
 		waitUntil {
-			_zSpeed = velocity _this #2;
-			sleep 0.2;
-			if (abs(_zSpeed) < 0.1) exitWith {true};
-		};
+			sleep 0.4;
+			_projectileSpeed = velocityModelSpace _this;
+			_speedX = abs(_projectileSpeed#0);
+			_speedY = abs(_projectileSpeed#1);
+			_speedZ = abs(_projectileSpeed#2);
+			_speedX max _speedY max _speedZ < 5;
+		}; 
 		_findEnemies = _this nearEntities [["soldierwb", "soldiergb"], 16];
 		if (isnil {_findEnemies #0}) exitwith {};
 
@@ -44,23 +48,17 @@ gokoVO_opfor_thrown_frag =
 		
 		if (_enemy iskindof "soldiergb") then 
 		{
-			_independentReactingGrenade = selectRandom [
-				"Inspotnade01", "Inspotnade02", "Inspotnade03", "Inspotnade04", "Inspotnade05", 
-				"Inspotnade06", "Inspotnade07", "Inspotnade08", "Inspotnade09", "Inspotnade10", 
-				"Inspotnade11", "Inspotnade12", "Inspotnade13", "Inspotnade14", "Inspotnade15", 
-				"Inspotnade16", "Inspotnade17", "Inspotnade18"
-			];
+			_independentReactingGrenade = selectRandom ["Inspotnade01", "Inspotnade02", "Inspotnade03", "Inspotnade04", "Inspotnade05",
+			"Inspotnade06", "Inspotnade07", "Inspotnade08", "Inspotnade09", "Inspotnade10", "Inspotnade11", "Inspotnade12", 
+			"Inspotnade13", "Inspotnade14", "Inspotnade15", "Inspotnade16", "Inspotnade17", "Inspotnade18"];
 			[_enemy, _independentReactingGrenade] call gokovo_fnc_globalSay3d;
 		};
 		
 		if (_enemy iskindof "soldierwb") then 
 		{
-			_bluforReactingGrenade = selectRandom [
-				"Bspotnade01", "Bspotnade02", "Bspotnade03", "Bspotnade04", "Bspotnade05", 
-				"Bspotnade06", "Bspotnade07", "Bspotnade08", "Bspotnade09", "Bspotnade10",
-				"Bspotnade11", "Bspotnade12", "Bspotnade13", "Bspotnade14", "Bspotnade15", 
-				"Bspotnade16", "Bspotnade17", "Bspotnade18", "Bspotnade19", "Bspotnade20"
-			];
+			_bluforReactingGrenade = selectRandom ["Bspotnade01", "Bspotnade02", "Bspotnade03", "Bspotnade04", "Bspotnade05", "Bspotnade06",
+			"Bspotnade07", "Bspotnade08", "Bspotnade09", "Bspotnade10",	"Bspotnade11", "Bspotnade12", "Bspotnade13", "Bspotnade14", 
+			"Bspotnade15", "Bspotnade16", "Bspotnade17", "Bspotnade18", "Bspotnade19", "Bspotnade20"];
 			[_enemy, _bluforReactingGrenade] call gokovo_fnc_globalSay3d;
 		};
 	};
