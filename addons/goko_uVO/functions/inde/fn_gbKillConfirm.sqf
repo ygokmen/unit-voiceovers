@@ -44,7 +44,7 @@ _null = _this spawn {
 		[_localActor, true] remoteExec ["setRandomLip", 0];
 	};
 	waitUntil {
-		sleep 1 + random 1);
+		sleep 1 + random 1;
 		true;
 	};
 	/*	stop broadcast random lip simulation. */
