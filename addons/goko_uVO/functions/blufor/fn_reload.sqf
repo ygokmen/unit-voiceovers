@@ -23,11 +23,11 @@ _null = _this spawn {
 	_oldMagID = _this#4#2 - 1e+007;
 	_saveCycles = 1.0;
 	if (isPlayer _actor) then {_saveCycles = 0.2};
+
 	waitUntil {
+		if ((inputaction "reloadmagazine" > 0) && (_actor ammo _muzzle == 0 || _muzzle != currentMuzzle _actor)) exitWith {true};
 		sleep _saveCycles;
-		!alive _actor;
-		if (inputaction "reloadmagazine" > 0 && ((_actor ammo _muzzle) == 0 || _muzzle != currentMuzzle _actor)) exitWith {true};
-		if (!isplayer _actor && (_actor ammo _muzzle) == 0 ) exitWith {true};
+		((!isplayer _actor && _actor ammo _muzzle == 0) || isNull _actor || !alive _actor);
 	};
 	if (!alive _actor) exitwith{};
 	

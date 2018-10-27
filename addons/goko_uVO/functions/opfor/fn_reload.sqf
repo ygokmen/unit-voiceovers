@@ -23,11 +23,11 @@ _null = _this spawn {
 	_oldMagID = _this#4#2 - 1e+007;
 	_saveCycles = 1.0;
 	if (isPlayer _actor) then {_saveCycles = 0.2};
-	waitUntil { 
+
+	waitUntil {
+		if ((inputaction "reloadmagazine" > 0) && (_actor ammo _muzzle == 0 || _muzzle != currentMuzzle _actor)) exitWith {true};
 		sleep _saveCycles;
-		!alive _actor;
-		if (inputaction "reloadmagazine" > 0 && ((_actor ammo _muzzle) == 0 || _muzzle != currentMuzzle _actor)) exitWith {true};
-		if (!isplayer _actor && (_actor ammo _muzzle) == 0 ) exitWith {true};
+		((!isplayer _actor && _actor ammo _muzzle == 0) || isNull _actor || !alive _actor);
 	};
 	if (!alive _actor) exitwith{};
 
@@ -35,7 +35,7 @@ _null = _this spawn {
 	{(parseNumber (currentMagazineDetail _actor splitString "[]:/" select 4)) - 1e+007};  
 	if (_getMagID != _newMagID) exitWith {};
 	
-	_reloadingSample =	selectrandom ["orel01", "orel02", "orel03", 
+	_reloadingSample = selectrandom ["orel01", "orel02", "orel03", 
 	"orel04", "orel05", "orel06", "orel07", "orel08", "orel09", "orel10", 
 	"orel11", "orel12", "orel13", "orel14", "orel15", "orel16", "orel17", 
 	"orel18", "orel19", "orel20", "orel21", "orel22", "orel23", "orel24", 
