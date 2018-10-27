@@ -8,7 +8,6 @@ params ["_unit"];
 
 _getFriends = (_unit nearEntities [["soldierwb"], 50]) - [_unit];
 if (isnil{_getFriends #0}) exitwith {};
-
 if (currentweapon _unit != secondaryweapon _unit) then
 {
 	_unitAmmoLowSample = selectRandom ["blowammo01", "blowammo02", "blowammo03", 
@@ -19,8 +18,9 @@ if (currentweapon _unit != secondaryweapon _unit) then
 else
 {
 	_yanci = selectrandom _getFriends;
-	_friendlyCoveringSample = selectRandom ["bcover01", "bcover02", "bcover03",
-	"bcover04", "bcover10", "bcover11", "bcover12", "bcover13"];
+	
+	_friendlyCoveringSample = selectRandom ["bcover01", "bcover02", 
+	"bcover03", "bcover04", "bcover10", "bcover11", "bcover12", "bcover13"];
 	
 	[_yanci, _friendlyCoveringSample] call gokovo_fnc_globalSay3d;
 };

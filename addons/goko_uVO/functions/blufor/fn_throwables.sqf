@@ -9,10 +9,10 @@ gokoVO_fnc_throwablesBlufor =
 {
 	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 	
+	if !(_weapon in ["Throw", "Put"]) exitWith{};
+	
 	#include <throwable_type_definitions.sqf>
 	#include <throwable_soundArraysBlufor.sqf>
-	
-	if !(_weapon in ["Throw", "Put"]) exitWith{};
 	
 	_searchFriendly = (_unit nearEntities [["SoldierWB"], 50]) - [_unit];
 
@@ -44,6 +44,7 @@ gokoVO_blufor_thrown_frag =
 		_findEnemies = _findEnemies apply {[_x distance _this, _x]};
 		_findEnemies sort true;
 		private _enemy = _findEnemies#0#1;
+		
 		if (_enemy iskindof "soldiergb") then
 		{
 			_independentReactingGrenade = selectRandom ["Inspotnade01", "Inspotnade02", "Inspotnade03", "Inspotnade04",

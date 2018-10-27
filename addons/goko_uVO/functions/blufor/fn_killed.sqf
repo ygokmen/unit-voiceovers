@@ -11,8 +11,8 @@ params ["_unit", "_killer", "_instigator", "_useEffects"];
 playsound3d [format ["%1",_deathSound], _unit, false, getPosASL _unit, goko_vo_deathshouts_volume, 1, goko_vo_deathshouts_diameter];
 
 /*  search for friendly unit around 50meter radius. */
-_searchFriendly = _unit nearEntities [["SoldierWB"], 50];
-_searchFriendly deleteAt (_searchFriendly find _unit);
+_searchFriendly = (_unit nearEntities [["SoldierWB"], 50]) - [_unit];
+
 /*  if unit found, plays 'man down!' sound. 'spawn' is necessary to add delay. */
 if !(isnil {_searchFriendly #0}) then
 {
@@ -32,6 +32,7 @@ if !(isnil {_searchFriendly #0}) then
 		"bsubdown48", "bsubdown49", "bsubdown50", "bsubdown51", "bsubdown52", "bsubdown53", "bsubdown54", 
 		"bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", 
 		"bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"]; 
+		
 		[_this, _manDown] call gokovo_fnc_globalSay3d;
 	};
 };

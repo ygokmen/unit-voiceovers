@@ -44,7 +44,6 @@ _null = _this spawn {
 		[_localActor, [_soundSample, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 		[_localActor, true] remoteExec ["setRandomLip", 0];
 	};
-	
 	waitUntil {
 		sleep 1 + random 1;
 		true;

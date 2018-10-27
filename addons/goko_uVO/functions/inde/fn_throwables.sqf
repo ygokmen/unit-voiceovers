@@ -8,14 +8,13 @@
 gokoVO_fnc_throwablesInde = 
 {
 	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+	
 	if !(_weapon in ["Throw", "Put"]) exitWith{};
 	
-	_searchFriendly = _unit nearEntities [["SoldierGB"], 50];
-	_searchFriendly deleteAt (_searchFriendly find _unit);
-	/*	find out if there friendlies around */
+	#include <throwable_type_definitions.sqf>
+	#include <throwable_soundArraysInde.sqf>
 	
-	#include "throwable_type_definitions.sqf"
-	#include "throwable_soundArraysInde.sqf"
+	_searchFriendly = (_unit nearEntities [["SoldierGB"], 50]) - [_unit];
 	
 	switch (true) do {
 		case (_magazine in _expGrenTypes) : {[_unit, _fragGrenadeSample] call gokovo_fnc_globalSay3d; _projectile call gokoVO_inde_thrown_frag};
@@ -51,6 +50,7 @@ gokoVO_inde_thrown_frag =
 			_bluforReactingGrenade = selectRandom ["Bspotnade01", "Bspotnade02", "Bspotnade03", "Bspotnade04", "Bspotnade05", 
 			"Bspotnade06", "Bspotnade07", "Bspotnade08", "Bspotnade09", "Bspotnade10", "Bspotnade11", "Bspotnade12", "Bspotnade13", 
 			"Bspotnade14", "Bspotnade15", "Bspotnade16", "Bspotnade17", "Bspotnade18", "Bspotnade19", "Bspotnade20"];
+			
 			[_enemy, _bluforReactingGrenade] call gokovo_fnc_globalSay3d;
 		};
 		if (_enemy iskindof "soldiereb") then 
@@ -59,6 +59,7 @@ gokoVO_inde_thrown_frag =
 			"ospotnade06", "ospotnade07", "ospotnade08", "ospotnade09", "ospotnade10", "ospotnade11", "ospotnade12",
 			"ospotnade13", "ospotnade14", "ospotnade15", "ospotnade16", "ospotnade17", "ospotnade18", "ospotnade19", 
 			"ospotnade20", "ospotnade21", "ospotnade22", "ospotnade23"];
+			
 			[_enemy, _opforReactingGrenade] call gokovo_fnc_globalSay3d;
 		};
 	};
