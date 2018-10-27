@@ -35,18 +35,12 @@ _null = _this spawn {
 	{(parseNumber (currentMagazineDetail _actor splitString "[]:/" select 4)) - 1e+007};  
 	if (_getMagID != _newMagID) exitWith {};
 	
-<<<<<<< HEAD
-	_reloadingSample =  selectrandom ["brel01", "brel02", "brel03", "brel04", "brel05", "brel06", "brel07", "brel08", "brel09",
-	"brel10", "brel11", "brel12", "brel13", "brel14", "brel15", "brel16", "brel17", "brel18", "brel19", "brel20", "brel21", 
-	"brel22","brel23", "brel24", "brel25", "brel26", "brel27", "brel28", "brel29", "brel30", "brel31"];
-=======
 	_reloadingSample = selectrandom ["brel01", "brel02", "brel03", 
 	"brel04", "brel05", "brel06", "brel07", "brel08", "brel09", "brel10", 
 	"brel11", "brel12", "brel13", "brel14", "brel15", "brel16", "brel17", 
 	"brel18", "brel19", "brel20", "brel21", "brel22", "brel23", "brel24", 
 	"brel25", "brel26", "brel27", "brel28", "brel29", "brel30", "brel31"]; 
 
->>>>>>> develop
 	[_actor, _reloadingSample] call gokovo_fnc_globalSay3d;
 	
 	_getFriends = (_actor nearEntities [["soldierwb"], 50]) - [_actor];
