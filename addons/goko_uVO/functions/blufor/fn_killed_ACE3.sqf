@@ -22,10 +22,6 @@ if !(isnil {_searchFriendly #0}) then
 {
 	_foundFriendly = selectRandom _searchFriendly;
 	_foundFriendly spawn {
-		waituntil {
-			sleep 2 + random 2;
-			true;
-		};
 		_manDown = selectRandom ["bsubdown01", "bsubdown02", "bsubdown03", "bsubdown04", "bsubdown05", 
 		"bsubdown06", "bsubdown07", "bsubdown08", "bsubdown09", "bsubdown10", "bsubdown11", "bsubdown12", 
 		"bsubdown13", "bsubdown14", "bsubdown15", "bsubdown16", "bsubdown17", "bsubdown18", "bsubdown19", 
@@ -36,7 +32,10 @@ if !(isnil {_searchFriendly #0}) then
 		"bsubdown48", "bsubdown49", "bsubdown50", "bsubdown51", "bsubdown52", "bsubdown53", "bsubdown54", 
 		"bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", 
 		"bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"]; 
-		
+		waituntil {
+			sleep 2 + random 2;
+			true;
+		};
 		[_this, _manDown] call gokovo_fnc_globalSay3d;
 	};
 };
