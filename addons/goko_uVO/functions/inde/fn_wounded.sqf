@@ -4,12 +4,16 @@
 	website: https://github.com/the0utsider
 	description: Globally executes Say3D command on unit hit according to friend or foe
 */
-
 params ["_unit", "_source", "_damage", "_instigator"];
 
-isTalking = _unit getVariable ["gokovo_var_randomLip", false];
-if (_unit == _instigator || isTalking || _damage > 0.9) exitWith{};
+/* prevent EH trigger more than once (penetrating multiple parts, explosion damage, etc.) */
+_currentHealth = getDammage _unit;
+if isNil {_unit getVariable "goko_var_lastDammage"} then {
+	_unit setVariable ["goko_var_lastDammage", 0];
+};
+_storedHealth = _unit getVariable "goko_var_lastDammage";
 
+if (_unit == _instigator || _currentHealth == _storedHealth) exitWith{};
 if (_instigator iskindof "SoldierGB" && goko_vo_INDIcompatibility || faction _unit == faction _instigator) then
 {
 	_warnFF = selectRandom ["inwatchfire01", "inwatchfire02", "inwatchfire03", 
@@ -36,3 +40,5 @@ else
 	
 	[_unit, _screamBulletWound] call gokovo_fnc_globalSay3d;
 };
+
+_unit setVariable ["goko_var_lastDammage", _currentHealth];
