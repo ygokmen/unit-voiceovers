@@ -1,5 +1,4 @@
-_fragGrenadeSample =
-	selectRandom [
+_fragGrenadeSample = selectRandom [
 	"ofrag01",
 	"ofrag02",
 	"ofrag03",
@@ -16,8 +15,7 @@ _fragGrenadeSample =
 	"ofrag14"
 ];
 
-_smokeGrenadeSample = 
-	selectRandom [
+_smokeGrenadeSample = selectRandom [
 	"osmoke01",
 	"osmoke02",
 	"osmoke03",
@@ -29,8 +27,7 @@ _smokeGrenadeSample =
 	"osmoke09"
 ];
 
-_flashGrenadeSample = 
-selectrandom [	
+_flashGrenadeSample = selectrandom [	
 	"oflash01", 
 	"oflash02", 
 	"oflash03", 
@@ -40,8 +37,7 @@ selectrandom [
 	"oflash07"
 ];
 
-_incendieryGrenadeSample = 
-selectRandom [
+_incendieryGrenadeSample = selectRandom [
 	"oIncgren01", 
 	"oIncgren02", 
 	"oIncgren03", 
@@ -51,8 +47,7 @@ selectRandom [
 	"oIncgren07"
 ];
 
-_explosivePutSample = 
-selectRandom [
+_explosivePutSample = selectRandom [
 	"oexpls01",
 	"oexpls02",
 	"oexpls03",
@@ -71,4 +66,3 @@ selectRandom [
 	"oexpls16",
 	"oexpls17"
 ];
-

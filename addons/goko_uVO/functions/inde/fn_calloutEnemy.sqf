@@ -26,14 +26,14 @@ if (side _unit != side cursorTarget ) then
 	_azimuth = getDir _unit; 
 	switch (true) do 
 	{ 
-		case (_azimuth < 17) : {[_unit, _north] call gokovo_fnc_globalSay3d}; 
-		case (_azimuth < 73) : { [_unit, _northEast] call gokovo_fnc_globalSay3d; }; 
-		case (_azimuth < 107) : { [_unit, _east] call gokovo_fnc_globalSay3d; }; 
-		case (_azimuth < 163) : { [_unit, _southEast] call gokovo_fnc_globalSay3d; }; 
-		case (_azimuth < 197) : { [_unit, _south] call gokovo_fnc_globalSay3d; }; 
-		case (_azimuth < 253) : { [_unit, _southWest] call gokovo_fnc_globalSay3d; }; 
-		case (_azimuth < 287) : { [_unit, _west] call gokovo_fnc_globalSay3d; }; 
-		case (_azimuth < 343) : { [_unit, _northWest] call gokovo_fnc_globalSay3d; }; 
-		default {[_unit, _north] call gokovo_fnc_globalSay3d}; 
+		case (_azimuth < 17) : {[_unit, _north] call gokovo_fnc_globalSay3d};
+		case (_azimuth < 73) : {[_unit, _northEast] call gokovo_fnc_globalSay3d};
+		case (_azimuth < 107) : {[_unit, _east] call gokovo_fnc_globalSay3d};
+		case (_azimuth < 163) : {[_unit, _southEast] call gokovo_fnc_globalSay3d};
+		case (_azimuth < 197) : {[_unit, _south] call gokovo_fnc_globalSay3d};
+		case (_azimuth < 253) : {[_unit, _southWest] call gokovo_fnc_globalSay3d};
+		case (_azimuth < 287) : {[_unit, _west] call gokovo_fnc_globalSay3d};
+		case (_azimuth < 343) : {[_unit, _northWest] call gokovo_fnc_globalSay3d};
+		default {[_unit, _north] call gokovo_fnc_globalSay3d};
 	};
-}; 
+};

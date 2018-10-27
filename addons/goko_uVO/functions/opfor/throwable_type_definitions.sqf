@@ -1,3 +1,9 @@
+/*
+	goko unit voice-overs throwable item type definitions
+	author: gökmen
+	website: https://github.com/the0utsider
+*/
+
 _expGrenTypes = [
 	"HandGrenade", 
 	"MiniGrenade", 
