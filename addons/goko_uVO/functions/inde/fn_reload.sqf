@@ -29,7 +29,7 @@ _null = _this spawn {
 		sleep _saveCycles;
 		((!isplayer _actor && _actor ammo _muzzle == 0) || isNull _actor || !alive _actor);
 	};
-	if (!alive _actor) exitwith{};
+	if (isNull _actor || !alive _actor) exitwith{};
 
 	_getMagID = if (currentMagazineDetail _actor isEqualTo "") then {0} else  
 	{(parseNumber (currentMagazineDetail _actor splitString "[]:/" select 4)) - 1e+007};  
@@ -54,7 +54,7 @@ _null = _this spawn {
 	"Incover16", "Incover17", "Incover18", "Incover19", "Incover20", "Incover21", "Incover22"];
 	
 	waitUntil {	
-		sleep 2 + random 3;
+		sleep (2 + random 3);
 		true 
 	};
 	
