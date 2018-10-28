@@ -18,8 +18,8 @@ goko_vo_INDIcompatibility = profileNamespace getVariable ["goko_vo_INDIcompatibi
 goko_vo_konfirms = profileNamespace getVariable ["goko_vo_konfirms", true];
 goko_vo_soundsdiameter = profileNamespace getVariable ["goko_vo_soundsdiameter", 300];
 goko_vo_soundsamplepitch = profileNamespace getVariable ["goko_vo_soundsamplepitch", 1];
-goko_vo_deathshouts_volume = profileNamespace getVariable ["goko_vo_deathshouts_volume", 3.2];
-goko_vo_deathshouts_diameter = profileNamespace getVariable ["goko_vo_deathshouts_diameter", 310];
+goko_vo_deathshouts_volume = profileNamespace getVariable ["goko_vo_deathshouts_volume", 3];
+goko_vo_deathshouts_diameter = profileNamespace getVariable ["goko_vo_deathshouts_diameter", 300];
 
 if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then 
 {
@@ -98,7 +98,7 @@ if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then
 			"LIST", // setting type
 			["Death scream volume","Pain shouts played upon unit death"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 			"Goko Unit VO's General settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-			[[0,2,2.4,3.2,3.5,3.8],["Disabled","Very Low","Low","Normal","High", "Very high"],3], // default
+			[[0,2,2.4,3,3.5,3.8],["Disabled","Very Low","Low","Normal","High", "Very high"],3], // default
 			true, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
 			{
 			} // function that will be executed once on mission start and every time the setting is changed.
