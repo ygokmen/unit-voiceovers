@@ -33,7 +33,7 @@ if !(isnil {_searchFriendly #0}) then
 		"bsubdown55", "bsubdown56", "bsubdown57", "bsubdown58", "bsubdown59", "bsubdown60", "bsubdown61", 
 		"bsubdown62", "bsubdown63", "bsubdown64", "bsubdown65", "bsubdown66", "bsubdown67"]; 
 		waituntil {
-			sleep 2 + random 2;
+			sleep (2 + random 2);
 			true;
 		};
 		[_this, _manDown] call gokovo_fnc_globalSay3d;

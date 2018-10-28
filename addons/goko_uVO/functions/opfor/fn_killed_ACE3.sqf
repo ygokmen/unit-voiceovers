@@ -5,6 +5,7 @@
 	description: methods trigger on unit killed
 */
 params ["_unit"];
+
 /*	required for ACE3 compatibility. */
 private ["_instigator"];
 _instigator = _unit getVariable "ace_medical_lastDamageSource";
@@ -26,7 +27,7 @@ if !(isnil {_searchFriendly #0}) then
 		"osubdown13", "osubdown14", "osubdown15", "osubdown16", "osubdown17", "osubdown18", "osubdown19", 
 		"osubdown20", "osubdown21", "osubdown22", "osubdown23", "osubdown24", "osubdown25", "osubdown26"];
 		waituntil {
-			sleep 2 + random 2;
+			sleep (2 + random 2);
 			true;
 		};
 		[_this, _manDown] call gokovo_fnc_globalSay3d;
