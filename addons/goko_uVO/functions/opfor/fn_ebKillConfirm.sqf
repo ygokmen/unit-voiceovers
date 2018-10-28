@@ -21,10 +21,10 @@ _null = _this spawn {
 	_victim = _this select 0;
 	_localActor = _this select 1;
 	waitUntil {
-		sleep 0.4 + random 2;
+		sleep (0.4 + random 2.6);
 		true;
 	};
-	/*	add delay, find distance of unit. */
+	/*	find distance of unit. */
 	if ((_localActor distance _victim) > 200) then
 	{
 		_soundSample = selectRandom ["otarget01", "otarget02", "otarget03", "otarget04", 
@@ -44,7 +44,7 @@ _null = _this spawn {
 		[_localActor, true] remoteExec ["setRandomLip", 0];
 	};
 	waitUntil {
-		sleep 1 + random 1;
+		sleep (1 + random 1);
 		true;
 	};
 	/*	stop broadcast random lip simulation. */
