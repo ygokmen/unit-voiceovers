@@ -1,58 +1,75 @@
-﻿[B]Author:[/B] [url=https://steamcommunity.com/id/654wak654]654wak654[/url] & outsider
-[B]Website/Repo:[/B] https://github.com/the0utsider/unit-voiceovers
-[B]BIF thread:[/B] https://forums.bohemia.net/forums/topic/215191-unit-voiceovers/
+﻿[B]Author:[/B] [url=https://steamcommunity.com/id/654wak654]654wak654[/url] & the0utsider
+[url=https://github.com/the0utsider/unit-voiceovers/releases]website and more[/url]
+[url=https://forums.bohemia.net/forums/topic/215191-unit-voiceovers/]Bohemia interactive forums[/url]
 
-[B]Short description:[/B] Dynamic 3D-positional voiceovers for units
 [B]MP compatible:[/B] Yes [i]*Has to be loaded on both server and client[/i]
 [B]Requirements:[/B] None (optional: CBA)
-[B]Version:[/B] v1.31
+[B]Version:[/B] v1.31 [i] "harvest & rewrite" [/i]
 [B]Signed:[/B] Yes
 
 [h1]Description:[/h1]
-Using NWI's iconic game [url=https://newworldinteractive.com/#insurgency]"Insurgency"[/url] sound samples, this add-on created to improve overall experience and bring dynamism to expressionless Arma3 models. I always imagined this to be something similar to st_hud but an aural one instead of visual. Each side have their own sounds, with samples played on certain actions to increase situational awareness, to simulate better close quarters combat.
+This is not a regular replacement mod to patch/replace existing sound files. It is a unique experiment and completely new, never done before approach in A3.
+
+Using NWI's iconic game [url=https://newworldinteractive.com/#insurgency]"Insurgency"[/url] resources, this addon is created to improve overall experience and bring dynamism to expressionless Arma3 models with samples played on certain actions to increase situational awareness, to simulate better close quarters combat.
+
+[B]Custom voice-over events:[/B]
+[list]
+	[*] Hostile frag grenade drop closeby
+	[*] clip goes empty/full reload
+	[*] shooting enemy (only if instigator have clear vision of victim)
+	[*] being shot at
+	[*] getting wounded
+	[*] friendly fire
+	[*] spotting enemy
+	[*] using throwable items (flash, smoke, frag grenades etc.)
+	[*] low on ammo
+	[*] teammate is killed nearby
+	[*] planting charges, mines, explosives
+[/list]
+  [i]  Unit has to have friendlies nearby (50 meters) in order to emit feedback voices. 
+Solo/alone unit won't emit certain sounds.  [/i]
 
 [h1]Features:[/h1]
 [list]
-	[*] Complete overhaul for default arma unit voice-overs
-	[*] SoldierWB, SoldierEB, SoldierGB classes use their own different set of voices
+	[*] Dynamic reactions
+	[*] Feedback / call outs according to friendlies in vicinity
+	[*] Main soldier classes use their own different set of voices
 	[*] Compatible with RHS mods
-	[*] Randomized samples on each action for diversity
-	[*] Spot enemy / callout targets direction (Default key 'T')
 	[*] ACE3 detection: compatible with ACE3
 	[*] works independent from 'enablesentences false' setting; using its own EH framework
-	[*] more than 1000 different sound samples total
+	[*] Randomized samples on each action for diversity
+	[*] uses more than a thousand different sound samples
 [/list]
 [B]'spot enemy' feature:[/B]This is similar to tactical ping, only an aural one to quickly alert your group. 
-Only works if you have a compass. Press T while watching an enemy soldier.
+Only works if you have a compass: Press T to spot an enemy soldier.
 
 [h1]Customization:[/h1]
 * [i]CBA is required to enable add-on options[/i]
 [list]
-	[*] Sound sample pitch adjustment (local setting)
-	[*] Set volume level and travel distance to your liking (global setting)
+	[*] enable/disable for client
+	[*] Sound sample pitch adjustment
+	[*] Set volume level, pitch and travel distance 
 	[*] Rebind/change 'Spot enemy' key via CBA add-on controls 
-	[*] Enable/Disable faction relations according to scenario
 [/list]
+[h1]Compatibility (solution to friendly-fire calls)[/h1]
+[b]Enable/Disable faction relations according to scenario:[/b]
+  [i] units belong to different sides will react to each other as enemies period. That's hard coded. [/i]
+  Consequently, units belong to same side will treat each other friendly all the time.
+But, in some cases you become enemies with a [b]'faction' within same side.[/b]
+[b]  There is a compatibility option for this:[/b] under cba addon options, untick this option for required Side.
 
-[B]Dynamic voice-overs when:[/B]
-[list]
-	[*] clip goes empty/reloading,
-	[*] shooting enemy,
-	[*] being shot at,
-	[*] getting wounded,
-	[*] hurting a friendly,
-	[*] spotting enemy,
-	[*] using throwable items (flash grenades, frag etc),
-	[*] low on ammo,
-	[*] hostile grenade lands nearby,
-	[*] a teammate nearby is killed,
-	[*] planting charges
-[/list]
+[h1]Disabling default game VO completely: 'enableSentences false'[/h1]
+[i]'Unit Voiceovers' uses it's own eventhandler methods to emit sounds. 
+You can (and maybe you should) disable default robotic arma3 chatter. Unit voiceovers mod still continue to work and probably work better with this option.[/i]
+
+Disabling default chatter of game is possible via option inside 'compatibility settings'.
+[b]This will MUTE ALL game's default radio chatter and voices for both AI and player.[/b]
 
 [B]Included Files:[/B] 
 gokmen.bikey
 goko_uVO.pbo
 goko_uVO.pbo.gokmen.bisign
+readme.txt
 
 [h1]Thanks:[/h1] when the idea to create this mod came to me, [url=https://github.com/654wak654]654wak654[/url]wrote first original EH code then showed me how to do it, this mod exists thanks to him.
 [url=https://steamcommunity.com/id/gebbet]gebbet[/url] & [url=https://steamcommunity.com/id/kappaccino1]SergentKappa[/url] for being testers against all odds like low bandwdth, lack of dedicated server, masked IP and other 3rd world problems.
@@ -64,6 +81,8 @@ goko_uVO.pbo.gokmen.bisign
  [url=https://www.bohemia.net/community/licenses/arma-public-license-share-alike]APL-SA[/url]
  Feel free to use and modify this code, on the proviso that you post back changes and improvements so that everyone can benefit from them, and acknowledge the original authors in any derivative works.
 [b] Reuploading this is not allowed (especially to armaholic) [/b]
+
+[url=https://github.com/the0utsider/unit-voiceovers/blob/develop/changelog_full.txt]Changelog[/url]
 
 [B]ChangeLog:[/B]
 [SPOILER]
