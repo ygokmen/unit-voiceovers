@@ -75,7 +75,7 @@ if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then
 		[
 			"goko_vo_client_enabled", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 			"LIST", // setting type
-			["Player voice-over functions","Local setting. Decide for yourself."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+			["Client voice-over functions","Local setting. Decide for yourself."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 			"Goko Unit VO's General settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
 			[[true,false],["Enabled","Disabled"],0], // default
 			false, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
@@ -86,7 +86,7 @@ if(isClass(configFile >> "CfgPatches" >> "cba_settings")) then
 		[
 			"goko_vo_konfirms", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
 			"LIST", // setting type
-			["Player vocal kill confirms","Local setting. Decide for yourself."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+			["Client vocal kill confirms","Local setting. Decide for yourself."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
 			"Goko Unit VO's General settings", // Pretty name of the category where the setting can be found. Can be stringtable entry.
 			[[true,false],["Yeah sure.","No thanks."],0], // default
 			false, // "global" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
