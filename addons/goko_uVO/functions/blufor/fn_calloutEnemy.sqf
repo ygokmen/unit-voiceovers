@@ -6,6 +6,8 @@
 */
 params ["_unit"];
 
+if (isPlayer _unit && !goko_vo_client_enabled) exitWith{};
+
 hasCompass = ("ItemCompass" in assignedItems(_unit));
 _knowabouts = _unit knowsabout cursorTarget;
 isWeaponLauncher = currentWeapon _unit == secondaryWeapon _unit;

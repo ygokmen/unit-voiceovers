@@ -4,7 +4,9 @@
 	website: https://github.com/the0utsider
 	description: called from callouts_postinit via keybind
 */
-params ["_unit"]; 
+params ["_unit"];
+
+if (isPlayer _unit && !goko_vo_client_enabled) exitWith{};
 
 hasCompass = ("ItemCompass" in assignedItems(_unit));
 _knowabouts = _unit knowsabout cursorTarget; 

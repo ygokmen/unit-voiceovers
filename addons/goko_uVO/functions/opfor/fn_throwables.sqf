@@ -9,6 +9,7 @@ gokoVO_fnc_throwablesOpfor =
 {
 	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 	
+	if (isPlayer _unit && !goko_vo_client_enabled) exitWith{};
 	if !(_weapon in ["Throw", "Put"]) exitWith{};
 	
 	#include <throwable_type_definitions.sqf>

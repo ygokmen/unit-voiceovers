@@ -6,6 +6,8 @@
 */
 params ["_unit", "_source", "_damage", "_instigator"];
 
+if (isPlayer _unit && !goko_vo_client_enabled) exitWith{};
+
 /* prevent EH trigger more than once (penetrating multiple parts, explosion damage, etc.) */
 _currentHealth = getDammage _unit;
 if isNil {_unit getVariable "goko_var_lastDammage"} then {

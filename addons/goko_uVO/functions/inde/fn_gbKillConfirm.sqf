@@ -6,8 +6,6 @@
 */
 params ["_unit", "_instigator"];
 
-if (isPlayer _instigator && !goko_vo_konfirms) exitWith{};
-
 /*	look for West side base class. */
 _searchFriendly = (_instigator nearEntities [["soldierGB"], 50]) - [_instigator];
 if (isnil {_searchFriendly #0}) exitWith {};
@@ -15,7 +13,7 @@ if (isnil {_searchFriendly #0}) exitWith {};
 isTalking = _instigator getVariable ["gokovo_var_randomLip", false];
 if (inputAction "pushToTalk" > 0 || isTalking ) exitWith{};
 
-/*	start random lip simulation and spawn thread */
+/*	start random lip simulation and spawn loop */
 _instigator setVariable ["gokovo_var_randomLip", true];
 _null = _this spawn {
 	_victim = _this select 0;
