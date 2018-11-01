@@ -27,7 +27,7 @@ Using NWI's iconic game [url=https://newworldinteractive.com/#insurgency]"Insurg
 	[*] planting charges, mines, explosives
 [/list]
   [i]  Unit has to have friendlies nearby (50 meters) in order to emit feedback voices. 
-Solo/alone unit won't emit certain sounds.  [/i]
+Solo/alone unit won't emit vo's.  [/i]
 
 [h1]Features:[/h1]
 [list]
