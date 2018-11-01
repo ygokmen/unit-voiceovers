@@ -9,12 +9,13 @@
 */
 Params ["_actor", "_soundSample"];
 
+if (!alive _actor) exitWith{};
 if isNil {_actor getVariable "gokovo_var_randomLip"} then {
 	_actor setVariable ["gokovo_var_randomLip", false];
 };
-isTalking = _actor getVariable "gokovo_var_randomLip";
+_isTalking = _actor getVariable "gokovo_var_randomLip";
 
-if (inputAction "pushToTalk" > 0 || isTalking) exitWith{};
+if (_isTalking || inputAction "pushToTalk" > 0) exitWith{};
 
 [_actor, [_soundSample, goko_vo_soundsdiameter, goko_vo_soundsamplepitch]] remoteExec ["say3D", 0];
 _actor setVariable ["goko_var_lastTickTime", time];
