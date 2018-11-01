@@ -21,6 +21,7 @@ _searchFriendly = (_unit nearEntities [["SoldierWB"], 50]) - [_unit];
 if !(isnil {_searchFriendly #0}) then
 {
 	_foundFriendly = selectRandom _searchFriendly;
+	if (isPlayer _foundFriendly && !goko_vo_client_enabled) exitWith{};
 	_foundFriendly spawn {
 		_manDown = selectRandom ["bsubdown01", "bsubdown02", "bsubdown03", "bsubdown04", "bsubdown05", 
 		"bsubdown06", "bsubdown07", "bsubdown08", "bsubdown09", "bsubdown10", "bsubdown11", "bsubdown12", 
@@ -39,6 +40,8 @@ if !(isnil {_searchFriendly #0}) then
 		[_this, _manDown] call gokovo_fnc_globalSay3d;
 	};
 };
+
+if (isPlayer _instigator && !goko_vo_konfirms) exitWith{};
 
 private _visibility = [_unit, "VIEW"] checkVisibility [eyePos _unit,  AGLToASL (_instigator modelToWorldVisual (_instigator selectionPosition "Spine3"))];
 if (_visibility == 0) then {
