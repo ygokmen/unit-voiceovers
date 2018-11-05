@@ -1,4 +1,8 @@
-#include "soundsCommon.hpp"
-#include "soundsEAST.hpp"
-#include "soundsGUER.hpp"
-#include "soundsWEST.hpp"
+class CfgSounds
+{
+	sounds[] = {};
+	#include "UVO\sounds\soundsCommon.hpp"
+	#include "UVO\sounds\soundsEAST.hpp"
+	#include "UVO\sounds\soundsGUER.hpp"
+	#include "UVO\sounds\soundsWEST.hpp"
+}
