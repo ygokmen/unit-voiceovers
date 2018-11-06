@@ -10,7 +10,7 @@
 	    };
 	};
 */
-params [["_faction",""],["_nationality","",["_definitionFile",""];
+params [["_faction",""],["_nationality",""],["_definitionFile",""]];
 
 // make it so there can be as many nationalities... use pushBack or append
 if (isNil "UVO_customNationalities") then {
