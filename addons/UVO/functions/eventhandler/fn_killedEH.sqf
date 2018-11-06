@@ -8,8 +8,8 @@ _unit setVariable ["UVO_unitIsDead", true];
 playSound3D [selectRandom (missionNamespace getVariable "UVO_deathShout"), _unit, false, getPosASL _unit, UVO_option_deathShoutsVolume, 1, UVO_option_deathShoutsDiameter];
 //playSound3D [([(str missionConfigFile), 0, -15] call BIS_fnc_trimString) + selectRandom (missionNamespace getVariable "UVO_deathShout"), _unit, false, getPosASL _unit, UVO_option_deathShoutsVolume, 1, UVO_option_deathShoutsDiameter];
 
-// Find nearby friendlies in 50 meter radius
-private _nearFriendlies = ((_unit nearEntities [["Man"], 50]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
+// Find nearby friendlies in 40 meter radius
+private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 
 // If there are friendlies around, make them say 'man down'
 if !(_nearFriendlies isEqualTo []) then

@@ -4,10 +4,8 @@ params ["_unit","_victim"];
 private _unitNationality = _unit getVariable "UVO_unitNationality";
 if (!alive _unit || isNil "_unitNationality") exitWith {};
 
-// Find nearby friendlies in 50 meter radius
-private _nearFriendlies = ((_unit nearEntities [["Man"], 50]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
-
-// Stop if there aren't nearby friendlies
+// Find nearby friendlies in 40 meter radius, only run if there are any
+private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 if !(_nearFriendlies isEqualTo []) exitWith {};
 
 // How far away is the killer/victim?

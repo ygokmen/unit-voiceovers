@@ -5,8 +5,8 @@ if (_weapon != _muzzle || !isNil "ace_arsenal_camera" || !isNil "RSCDisplayArsen
 // Stop if unit is still has mags for current weapon
 if !(getArray(configfile >> "CfgWeapons" >> _muzzle >> "magazines") arrayIntersect magazines _unit isEqualTo []) exitWith {};
 
-// Find nearby friendlies in 50 meter radius
-private _nearFriendlies = ((_unit nearEntities [["Man"], 50]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
+// Find nearby friendlies in 40 meter radius, only run if there are any
+private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 if (_nearFriendlies isEqualTo []) exitWith {};
 
 // If primary weapon, say ammo low. If it's a launcher, have a friendly say he's covering.
