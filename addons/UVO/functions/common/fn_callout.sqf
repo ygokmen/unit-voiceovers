@@ -1,12 +1,11 @@
 params ["_unit"];
 
-if (isPlayer _unit && !UVO_option_clientEnabled) exitWith{};
+if (isPlayer _unit && !UVO_option_clientEnabled || !isNull cursorTarget) exitWith{};
 
 private _isEnemy = (side group _unit) getFriend (side group cursorTarget) < 0.6;
-private _knowsAboutTarget = _unit knowsabout cursorTarget;
 private _isWeaponLauncher = currentWeapon _unit == secondaryWeapon _unit;
 private _isMan = cursorTarget iskindof "MAN";
-if (!_isEnemy || !("ItemCompass" in (assignedItems _unit)) || _knowsAboutTarget == 0 || !alive cursorTarget || !_isMan || _isWeaponLauncher) exitWith{};
+if (!_isEnemy || !("ItemCompass" in (assignedItems _unit)) || !alive cursorTarget || !_isMan || _isWeaponLauncher) exitWith{};
 
 private "_calloutDir";
 _azimuth = getDir _unit;
