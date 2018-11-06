@@ -34,8 +34,7 @@ Gokmen: I always imagined this to be something similar to st_hud but an aural on
 - A hostile frag is thrown nearby,
 - A nearby friendly is killed,
 
-**Installation**
-Requirements: CBA_A3
+**Installation Requirements: CBA_A3**
 
 Subscribe via steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1248372833
 
