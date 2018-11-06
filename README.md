@@ -36,7 +36,7 @@ Gokmen: I always imagined this to be something similar to st_hud but an aural on
 
 **Installation Requirements: CBA_A3**
 
-Subscribe via steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1248372833
+Subscribe via Steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1248372833
 
 ---
 
