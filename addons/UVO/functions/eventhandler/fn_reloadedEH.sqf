@@ -1,3 +1,13 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Reloaded event handler script. Calls ammo low and cover phrases
+
+Parameters:
+See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Reloaded) for more info
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 params ["_unit","_weapon","_muzzle","_newMagazine","_oldMagazine"];
 
 if (_weapon != _muzzle || !isNil "ace_arsenal_camera" || !isNil "RSCDisplayArsenal") exitWith {};

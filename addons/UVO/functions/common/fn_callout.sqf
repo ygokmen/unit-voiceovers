@@ -1,3 +1,13 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Calls directional callout phrases
+
+Parameters:
+0: Unit that initiates callout <STRING>
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 params ["_unit"];
 
 if (isPlayer _unit && !UVO_option_clientEnabled || !isNull cursorTarget) exitWith{};

@@ -1,3 +1,14 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Class based init event handler script
+
+Parameters:
+0: The spawned unit <STRING>
+1: Default nationality applied to unit <STRING>
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 params ["_unit","_defaultNationality"];
 
 // UVO is handled where unit is local

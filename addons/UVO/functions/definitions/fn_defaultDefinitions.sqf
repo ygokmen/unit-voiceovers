@@ -1,3 +1,13 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Defines default nationality sounds
+
+Parameters:
+Nothing
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 #include <nationality_EAST.sqf>
 #include <nationality_GUER.sqf>
 #include <nationality_WEST.sqf>

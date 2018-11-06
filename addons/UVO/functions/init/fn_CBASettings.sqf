@@ -1,7 +1,13 @@
-/*
-	CBA Settings
-*/
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+CBA Settings definition function called preInit
 
+Parameters:
+Nothing
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 UVO_option_enableSentences = profileNamespace getVariable ["UVO_option_enableSentences", false];
 UVO_option_clientEnabled = profileNamespace getVariable ["UVO_option_clientEnabled", true];
 UVO_option_killConfirmChanceAI = profileNamespace getVariable ["UVO_option_killConfirmChanceAI", 1];

@@ -1,3 +1,14 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Defines throwable types to be used with UVO_fnc_firedEH.
+Update for compatibility as needed.
+
+Parameters:
+Nothing
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 UVO_fragTypes = [
 	"HandGrenade",
 	"MiniGrenade",

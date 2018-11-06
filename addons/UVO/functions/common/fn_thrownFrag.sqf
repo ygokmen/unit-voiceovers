@@ -1,3 +1,14 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Plays grenade alert phrase to nearby units when grenade has landed.
+
+Parameters:
+0: Grenade <STRING>
+1: Grenade thrower's side <STRING>
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 params ["_projectile","_throwerSide"];
 
 [

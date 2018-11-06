@@ -1,3 +1,13 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Fired event handler script. Calls grenade, charge and reloading phrases
+
+Parameters:
+See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Fired) for more info
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];
 
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};

@@ -1,3 +1,14 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Makes a killer call a confirmation phrase
+
+Parameters:
+0: Killer unit <STRING>
+1: Victim unit <STRING>
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 params ["_unit","_victim"];
 
 // Stop here if killer is dead or no nationality is defined

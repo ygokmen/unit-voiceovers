@@ -1,3 +1,13 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Killed event handler script. Calls death shouts, 'allyDown', and kill confirm phrases
+
+Parameters:
+See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Killed) for more info
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 params ["_unit","_killer","_instigator","_useEffects"];
 
 // Prevent EH from firing twice

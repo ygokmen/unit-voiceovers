@@ -1,3 +1,7 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Default "GUER" nationality sound definitions
+----------------------------------------------------------*/
 // callout
 
 UVO_calloutN_GUER = [

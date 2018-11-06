@@ -1,3 +1,7 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Default "EAST" nationality sound definitions
+----------------------------------------------------------*/
 // callout
 
 UVO_calloutN_EAST = [

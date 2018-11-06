@@ -1,3 +1,14 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Globally executes say3D with lip movement functionality
+
+Parameters:
+0: Talking unit <STRING>
+1: Sound class <STRING>
+
+Return Value:
+Nothing
+----------------------------------------------------------*/
 params ["_actor", "_sound"];
 
 if (!alive _actor) exitWith {};
