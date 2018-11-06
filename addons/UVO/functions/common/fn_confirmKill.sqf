@@ -19,10 +19,10 @@ private _distance = _unit distance _victim;
 		params ["_unit","_unitNationality","_victim","_distance"];
 
 		if (_distance > 200) then {		
-			// Calm kill confirm sounds beyond 200m range
+			// Calm kill confirm beyond 200m range
 			[_unit,selectRandom (missionNamespace getVariable (format["UVO_targDownLo_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 		} else {
-			// Dramatic kill confirm sounds at close range
+			// Dramatic kill confirm at close range
 			[_unit,selectRandom (missionNamespace getVariable (format["UVO_targDownHi_%1",_unitNationality]))] call UVO_fnc_globalSay3d;
 		};
 	},

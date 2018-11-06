@@ -2,15 +2,14 @@ params ["_unit","_weapon","_muzzle","_newMagazine","_oldMagazine"];
 
 if (_weapon != _muzzle || !isNil "ace_arsenal_camera" || !isNil "RSCDisplayArsenal") exitWith {};
 
-// Check if unit is out of ammo for current weapon
-private _outOfAmmo = getArray(configfile >> "CfgWeapons" >> _muzzle >> "magazines") arrayIntersect magazines _unit isEqualTo [];
-if !(_outOfAmmo) exitWith {};
+// Stop if unit is still has mags for current weapon
+if !(getArray(configfile >> "CfgWeapons" >> _muzzle >> "magazines") arrayIntersect magazines _unit isEqualTo []) exitWith {};
 
 // Find nearby friendlies in 50 meter radius
 private _nearFriendlies = ((_unit nearEntities [["Man"], 50]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 if (_nearFriendlies isEqualTo []) exitWith {};
 
-// If primary weapon, say ammo low. If its a launcher, have a friendly say he's covering.
+// If primary weapon, say ammo low. If it's a launcher, have a friendly say he's covering.
 if (currentweapon _unit != secondaryweapon _unit) then {
 
 	if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};

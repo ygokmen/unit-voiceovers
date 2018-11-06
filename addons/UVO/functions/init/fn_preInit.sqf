@@ -2,7 +2,9 @@ if (is3DEN) exitWith {};
 
 // ACE Medical compat
 if (isClass (configFile >> "CfgPatches" >> "ace_main")) then {
-	missionNamespace setVariable ["UVO_ACE3Loaded",true];
+	UVO_ACE3Loaded = true;
+} else {
+	UVO_ACE3Loaded = false;
 };
 
 // Add soldier class event handlers

@@ -2,7 +2,6 @@ params ["_projectile","_throwerSide"];
 
 [
 	{
-		// grenade speed
 		(velocityModelSpace (_this # 0)) params ["_speedX","_speedY","_speedZ"];
 		(abs _speedX) max (abs _speedY) max (abs _speedZ) < 5;
 	},
@@ -26,7 +25,7 @@ params ["_projectile","_throwerSide"];
 		private _nearestEnemy = _nearEnemies # 0 # 1;
 		
 
-		// Get the unit's nationality
+		// Get the unit's nationality, stop here if there is no nationality defined
 		private _unitNationality = _nearestEnemy getVariable "UVO_unitNationality";
 		if (isNil "_unitNationality") exitWith {};
 

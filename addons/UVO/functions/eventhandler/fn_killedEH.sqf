@@ -23,6 +23,7 @@ if !(_nearFriendlies isEqualTo []) then
 
 	private _friendlyUnit = selectRandom _nearFriendlies;
 
+	// Do the rest after small delay for realism
 	[
 		{
 			params ["_friendlyUnit"];
