@@ -8,7 +8,7 @@ private _isMan = cursorTarget iskindof "MAN";
 if (!_isEnemy || !("ItemCompass" in (assignedItems _unit)) || !alive cursorTarget || !_isMan || _isWeaponLauncher) exitWith{};
 
 private "_calloutDir";
-_azimuth = getDir _unit;
+private _azimuth = getDir _unit;
 
 switch (true) do {
 	case (_azimuth < 17) : {_calloutDir = "N";};
