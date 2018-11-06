@@ -1,13 +1,52 @@
 // callout
 
-UVO_calloutN_GUER = [];
-UVO_calloutNE_GUER = [];
-UVO_calloutE_GUER = [];
-UVO_calloutSE_GUER = [];
-UVO_calloutS_GUER = [];
-UVO_calloutSW_GUER = [];
-UVO_calloutW_GUER = [];
-UVO_calloutNW_GUER = [];
+UVO_calloutN_GUER = [
+	"UVO_calloutN01_GUER",
+	"UVO_calloutN02_GUER",
+	"UVO_calloutN03_GUER"
+];
+
+UVO_calloutNE_GUER = [
+	"UVO_calloutNE01_GUER",
+	"UVO_calloutNE02_GUER",
+	"UVO_calloutNE03_GUER"
+];
+
+UVO_calloutE_GUER = [
+	"UVO_calloutE01_GUER",
+	"UVO_calloutE02_GUER",
+	"UVO_calloutE03_GUER"
+];
+
+UVO_calloutSE_GUER = [
+	"UVO_calloutSE01_GUER",
+	"UVO_calloutSE02_GUER",
+	"UVO_calloutSE03_GUER"
+];
+
+UVO_calloutS_GUER = [
+	"UVO_calloutS01_GUER",
+	"UVO_calloutS02_GUER",
+	"UVO_calloutS03_GUER"
+];
+
+UVO_calloutSW_GUER = [
+	"UVO_calloutSW01_GUER",
+	"UVO_calloutSW02_GUER",
+	"UVO_calloutSW03_GUER"
+];
+
+UVO_calloutW_GUER = [
+	"UVO_calloutW01_GUER",
+	"UVO_calloutW02_GUER",
+	"UVO_calloutW03_GUER"
+];
+
+UVO_calloutNW_GUER = [
+	"UVO_calloutNW01_GUER",
+	"UVO_calloutNW02_GUER",
+	"UVO_calloutNW03_GUER"
+];
 
 // fired
 

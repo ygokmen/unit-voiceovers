@@ -10,12 +10,15 @@ private _nearFriendlies = ((_unit nearEntities [["Man"], 50]) - [_unit]) select 
 // Stop if there aren't nearby friendlies
 if !(_nearFriendlies isEqualTo []) exitWith {};
 
+// How far away is the killer/victim?
+private _distance = _unit distance _victim;
+
 // Do the rest after a small delay for realism
 [
 	{
-		params ["_unit","_unitNationality","_victim"];
+		params ["_unit","_unitNationality","_victim","_distance"];
 
-		if ((_unit distance _victim) > 200) then {		
+		if (_distance > 200) then {		
 			// Calm kill confirm sounds beyond 200m range
 			[_unit,selectRandom (missionNamespace getVariable (format["UVO_targDownLo_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 		} else {
@@ -23,6 +26,6 @@ if !(_nearFriendlies isEqualTo []) exitWith {};
 			[_unit,selectRandom (missionNamespace getVariable (format["UVO_targDownHi_%1",_unitNationality]))] call UVO_fnc_globalSay3d;
 		};
 	},
-	[_unit,_unitNationality,_victim],
-	(2 + random 2)
+	[_unit,_unitNationality,_victim,_distance],
+	(0.4 + (_distance * 0.0015)) // scale delay with distance
 ] call CBA_fnc_waitAndExecute;

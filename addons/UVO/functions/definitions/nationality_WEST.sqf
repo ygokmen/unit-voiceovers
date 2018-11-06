@@ -1,13 +1,76 @@
 // callout
 
-UVO_calloutN_WEST = [];
-UVO_calloutNE_WEST = [];
-UVO_calloutE_WEST = [];
-UVO_calloutSE_WEST = [];
-UVO_calloutS_WEST = [];
-UVO_calloutSW_WEST = [];
-UVO_calloutW_WEST = [];
-UVO_calloutNW_WEST = [];
+UVO_calloutN_WEST = [
+	"UVO_calloutN01_WEST",
+	"UVO_calloutN02_WEST",
+	"UVO_calloutN03_WEST",
+	"UVO_calloutN04_WEST",
+	"UVO_calloutN05_WEST",
+	"UVO_calloutN06_WEST"
+];
+
+UVO_calloutNE_WEST = [
+	"UVO_calloutNE01_WEST",
+	"UVO_calloutNE02_WEST",
+	"UVO_calloutNE03_WEST",
+	"UVO_calloutNE04_WEST",
+	"UVO_calloutNE05_WEST",
+	"UVO_calloutNE06_WEST"
+];
+
+UVO_calloutE_WEST = [
+	"UVO_calloutE01_WEST",
+	"UVO_calloutE02_WEST",
+	"UVO_calloutE03_WEST",
+	"UVO_calloutE04_WEST",
+	"UVO_calloutE05_WEST",
+	"UVO_calloutE06_WEST"
+];
+
+UVO_calloutSE_WEST = [
+	"UVO_calloutSE01_WEST",
+	"UVO_calloutSE02_WEST",
+	"UVO_calloutSE03_WEST",
+	"UVO_calloutSE04_WEST",
+	"UVO_calloutSE05_WEST",
+	"UVO_calloutSE06_WEST"
+];
+
+UVO_calloutS_WEST = [
+	"UVO_calloutS01_WEST",
+	"UVO_calloutS02_WEST",
+	"UVO_calloutS03_WEST",
+	"UVO_calloutS04_WEST",
+	"UVO_calloutS05_WEST",
+	"UVO_calloutS06_WEST"
+];
+
+UVO_calloutSW_WEST = [
+	"UVO_calloutSW01_WEST",
+	"UVO_calloutSW02_WEST",
+	"UVO_calloutSW03_WEST",
+	"UVO_calloutSW04_WEST",
+	"UVO_calloutSW05_WEST",
+	"UVO_calloutSW06_WEST"
+];
+
+UVO_calloutW_WEST = [
+	"UVO_calloutW01_WEST",
+	"UVO_calloutW02_WEST",
+	"UVO_calloutW03_WEST",
+	"UVO_calloutW04_WEST",
+	"UVO_calloutW05_WEST",
+	"UVO_calloutW06_WEST"
+];
+
+UVO_calloutNW_WEST = [
+	"UVO_calloutNW01_WEST",
+	"UVO_calloutNW02_WEST",
+	"UVO_calloutNW03_WEST",
+	"UVO_calloutNW04_WEST",
+	"UVO_calloutNW05_WEST",
+	"UVO_calloutNW06_WEST"
+];
 
 // fired
 

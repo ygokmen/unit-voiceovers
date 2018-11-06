@@ -1,43 +1,46 @@
 if(!hasInterface) exitWith {};
-	
-[] spawn
-{
-	waitUntil {!isnull Player && !isNull (findDisplay 46)};
-	
-	_targetCallouts = ["Unit Voice-Overs","enemy_callout","Revealed Enemies Direction",{
-		_activefaction = lelz;
-		switch (true) do 
-		{ 
-			case (side player == WEST ) : {_activefaction = gokoVO_fnc_calloutBlufor }; 
-			case (side player == Independent ) : {_activefaction = gokoVO_fnc_calloutInde }; 
-			case (side player == EAST ) : {_activefaction = gokoVO_fnc_calloutOpfor }; 
-		}; 
-		player call _activefaction;
 
-	}, {}, [0x14, [false, false, false]],false] call CBA_fnc_addkeybind;
-	
-	goko_bcallout_keydown = false;
-	
-	goko_bcallout_key = (findDisplay 46) displayAddEventHandler ["KeyDown", 
+[
 	{
-		params ["_display","_dikKey","_shift","_ctrl","_alt"];
+		!isNull player && !isNull (findDisplay 46);
+	},
+	{
+		[
+			"Unit Voice-Overs",
+			"UVO_callout",
+			["Reveal enemy direction","Gives a directional callout"],
+			{
+				[player] call UVO_fnc_callout;
+			},
+			"",
+			[0x14,[false,false,false]],
+			false
+		] call CBA_fnc_addkeybind;
+
+		UVO_callout_keyDown = false;
+	
+		UVO_callout_key = (findDisplay 46) displayAddEventHandler ["KeyDown",{
+				params ["_display","_dikKey","_shift","_ctrl","_alt"];
+				
+				if (_dikKey in (actionkeys "RevealTarget")) then
+				{
+					if (UVO_callout_keyDown) exitwith {};
+					
+					UVO_callout_keyDown = true;
+					private _calloutKeybind = (["Unit Voice-Overs", "UVO_callout"] call CBA_fnc_getKeybind) select 5;
+					if ((_calloutKeybind select 0) in (actionkeys "RevealTarget")) exitwith{};
+				};
+			}
+		];
 		
-		if (_dikKey in (actionkeys "RevealTarget")) then
-		{
-			if (goko_bcallout_keydown) exitwith {};
-			
-			goko_bcallout_keydown = true;
-			_targetCallouts = (["Unit Voice-Overs", "enemy_callout"] call CBA_fnc_getKeybind) select 5;
-			if ((_targetCallouts select 0) in (actionkeys "RevealTarget")) exitwith{};
-		};
-	}];
-	
-	goko_bcallout_keyUp = (findDisplay 46) displayAddEventHandler ["KeyUp", 
-	{
-		params ["_display","_dikKey","_shift","_ctrl","_alt"];
-		if (_dikKey in (actionkeys "RevealTarget")) then
-		{
-			goko_bcallout_keydown = false;
-		};
-	}];
-};
+		UVO_callout_keyUp = (findDisplay 46) displayAddEventHandler ["KeyUp",{
+				params ["_display","_dikKey","_shift","_ctrl","_alt"];
+
+				if (_dikKey in (actionkeys "RevealTarget")) then
+				{
+					UVO_callout_keyDown = false;
+				};
+			}
+		];
+	}
+] call CBA_fnc_waitUntilAndExecute;

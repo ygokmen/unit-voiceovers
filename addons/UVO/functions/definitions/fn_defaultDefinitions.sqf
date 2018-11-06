@@ -54,12 +54,5 @@ UVO_deathShout = [
 	"UVO\sounds\common\deathShout\deathShout49.ogg",
 	"UVO\sounds\common\deathShout\deathShout50.ogg",
 	"UVO\sounds\common\deathShout\deathShout51.ogg",
-	"UVO\sounds\common\deathShout\deathShout52.ogg",
-	"UVO\sounds\common\deathShout\deathShout53.ogg",
-	"UVO\sounds\common\deathShout\deathShout54.ogg",
-	"UVO\sounds\common\deathShout\deathShout55.ogg",
-	"UVO\sounds\common\deathShout\deathShout56.ogg",
-	"UVO\sounds\common\deathShout\deathShout57.ogg",
-	"UVO\sounds\common\deathShout\deathShout58.ogg",
-	"UVO\sounds\common\deathShout\deathShout59.ogg"
+	"UVO\sounds\common\deathShout\deathShout52.ogg"
 ];

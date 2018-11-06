@@ -6,6 +6,7 @@ class cfgFunctions
 		class common
 		{
 			file = "UVO\functions\common";
+			class callout {};
 			class confirmKill {};
 			class globalsay3D {};
 			class thrownFrag {};
@@ -14,8 +15,8 @@ class cfgFunctions
 		{
 			file = "UVO\functions\definitions";
 			class createNationality {};
-			class nationalities {preInit = 1;};
-			class throwables {preInit = 1;};
+			class defaultDefinitions {preInit = 1;};
+			class throwableDefinitions {preInit = 1;};
 		};
 		class eventhandler
 		{
@@ -28,10 +29,10 @@ class cfgFunctions
 		class init
 		{
 			file = "UVO\functions\init";
-			//class CBASettings {preInit = 1};
+			class CBASettings {preInit = 1};
 			class classInit {};
-			class init {preInit = 1;};
-			//class keybinds {postInit = 1};
+			class preInit {preInit = 1;};
+			class keybinds {postInit = 1};
 		};
 	};
 };

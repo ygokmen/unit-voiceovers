@@ -8,7 +8,7 @@ if !(_outOfAmmo) exitWith {};
 
 // Find nearby friendlies in 50 meter radius
 private _nearFriendlies = ((_unit nearEntities [["Man"], 50]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
-if !(_nearFriendlies isEqualTo []) exitWith {};
+if (_nearFriendlies isEqualTo []) exitWith {};
 
 // If primary weapon, say ammo low. If its a launcher, have a friendly say he's covering.
 if (currentweapon _unit != secondaryweapon _unit) then {
@@ -25,7 +25,7 @@ if (currentweapon _unit != secondaryweapon _unit) then {
 		_nearFriendlies = _nearFriendlies - (_nearFriendlies select {isPlayer _x});
 	};
 
-	if !(_nearFriendlies isEqualTo []) exitWith {};
+	if (_nearFriendlies isEqualTo []) exitWith {};
 	
 	private _friendlyUnit = selectrandom _nearFriendlies;
 

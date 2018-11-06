@@ -1,14 +1,7 @@
-if(is3DEN) exitWith {};
-
 params ["_unit","_defaultNationality"];
 
 // UVO is handled where unit is local
-if (local _unit) then 
-{
-	// Only allow combative sides
-	private _side = side _unit;
-	if !(_side == west || _side == east || _side == resistance) exitWith {};
-
+if (local _unit) then {
 	// Set unit nationality, also used as detection for Reload Statemachine
 	if (!isNil "UVO_customNationalities") then {
 		private _customNationality = UVO_customNationalities select {(_x # 0) == faction _unit};
@@ -22,7 +15,6 @@ if (local _unit) then
 		_unit setVariable ["UVO_unitNationality",_defaultNationality];
 	};
 	
-
 	// Make it so unit can talk with UVO_fnc_globalSay3D
 	_actor setVariable ["UVO_unitRandomLip",false];
 
