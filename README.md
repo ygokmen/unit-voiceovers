@@ -1,6 +1,9 @@
 # Unit Voice-overs
 Dynamic, randomized 3D positional sound samples for units in Arma
 
+**Requirements**
+- CBA_A3: https://steamcommunity.com/sharedfiles/filedetails/?id=450814997
+
 Authors: 654wak654, Gokmen 'the0utsider', Sceptre
 
 Using NWI's 'Insurgency' sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
@@ -35,7 +38,7 @@ Gokmen: I always imagined this to be something similar to st_hud but an aural on
 - A hostile frag is thrown nearby
 - A nearby friendly is killed
 
-**Installation Requirements: CBA_A3**
+**Installation**
 
 Subscribe via Steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1248372833
 
