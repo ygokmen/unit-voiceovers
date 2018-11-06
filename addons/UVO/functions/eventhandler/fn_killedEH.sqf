@@ -41,7 +41,7 @@ if !(_nearFriendlies isEqualTo []) then
 };
 
 // ACE3 Compatibility
-if (missionNamespace getVariable "UVO_ACE3Loaded") then {
+if (UVO_ACE3Loaded) then {
 	_instigator = _unit getVariable "ace_medical_lastDamageSource";
 };
 
