@@ -25,15 +25,15 @@ Gokmen: I always imagined this to be something similar to st_hud but an aural on
 - Custom faction sound declaration system
 
 **Dynamic voice-overs when**
-- Magazine goes empty/reloading,
-- Killed enemy,
-- Getting wounded,
-- Hurting a friendly,
-- Spotting enemy,
-- Using throwable or plantable items,
-- Low on ammo,
-- A hostile frag is thrown nearby,
-- A nearby friendly is killed,
+- Magazine goes empty/reloading
+- Killed enemy
+- Getting wounded
+- Hurting a friendly
+- Spotting enemy
+- Using throwable or plantable items
+- Low on ammo
+- A hostile frag is thrown nearby
+- A nearby friendly is killed
 
 **Installation Requirements: CBA_A3**
 
