@@ -4,6 +4,7 @@ Dynamic, randomized 3D positional sound samples for units in Arma
 Authors: 654wak654, Gokmen 'the0utsider', Sceptre
 
 Using NWI's 'Insurgency' sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
+
 Gokmen: I always imagined this to be something similar to st_hud but an aural one instead of visual. Each faction has their own sounds, with samples played on certain actions to increase situational awareness and to simulate better close quarters combat.
 
 **Features**
