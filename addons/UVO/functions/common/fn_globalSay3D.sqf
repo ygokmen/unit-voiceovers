@@ -17,7 +17,7 @@ if (!alive _actor) exitWith {};
 if ((_actor getVariable "UVO_unitRandomLip") || inputAction "pushToTalk" > 0) exitWith {};
 
 // 'Say' the sound on all clients
-[_actor, [_sound, UVO_option_soundsDiameter, UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
+[_actor, [_sound, UVO_option_soundsDiameter, UVO_option_soundsSamplePitch]] remoteExec ["say3D"];
 
 // Give some lip movement
 _actor setVariable ["UVO_unitRandomLip",true];
