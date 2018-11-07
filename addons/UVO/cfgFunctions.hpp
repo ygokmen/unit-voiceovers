@@ -6,7 +6,7 @@ class cfgFunctions
 		class common
 		{
 			file = "UVO\functions\common";
-			//class callout {};
+			class calloutDir {};
 			class confirmKill {};
 			class globalsay3D {};
 			class thrownFrag {};
@@ -29,10 +29,10 @@ class cfgFunctions
 		class init
 		{
 			file = "UVO\functions\init";
-			class CBASettings {preInit = 1};
+			class CBASettings {preInit = 1;};
 			class classInit {};
 			class preInit {preInit = 1;};
-			//class keybinds {postInit = 1};
+			class keybinds {postInit = 1;};
 		};
 	};
 };
