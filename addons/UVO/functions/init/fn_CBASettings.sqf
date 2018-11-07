@@ -21,7 +21,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_enableSentences",
 	"CHECKBOX",
-	["enableSentences (Default Arma chatter)","Forces default arma chatter to be enabled or disabled. Recommended off (Default: FALSE)"],
+	["enableSentences (Default Arma chatter)","Forces default arma chatter to be enabled or disabled. Recommended off. (Default: FALSE)"],
 	"Unit Voice-Over Options",
 	false,
 	true,
@@ -32,7 +32,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_clientEnabled",
 	"CHECKBOX",
-	["Enabled for players","Choose whether voice-overs are used with players (DEFAULT: TRUE)"],
+	["Enabled for players","Choose whether voice-overs are used with players. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
 	true
@@ -48,7 +48,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_killConfirmChanceAI",
 	"SLIDER",
-	["AI kill confirmation chance","Chance that AI will give a confirmation when enemy is killed and visible (DEFAULT: 1)"],
+	["AI kill confirmation chance","Chance that AI will give a confirmation when enemy is killed and visible. (DEFAULT: 1)"],
 	"Unit Voice-Over Options",
 	[0,1,1,2],
 	true
@@ -56,7 +56,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_killConfirmChancePlayer",
 	"SLIDER",
-	["Player kill confirmation chance","Chance that players will give a confirmation when enemy is killed and visible (DEFAULT: 1)"],
+	["Player kill confirmation chance","Chance that players will give a confirmation when enemy is killed and visible. (DEFAULT: 1)"],
 	"Unit Voice-Over Options",
 	[0,1,1,2],
 	true
@@ -64,7 +64,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_soundsDiameter",
 	"SLIDER",
-	["Voice travel diameter","Represents a sound fade-out diameter with unit at center (DEFAULT: 300)"],
+	["Voice travel diameter","Represents a sound fade-out diameter with unit at center. (DEFAULT: 300)"],
 	"Unit Voice-Over Options",
 	[100,500,300,0],
 	true
@@ -72,7 +72,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_soundsSamplePitch",
 	"SLIDER",
-	["Voice sample pitch","Modify pitch of voice sound samples (DEFAULT: 1)"],
+	["Voice sample pitch","Modify pitch of voice sound samples. (DEFAULT: 1)"],
 	"Unit Voice-Over Options",
 	[0.8,1.2,1,2],
 	true
@@ -80,7 +80,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_deathShoutsVolume",
 	"LIST",
-	["Death shout volume","Changes how loud death shouts are when a unit is killed (DEFAULT: Normal)"],
+	["Death shout volume","Changes how loud death shouts are when a unit is killed. (DEFAULT: Normal)"],
 	"Unit Voice-Over Options",
 	[[0,2,2.4,3,3.5,3.8],["Disabled","Very Low","Low","Normal","High","Very high"],3],
 	true
@@ -88,7 +88,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_deathShoutsDiameter",
 	"SLIDER",
-	["Death shout travel diameter","Represents a sound fade-out diameter with unit at center (DEFAULT: 300)"],
+	["Death shout travel diameter","Represents a sound fade-out diameter with unit at center. (DEFAULT: 300)"],
 	"Unit Voice-Over Options",
 	[100,500,300,0],
 	true
