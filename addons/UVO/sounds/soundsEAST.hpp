@@ -1330,113 +1330,113 @@
 		sound[] = {"UVO\sounds\east\killed\targDownLo10.ogg",2.6,1,100};
 		titles[] = {};
 	};
-//EAST other
-	class UVO_other01_EAST
+//EAST cover
+	class UVO_cover01_EAST
 	{
-		name = "UVO_other01_EAST";
-		sound[] = {"UVO\sounds\east\other\other01.ogg",2.6,1,100};
+		name = "UVO_cover01_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover01.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other02_EAST
+	class UVO_cover02_EAST
 	{
-		name = "UVO_other01_EAST";
-		sound[] = {"UVO\sounds\east\other\other02.ogg",2.6,1,100};
+		name = "UVO_cover01_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover02.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other03_EAST
+	class UVO_cover03_EAST
 	{
-		name = "UVO_other03_EAST";
-		sound[] = {"UVO\sounds\east\other\other03.ogg",2.6,1,100};
+		name = "UVO_cover03_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover03.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other04_EAST
+	class UVO_cover04_EAST
 	{
-		name = "UVO_other04_EAST";
-		sound[] = {"UVO\sounds\east\other\other04.ogg",2.6,1,100};
+		name = "UVO_cover04_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover04.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other05_EAST
+	class UVO_cover05_EAST
 	{
-		name = "UVO_other05_EAST";
-		sound[] = {"UVO\sounds\east\other\other05.ogg",2.6,1,100};
+		name = "UVO_cover05_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover05.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other06_EAST
+	class UVO_cover06_EAST
 	{
-		name = "UVO_other06_EAST";
-		sound[] = {"UVO\sounds\east\other\other06.ogg",2.6,1,100};
+		name = "UVO_cover06_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover06.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other07_EAST
+	class UVO_cover07_EAST
 	{
-		name = "UVO_other07_EAST";
-		sound[] = {"UVO\sounds\east\other\other07.ogg",2.6,1,100};
+		name = "UVO_cover07_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover07.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other08_EAST
+	class UVO_cover08_EAST
 	{
-		name = "UVO_other08_EAST";
-		sound[] = {"UVO\sounds\east\other\other08.ogg",2.6,1,100};
+		name = "UVO_cover08_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover08.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other09_EAST
+	class UVO_cover09_EAST
 	{
-		name = "UVO_other09_EAST";
-		sound[] = {"UVO\sounds\east\other\other09.ogg",2.6,1,100};
+		name = "UVO_cover09_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover09.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other10_EAST
+	class UVO_cover10_EAST
 	{
-		name = "UVO_other10_EAST";
-		sound[] = {"UVO\sounds\east\other\other10.ogg",2.6,1,100};
+		name = "UVO_cover10_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover10.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other11_EAST
+	class UVO_cover11_EAST
 	{
-		name = "UVO_other11_EAST";
-		sound[] = {"UVO\sounds\east\other\other11.ogg",2.6,1,100};
+		name = "UVO_cover11_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover11.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other12_EAST
+	class UVO_cover12_EAST
 	{
-		name = "UVO_other12_EAST";
-		sound[] = {"UVO\sounds\east\other\other12.ogg",2.6,1,100};
+		name = "UVO_cover12_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover12.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other13_EAST
+	class UVO_cover13_EAST
 	{
-		name = "UVO_other13_EAST";
-		sound[] = {"UVO\sounds\east\other\other13.ogg",2.6,1,100};
+		name = "UVO_cover13_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover13.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other14_EAST
+	class UVO_cover14_EAST
 	{
-		name = "UVO_other14_EAST";
-		sound[] = {"UVO\sounds\east\other\other14.ogg",2.6,1,100};
+		name = "UVO_cover14_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover14.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other15_EAST
+	class UVO_cover15_EAST
 	{
-		name = "UVO_other15_EAST";
-		sound[] = {"UVO\sounds\east\other\other15.ogg",2.6,1,100};
+		name = "UVO_cover15_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover15.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other16_EAST
+	class UVO_cover16_EAST
 	{
-		name = "UVO_other16_EAST";
-		sound[] = {"UVO\sounds\east\other\other16.ogg",2.6,1,100};
+		name = "UVO_cover16_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover16.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other17_EAST
+	class UVO_cover17_EAST
 	{
-		name = "UVO_other17_EAST";
-		sound[] = {"UVO\sounds\east\other\other17.ogg",2.6,1,100};
+		name = "UVO_cover17_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover17.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other18_EAST
+	class UVO_cover18_EAST
 	{
-		name = "UVO_other18_EAST";
-		sound[] = {"UVO\sounds\east\other\other18.ogg",2.6,1,100};
+		name = "UVO_cover18_EAST";
+		sound[] = {"UVO\sounds\east\cover\cover18.ogg",2.6,1,100};
 		titles[] = {};
 	};
 //EAST ammoLow

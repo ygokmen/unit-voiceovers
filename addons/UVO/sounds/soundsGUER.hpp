@@ -1288,137 +1288,137 @@
 		sound[] = {"UVO\sounds\guer\killed\targDownLo10.ogg",2.6,1,100};
 		titles[] = {};
 	};
-//GUER other
-	class UVO_other01_GUER
+//GUER cover
+	class UVO_cover01_GUER
 	{
-		name = "UVO_other01_GUER";
-		sound[] = {"UVO\sounds\guer\other\other01.ogg",2.6,1,100};
+		name = "UVO_cover01_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover01.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other02_GUER
+	class UVO_cover02_GUER
 	{
-		name = "UVO_other01_GUER";
-		sound[] = {"UVO\sounds\guer\other\other02.ogg",2.6,1,100};
+		name = "UVO_cover01_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover02.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other03_GUER
+	class UVO_cover03_GUER
 	{
-		name = "UVO_other03_GUER";
-		sound[] = {"UVO\sounds\guer\other\other03.ogg",2.6,1,100};
+		name = "UVO_cover03_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover03.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other04_GUER
+	class UVO_cover04_GUER
 	{
-		name = "UVO_other04_GUER";
-		sound[] = {"UVO\sounds\guer\other\other04.ogg",2.6,1,100};
+		name = "UVO_cover04_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover04.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other05_GUER
+	class UVO_cover05_GUER
 	{
-		name = "UVO_other05_GUER";
-		sound[] = {"UVO\sounds\guer\other\other05.ogg",2.6,1,100};
+		name = "UVO_cover05_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover05.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other06_GUER
+	class UVO_cover06_GUER
 	{
-		name = "UVO_other06_GUER";
-		sound[] = {"UVO\sounds\guer\other\other06.ogg",2.6,1,100};
+		name = "UVO_cover06_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover06.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other07_GUER
+	class UVO_cover07_GUER
 	{
-		name = "UVO_other07_GUER";
-		sound[] = {"UVO\sounds\guer\other\other07.ogg",2.6,1,100};
+		name = "UVO_cover07_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover07.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other08_GUER
+	class UVO_cover08_GUER
 	{
-		name = "UVO_other08_GUER";
-		sound[] = {"UVO\sounds\guer\other\other08.ogg",2.6,1,100};
+		name = "UVO_cover08_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover08.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other09_GUER
+	class UVO_cover09_GUER
 	{
-		name = "UVO_other09_GUER";
-		sound[] = {"UVO\sounds\guer\other\other09.ogg",2.6,1,100};
+		name = "UVO_cover09_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover09.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other10_GUER
+	class UVO_cover10_GUER
 	{
-		name = "UVO_other10_GUER";
-		sound[] = {"UVO\sounds\guer\other\other10.ogg",2.6,1,100};
+		name = "UVO_cover10_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover10.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other11_GUER
+	class UVO_cover11_GUER
 	{
-		name = "UVO_other11_GUER";
-		sound[] = {"UVO\sounds\guer\other\other11.ogg",2.6,1,100};
+		name = "UVO_cover11_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover11.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other12_GUER
+	class UVO_cover12_GUER
 	{
-		name = "UVO_other12_GUER";
-		sound[] = {"UVO\sounds\guer\other\other12.ogg",2.6,1,100};
+		name = "UVO_cover12_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover12.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other13_GUER
+	class UVO_cover13_GUER
 	{
-		name = "UVO_other13_GUER";
-		sound[] = {"UVO\sounds\guer\other\other13.ogg",2.6,1,100};
+		name = "UVO_cover13_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover13.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other14_GUER
+	class UVO_cover14_GUER
 	{
-		name = "UVO_other14_GUER";
-		sound[] = {"UVO\sounds\guer\other\other14.ogg",2.6,1,100};
+		name = "UVO_cover14_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover14.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other15_GUER
+	class UVO_cover15_GUER
 	{
-		name = "UVO_other15_GUER";
-		sound[] = {"UVO\sounds\guer\other\other15.ogg",2.6,1,100};
+		name = "UVO_cover15_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover15.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other16_GUER
+	class UVO_cover16_GUER
 	{
-		name = "UVO_other16_GUER";
-		sound[] = {"UVO\sounds\guer\other\other16.ogg",2.6,1,100};
+		name = "UVO_cover16_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover16.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other17_GUER
+	class UVO_cover17_GUER
 	{
-		name = "UVO_other17_GUER";
-		sound[] = {"UVO\sounds\guer\other\other17.ogg",2.6,1,100};
+		name = "UVO_cover17_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover17.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other18_GUER
+	class UVO_cover18_GUER
 	{
-		name = "UVO_other18_GUER";
-		sound[] = {"UVO\sounds\guer\other\other18.ogg",2.6,1,100};
+		name = "UVO_cover18_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover18.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other19_GUER
+	class UVO_cover19_GUER
 	{
-		name = "UVO_other19_GUER";
-		sound[] = {"UVO\sounds\guer\other\other19.ogg",2.6,1,100};
+		name = "UVO_cover19_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover19.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other20_GUER
+	class UVO_cover20_GUER
 	{
-		name = "UVO_other20_GUER";
-		sound[] = {"UVO\sounds\guer\other\other20.ogg",2.6,1,100};
+		name = "UVO_cover20_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover20.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other21_GUER
+	class UVO_cover21_GUER
 	{
-		name = "UVO_other21_GUER";
-		sound[] = {"UVO\sounds\guer\other\other21.ogg",2.6,1,100};
+		name = "UVO_cover21_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover21.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other22_GUER
+	class UVO_cover22_GUER
 	{
-		name = "UVO_other22_GUER";
-		sound[] = {"UVO\sounds\guer\other\other22.ogg",2.6,1,100};
+		name = "UVO_cover22_GUER";
+		sound[] = {"UVO\sounds\guer\cover\cover22.ogg",2.6,1,100};
 		titles[] = {};
 	};
 //GUER ammoLow

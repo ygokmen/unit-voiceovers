@@ -280,31 +280,31 @@ UVO_targDownLo_GUER = [
 	"UVO_targDownLo10_GUER"
 ];
 
-// other
+// cover
 
-UVO_other_GUER = [
-	"UVO_other01_GUER",
-	"UVO_other02_GUER",
-	"UVO_other03_GUER",
-	"UVO_other04_GUER",
-	"UVO_other05_GUER",
-	"UVO_other06_GUER",
-	"UVO_other07_GUER",
-	"UVO_other08_GUER",
-	"UVO_other09_GUER",
-	"UVO_other10_GUER",
-	"UVO_other11_GUER",
-	"UVO_other12_GUER",
-	"UVO_other13_GUER",
-	"UVO_other14_GUER",
-	"UVO_other15_GUER",
-	"UVO_other16_GUER",
-	"UVO_other17_GUER",
-	"UVO_other18_GUER",
-	"UVO_other19_GUER",
-	"UVO_other20_GUER",
-	"UVO_other21_GUER",
-	"UVO_other22_GUER"
+UVO_cover_GUER = [
+	"UVO_cover01_GUER",
+	"UVO_cover02_GUER",
+	"UVO_cover03_GUER",
+	"UVO_cover04_GUER",
+	"UVO_cover05_GUER",
+	"UVO_cover06_GUER",
+	"UVO_cover07_GUER",
+	"UVO_cover08_GUER",
+	"UVO_cover09_GUER",
+	"UVO_cover10_GUER",
+	"UVO_cover11_GUER",
+	"UVO_cover12_GUER",
+	"UVO_cover13_GUER",
+	"UVO_cover14_GUER",
+	"UVO_cover15_GUER",
+	"UVO_cover16_GUER",
+	"UVO_cover17_GUER",
+	"UVO_cover18_GUER",
+	"UVO_cover19_GUER",
+	"UVO_cover20_GUER",
+	"UVO_cover21_GUER",
+	"UVO_cover22_GUER"
 ];
 
 // reload

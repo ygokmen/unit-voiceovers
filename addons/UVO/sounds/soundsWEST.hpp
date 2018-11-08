@@ -1474,113 +1474,113 @@
 		sound[] = {"UVO\sounds\west\killed\targDownLo10.ogg",2.6,1,100};
 		titles[] = {};
 	};
-//WEST other
-	class UVO_other01_WEST
+//WEST cover
+	class UVO_cover01_WEST
 	{
-		name = "UVO_other01_WEST";
-		sound[] = {"UVO\sounds\west\other\other01.ogg",2.6,1,100};
+		name = "UVO_cover01_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover01.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other02_WEST
+	class UVO_cover02_WEST
 	{
-		name = "UVO_other01_WEST";
-		sound[] = {"UVO\sounds\west\other\other02.ogg",2.6,1,100};
+		name = "UVO_cover01_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover02.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other03_WEST
+	class UVO_cover03_WEST
 	{
-		name = "UVO_other03_WEST";
-		sound[] = {"UVO\sounds\west\other\other03.ogg",2.6,1,100};
+		name = "UVO_cover03_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover03.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other04_WEST
+	class UVO_cover04_WEST
 	{
-		name = "UVO_other04_WEST";
-		sound[] = {"UVO\sounds\west\other\other04.ogg",2.6,1,100};
+		name = "UVO_cover04_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover04.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other05_WEST
+	class UVO_cover05_WEST
 	{
-		name = "UVO_other05_WEST";
-		sound[] = {"UVO\sounds\west\other\other05.ogg",2.6,1,100};
+		name = "UVO_cover05_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover05.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other06_WEST
+	class UVO_cover06_WEST
 	{
-		name = "UVO_other06_WEST";
-		sound[] = {"UVO\sounds\west\other\other06.ogg",2.6,1,100};
+		name = "UVO_cover06_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover06.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other07_WEST
+	class UVO_cover07_WEST
 	{
-		name = "UVO_other07_WEST";
-		sound[] = {"UVO\sounds\west\other\other07.ogg",2.6,1,100};
+		name = "UVO_cover07_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover07.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other08_WEST
+	class UVO_cover08_WEST
 	{
-		name = "UVO_other08_WEST";
-		sound[] = {"UVO\sounds\west\other\other08.ogg",2.6,1,100};
+		name = "UVO_cover08_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover08.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other09_WEST
+	class UVO_cover09_WEST
 	{
-		name = "UVO_other09_WEST";
-		sound[] = {"UVO\sounds\west\other\other09.ogg",2.6,1,100};
+		name = "UVO_cover09_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover09.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other10_WEST
+	class UVO_cover10_WEST
 	{
-		name = "UVO_other10_WEST";
-		sound[] = {"UVO\sounds\west\other\other10.ogg",2.6,1,100};
+		name = "UVO_cover10_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover10.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other11_WEST
+	class UVO_cover11_WEST
 	{
-		name = "UVO_other11_WEST";
-		sound[] = {"UVO\sounds\west\other\other11.ogg",2.6,1,100};
+		name = "UVO_cover11_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover11.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other12_WEST
+	class UVO_cover12_WEST
 	{
-		name = "UVO_other12_WEST";
-		sound[] = {"UVO\sounds\west\other\other12.ogg",2.6,1,100};
+		name = "UVO_cover12_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover12.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other13_WEST
+	class UVO_cover13_WEST
 	{
-		name = "UVO_other13_WEST";
-		sound[] = {"UVO\sounds\west\other\other13.ogg",2.6,1,100};
+		name = "UVO_cover13_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover13.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other14_WEST
+	class UVO_cover14_WEST
 	{
-		name = "UVO_other14_WEST";
-		sound[] = {"UVO\sounds\west\other\other14.ogg",2.6,1,100};
+		name = "UVO_cover14_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover14.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other15_WEST
+	class UVO_cover15_WEST
 	{
-		name = "UVO_other15_WEST";
-		sound[] = {"UVO\sounds\west\other\other15.ogg",2.6,1,100};
+		name = "UVO_cover15_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover15.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other16_WEST
+	class UVO_cover16_WEST
 	{
-		name = "UVO_other16_WEST";
-		sound[] = {"UVO\sounds\west\other\other16.ogg",2.6,1,100};
+		name = "UVO_cover16_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover16.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other17_WEST
+	class UVO_cover17_WEST
 	{
-		name = "UVO_other17_WEST";
-		sound[] = {"UVO\sounds\west\other\other17.ogg",2.6,1,100};
+		name = "UVO_cover17_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover17.ogg",2.6,1,100};
 		titles[] = {};
 	};
-	class UVO_other18_WEST
+	class UVO_cover18_WEST
 	{
-		name = "UVO_other18_WEST";
-		sound[] = {"UVO\sounds\west\other\other18.ogg",2.6,1,100};
+		name = "UVO_cover18_WEST";
+		sound[] = {"UVO\sounds\west\cover\cover18.ogg",2.6,1,100};
 		titles[] = {};
 	};
 //WEST ammoLow

@@ -42,5 +42,5 @@ if (currentweapon _unit != secondaryweapon _unit) then {
 	private _unitNationality = _friendlyUnit getVariable "UVO_unitNationality";
 	if (isNil "_unitNationality") exitWith {};
 	
-	[_friendlyUnit,selectRandom (missionNamespace getVariable (format ["UVO_other_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
+	[_friendlyUnit,selectRandom (missionNamespace getVariable (format ["UVO_cover_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 };

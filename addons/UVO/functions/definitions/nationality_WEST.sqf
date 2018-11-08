@@ -311,27 +311,27 @@ UVO_targDownLo_WEST = [
 	"UVO_targDownLo10_WEST"
 ];
 
-// other
+// cover
 
-UVO_other_WEST = [
-	"UVO_other01_WEST",
-	"UVO_other02_WEST",
-	"UVO_other03_WEST",
-	"UVO_other04_WEST",
-	"UVO_other05_WEST",
-	"UVO_other06_WEST",
-	"UVO_other07_WEST",
-	"UVO_other08_WEST",
-	"UVO_other09_WEST",
-	"UVO_other10_WEST",
-	"UVO_other11_WEST",
-	"UVO_other12_WEST",
-	"UVO_other13_WEST",
-	"UVO_other14_WEST",
-	"UVO_other15_WEST",
-	"UVO_other16_WEST",
-	"UVO_other17_WEST",
-	"UVO_other18_WEST"
+UVO_cover_WEST = [
+	"UVO_cover01_WEST",
+	"UVO_cover02_WEST",
+	"UVO_cover03_WEST",
+	"UVO_cover04_WEST",
+	"UVO_cover05_WEST",
+	"UVO_cover06_WEST",
+	"UVO_cover07_WEST",
+	"UVO_cover08_WEST",
+	"UVO_cover09_WEST",
+	"UVO_cover10_WEST",
+	"UVO_cover11_WEST",
+	"UVO_cover12_WEST",
+	"UVO_cover13_WEST",
+	"UVO_cover14_WEST",
+	"UVO_cover15_WEST",
+	"UVO_cover16_WEST",
+	"UVO_cover17_WEST",
+	"UVO_cover18_WEST"
 ];
 
 // reload
