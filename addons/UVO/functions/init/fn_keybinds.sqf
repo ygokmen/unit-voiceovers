@@ -1,3 +1,7 @@
+/*--------------------------------------------------------
+Authors: Gokmen, Sceptre
+Adds keybinds using CBA keybinding
+----------------------------------------------------------*/
 if(!hasInterface) exitWith {};
 
 [
