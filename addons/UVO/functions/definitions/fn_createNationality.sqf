@@ -13,10 +13,10 @@ Nothing
 Example (added via Extended_PreInit_EventHandlers in description.ext):
 
 class Extended_PreInit_EventHandlers {
-    class UVO_CSAT {
+    class UVO_customCSAT {
         init = "['OPF_F','ARAB','nationality_ARAB.sqf'] call UVO_fnc_createNationality;";
     };
-    class UVO_NATO {
+    class UVO_customNATO {
         init = "['BLU_F','ARAB'] call UVO_fnc_createNationality;";
     };
 };
@@ -36,6 +36,9 @@ if (!(_faction isEqualTo "") && !(_nationality isEqualTo "")) then {
 	
 	if !(_definitionFile isEqualTo "") then {
 		call compile preprocessFileLineNumbers _definitionFile;
-	};	
+	} else {
+		if (isNil format["UVO_reloading_%1",_nationality]) then {
+			diag_log "UVO ERROR: UVO_fnc_createNationality: NEW NATIONALITY MISSING DEFINITIONS";
+		};
+	};
 };
-
