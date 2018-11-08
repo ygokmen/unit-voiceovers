@@ -19,7 +19,7 @@ params ["_projectile","_throwerSide"];
 	{
 		params ["_projectile","_throwerSide"];
 
-		// Find nearby enemies in 16 meter radius
+		// Find nearby enemies in 15 meter radius
 		private _nearEnemies = (_projectile nearEntities [["CAManBase"],15]) select {_throwerSide getFriend (side group _x) < 0.6};
 		if (_nearEnemies isEqualTo []) exitwith {};
 		
