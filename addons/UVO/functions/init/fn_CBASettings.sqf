@@ -10,7 +10,6 @@ Nothing
 ----------------------------------------------------------*/
 UVO_option_enableSentences = profileNamespace getVariable ["UVO_option_enableSentences", false];
 UVO_option_clientEnabled = profileNamespace getVariable ["UVO_option_clientEnabled", true];
-//UVO_option_proximityCheck = profileNamespace getVariable ["UVO_option_proximityCheck", true];
 UVO_option_killConfirmChanceAI = profileNamespace getVariable ["UVO_option_killConfirmChanceAI", 1];
 UVO_option_killConfirmChancePlayer = profileNamespace getVariable ["UVO_option_killConfirmChancePlayer", 1];
 UVO_option_soundsDiameter = profileNamespace getVariable ["UVO_option_soundsDiameter", 300];
@@ -37,14 +36,6 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 	true,
 	true
 ] call CBA_Settings_fnc_init;
-/*[
-	"UVO_option_proximityCheck",
-	"CHECKBOX",
-	["Proximity Check","If enabled, sounds are only called if the unit is NOT alone. If you have a shitty PC, disabling this might help performance. (DEFAULT: TRUE)"],
-	"Unit Voice-Over Options",
-	true,
-	true
-] call CBA_Settings_fnc_init;*/
 [
 	"UVO_option_killConfirmChanceAI",
 	"SLIDER",
