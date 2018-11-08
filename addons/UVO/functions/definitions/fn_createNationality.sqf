@@ -13,17 +13,29 @@ Nothing
 Example (added via Extended_PreInit_EventHandlers in description.ext):
 
 class Extended_PreInit_EventHandlers {
-    class UVO_OPF_F {
+    class UVO_CSAT {
         init = "['OPF_F','ARAB','nationality_ARAB.sqf'] call UVO_fnc_createNationality;";
+    };
+    class UVO_NATO {
+        init = "['BLU_F','ARAB'] call UVO_fnc_createNationality;";
     };
 };
 ----------------------------------------------------------*/
-params [["_faction",""],["_nationality",""],["_definitionFile",""]];
+params [["_faction","",[""]],["_nationality","",[""]],["_definitionFile","",[""]]];
+
+if ((_faction isEqualTo "") || (_nationality isEqualTo "")) exitWith {
+	diag_log "UVO ERROR: UVO_fnc_createNationality: FACTION OR NATIONALITY SUFFIX NOT DEFINED";
+};
 
 if (isNil "UVO_customNationalities") then {
 	missionNamespace setVariable ["UVO_customNationalities",[]];
 };
 
-UVO_customNationalities pushBack [_faction,_nationality];
+if (!(_faction isEqualTo "") && !(_nationality isEqualTo "")) then {
+	UVO_customNationalities pushBack [_faction,_nationality];
+	
+	if !(_definitionFile isEqualTo "") then {
+		call compile preprocessFileLineNumbers _definitionFile;
+	};	
+};
 
-call compile preprocessFileLineNumbers _definitionFile;
