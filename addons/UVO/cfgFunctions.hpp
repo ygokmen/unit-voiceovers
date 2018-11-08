@@ -24,6 +24,7 @@ class cfgFunctions
 			class firedEH {};
 			class hitEH {};
 			class killedEH {};
+			class localEH {};
 			class reloadedEH {};
 		};
 		class init
