@@ -40,7 +40,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 /*[
 	"UVO_option_proximityCheck",
 	"CHECKBOX",
-	["Proximity Check","If enabled, sounds are only called if the unit is NOT alone. Disabling can increase performance, but units ALWAYS say stuff. (DEFAULT: TRUE)"],
+	["Proximity Check","If enabled, sounds are only called if the unit is NOT alone. If you have a shitty PC, disabling this might help performance. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
 	true

@@ -29,5 +29,5 @@ _actor setVariable ["UVO_unitRandomLip",true];
 		[_this,false] remoteExec ["setRandomLip",0];
 	},
 	_actor,
-	(1 + random 1)
+	(1 + random 0.5)
 ] call CBA_fnc_waitAndExecute;
