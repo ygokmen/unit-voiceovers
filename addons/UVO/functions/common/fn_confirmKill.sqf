@@ -3,8 +3,8 @@ Authors: Gokmen, Sceptre
 Makes a killer call a confirmation phrase
 
 Parameters:
-0: Killer unit <STRING>
-1: Victim unit <STRING>
+0: Killer unit <OBJECT>
+1: Victim unit <OBJECT>
 
 Return Value:
 Nothing

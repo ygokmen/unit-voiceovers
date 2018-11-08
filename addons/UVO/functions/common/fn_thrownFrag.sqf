@@ -3,7 +3,7 @@ Authors: Gokmen, Sceptre
 Plays grenade alert phrase to nearby units when grenade has landed.
 
 Parameters:
-0: Grenade <STRING>
+0: Grenade <OBJECT>
 1: Grenade thrower's side <STRING>
 
 Return Value:

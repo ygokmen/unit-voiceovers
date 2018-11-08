@@ -1,12 +1,6 @@
 /*--------------------------------------------------------
 Authors: Sceptre
 Generic preInit function
-
-Parameters:
-Nothing
-
-Return Value:
-Nothing
 ----------------------------------------------------------*/
 if (is3DEN) exitWith {};
 

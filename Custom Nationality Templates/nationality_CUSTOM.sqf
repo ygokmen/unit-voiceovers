@@ -3,6 +3,8 @@ Template nationality sound definition file.
 
 *Replace "_CUSTOM" with the nationality suffix of your choosing.
 
+*Array names MUST be in the same format to be called in UVO
+
 *Each array should be strings of the corresponding 
 sound class names you defined in cfgSounds.
 ----------------------------------------------------------*/
@@ -128,12 +130,12 @@ UVO_targDownLo_CUSTOM = [
 	"UVO_targDownLo03_CUSTOM"
 ];
 
-// other
+// cover
 
-UVO_other_CUSTOM = [
-	"UVO_other01_CUSTOM",
-	"UVO_other02_CUSTOM",
-	"UVO_other03_CUSTOM"
+UVO_cover_CUSTOM = [
+	"UVO_cover01_CUSTOM",
+	"UVO_cover02_CUSTOM",
+	"UVO_cover03_CUSTOM"
 ];
 
 // reload

@@ -1,12 +1,6 @@
 /*--------------------------------------------------------
 Authors: Gokmen, Sceptre
-CBA Settings definition function called preInit
-
-Parameters:
-Nothing
-
-Return Value:
-Nothing
+CBA Settings function called preInit
 ----------------------------------------------------------*/
 UVO_option_enableSentences = profileNamespace getVariable ["UVO_option_enableSentences", false];
 UVO_option_clientEnabled = profileNamespace getVariable ["UVO_option_clientEnabled", true];

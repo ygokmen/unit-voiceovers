@@ -3,7 +3,7 @@ Authors: Sceptre
 Re-initializes necessary stuff if unit's ownership is transferred.
 
 Parameters:
-0: The unit that had locality changed <STRING>
+0: The unit that had locality changed <OBJECT>
 
 Return Value:
 Nothing

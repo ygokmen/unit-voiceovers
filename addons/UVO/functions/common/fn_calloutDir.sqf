@@ -3,7 +3,7 @@ Authors: Gokmen, Sceptre
 Calls directional callout phrases
 
 Parameters:
-0: Unit that initiates callout <STRING>
+0: Unit that initiates callout <OBJECT>
 
 Return Value:
 Nothing

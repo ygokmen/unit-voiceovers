@@ -3,7 +3,7 @@ Authors: Gokmen, Sceptre
 Class based init event handler script
 
 Parameters:
-0: The spawned unit <STRING>
+0: The spawned unit <OBJECT>
 1: Default nationality applied to unit <STRING>
 
 Return Value:

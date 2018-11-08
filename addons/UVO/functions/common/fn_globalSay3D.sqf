@@ -3,7 +3,7 @@ Authors: Gokmen, Sceptre
 Globally executes say3D with lip movement functionality
 
 Parameters:
-0: Talking unit <STRING>
+0: Talking unit <OBJECT>
 1: Sound class <STRING>
 
 Return Value:
