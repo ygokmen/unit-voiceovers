@@ -1,15 +1,13 @@
 if(!hasInterface) exitWith {};
 
-#include "\a3\editor_f\Data\Scripts\dikCodes.h"
-
 [
 	"Unit Voice-Overs",
-	"UVO_calloutDir",
-	"Say directional callout",
+	"UVO_callout",
+	["Say directional enemy callout","(DEFAULT: T)"],
 	{
-		player call UVO_fnc_calloutDir;
+		[player] call UVO_fnc_calloutDir
 	},
 	"",
-	[DIK_T, [false, false, false]],
+	[0x14,[false,false,false]],
 	false
 ] call CBA_fnc_addKeybind;
