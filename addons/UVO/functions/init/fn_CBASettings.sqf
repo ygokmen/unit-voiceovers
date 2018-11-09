@@ -4,6 +4,7 @@ CBA Settings function called preInit
 ----------------------------------------------------------*/
 UVO_option_enableSentences = profileNamespace getVariable ["UVO_option_enableSentences", false];
 UVO_option_clientEnabled = profileNamespace getVariable ["UVO_option_clientEnabled", true];
+UVO_option_ambientEnabled = profileNamespace getVariable ["UVO_option_ambientEnabled", true];
 UVO_option_killConfirmChanceAI = profileNamespace getVariable ["UVO_option_killConfirmChanceAI", 1];
 UVO_option_killConfirmChancePlayer = profileNamespace getVariable ["UVO_option_killConfirmChancePlayer", 1];
 UVO_option_soundsDiameter = profileNamespace getVariable ["UVO_option_soundsDiameter", 300];
@@ -26,6 +27,14 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 	"UVO_option_clientEnabled",
 	"CHECKBOX",
 	["Enabled for players","Choose whether voice-overs are used with players. (DEFAULT: TRUE)"],
+	"Unit Voice-Over Options",
+	true,
+	true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_ambientEnabled",
+	"CHECKBOX",
+	["Ambient radio transmissions","Random radio transmissions. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
 	true
