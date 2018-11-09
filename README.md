@@ -1,6 +1,8 @@
 # Unit Voice-overs
 Dynamic, randomized 3D positional sound samples for units in Arma
 
+Current Version: N/A
+
 **Authors**
 
 654wak654, Gokmen 'the0utsider', Sceptre
