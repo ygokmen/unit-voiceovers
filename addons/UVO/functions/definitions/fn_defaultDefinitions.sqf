@@ -66,3 +66,34 @@ UVO_deathShout = [
 	"UVO\sounds\common\deathShout\deathShout51.wav",
 	"UVO\sounds\common\deathShout\deathShout52.wav"
 ];
+
+UVO_ambientRadio = [
+	"UVO_genericTransmission01", "UVO_genericTransmission02", 
+	"UVO_genericTransmission03", "UVO_genericTransmission04", 
+	"UVO_genericTransmission05", "UVO_genericTransmission06", 
+	"UVO_genericTransmission07", "UVO_genericTransmission08", 
+	"UVO_genericTransmission09", "UVO_genericTransmission10", 
+	"UVO_genericTransmission11", "UVO_genericTransmission12", 
+	"UVO_genericTransmission13", "UVO_genericTransmission14", 
+	"UVO_genericTransmission15", "UVO_genericTransmission16", 
+	"UVO_genericTransmission17", "UVO_genericTransmission18", 
+	"UVO_genericTransmission19", "UVO_genericTransmission20", 
+	"UVO_genericTransmission21", "UVO_genericTransmission22", 
+	"UVO_genericTransmission23", "UVO_genericTransmission24", 
+	"UVO_genericTransmission25", "UVO_genericTransmission26", 
+	"UVO_genericTransmission27", "UVO_genericTransmission28", 
+	"UVO_genericTransmission29", "UVO_genericTransmission30", 
+	"UVO_genericTransmission31", "UVO_genericTransmission32", 
+	"UVO_genericTransmission34", "UVO_genericTransmission35", 
+	"UVO_genericTransmission36", "UVO_genericTransmission37", 
+	"UVO_genericTransmission38", "UVO_genericTransmission39", 
+	"UVO_genericTransmission40", "UVO_genericTransmission41", 
+	"UVO_genericTransmission42", "UVO_genericTransmission43", 
+	"UVO_genericTransmission44", "UVO_genericTransmission45", 
+	"UVO_genericTransmission46", "UVO_genericTransmission47", 
+	"UVO_genericTransmission48", "UVO_genericTransmission49", 
+	"UVO_genericTransmission50", "UVO_genericTransmission51", 
+	"UVO_genericTransmission52", "UVO_genericTransmission53", 
+	"UVO_genericTransmission54", "UVO_genericTransmission55", 
+	"UVO_genericTransmission56", "UVO_genericTransmission57"
+];
