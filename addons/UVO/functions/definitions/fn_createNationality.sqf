@@ -27,18 +27,24 @@ if ((_faction isEqualTo "") || (_nationality isEqualTo "")) exitWith {
 	diag_log "UVO ERROR: UVO_fnc_createNationality: FACTION OR NATIONALITY SUFFIX NOT DEFINED";
 };
 
-if (isNil "UVO_customNationalities") then {
-	missionNamespace setVariable ["UVO_customNationalities",[]];
-};
+private _missingDef = false;
 
-if (!(_faction isEqualTo "") && !(_nationality isEqualTo "")) then {
-	UVO_customNationalities pushBack [_faction,_nationality];
-	
-	if !(_definitionFile isEqualTo "") then {
-		call compile preprocessFileLineNumbers _definitionFile;
-	} else {
-		if (isNil format["UVO_reloading_%1",_nationality]) then {
-			diag_log "UVO ERROR: UVO_fnc_createNationality: NEW NATIONALITY MISSING DEFINITIONS";
-		};
+if !(_definitionFile isEqualTo "") then {
+	call compile preprocessFileLineNumbers _definitionFile;
+} else {
+	if (isNil format["UVO_reloading_%1",_nationality]) then {
+		_missingDef = true;
 	};
 };
+
+if (_missingDef) exitWith {
+	diag_log format["UVO ERROR: UVO_fnc_createNationality: NATIONALITY '%1' MISSING DEFINITIONS",_nationality];
+};
+
+if (isNil "UVO_customNationalities") then {
+	missionNamespace setVariable ["UVO_customNationalities",[]];
+	diag_log "UVO INFO: UVO_fnc_createNationality: CUSTOM NATIONALITIES INITIALIZED";
+};
+
+UVO_customNationalities pushBack [_faction,_nationality];
+diag_log format["UVO INFO: UVO_fnc_createNationality: FACTION '%1' SET WITH NATIONALITY '%2'",_faction,_nationality];

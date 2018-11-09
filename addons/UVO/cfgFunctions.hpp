@@ -10,6 +10,7 @@ class cfgFunctions
 			class confirmKill {};
 			class disableUVO {};
 			class globalsay3D {};
+			class reinitialize {};
 			class thrownFrag {};
 		};
 		class definitions
