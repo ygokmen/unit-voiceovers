@@ -8,6 +8,7 @@ class cfgFunctions
 			file = "UVO\functions\common";
 			class calloutDir {};
 			class confirmKill {};
+			class disableUVO {};
 			class globalsay3D {};
 			class thrownFrag {};
 		};
