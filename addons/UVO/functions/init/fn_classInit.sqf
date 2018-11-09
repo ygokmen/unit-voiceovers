@@ -34,17 +34,7 @@ if (local _unit) then {
 	private _firedEHID = _unit addeventhandler ["Fired",{_this call UVO_fnc_firedEH}];
 	private _killedEHID = _unit addEventhandler ["Killed",{_this call UVO_fnc_killedEH}];
 	private _reloadedEHID = _unit addEventhandler ["Reloaded",{_this call UVO_fnc_reloadedEH}];
-	private _localEHID = _unit addEventhandler ["Local",{
-		params ["_unit","isLocal"];
-		(_unit getVariable "UVO_unitEHIDs") params ["_hitEHID","_firedEHID","_killedEHID","_reloadedEHID","_localEHID"];
+	private _localEHID = _unit addEventhandler ["Local",{_this call UVO_fnc_localEH}];
 
-		_unit removeEventHandler ["Hit",_hitEHID];
-		_unit removeEventHandler ["Fired",_firedEHID];
-		_unit removeEventHandler ["Killed",_killedEHID];
-		_unit removeEventHandler ["Reloaded",_reloadedEHID];
-		_unit removeEventHandler ["Local",_localEHID];
-		[_unit] remoteExec ["UVO_fnc_localEH",_unit];
-	}];
-
-	_unit setVariable ["UVO_unitEHIDs",[_hitEHID,_firedEHID,_killedEHID,_reloadedEHID,_localEHID],true];
+	_unit setVariable ["UVO_unitEHIDs",[_hitEHID,_firedEHID,_killedEHID,_reloadedEHID,_localEHID]];
 };

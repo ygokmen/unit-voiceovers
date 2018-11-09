@@ -34,13 +34,18 @@ if (currentweapon _unit != secondaryweapon _unit) then {
 		_nearFriendlies = _nearFriendlies - (_nearFriendlies select {isPlayer _x});
 	};
 
+	// Stop if there are no nearby friendlies to use
 	if (_nearFriendlies isEqualTo []) exitWith {};
+
+	// Select friendly unit that can say shit
+	private _friendlyUnit = selectRandom (_nearFriendlies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x});
 	
-	private _friendlyUnit = selectrandom _nearFriendlies;
+	// Stop if no units were available to use
+	if (isNil "_friendlyUnit") exitWith {};
 
 	// Get friendly unit's nationality
 	private _unitNationality = _friendlyUnit getVariable "UVO_unitNationality";
-	if (isNil "_unitNationality") exitWith {};
 	
+	// "I'll cover you!"
 	[_friendlyUnit,selectRandom (missionNamespace getVariable (format ["UVO_cover_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 };
