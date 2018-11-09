@@ -23,6 +23,7 @@ class CfgFunctions
 		class eventhandler
 		{
 			file = "UVO\functions\eventhandler";
+			class animChangedEH {};
 			class firedEH {};
 			class hitEH {};
 			class killedEH {};

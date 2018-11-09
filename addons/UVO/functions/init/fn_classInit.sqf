@@ -30,6 +30,7 @@ if (local _unit) then {
 	_unit setVariable ["UVO_unitRandomLip",false];
 
 	// Add necessary Event Handlers
+	private _animChangedEHID = _unit addEventHandler ["AnimChanged",{_this call UVO_fnc_animChangedEH}];
 	private _hitEHID = _unit addEventHandler ["Hit",{_this call UVO_fnc_hitEH}];
 	private _firedEHID = _unit addeventhandler ["Fired",{_this call UVO_fnc_firedEH}];
 	private _killedEHID = _unit addEventhandler ["Killed",{_this call UVO_fnc_killedEH}];
