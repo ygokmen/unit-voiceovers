@@ -15,28 +15,30 @@ Gokmen: I always imagined this to be something similar to st_hud but an aural on
 
 **Features**
 - Complete overhaul for default arma unit voice-overs
-- Opfor, independent, and blufor sides use their own different set of voices
+- Opfor, independent, and blufor sides use different sets of voices
 - Randomized samples on each action
 - Spot enemy / callout targets direction (Default key 'T')
 - ACE3 Medical compatibility
 - Independent from 'enablesentences false' setting
 - Almost 1000 different sound samples total
+- Supports transferring unit locality
 
 **Customization**
-- Enable/disable VOs for player/client
+- Enable/disable VOs for player
 - Sound sample pitch adjustment
 - Set volume level and travel distance to your liking
 - Ratio customization for certain sounds
 - Rebind/change 'Target Spot' key via CBA add-on controls
-- Custom faction sound declaration system
+- Custom faction/nationality sound declaration system
+- Single unit disable function
 
-**Dynamic voice-overs when**
+**Dynamic voice-overs when:**
 - Magazine goes empty/reloading
-- Killed enemy
+- Enemy visibly killed
 - Getting wounded
-- Hurting a friendly
-- Spotting enemy
-- Using throwable or plantable items
+- Friendly fire
+- Player spots enemy
+- Using throw-able or plant-able items
 - Low on ammo
 - A hostile frag is thrown nearby
 - A nearby friendly is killed
