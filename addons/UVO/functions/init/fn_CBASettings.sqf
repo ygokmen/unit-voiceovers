@@ -9,7 +9,7 @@ UVO_option_killConfirmChanceAI = profileNamespace getVariable ["UVO_option_killC
 UVO_option_killConfirmChancePlayer = profileNamespace getVariable ["UVO_option_killConfirmChancePlayer", 1];
 UVO_option_soundsDiameter = profileNamespace getVariable ["UVO_option_soundsDiameter", 300];
 UVO_option_soundsSamplePitch = profileNamespace getVariable ["UVO_option_soundsSamplePitch", 1];
-UVO_option_deathShoutsVolume = profileNamespace getVariable ["UVO_option_deathShoutsVolume", 1];
+UVO_option_deathShoutsVolume = profileNamespace getVariable ["UVO_option_deathShoutsVolume", 2.9];
 UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_deathShoutsDiameter", 300];
 
 [
