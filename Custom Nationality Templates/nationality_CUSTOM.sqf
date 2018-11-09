@@ -1,13 +1,8 @@
-/*--------------------------------------------------------
-Template nationality sound definition file.
+// Template nationality sound definition file.
+// *Replace "_CUSTOM" with the nationality suffix of your choosing.
+// *Array names MUST be in the same format to be called in UVO
+// *Each array should be strings of the corresponding sound class names you defined in cfgSounds.
 
-*Replace "_CUSTOM" with the nationality suffix of your choosing.
-
-*Array names MUST be in the same format to be called in UVO
-
-*Each array should be strings of the corresponding 
-sound class names you defined in cfgSounds.
-----------------------------------------------------------*/
 // callout
 
 UVO_calloutN_CUSTOM = [

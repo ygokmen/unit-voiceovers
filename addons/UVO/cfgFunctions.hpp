@@ -1,4 +1,4 @@
-class cfgFunctions
+class CfgFunctions
 {
 	class UVO
 	{

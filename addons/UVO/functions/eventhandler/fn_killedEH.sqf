@@ -73,10 +73,10 @@ if ((side group _unit) getFriend (side group _instigator) >= 0.6) exitWith {};
 if (!alive _instigator || isNil {_instigator getVariable "UVO_unitNationality"}) exitWith {};
 
 // Check if the killer can see victim fully
-private _visibility = [_instigator,"VIEW",_unit] checkVisibility [eyePos _instigator, AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine3"))];
+private _visibility = [_instigator,"VIEW",_unit] checkVisibility [eyePos _instigator,AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine3"))];
 
 if (_visibility isEqualTo 0) then {
-	_visibility = [_instigator, "VIEW",_unit] checkVisibility [eyePos _instigator, AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Head"))];
+	_visibility = [_instigator,"VIEW",_unit] checkVisibility [eyePos _instigator,AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Head"))];
 };
 
 // Stop if there's no clear line of sight

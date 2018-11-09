@@ -1,3 +1,3 @@
-#include "cfgFunctions.hpp"
-#include "cfgSounds.hpp"
-#include "cfgPatches.hpp"
+#include "CfgFunctions.hpp"
+#include "CfgSounds.hpp"
+#include "CfgPatches.hpp"
