@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
 Authors: Sceptre
-Used to define a new nationality used by the UVO framework.
+Defines a new user-created nationality that can be used by the UVO framework.
 
 Parameters:
 0: Nationality suffix name <STRING>
@@ -43,12 +43,11 @@ if (_missingDefinitions) exitWith {
 	diag_log format["UVO ERROR: UVO_fnc_createNationality: NATIONALITY '%1' MISSING DEFINITIONS",_nationality]
 };
 
-if (isNil "UVO_customNationalities") then {
-	missionNamespace setVariable ["UVO_customNationalities",[]];
-	missionNamespace setVariable ["UVO_customNationalitySuffixes",[]];
-	diag_log "UVO INFO: UVO_fnc_createNationality: CUSTOM NATIONALITIES INITIALIZED";
+// Define defaults in case users want to use default UVO definitions
+if (isNil "UVO_customNationalitySuffixes") then {
+	missionNamespace setVariable ["UVO_customNationalitySuffixes",["EAST","GUER","WEST"]];
 };
 
 UVO_customNationalitySuffixes pushBack _nationality;
 diag_log format["UVO INFO: UVO_fnc_createNationality: NATIONALITY '%1' CREATED",_nationality];
-diag_log format["UVO INFO: Available custom nationality suffixes: %1",UVO_customNationalitySuffixes];
+diag_log format["UVO INFO: Available custom nationality suffixes: %1",(str UVO_customNationalitySuffixes)];

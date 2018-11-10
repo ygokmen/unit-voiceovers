@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
 Authors: Sceptre
-Sets a given faction to a user-created nationality.
+Sets a given faction to a nationality.
 
 Parameters:
 0: Faction class <STRING>
@@ -13,6 +13,15 @@ params [["_faction","",[""]],["_nationality","",[""]],["_definitionFile","",[""]
 
 if ((_faction isEqualTo "") || (_nationality isEqualTo "")) exitWith {
 	diag_log "UVO ERROR: UVO_fnc_setNationality: FACTION OR NATIONALITY SUFFIX MISSING";
+};
+
+if (isNil "UVO_customNationalities") then {
+	missionNamespace setVariable ["UVO_customNationalities",[]];
+};
+
+// Define defaults in case users want to use default UVO definitions
+if (isNil "UVO_customNationalitySuffixes") then {
+	missionNamespace setVariable ["UVO_customNationalitySuffixes",["EAST","GUER","WEST"]];
 };
 
 if (_nationality in UVO_customNationalitySuffixes) then {
