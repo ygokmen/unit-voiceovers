@@ -64,7 +64,7 @@ if (UVO_ACE3Loaded) then {
 
 // Chance for kill confirm
 private _isPlayer = isPlayer _instigator;
-if ((!_isPlayer && UVO_option_killConfirmChanceAI <= random 1) || (_isPlayer && UVO_option_killConfirmChancePlayer <= random 1)) exitWith {};
+if (isNil "_instigator" || (!_isPlayer && UVO_option_killConfirmChanceAI <= random 1) || (_isPlayer && UVO_option_killConfirmChancePlayer <= random 1)) exitWith {};
 
 // Stop if the kill was by friendly fire
 if ((side group _unit) getFriend (side group _instigator) >= 0.6) exitWith {};
