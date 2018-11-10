@@ -16,22 +16,20 @@ private _targetIsFriendly = (side group _unit) getFriend (side group cursorTarge
 private _isWeaponLauncher = currentWeapon _unit == secondaryWeapon _unit;
 if (!alive cursorTarget || _targetIsFriendly || !("ItemCompass" in (assignedItems _unit)) || _isWeaponLauncher) exitWith {false};
 
-private "_calloutDir";
 private _azimuth = getDir _unit;
-
-switch (true) do {
-	case (_azimuth < 17) : {_calloutDir = "N"};
-	case (_azimuth < 73) : {_calloutDir = "NE"};
-	case (_azimuth < 107) : {_calloutDir = "E"};
-	case (_azimuth < 163) : {_calloutDir = "SE"};
-	case (_azimuth < 197) : {_calloutDir = "S"};
-	case (_azimuth < 253) : {_calloutDir = "SW"};
-	case (_azimuth < 287) : {_calloutDir = "W"};
-	case (_azimuth < 343) : {_calloutDir = "NW"};
-	default {_calloutDir = "N"};
+private _calloutDir = switch (true) do {
+	case (_azimuth < 17) : {0};
+	case (_azimuth < 73) : {1};
+	case (_azimuth < 107) : {2};
+	case (_azimuth < 163) : {3};
+	case (_azimuth < 197) : {4};
+	case (_azimuth < 253) : {5};
+	case (_azimuth < 287) : {6};
+	case (_azimuth < 343) : {7};
+	default {0};
 };
 
 private _unitNationality = _unit getVariable "UVO_unitNationality";
-[_unit,selectRandom (missionNamespace getVariable (format["UVO_callout%1_%2",_calloutDir,_unitNationality]))] call UVO_fnc_globalSay3d;
+[_unit,selectRandom ((missionNamespace getVariable (format["UVO_callouts_%1",_unitNationality])) # _calloutDir)] call UVO_fnc_globalSay3d;
 
 true

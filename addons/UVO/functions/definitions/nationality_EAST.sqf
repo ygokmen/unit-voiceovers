@@ -2,54 +2,49 @@
 Authors: Gokmen, Sceptre
 Default "EAST" nationality sound definitions
 ----------------------------------------------------------*/
-// callout
+// callouts [N,NE,E,SE,S,SW,W,NW]
 
-UVO_calloutN_EAST = [
-	"UVO_calloutN01_EAST",
-	"UVO_calloutN02_EAST",
-	"UVO_calloutN03_EAST"
-];
-
-UVO_calloutNE_EAST = [
-	"UVO_calloutNE01_EAST",
-	"UVO_calloutNE02_EAST",
-	"UVO_calloutNE03_EAST"
-];
-
-UVO_calloutE_EAST = [
-	"UVO_calloutE01_EAST",
-	"UVO_calloutE02_EAST",
-	"UVO_calloutE03_EAST"
-];
-
-UVO_calloutSE_EAST = [
-	"UVO_calloutSE01_EAST",
-	"UVO_calloutSE02_EAST",
-	"UVO_calloutSE03_EAST"
-];
-
-UVO_calloutS_EAST = [
-	"UVO_calloutS01_EAST",
-	"UVO_calloutS02_EAST",
-	"UVO_calloutS03_EAST"
-];
-
-UVO_calloutSW_EAST = [
-	"UVO_calloutSW01_EAST",
-	"UVO_calloutSW02_EAST",
-	"UVO_calloutSW03_EAST"
-];
-
-UVO_calloutW_EAST = [
-	"UVO_calloutW01_EAST",
-	"UVO_calloutW02_EAST",
-	"UVO_calloutW03_EAST"
-];
-
-UVO_calloutNW_EAST = [
-	"UVO_calloutNW01_EAST",
-	"UVO_calloutNW02_EAST",
-	"UVO_calloutNW03_EAST"
+UVO_callouts_EAST = [
+	[
+		"UVO_calloutN01_EAST",
+		"UVO_calloutN02_EAST",
+		"UVO_calloutN03_EAST"
+	],
+	[
+		"UVO_calloutNE01_EAST",
+		"UVO_calloutNE02_EAST",
+		"UVO_calloutNE03_EAST"
+	],
+	[
+		"UVO_calloutE01_EAST",
+		"UVO_calloutE02_EAST",
+		"UVO_calloutE03_EAST"
+	],
+	[
+		"UVO_calloutSE01_EAST",
+		"UVO_calloutSE02_EAST",
+		"UVO_calloutSE03_EAST"
+	],
+	[
+		"UVO_calloutS01_EAST",
+		"UVO_calloutS02_EAST",
+		"UVO_calloutS03_EAST"
+	],
+	[
+		"UVO_calloutSW01_EAST",
+		"UVO_calloutSW02_EAST",
+		"UVO_calloutSW03_EAST"
+	],
+	[
+		"UVO_calloutW01_EAST",
+		"UVO_calloutW02_EAST",
+		"UVO_calloutW03_EAST"
+	],
+	[
+		"UVO_calloutNW01_EAST",
+		"UVO_calloutNW02_EAST",
+		"UVO_calloutNW03_EAST"
+	]
 ];
 
 // fired
