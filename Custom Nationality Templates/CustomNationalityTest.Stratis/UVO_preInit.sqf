@@ -4,5 +4,5 @@
 // Set NATO to CUSTOM nationality
 ['BLU_F','CUSTOM'] call UVO_fnc_setNationality;
 
-// Set AAF to CUSTOM nationality
-['IND_F','CUSTOM'] call UVO_fnc_setNationality;
+// Set AAF to default WEST nationality
+['IND_F','WEST'] call UVO_fnc_setNationality;
