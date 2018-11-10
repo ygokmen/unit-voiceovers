@@ -2,6 +2,9 @@
 Authors: Gokmen, Sceptre
 Plays random radio transmissions
 
+Parameters:
+See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#AnimChanged)
+
 Return Value: Nothing
 ----------------------------------------------------------*/
 params ["_unit", "_anim"];

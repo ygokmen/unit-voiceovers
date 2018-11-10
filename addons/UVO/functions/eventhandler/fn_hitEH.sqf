@@ -3,7 +3,7 @@ Authors: Gokmen, Sceptre
 Hit event handler script. Calls friendly fire and wounded phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Hit) for more info
+See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Hit)
 
 Return Value:
 Nothing

@@ -3,7 +3,7 @@ Authors: Gokmen, Sceptre
 Reloaded event handler script. Calls ammo low and cover phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Reloaded) for more info
+See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Reloaded)
 
 Return Value:
 Nothing

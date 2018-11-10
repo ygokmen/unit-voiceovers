@@ -3,7 +3,7 @@ Authors: Gokmen, Sceptre
 Killed event handler script. Calls death shouts, 'allyDown', and kill confirm phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Killed) for more info
+See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Killed)
 
 Return Value:
 Nothing

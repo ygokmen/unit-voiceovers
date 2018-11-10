@@ -3,7 +3,7 @@ Authors: Gokmen, Sceptre
 Fired event handler script. Calls grenade, charge and reloading phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Fired) for more info
+See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Fired)
 
 Return Value:
 Nothing
