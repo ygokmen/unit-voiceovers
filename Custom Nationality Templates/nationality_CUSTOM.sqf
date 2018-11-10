@@ -1,56 +1,53 @@
 // Template nationality sound definition file.
-// *Replace "_CUSTOM" with the nationality suffix of your choosing.
-// *Array names MUST be in the same format to be called in UVO
-// *Each array should be strings of the corresponding sound class names you defined in cfgSounds.
+// * Replace "_CUSTOM" with the nationality suffix of your choosing.
+// * Array names MUST be in the same format to be called in UVO
+// * Each array should be strings of the corresponding sound class names you defined in cfgSounds.
+// * If you wish to inherit the default definition for a specific sound set, use the following example:
+//	UVO_calloutN_CUSTOM = UVO_calloutN_WEST;
 
-// callout
+// callouts [N,NE,E,SE,S,SW,W,NW]
 
-UVO_calloutN_CUSTOM = [
-	"UVO_calloutN01_CUSTOM",
-	"UVO_calloutN02_CUSTOM",
-	"UVO_calloutN03_CUSTOM"
-];
-
-UVO_calloutNE_CUSTOM = [
-	"UVO_calloutNE01_CUSTOM",
-	"UVO_calloutNE02_CUSTOM",
-	"UVO_calloutNE03_CUSTOM"
-];
-
-UVO_calloutE_CUSTOM = [
-	"UVO_calloutE01_CUSTOM",
-	"UVO_calloutE02_CUSTOM",
-	"UVO_calloutE03_CUSTOM"
-];
-
-UVO_calloutSE_CUSTOM = [
-	"UVO_calloutSE01_CUSTOM",
-	"UVO_calloutSE02_CUSTOM",
-	"UVO_calloutSE03_CUSTOM"
-];
-
-UVO_calloutS_CUSTOM = [
-	"UVO_calloutS01_CUSTOM",
-	"UVO_calloutS02_CUSTOM",
-	"UVO_calloutS03_CUSTOM"
-];
-
-UVO_calloutSW_CUSTOM = [
-	"UVO_calloutSW01_CUSTOM",
-	"UVO_calloutSW02_CUSTOM",
-	"UVO_calloutSW03_CUSTOM"
-];
-
-UVO_calloutW_CUSTOM = [
-	"UVO_calloutW01_CUSTOM",
-	"UVO_calloutW02_CUSTOM",
-	"UVO_calloutW03_CUSTOM"
-];
-
-UVO_calloutNW_CUSTOM = [
-	"UVO_calloutNW01_CUSTOM",
-	"UVO_calloutNW02_CUSTOM",
-	"UVO_calloutNW03_CUSTOM"
+UVO_callouts_CUSTOM = [
+	[
+		"UVO_calloutN01_CUSTOM",
+		"UVO_calloutN02_CUSTOM",
+		"UVO_calloutN03_CUSTOM"
+	],
+	[
+		"UVO_calloutNE01_CUSTOM",
+		"UVO_calloutNE02_CUSTOM",
+		"UVO_calloutNE03_CUSTOM"
+	],
+	[
+		"UVO_calloutE01_CUSTOM",
+		"UVO_calloutE02_CUSTOM",
+		"UVO_calloutE03_CUSTOM"
+	],
+	[
+		"UVO_calloutSE01_CUSTOM",
+		"UVO_calloutSE02_CUSTOM",
+		"UVO_calloutSE03_CUSTOM"
+	],
+	[
+		"UVO_calloutS01_CUSTOM",
+		"UVO_calloutS02_CUSTOM",
+		"UVO_calloutS03_CUSTOM"
+	],
+	[
+		"UVO_calloutSW01_CUSTOM",
+		"UVO_calloutSW02_CUSTOM",
+		"UVO_calloutSW03_CUSTOM"
+	],
+	[
+		"UVO_calloutW01_CUSTOM",
+		"UVO_calloutW02_CUSTOM",
+		"UVO_calloutW03_CUSTOM"
+	],
+	[
+		"UVO_calloutNW01_CUSTOM",
+		"UVO_calloutNW02_CUSTOM",
+		"UVO_calloutNW03_CUSTOM"
+	]
 ];
 
 // fired

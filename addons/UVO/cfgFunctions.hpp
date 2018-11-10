@@ -18,6 +18,7 @@ class CfgFunctions
 			file = "UVO\functions\definitions";
 			class createNationality {};
 			class defaultDefinitions {preInit = 1;};
+			class setNationality {};
 			class throwableDefinitions {preInit = 1;};
 		};
 		class eventhandler

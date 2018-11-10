@@ -16,7 +16,7 @@ if (local _unit) then {
 	// Set unit nationality
 	if (!isNil "UVO_customNationalities") then {
 		private _customNationality = UVO_customNationalities select {(_x # 0) == faction _unit};
-		
+
 		if !(_customNationality isEqualTo []) then {
 			_unit setVariable ["UVO_unitNationality",(_customNationality # 0 # 1),true];
 		} else {
