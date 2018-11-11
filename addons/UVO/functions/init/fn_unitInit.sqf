@@ -11,7 +11,7 @@ Return Value:
 Nothing
 
 Examples:
-[_myUnit] remoteExec ["UVO_fnc_unitInit",_myUnit];
+[_myUnit,"WEST"] remoteExec ["UVO_fnc_unitInit",_myUnit];
 ----------------------------------------------------------*/
 params ["_unit","_defaultNationality"];
 
