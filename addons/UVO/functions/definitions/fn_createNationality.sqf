@@ -8,6 +8,9 @@ Parameters:
 
 Return Value:
 Nothing
+
+Example:
+['CUSTOM','nationality_CUSTOM.sqf'] call UVO_fnc_createNationality;
 ----------------------------------------------------------*/
 params [["_nationality","",[""]],["_definitionFile","",[""]]];
 

@@ -8,6 +8,9 @@ Parameters:
 
 Return Value:
 Nothing
+
+Example:
+['BLU_F','CUSTOM'] call UVO_fnc_setNationality;
 ----------------------------------------------------------*/
 params [["_faction","",[""]],["_nationality","",[""]],["_definitionFile","",[""]]];
 
