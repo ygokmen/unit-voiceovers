@@ -4,7 +4,7 @@ class UVO_ambientGenericStateMachine
 	skipNull = 1;
 	
 	class Standby {
-		onStateEntered = "_this setVariable ['UVO_ambInterval',(diag_tickTime + (15 + random 40 + random 50))];";
+		onStateEntered = "_this setVariable ['UVO_ambInterval',(diag_tickTime + (30 + random 40 + random 50))];";
 
 		class intervalComplete {
 			targetState = "Manifest";
