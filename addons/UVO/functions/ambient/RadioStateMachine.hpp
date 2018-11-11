@@ -4,7 +4,7 @@ class UVO_ambientRadioStateMachine
 	skipNull = 1;
 	
 	class Standby {
-		onStateEntered = "_this setVariable ['UVO_ambInterval',(diag_tickTime + (random 40 + random 40))];";
+		onStateEntered = "_this setVariable ['UVO_ambInterval',(diag_tickTime + (15 + random 30 + random 30))];";
 
 		class intervalComplete {
 			targetState = "Manifest";
@@ -13,7 +13,7 @@ class UVO_ambientRadioStateMachine
 	};
 
 	class Manifest {
-		onStateEntered = "_this remoteExec ['UVO_fnc_ambientRadio',_this]";
+		onStateEntered = "_this remoteExec ['UVO_fnc_ambientRadio',groupOwner _this]";
 		
 		class Standby {
 			targetState = "Standby";

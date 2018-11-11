@@ -11,7 +11,7 @@ Nothing
 params ["_group"];
 
 // Chance to do anything
-if (random 1 > 0.8) exitWith {};
+if (random 1 > UVO_option_ambientRadioChance) exitWith {};
 
 // 0 : All AI + Players
 // 1 : Only AI

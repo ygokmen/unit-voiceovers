@@ -44,7 +44,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_ambientRadioEnabled",
 	"CHECKBOX",
-	["Ambient radio transmissions","When enabled, random radio transmissions will be played per group. (DEFAULT: TRUE)"],
+	["Ambient radio transmissions","When enabled, random radio transmissions can be heard on units. Runs on a per group basis. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
 	true
@@ -52,9 +52,17 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_ambientRadioSetting",
 	"LIST",
-	["Ambient radio setting","Choose who radio transmissions will be able play on in the group. (DEFAULT: TRUE)"],
+	["Ambient radio group setting","Choose who radio transmissions will be able play on. (DEFAULT: 'Only group leaders')"],
 	"Unit Voice-Over Options",
 	[[0,1,2,3],["All AI + Players","Only AI","Only group leaders","Only AI group leaders"],2],
+	true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_ambientRadioChance",
+	"SLIDER",
+	["Ambient radio chance","Chance a radio transmission will play after a random interval has elapsed. (DEFAULT: 0.5)"],
+	"Unit Voice-Over Options",
+	[0.1,1,0.5,2],
 	true
 ] call CBA_Settings_fnc_init;
 [
