@@ -1,7 +1,7 @@
 # Unit Voice-overs
 Dynamic, randomized 3D positional sound samples for units in Arma
 
-Current Version: N/A
+Current Version: 1.4 "Petrichor"
 
 **Authors**
 
@@ -24,6 +24,7 @@ Gokmen: I always imagined this to be something similar to st_hud but an aural on
 - Supports transferring unit locality
 
 **Customization**
+- CBA Settings support
 - Enable/disable VOs for player
 - Sound sample pitch adjustment
 - Set volume level and travel distance to your liking
