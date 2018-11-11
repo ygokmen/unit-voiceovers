@@ -23,6 +23,6 @@ if (local _unit) then {
 	
 	if (random 1 > _chance) exitWith {};
 
-	// Do it
-	[_unit,selectRandom (missionNamespace getVariable "UVO_ambientGeneric")] call UVO_fnc_globalSay3D;
+	// 'Say' the sound on all clients
+	[_unit,[selectRandom (missionNamespace getVariable "UVO_ambientGeneric"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 };

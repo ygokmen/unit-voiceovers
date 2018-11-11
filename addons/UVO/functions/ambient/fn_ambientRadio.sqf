@@ -36,7 +36,7 @@ switch (UVO_option_ambientRadioSetting) do {
 		if (isNil "_radioOperator") exitWith {};
 
 		// ROGERDODGERLEMONSQUASHER
-		[_radioOperator,selectRandom (missionNamespace getVariable "UVO_ambientRadio")] call UVO_fnc_globalSay3D;
+		[_radioOperator,[selectRandom (missionNamespace getVariable "UVO_ambientRadio"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 	};
 	case 1 : {
 		private _units = units _group;
@@ -48,7 +48,7 @@ switch (UVO_option_ambientRadioSetting) do {
 		if (isNil "_radioOperator") exitWith {};
 
 		// ROGERDODGERLEMONSQUASHER
-		[_radioOperator,selectRandom (missionNamespace getVariable "UVO_ambientRadio")] call UVO_fnc_globalSay3D;
+		[_radioOperator,[selectRandom (missionNamespace getVariable "UVO_ambientRadio"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 	};
 	case 2 : {
 		private _leader = leader _group;
@@ -59,7 +59,7 @@ switch (UVO_option_ambientRadioSetting) do {
 		// Stop if unit isn't usable
 		if (isNil {_leader getVariable "UVO_unitNationality"} || !alive _leader) exitWith {};
 
-		[_leader,selectRandom (missionNamespace getVariable "UVO_ambientRadio")] call UVO_fnc_globalSay3D;
+		[_leader,[selectRandom (missionNamespace getVariable "UVO_ambientRadio"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 	};
 	case 3 : {
 		private _leader = leader _group;
@@ -70,7 +70,7 @@ switch (UVO_option_ambientRadioSetting) do {
 		// Stop if unit isn't usable
 		if (isNil {_leader getVariable "UVO_unitNationality"} || !alive _leader) exitWith {};
 
-		[_leader,selectRandom (missionNamespace getVariable "UVO_ambientRadio")] call UVO_fnc_globalSay3D;
+		[_leader,[selectRandom (missionNamespace getVariable "UVO_ambientRadio"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 	};
 	default {};
 };
