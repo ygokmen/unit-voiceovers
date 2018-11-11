@@ -2,73 +2,73 @@
 	class UVO_ambientGeneric01
 	{
 		name = "UVO_ambientGeneric01";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic01.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic01.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric02
 	{
 		name = "UVO_ambientGeneric02";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic02.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic02.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric03
 	{
 		name = "UVO_ambientGeneric03";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic03.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic03.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric04
 	{
 		name = "UVO_ambientGeneric04";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic04.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic04.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric05
 	{
 		name = "UVO_ambientGeneric05";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic05.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic05.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric06
 	{
 		name = "UVO_ambientGeneric06";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic06.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic06.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric07
 	{
 		name = "UVO_ambientGeneric07";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic07.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic07.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric08
 	{
 		name = "UVO_ambientGeneric08";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic08.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic08.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric09
 	{
 		name = "UVO_ambientGeneric09";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic09.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic09.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric10
 	{
 		name = "UVO_ambientGeneric10";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic10.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic10.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric11
 	{
 		name = "UVO_ambientGeneric11";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic11.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic11.ogg",1,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric12
 	{
 		name = "UVO_ambientGeneric12";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic12.wav",1,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic12.ogg",1,1,100};
 		titles[] = {};
 	};
 // Ambient Radio
