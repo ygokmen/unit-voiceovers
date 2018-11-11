@@ -1,0 +1,7 @@
+class Extended_PreInit_EventHandlers {
+    class UVO_customNationalityPreInit {
+        init = "call compile preprocessFileLineNumbers 'UVO_preInit.sqf'";
+    };
+};
+
+#include "CfgSounds.hpp"

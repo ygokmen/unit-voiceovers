@@ -1,43 +1,57 @@
-# Goko Unit Voiceovers
-Dynamic, randomized 3D positional sound samples for units
+# Unit Voice-overs
+Dynamic, randomized 3D positional sound samples for units in Arma
 
-Authors: 654wak654, Gokmen 'the0utsider'
+Current Version: N/A
 
-Using NWI's iconic game 'insurgency' sound samples, this add-on created to improve overall experience and bring dynamism to expressionless Arma3 models. I always imagined this to be something similar to st_hud but an aural one instead of visual. Each faction has their own sounds, with samples played on certain actions to increase situational awareness, to simulate better close quarters combat.
+**Authors**
 
-**Features:**
+654wak654, Gokmen 'the0utsider', Sceptre
+
+**Description**
+
+Using NWI's 'Insurgency' sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
+
+Gokmen: I always imagined this to be something similar to st_hud but an aural one instead of visual. Each faction has their own sounds, with samples played on certain actions to increase situational awareness and to simulate better close quarters combat.
+
+**Features**
 - Complete overhaul for default arma unit voice-overs
-- Opfor, independent, blufor sides use their own different set of voices
-- Randomized samples on each action for diversity
+- Opfor, independent, and blufor sides use different sets of voices
+- Randomized samples on each action
 - Spot enemy / callout targets direction (Default key 'T')
-- ACE3 compatibility: supports ace grenade types
-- works independent from 'enablesentences false' setting; using its own EH framework
-- almost 1000 different sound samples total
-- 'spot enemy' feature:This is similar to tactical ping, only an aural one to quickly alert your group. It uses 'knowsAbout' command; according to weather, time of day and distance of enemy soldier, player will call out enemies direction. If 'knowsabout' value return zero, function won't work.
+- ACE3 Medical compatibility
+- Independent from 'enablesentences false' setting
+- Almost 1000 different sound samples total
+- Supports transferring unit locality
 
-**Customization:**
-* CBA is required to enable add-on options
-- Enable/disable VOs for player/client
+**Customization**
+- Enable/disable VOs for player
 - Sound sample pitch adjustment
 - Set volume level and travel distance to your liking
 - Ratio customization for certain sounds
 - Rebind/change 'Target Spot' key via CBA add-on controls
+- Custom faction/nationality sound declaration system
+- Single unit disable function
 
 **Dynamic voice-overs when:**
-- clip goes empty/reloading,
-- shooting enemy,
-- being shot at,
-- getting wounded,
-- hurting a friendly,
-- spotting enemy,
-- using throwable items,
-- low on ammo,
-- hostile throw grenade at you,
-- a teammate nearby is killed,
-- planting charges.
+- Magazine goes empty/reloading
+- Enemy visibly killed
+- Getting wounded
+- Friendly fire
+- Player spots enemy
+- Using throw-able or plant-able items
+- Low on ammo
+- A hostile frag is thrown nearby
+- A nearby friendly is killed
 
-**Installation:**
- Subscribe via steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1248372833
+# Installation
+
+**Requirements**
+
+CBA_A3: https://steamcommunity.com/sharedfiles/filedetails/?id=450814997
+
+**Download**
+
+Subscribe via Steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1248372833
 
 ---
 
