@@ -4,8 +4,8 @@ Dynamic, randomized 3D positional sound fx for units in Arma
 Current Version: 1.4 "Petrichor"
 
 **Authors**
-654wak654
-Gokmen
+654wak654, 
+Gokmen, 
 Sceptre
 
 **Description**
