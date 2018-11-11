@@ -1,0 +1,50 @@
+[B]Authors:[/B] [url=https://steamcommunity.com/id/654wak654]654wak654[/url], Gokmen 'the0utsider', Sceptre
+[url=https://github.com/the0utsider/unit-voiceovers/releases]Github[/url]
+[url=https://forums.bohemia.net/forums/topic/215191-unit-voiceovers/]Bohemia Interactive forums[/url]
+
+[B]MP compatible:[/B] Yes [i]*Has to be loaded on both server and client[/i]
+[B]Requirements:[/B] CBA
+[B]Version:[/B] v1.4 [i] "Petrichor" [/i]
+[B]Signed:[/B] Yes
+[url=https://github.com/the0utsider/unit-voiceovers/blob/develop/changelog_full.txt]Changelog[/url]
+
+[h1]Description:[/h1]
+Dynamic, randomized 3D positional sound samples for units in Arma
+
+Using NWI's [url=https://newworldinteractive.com/#insurgency]"Insurgency"[/url] sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
+
+Gokmen: I always imagined this to be something similar to st_hud but an aural one instead of visual. Each faction has their own sounds, with samples played on certain actions to increase situational awareness and to simulate better close quarters combat.
+
+[h1]Features[/h1]
+[list]
+	[*] Complete overhaul for default arma unit voice-overs
+	[*] Opfor, independent, and blufor sides use different sets of voices
+	[*] Randomized samples on each action
+	[*] Spot enemy / callout targets direction (Default key 'T')
+	[*] ACE3 Medical compatibility
+	[*] Independent from 'enablesentences false' setting
+	[*] Almost 1000 different sound samples total
+	[*] Supports transferring unit locality
+[/list]
+  [i]  Unit has to have friendlies nearby (40 meters) in order to emit feedback voices. 
+Solo/alone unit won't emit vo's.  [/i]
+
+For more information please see our [urlhttps://github.com/the0utsider/unit-voiceovers/blob/master/README.md[/url]
+
+[B]Included Files:[/B] 
+UVO_1.4.bikey
+UVO.pbo
+UVO.pbo.UVO.bisign
+changelog_full.txt
+readme.txt
+
+[h1]Thanks:[/h1] when the idea to create this mod came to me, [url=https://github.com/654wak654]654wak654[/url]wrote first original EH code then showed me how to do it, this mod exists thanks to him.
+[url=https://steamcommunity.com/id/gebbet]gebbet[/url] & [url=https://steamcommunity.com/id/kappaccino1]SergentKappa[/url] for being testers against all odds like low bandwdth, lack of dedicated server, masked IP and other 3rd world problems.
+[url=https://store.steampowered.com/search/?developer=New%20World%20Interactive]N.W.I.[/url] for creating Insurgency, mikee and others for voice-overs
+[url=https://steamcommunity.com/id/SceptreOfficial]Sceptre[/url] for further testing and feedback.
+[b]Bohemia Interactive for creating Arma.[/b]
+
+[B]License:[/B] Covered under [B]Arma Public License Share Alike[/B]
+ [url=https://www.bohemia.net/community/licenses/arma-public-license-share-alike]APL-SA[/url]
+ Feel free to use and modify this code, on the proviso that you post back changes and improvements so that everyone can benefit from them, and acknowledge the original authors in any derivative works.
+[b] Reuploading this is not allowed (especially to armaholic) [/b]
