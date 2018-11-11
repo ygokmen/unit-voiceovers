@@ -12,6 +12,46 @@ Nothing
 #include <nationality_GUER.sqf>
 #include <nationality_WEST.sqf>
 
+UVO_ambientGeneric = [
+	"UVO_ambientGeneric01","UVO_ambientGeneric02",
+	"UVO_ambientGeneric03","UVO_ambientGeneric04",
+	"UVO_ambientGeneric05","UVO_ambientGeneric06",
+	"UVO_ambientGeneric07","UVO_ambientGeneric08",
+	"UVO_ambientGeneric09","UVO_ambientGeneric10",
+	"UVO_ambientGeneric11","UVO_ambientGeneric12"
+];
+
+UVO_ambientRadio = [
+	"UVO_ambientRadio01","UVO_ambientRadio02",
+	"UVO_ambientRadio03","UVO_ambientRadio04",
+	"UVO_ambientRadio05","UVO_ambientRadio06",
+	"UVO_ambientRadio07","UVO_ambientRadio08",
+	"UVO_ambientRadio09","UVO_ambientRadio10",
+	"UVO_ambientRadio11","UVO_ambientRadio12",
+	"UVO_ambientRadio13","UVO_ambientRadio14",
+	"UVO_ambientRadio15","UVO_ambientRadio16",
+	"UVO_ambientRadio17","UVO_ambientRadio18",
+	"UVO_ambientRadio19","UVO_ambientRadio20",
+	"UVO_ambientRadio21","UVO_ambientRadio22",
+	"UVO_ambientRadio23","UVO_ambientRadio24",
+	"UVO_ambientRadio25","UVO_ambientRadio26",
+	"UVO_ambientRadio27","UVO_ambientRadio28",
+	"UVO_ambientRadio29","UVO_ambientRadio30",
+	"UVO_ambientRadio31","UVO_ambientRadio32",
+	"UVO_ambientRadio34","UVO_ambientRadio35",
+	"UVO_ambientRadio36","UVO_ambientRadio37",
+	"UVO_ambientRadio38","UVO_ambientRadio39",
+	"UVO_ambientRadio40","UVO_ambientRadio41",
+	"UVO_ambientRadio42","UVO_ambientRadio43",
+	"UVO_ambientRadio44","UVO_ambientRadio45",
+	"UVO_ambientRadio46","UVO_ambientRadio47",
+	"UVO_ambientRadio48","UVO_ambientRadio49",
+	"UVO_ambientRadio50","UVO_ambientRadio51",
+	"UVO_ambientRadio52","UVO_ambientRadio53",
+	"UVO_ambientRadio54","UVO_ambientRadio55",
+	"UVO_ambientRadio56","UVO_ambientRadio57"
+];
+
 UVO_deathShout = [
 	"UVO\sounds\common\deathShout\deathShout01.wav",
 	"UVO\sounds\common\deathShout\deathShout02.wav",
@@ -65,35 +105,4 @@ UVO_deathShout = [
 	"UVO\sounds\common\deathShout\deathShout50.wav",
 	"UVO\sounds\common\deathShout\deathShout51.wav",
 	"UVO\sounds\common\deathShout\deathShout52.wav"
-];
-
-UVO_ambientRadio = [
-	"UVO_genericTransmission01","UVO_genericTransmission02",
-	"UVO_genericTransmission03","UVO_genericTransmission04",
-	"UVO_genericTransmission05","UVO_genericTransmission06",
-	"UVO_genericTransmission07","UVO_genericTransmission08",
-	"UVO_genericTransmission09","UVO_genericTransmission10",
-	"UVO_genericTransmission11","UVO_genericTransmission12",
-	"UVO_genericTransmission13","UVO_genericTransmission14",
-	"UVO_genericTransmission15","UVO_genericTransmission16",
-	"UVO_genericTransmission17","UVO_genericTransmission18",
-	"UVO_genericTransmission19","UVO_genericTransmission20",
-	"UVO_genericTransmission21","UVO_genericTransmission22",
-	"UVO_genericTransmission23","UVO_genericTransmission24",
-	"UVO_genericTransmission25","UVO_genericTransmission26",
-	"UVO_genericTransmission27","UVO_genericTransmission28",
-	"UVO_genericTransmission29","UVO_genericTransmission30",
-	"UVO_genericTransmission31","UVO_genericTransmission32",
-	"UVO_genericTransmission34","UVO_genericTransmission35",
-	"UVO_genericTransmission36","UVO_genericTransmission37",
-	"UVO_genericTransmission38","UVO_genericTransmission39",
-	"UVO_genericTransmission40","UVO_genericTransmission41",
-	"UVO_genericTransmission42","UVO_genericTransmission43",
-	"UVO_genericTransmission44","UVO_genericTransmission45",
-	"UVO_genericTransmission46","UVO_genericTransmission47",
-	"UVO_genericTransmission48","UVO_genericTransmission49",
-	"UVO_genericTransmission50","UVO_genericTransmission51",
-	"UVO_genericTransmission52","UVO_genericTransmission53",
-	"UVO_genericTransmission54","UVO_genericTransmission55",
-	"UVO_genericTransmission56","UVO_genericTransmission57"
 ];

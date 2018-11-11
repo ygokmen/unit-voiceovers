@@ -1,4 +1,420 @@
-//Death shouts
+// Ambient Generic
+	class UVO_ambientGeneric01
+	{
+		name = "UVO_ambientGeneric01";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic01.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric02
+	{
+		name = "UVO_ambientGeneric02";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic02.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric03
+	{
+		name = "UVO_ambientGeneric03";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic03.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric04
+	{
+		name = "UVO_ambientGeneric04";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic04.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric05
+	{
+		name = "UVO_ambientGeneric05";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic05.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric06
+	{
+		name = "UVO_ambientGeneric06";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic06.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric07
+	{
+		name = "UVO_ambientGeneric07";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic07.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric08
+	{
+		name = "UVO_ambientGeneric08";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic08.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric09
+	{
+		name = "UVO_ambientGeneric09";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic09.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric10
+	{
+		name = "UVO_ambientGeneric10";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic10.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric11
+	{
+		name = "UVO_ambientGeneric11";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic11.wav",1,1,100};
+		titles[] = {};
+	};
+	class UVO_ambientGeneric12
+	{
+		name = "UVO_ambientGeneric12";
+		sound[] = {"UVO\sounds\common\ambient\generic\generic12.wav",1,1,100};
+		titles[] = {};
+	};
+// Ambient Radio
+	class UVO_ambientRadio01
+	{
+		name = "UVO_ambientRadio01";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio01.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio02
+	{
+		name = "UVO_ambientRadio02";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio02.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio03
+	{
+		name = "UVO_ambientRadio03";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio03.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio04
+	{
+		name = "UVO_ambientRadio04";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio04.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio05
+	{
+		name = "UVO_ambientRadio05";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio05.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio06
+	{
+		name = "UVO_ambientRadio06";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio06.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio07
+	{
+		name = "UVO_ambientRadio07";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio07.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio08
+	{
+		name = "UVO_ambientRadio08";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio08.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio09
+	{
+		name = "UVO_ambientRadio09";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio09.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio10
+	{
+		name = "UVO_ambientRadio10";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio10.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio11
+	{
+		name = "UVO_ambientRadio11";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio11.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio12
+	{
+		name = "UVO_ambientRadio12";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio12.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio13
+	{
+		name = "UVO_ambientRadio13";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio13.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio14
+	{
+		name = "UVO_ambientRadio14";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio14.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio15
+	{
+		name = "UVO_ambientRadio15";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio15.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio16
+	{
+		name = "UVO_ambientRadio16";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio16.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio17
+	{
+		name = "UVO_ambientRadio17";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio17.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio18
+	{
+		name = "UVO_ambientRadio18";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio18.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio19
+	{
+		name = "UVO_ambientRadio19";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio19.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio20
+	{
+		name = "UVO_ambientRadio20";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio20.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio21
+	{
+		name = "UVO_ambientRadio21";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio21.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio22
+	{
+		name = "UVO_ambientRadio22";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio22.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio23
+	{
+		name = "UVO_ambientRadio23";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio23.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio24
+	{
+		name = "UVO_ambientRadio24";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio24.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio25
+	{
+		name = "UVO_ambientRadio25";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio25.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio26
+	{
+		name = "UVO_ambientRadio26";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio26.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio27
+	{
+		name = "UVO_ambientRadio27";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio27.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio28
+	{
+		name = "UVO_ambientRadio28";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio28.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio29
+	{
+		name = "UVO_ambientRadio29";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio29.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio30
+	{
+		name = "UVO_ambientRadio30";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio30.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio31
+	{
+		name = "UVO_ambientRadio31";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio31.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio32
+	{
+		name = "UVO_ambientRadio32";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio32.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio33
+	{
+		name = "UVO_ambientRadio33";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio33.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio34
+	{
+		name = "UVO_ambientRadio34";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio34.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio35
+	{
+		name = "UVO_ambientRadio35";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio35.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio36
+	{
+		name = "UVO_ambientRadio36";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio36.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio37
+	{
+		name = "UVO_ambientRadio37";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio37.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio38
+	{
+		name = "UVO_ambientRadio38";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio38.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio39
+	{
+		name = "UVO_ambientRadio39";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio39.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio40
+	{
+		name = "UVO_ambientRadio40";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio40.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio41
+	{
+		name = "UVO_ambientRadio41";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio41.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio42
+	{
+		name = "UVO_ambientRadio42";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio42.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio43
+	{
+		name = "UVO_ambientRadio43";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio43.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio44
+	{
+		name = "UVO_ambientRadio44";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio44.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio45
+	{
+		name = "UVO_ambientRadio45";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio45.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio46
+	{
+		name = "UVO_ambientRadio46";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio46.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio47
+	{
+		name = "UVO_ambientRadio47";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio47.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio48
+	{
+		name = "UVO_ambientRadio48";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio48.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio49
+	{
+		name = "UVO_ambientRadio49";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio49.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio50
+	{
+		name = "UVO_ambientRadio50";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio50.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio51
+	{
+		name = "UVO_ambientRadio51";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio51.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio52
+	{
+		name = "UVO_ambientRadio52";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio52.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio53
+	{
+		name = "UVO_ambientRadio53";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio53.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio54
+	{
+		name = "UVO_ambientRadio54";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio54.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio55
+	{
+		name = "UVO_ambientRadio55";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio55.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio56
+	{
+		name = "UVO_ambientRadio56";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio56.ogg",0.7,1,60};
+		titles[] = {};
+	};
+	class UVO_ambientRadio57
+	{
+		name = "UVO_ambientRadio57";
+		sound[] = {"UVO\sounds\common\ambient\radio\radio57.ogg",0.7,1,60};
+		titles[] = {};
+	};
+// Death shouts
 	class UVO_deathShout01
 	{
 		name = "UVO_deathShout01";
@@ -309,348 +725,5 @@
 	{
 		name = "UVO_deathShout52";
 		sound[] = {"UVO\sounds\common\deathShout\deathShout52.wav",2.9,1,100};
-		titles[] = {};
-	};
-// Radio Transmissions
-	class UVO_genericTransmission01
-	{
-		name = "UVO_genericTransmission01";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_01.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission02
-	{
-		name = "UVO_genericTransmission02";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_02.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission03
-	{
-		name = "UVO_genericTransmission03";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_03.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission04
-	{
-		name = "UVO_genericTransmission04";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_04.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission05
-	{
-		name = "UVO_genericTransmission05";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_05.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission06
-	{
-		name = "UVO_genericTransmission06";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_06.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission07
-	{
-		name = "UVO_genericTransmission07";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_07.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission08
-	{
-		name = "UVO_genericTransmission08";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_08.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission09
-	{
-		name = "UVO_genericTransmission09";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_09.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission10
-	{
-		name = "UVO_genericTransmission10";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_10.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission11
-	{
-		name = "UVO_genericTransmission11";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_11.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission12
-	{
-		name = "UVO_genericTransmission12";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_12.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission13
-	{
-		name = "UVO_genericTransmission13";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_13.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission14
-	{
-		name = "UVO_genericTransmission14";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_14.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission15
-	{
-		name = "UVO_genericTransmission15";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_15.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission16
-	{
-		name = "UVO_genericTransmission16";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_16.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission17
-	{
-		name = "UVO_genericTransmission17";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_17.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission18
-	{
-		name = "UVO_genericTransmission18";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_18.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission19
-	{
-		name = "UVO_genericTransmission19";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_19.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission20
-	{
-		name = "UVO_genericTransmission20";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_20.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission21
-	{
-		name = "UVO_genericTransmission21";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_21.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission22
-	{
-		name = "UVO_genericTransmission22";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_22.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission23
-	{
-		name = "UVO_genericTransmission23";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_23.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission24
-	{
-		name = "UVO_genericTransmission24";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_24.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission25
-	{
-		name = "UVO_genericTransmission25";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_25.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission26
-	{
-		name = "UVO_genericTransmission26";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_26.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission27
-	{
-		name = "UVO_genericTransmission27";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_27.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission28
-	{
-		name = "UVO_genericTransmission28";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_28.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission29
-	{
-		name = "UVO_genericTransmission29";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_29.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission30
-	{
-		name = "UVO_genericTransmission30";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_30.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission31
-	{
-		name = "UVO_genericTransmission31";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_31.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission32
-	{
-		name = "UVO_genericTransmission32";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_32.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission33
-	{
-		name = "UVO_genericTransmission33";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_33.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission34
-	{
-		name = "UVO_genericTransmission34";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_34.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission35
-	{
-		name = "UVO_genericTransmission35";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_35.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission36
-	{
-		name = "UVO_genericTransmission36";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_36.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission37
-	{
-		name = "UVO_genericTransmission37";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_37.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission38
-	{
-		name = "UVO_genericTransmission38";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_38.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission39
-	{
-		name = "UVO_genericTransmission39";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_39.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission40
-	{
-		name = "UVO_genericTransmission40";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_40.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission41
-	{
-		name = "UVO_genericTransmission41";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_41.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission42
-	{
-		name = "UVO_genericTransmission42";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_42.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission43
-	{
-		name = "UVO_genericTransmission43";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_43.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission44
-	{
-		name = "UVO_genericTransmission44";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_44.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission45
-	{
-		name = "UVO_genericTransmission45";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_45.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission46
-	{
-		name = "UVO_genericTransmission46";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_46.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission47
-	{
-		name = "UVO_genericTransmission47";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_47.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission48
-	{
-		name = "UVO_genericTransmission48";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_48.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission49
-	{
-		name = "UVO_genericTransmission49";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_49.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission50
-	{
-		name = "UVO_genericTransmission50";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_50.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission51
-	{
-		name = "UVO_genericTransmission51";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_51.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission52
-	{
-		name = "UVO_genericTransmission52";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_52.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission53
-	{
-		name = "UVO_genericTransmission53";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_53.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission54
-	{
-		name = "UVO_genericTransmission54";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_54.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission55
-	{
-		name = "UVO_genericTransmission55";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_55.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission56
-	{
-		name = "UVO_genericTransmission56";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_56.ogg",0.7,1,60};
-		titles[] = {};
-	};
-	class UVO_genericTransmission57
-	{
-		name = "UVO_genericTransmission57";
-		sound[] = {"UVO\sounds\common\genericTransmission\mil_radio_57.ogg",0.7,1,60};
 		titles[] = {};
 	};

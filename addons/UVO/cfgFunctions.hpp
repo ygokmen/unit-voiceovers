@@ -3,6 +3,13 @@ class CfgFunctions
 	class UVO
 	{
 		tag = "UVO";
+		class ambient
+		{
+			file = "UVO\functions\ambient";
+			class ambientGeneric {};
+			class ambientRadio {};
+			class intervalCheck {};
+		};
 		class common
 		{
 			file = "UVO\functions\common";
@@ -24,7 +31,6 @@ class CfgFunctions
 		class eventhandler
 		{
 			file = "UVO\functions\eventhandler";
-			class animChangedEH {};
 			class firedEH {};
 			class hitEH {};
 			class killedEH {};
@@ -35,9 +41,10 @@ class CfgFunctions
 		{
 			file = "UVO\functions\init";
 			class CBASettings {preInit = 1;};
-			class classInit {};
+			class postInit {postInit = 1;};
 			class preInit {preInit = 1;};
 			class keybinds {postInit = 1;};
+			class unitInit {};
 		};
 	};
 };

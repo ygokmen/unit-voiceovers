@@ -6,7 +6,7 @@ Parameters:
 0: Unit that initiates callout <OBJECT>
 
 Return Value:
-Nothing
+<BOOL> True if callout was made, false otherwise
 ----------------------------------------------------------*/
 params ["_unit"];
 
