@@ -21,6 +21,12 @@ UVO_ambientGeneric = [
 	"UVO_ambientGeneric11","UVO_ambientGeneric12"
 ];
 
+UVO_ambientGenericWhistle = [
+	"UVO_ambientGenericWhistle01",
+	"UVO_ambientGenericWhistle02",
+	"UVO_ambientGenericWhistle03"
+];
+
 UVO_ambientRadio = [
 	"UVO_ambientRadio01","UVO_ambientRadio02",
 	"UVO_ambientRadio03","UVO_ambientRadio04",

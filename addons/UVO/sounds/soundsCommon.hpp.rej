@@ -1,0 +1,24 @@
+diff a/addons/UVO/sounds/soundsCommon.hpp b/addons/UVO/sounds/soundsCommon.hpp	(rejected hunks)
+@@ -2,19 +2,19 @@
+ 	class UVO_ambientGeneric01
+ 	{
+ 		name = "UVO_ambientGeneric01";
+-		sound[] = {"UVO\sounds\common\ambient\generic\generic01.ogg",1,1,100};
++		sound[] = {"UVO\sounds\common\ambient\generic\generic01.ogg",0.6,1,100};
+ 		titles[] = {};
+ 	};
+ 	class UVO_ambientGeneric02
+ 	{
+ 		name = "UVO_ambientGeneric02";
+-		sound[] = {"UVO\sounds\common\ambient\generic\generic02.ogg",1,1,100};
++		sound[] = {"UVO\sounds\common\ambient\generic\generic02.ogg",0.6,1,100};
+ 		titles[] = {};
+ 	};
+ 	class UVO_ambientGeneric03
+ 	{
+ 		name = "UVO_ambientGeneric03";
+-		sound[] = {"UVO\sounds\common\ambient\generic\generic03.ogg",1,1,100};
++		sound[] = {"UVO\sounds\common\ambient\generic\generic03.ogg",0.7,1,100};
+ 		titles[] = {};
+ 	};
+ 	class UVO_ambientGeneric04
