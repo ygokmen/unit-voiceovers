@@ -2,13 +2,13 @@
 	class UVO_ambientGeneric01
 	{
 		name = "UVO_ambientGeneric01";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic01.ogg",0.6,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic01.ogg",0.7,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric02
 	{
 		name = "UVO_ambientGeneric02";
-		sound[] = {"UVO\sounds\common\ambient\generic\generic02.ogg",0.6,1,100};
+		sound[] = {"UVO\sounds\common\ambient\generic\generic02.ogg",0.7,1,100};
 		titles[] = {};
 	};
 	class UVO_ambientGeneric03
