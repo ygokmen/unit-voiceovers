@@ -15,35 +15,39 @@ Dynamic, randomized 3D positional sound fx for units in Arma.
 Using NWI's 'Insurgency' sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
 
 **Features**
-- Complete overhaul for default arma unit voice-overs
+- Complete overhaul for default Arma unit voice-overs
 - Opfor, independent, and blufor sides use different sets of voices
-- Randomized samples on each action
+- Randomized samples for each action
 - Spot enemy / callout targets direction (Default key 'T')
 - ACE3 Medical compatibility
-- Independent from 'enablesentences false' setting
+- Custom Nationality system
 - Almost 1000 different sound samples total
 - Supports transferring unit locality
+- Works independent from 'enableSentences false' setting
 
 **Customization**
 - CBA Settings support
-- Enable/disable VOs for player
-- Sound sample pitch adjustment
-- Set volume level and travel distance to your liking
+- Toggle voice-overs for players
+- Toggle ambient sounds
+- Ambient radio sound settings
 - Ratio customization for certain sounds
-- Rebind/change 'Target Spot' key via CBA add-on controls
+- Set volume level and travel distance to your liking
+- Sound sample pitch adjustment
 - Custom faction/nationality sound declaration system
-- Single unit disable function
+- Rebind/change 'Callout' key via CBA add-on controls
+- Unit disable/init function
 
-**Dynamic voice-overs when:**
+**Dynamic voice-over events:**
 - Magazine goes empty/reloading
 - Enemy visibly killed
 - Getting wounded
 - Friendly fire
-- Player spots enemy
+- Player spots enemy (via 'Callout' key)
 - Using throw-able or plant-able items
 - Low on ammo
 - A hostile frag is thrown nearby
 - A nearby friendly is killed
+- Ambient sounds at random intervals
 
 # Installation
 
