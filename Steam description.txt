@@ -1,4 +1,7 @@
+[B]Current Version:[/B] 1.4 "Petrichor"
+
 [B]Authors:[/B] 654wak654, Gokmen 'the0utsider', Sceptre
+
 Website: [url=https://github.com/the0utsider/unit-voiceovers/releases]Github[/url]
 [url=https://forums.bohemia.net/forums/topic/215191-unit-voiceovers/]Bohemia Interactive forums[/url]
 

@@ -1,14 +1,16 @@
 # Unit Voice-overs
-Dynamic, randomized 3D positional sound fx for units in Arma
 
-Current Version: 1.4 "Petrichor"
+**Current Version:** 1.4 "Petrichor"
 
 **Authors**
+
 654wak654, 
 Gokmen, 
 Sceptre
 
 **Description**
+
+Dynamic, randomized 3D positional sound fx for units in Arma.
 
 Using NWI's 'Insurgency' sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
 
