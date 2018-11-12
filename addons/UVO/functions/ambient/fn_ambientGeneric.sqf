@@ -13,7 +13,7 @@ params ["_unit"];
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 
 if (local _unit) then {
-	// Chance for cough or sniff depends on damage
+	// Chance for cough scales with damage
 	private _damage = getDammage _unit;
 	private _chance = switch (true) do {
 		case (_damage >= 0.6) : {0.4};
@@ -21,13 +21,13 @@ if (local _unit) then {
 		default {0.1};
 	};
 	
-	if (random 1 > _chance) exitWith {};
-
-	// 'Say' the sound on all clients
-	[_unit,[selectRandom (missionNamespace getVariable "UVO_ambientGeneric"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
+	// Cough
+	if (random 1 > _chance) exitWith {
+		[_unit,[selectRandom (missionNamespace getVariable "UVO_ambientGeneric"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
+	};
 
 	// Chance for a whistle
-	if (random 1 < 0.08) then {
+	if (random 1 < 0.1) exitWith {
 		private _state = behaviour _unit;
 		if (_state == "CARELESS" || _state == "SAFE") then {
 			[_unit,[selectRandom (missionNamespace getVariable "UVO_ambientGenericWhistle"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
