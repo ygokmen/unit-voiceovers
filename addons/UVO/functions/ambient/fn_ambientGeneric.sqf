@@ -22,7 +22,7 @@ if (local _unit) then {
 	};
 	
 	// Cough
-	if (random 1 > _chance) exitWith {
+	if (random 1 < _chance) exitWith {
 		[_unit,[selectRandom (missionNamespace getVariable "UVO_ambientGeneric"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 	};
 
