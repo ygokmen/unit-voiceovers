@@ -1,7 +1,7 @@
 v1.4 - 11/11/2018 - "Petrichor":
  - Spotlight: Complete overhaul and consolidation of all functions
  - Added: Custom Nationality system (create and use your own sound sets with the UVO framework)
- - Added: Initial implementation of an ambient sound system (coughs, sniffs, and radio chatter)
+ - Added: Initial implementation of an ambient sound system (coughs, sniffs, and radio chatter play at random intervals)
  - Added: Functions to disable and re-enable unit voice-overs
  - Improved: Object locality change detection (unit ownership can now be transferred between machines)
  - Improved: General performance
