@@ -1,0 +1,30 @@
+class Header
+{
+	gameType=Sandbox;
+	minPlayers=1;
+	maxPlayers=2;
+};
+
+author="Sceptre";
+onLoadName="CustomNationalityTest";
+
+saving=0;
+disabledAI=1;
+joinUnassigned=0;
+corpseManagerMode = 3;
+corpseLimit = 25;
+corpseRemovalMinTime = 180;
+corpseRemovalMaxTime = 600;
+minPlayerDistance = 20;
+respawn = 3;
+respawnDelay = 5;
+respawnVehicleDelay = 20;
+respawnDialog = 0;
+respawnTemplates[] = {"MenuPosition"};
+respawnOnStart = -1;
+
+class Extended_PreInit_EventHandlers {
+    class UVO_CUSTOM {
+        init = "call compile preProcessFileLineNumbers 'myCustomNationality.sqf'";
+    };
+};
