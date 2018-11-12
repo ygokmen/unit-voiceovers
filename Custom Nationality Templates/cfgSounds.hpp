@@ -1,6 +1,5 @@
 // Template cfgSounds config
-// *Sound class names must match to strings defined in definitions file
-// *Sound location/path can be of your choosing
+// * Sound class names must match to strings in your definitions
 
 class CfgSounds
 {

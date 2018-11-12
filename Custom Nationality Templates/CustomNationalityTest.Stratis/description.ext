@@ -1,3 +1,10 @@
+class Header
+{
+	gameType=Sandbox;
+	minPlayers=1;
+	maxPlayers=2;
+};
+
 author="Sceptre";
 onLoadName="CustomNationalityTest";
 
@@ -17,7 +24,7 @@ respawnTemplates[] = {"MenuPosition"};
 respawnOnStart = -1;
 
 class Extended_PreInit_EventHandlers {
-    class UVO_customNationalityPreInit {
-        init = "call compile preprocessFileLineNumbers 'UVO_preInit.sqf'";
+    class UVO_CUSTOM {
+        init = "call compile preProcessFileLineNumbers 'myCustomNationality.sqf'";
     };
 };

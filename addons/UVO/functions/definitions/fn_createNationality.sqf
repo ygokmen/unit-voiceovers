@@ -1,56 +1,84 @@
 /*--------------------------------------------------------
 Authors: Sceptre
-Defines a new user-created nationality that can be used by the UVO framework.
+Creates a custom nationality via script and sets assigned factions to the nationality
 
 Parameters:
-0: Nationality suffix name <STRING>
+0: Nationality name/suffix <STRING>
 1: Path to sound set definition file <STRING>
+2: Definitions array <ARRAY>
 
 Return Value:
 Nothing
 
 Example:
-['CUSTOM','nationality_CUSTOM.sqf'] call UVO_fnc_createNationality;
+See Template
 ----------------------------------------------------------*/
-params [["_nationality","",[""]],["_definitionFile","",[""]]];
+params [["_nationality","",[""]],["_factions","",[[]]],["_definitions","",[[]]]];
 
-if ((_nationality isEqualTo "") || _definitionFile isEqualTo "") exitWith {
-	diag_log "UVO ERROR: UVO_fnc_createNationality: NATIONALITY SUFFIX OR DEFINITION FILE MISSING";
+if ((_nationality isEqualTo "") || (_factions isEqualTo []) || (_definitionFile isEqualTo [])) exitWith {
+	diag_log "UVO ERROR: UVO_fnc_createNationality: MISSING PARAMETERS";
 };
 
-// Define sound sets
-call compile preprocessFileLineNumbers _definitionFile;
+_definitions params [
+	"_calloutsN",
+	"_calloutsNE",
+	"_calloutsE",
+	"_calloutsSE",
+	"_calloutsS",
+	"_calloutsSW",
+	"_calloutsW",
+	"_calloutsNW",
+	"_explosive",
+	"_flash",
+	"_frag",
+	"_incendiary",
+	"_smoke",
+	"_spotNade",
+	"_friendlyFire",
+	"_wounded",
+	"_allyDown",
+	"_targDownHi",
+	"_targDownLo",
+	"_cover",
+	"_ammoLow",
+	"_reloading"
+];
 
-// Check for undefined sound sets
-private _missingDefinitions = switch (true) do {
-	case (isNil format["UVO_callouts_%1",_nationality]) : {true};
-	case (isNil format["UVO_explosive_%1",_nationality]) : {true};
-	case (isNil format["UVO_flash_%1",_nationality]) : {true};
-	case (isNil format["UVO_frag_%1",_nationality]) : {true};
-	case (isNil format["UVO_incendiary_%1",_nationality]) : {true};
-	case (isNil format["UVO_smoke_%1",_nationality]) : {true};
-	case (isNil format["UVO_spotNade_%1",_nationality]) : {true};
-	case (isNil format["UVO_friendlyFire_%1",_nationality]) : {true};
-	case (isNil format["UVO_wounded_%1",_nationality]) : {true};
-	case (isNil format["UVO_allyDown_%1",_nationality]) : {true};
-	case (isNil format["UVO_targDownHi_%1",_nationality]) : {true};
-	case (isNil format["UVO_targDownLo_%1",_nationality]) : {true};
-	case (isNil format["UVO_cover_%1",_nationality]) : {true};
-	case (isNil format["UVO_ammoLow_%1",_nationality]) : {true};
-	case (isNil format["UVO_reloading_%1",_nationality]) : {true};
-	default {false};
+missionNamespace setVariable [format["UVO_callouts_%1",_nationality],
+	[
+	    _calloutsN,
+	    _calloutsNE,
+	    _calloutsE,
+	    _calloutsSE,
+	    _calloutsS,
+	    _calloutsSW,
+	    _calloutsW,
+	    _calloutsNW
+	]
+];
+missionNamespace setVariable [format["UVO_explosive_%1",_nationality],_explosive];
+missionNamespace setVariable [format["UVO_flash_%1",_nationality],_flash];
+missionNamespace setVariable [format["UVO_frag_%1",_nationality],_frag];
+missionNamespace setVariable [format["UVO_incendiary_%1",_nationality],_incendiary];
+missionNamespace setVariable [format["UVO_smoke_%1",_nationality],_smoke];
+missionNamespace setVariable [format["UVO_spotNade_%1",_nationality],_spotNade];
+missionNamespace setVariable [format["UVO_friendlyFire_%1",_nationality],_friendlyFire];
+missionNamespace setVariable [format["UVO_wounded_%1",_nationality],_wounded];
+missionNamespace setVariable [format["UVO_allyDown_%1",_nationality],_allyDown];
+missionNamespace setVariable [format["UVO_targDownHi_%1",_nationality],_targDownHi];
+missionNamespace setVariable [format["UVO_targDownLo_%1",_nationality],_targDownLo];
+missionNamespace setVariable [format["UVO_cover_%1",_nationality],_cover];
+missionNamespace setVariable [format["UVO_ammoLow_%1",_nationality],_ammoLow];
+missionNamespace setVariable [format["UVO_reloading_%1",_nationality],_reloading];
+
+diag_log format["UVO INFO: NATIONALITY %1 CREATED",_nationality];
+
+if (isNil "UVO_customNationalities") then {
+	missionNamespace setVariable ["UVO_customNationalities",[]];
 };
 
-// Cancel if missing required definitions
-if (_missingDefinitions) exitWith {
-	diag_log format["UVO ERROR: UVO_fnc_createNationality: NATIONALITY '%1' MISSING DEFINITIONS",_nationality]
-};
-
-// Define defaults in case users want to use default UVO definitions
-if (isNil "UVO_customNationalitySuffixes") then {
-	missionNamespace setVariable ["UVO_customNationalitySuffixes",["EAST","GUER","WEST"]];
-};
-
-UVO_customNationalitySuffixes pushBack _nationality;
-diag_log format["UVO INFO: UVO_fnc_createNationality: NATIONALITY '%1' CREATED",_nationality];
-diag_log format["UVO INFO: Available custom nationality suffixes: %1",(str UVO_customNationalitySuffixes)];
+{
+	UVO_customNationalities pushBack [_x,_nationality];
+	diag_log format["UVO INFO: FACTION %1 SET WITH NATIONALITY %2",_x,_nationality];
+	false
+} count _factions;
