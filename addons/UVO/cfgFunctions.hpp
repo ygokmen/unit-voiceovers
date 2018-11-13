@@ -26,6 +26,7 @@ class CfgFunctions
 			class createNationality {};
 			class createNationalityFromConfig {};
 			class defaultDefinitions {preInit = 1;};
+			class setNationality {};
 			class throwableDefinitions {preInit = 1;};
 		};
 		class eventhandler
