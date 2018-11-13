@@ -27,7 +27,7 @@ if (local _unit) then {
 	};
 
 	// Chance for a whistle
-	if (random 1 < 0.1) exitWith {
+	if (random 1 < 0.08) exitWith {
 		private _state = behaviour _unit;
 		if (_state == "CARELESS" || _state == "SAFE") then {
 			[_unit,[selectRandom (missionNamespace getVariable "UVO_ambientGenericWhistle"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];

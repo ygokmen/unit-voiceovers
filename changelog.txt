@@ -1,3 +1,15 @@
+v1.45 - 11/13/2018 - "Exiguous":
+ - Added: 'UVO_fnc_setNationality' function to set array of factions to already existing nationality
+ - Fixed: CBA Settings now appear in the eden editor.
+ - Fixed: Wrong parameter description
+ - Fixed: Check for ACE_isUnconscious
+ - Fixed: Possible error in Killed EH
+ - Fixed: Incorrect default params in UVO_fnc_createNationality
+ - Improved: Callout functionality
+ - Improved: Ambient sounds now use CBA_missionTime instead of diag_tickTime.
+ - Changed: Death shouts are now a 90% chance
+ - Changed: Some minor volume adjustments and general tweaks
+
 v1.4 - 11/11/2018 - "Petrichor":
  - Spotlight: Complete overhaul and consolidation of all functions
  - Added: Custom Nationality system (create and use your own sound sets with the UVO framework)

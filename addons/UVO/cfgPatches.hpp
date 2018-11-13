@@ -2,6 +2,9 @@ class CfgPatches
 {
 	class UVO
 	{
+		name = "Unit Voice-overs";
+		version="1.45";
+		author="UVO Team";
 		units[] = {};
 		weapons[]={};
 		requiredVersion = 0.1;
@@ -12,7 +15,5 @@ class CfgPatches
 			"cba_statemachine",
 			"cba_xeh"
 		};
-		version="1.4";
-		author="Gokmen, 654wak654, Sceptre";
 	};
 };
