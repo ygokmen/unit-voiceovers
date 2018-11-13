@@ -14,8 +14,8 @@ params ["_unit","_killer","_instigator","_useEffects"];
 if (!isNil {_unit getVariable "UVO_unitIsDead"}) exitWith {};
 _unit setVariable ["UVO_unitIsDead", true];
 
-// Play death shout effect - check if underwater - 90% chance voice will be used
-if !(eyePos _unit # 2 < 0 && random 1 < 0.9) then {
+// Play death shout effect - check if underwater
+if !(eyePos _unit # 2 < 0) then {
 	playSound3D [selectRandom (missionNamespace getVariable "UVO_deathShout"), _unit, false, getPosASL _unit, UVO_option_deathShoutsVolume, 1, UVO_option_deathShoutsDiameter];
 };
 
