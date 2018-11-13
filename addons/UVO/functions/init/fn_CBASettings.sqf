@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
 Authors: Gokmen, Sceptre
-CBA Settings function called preInit
+CBA Settings function called via XEH preInit
 ----------------------------------------------------------*/
 UVO_option_enableSentences = profileNamespace getVariable ["UVO_option_enableSentences",false];
 UVO_option_clientEnabled = profileNamespace getVariable ["UVO_option_clientEnabled",true];

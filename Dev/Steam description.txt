@@ -1,16 +1,16 @@
-[B]Current Version:[/B] 1.4 "Petrichor"
+[B]Current Version:[/B] 1.45 "Exiguous"
 
 [B]Authors:[/B] 654wak654, Gokmen 'the0utsider', Sceptre
 
 Website: https://github.com/the0utsider/unit-voiceovers
 Wiki: https://github.com/the0utsider/unit-voiceovers/wiki
 [url=https://forums.bohemia.net/forums/topic/215191-unit-voiceovers/]Bohemia Interactive forums[/url]
+[url=https://github.com/the0utsider/unit-voiceovers/blob/master/changelog.txt]Changelog[/url]
 
 [B]MP compatible:[/B] Yes [i]*Has to be loaded on both server and client[/i]
 [B]Requirements:[/B] CBA
 [B]Version:[/B] v1.4 [i] "Petrichor" [/i]
 [B]Signed:[/B] Yes
-[url=https://github.com/the0utsider/unit-voiceovers/blob/master/changelog.txt]Changelog[/url]
 
 [h1]Description[/h1]
 Dynamic, randomized 3D positional sound samples for units in Arma.
@@ -34,15 +34,6 @@ Using NWI's [url=https://newworldinteractive.com/#insurgency]Insurgency[/url] so
 For more information on features and customizability, [url=https://github.com/the0utsider/unit-voiceovers/blob/master/README.md]please see our github readme[/url]
 
 For defining custom nationalities and other functions, [url=https://github.com/the0utsider/unit-voiceovers/wiki]please see our github wiki[/url]
-
-[B]Included Files:[/B] 
-UVO.pbo
-UVO.pbo.UVO-Team.bisign
-UVO-Team.bikey
-changelog_full.txt
-readme.txt
-Custom Nationality Templates
-
 
 [h1]Thanks[/h1] 
 When the idea to create this mod came to me, [url=https://github.com/654wak654]654wak654[/url] wrote original EH code then showed me how to do it, this mod exists thanks to him.

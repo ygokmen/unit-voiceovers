@@ -9,25 +9,25 @@ Parameters:
 Return Value:
 Nothing
 ----------------------------------------------------------*/
-params ["_actor", "_sound"];
+params ["_unit","_sound"];
 
-if (!alive _actor) exitWith {};
+// Don't let dead or unconscious units talk
+if (!alive _unit || (_unit getVariable ["ACE_isUnconscious",false])) exitWith {};
 
 // Don't let the unit talk over himself
-if ((_actor getVariable "UVO_unitRandomLip") || inputAction "pushToTalk" > 0) exitWith {};
+if ((_unit getVariable "UVO_unitTalking") || inputAction "pushToTalk" > 0) exitWith {};
+_unit setVariable ["UVO_unitTalking",true];
 
 // 'Say' the sound on all clients
-[_actor,[_sound,UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
+[_unit,[_sound,UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 
-// Give some lip movement
-_actor setVariable ["UVO_unitRandomLip",true];
-[_actor,true] remoteExec ["setRandomLip",0];
-
+// Give some lip movement and let the unit talk again
+[_unit,true] remoteExec ["setRandomLip",0];
 [
 	{
-		_this setVariable ["UVO_unitRandomLip",false];
 		[_this,false] remoteExec ["setRandomLip",0];
+		_this setVariable ["UVO_unitTalking",false];
 	},
-	_actor,
-	(1 + random 0.5)
+	_unit,
+	(1 + random 1)
 ] call CBA_fnc_waitAndExecute;

@@ -1,6 +1,6 @@
 # Unit Voice-overs
 
-**Current Version:** 1.4 "Petrichor"
+**Current Version:** 1.45 "Exiguous"
 
 **Authors**
 

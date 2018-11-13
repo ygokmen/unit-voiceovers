@@ -4,7 +4,7 @@ Creates a custom nationality via script and sets assigned factions to the nation
 
 Parameters:
 0: Nationality name/suffix <STRING>
-1: Path to sound set definition file <STRING>
+1: Array of faction class strings <ARRAY>
 2: Definitions array <ARRAY>
 
 Return Value:
@@ -13,7 +13,7 @@ Nothing
 Example:
 See Template
 ----------------------------------------------------------*/
-params [["_nationality","",[""]],["_factions","",[[]]],["_definitions","",[[]]]];
+params [["_nationality","",[""]],["_factions",[],[[]]],["_definitions",[],[[]]]];
 
 if ((_nationality isEqualTo "") || (_factions isEqualTo []) || (_definitionFile isEqualTo [])) exitWith {
 	diag_log "UVO ERROR: UVO_fnc_createNationality: MISSING PARAMETERS";

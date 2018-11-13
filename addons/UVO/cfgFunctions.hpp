@@ -26,6 +26,7 @@ class CfgFunctions
 			class createNationality {};
 			class createNationalityFromConfig {};
 			class defaultDefinitions {preInit = 1;};
+			class setNationality {};
 			class throwableDefinitions {preInit = 1;};
 		};
 		class eventhandler
@@ -40,10 +41,9 @@ class CfgFunctions
 		class init
 		{
 			file = "UVO\functions\init";
-			class CBASettings {preInit = 1;};
-			class postInit {postInit = 1;};
+			class CBASettings {};
+			class postInit {};
 			class preInit {preInit = 1;};
-			class keybinds {postInit = 1;};
 			class unitInit {};
 		};
 	};

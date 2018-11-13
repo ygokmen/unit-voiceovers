@@ -34,7 +34,7 @@ if !(_nearFriendlies isEqualTo []) then
 	if (_nearFriendlies isEqualTo []) exitWith {};
 
 	// Select friendly unit that can say shit
-	private _friendlyUnit = selectRandom (_nearFriendlies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x});
+	private _friendlyUnit = selectRandom (_nearFriendlies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x && !(_unit getVariable ["ACE_isUnconscious",false])});
 	
 	// Stop if no units are available to use
 	if (isNil "_friendlyUnit") exitWith {};
@@ -53,18 +53,18 @@ if !(_nearFriendlies isEqualTo []) then
 			};
 		},
 		[_friendlyUnit],
-		(1.5 + random 1.5)
+		(1.8 + random 1.2)
 	] call CBA_fnc_waitAndExecute;
 };
 
 // ACE3 Compatibility
 if (UVO_ACE3Loaded) then {
-	_instigator = _unit getVariable "ace_medical_lastDamageSource";
+	_instigator = _unit getVariable ["ace_medical_lastDamageSource",objNull];
 };
 
 // Chance for kill confirm
 private _isPlayer = isPlayer _instigator;
-if (isNil "_instigator" || (!_isPlayer && UVO_option_killConfirmChanceAI <= random 1) || (_isPlayer && UVO_option_killConfirmChancePlayer <= random 1)) exitWith {};
+if (isNull _instigator || (!_isPlayer && UVO_option_killConfirmChanceAI <= random 1) || (_isPlayer && UVO_option_killConfirmChancePlayer <= random 1)) exitWith {};
 
 // Stop if the kill was by friendly fire
 if ((side group _unit) getFriend (side group _instigator) >= 0.6) exitWith {};
