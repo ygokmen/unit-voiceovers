@@ -41,9 +41,8 @@ class CfgFunctions
 		{
 			file = "UVO\functions\init";
 			class CBASettings {};
-			class postInit {postInit = 1;};
+			class postInit {};
 			class preInit {preInit = 1;};
-			class keybinds {postInit = 1;};
 			class unitInit {};
 		};
 	};
