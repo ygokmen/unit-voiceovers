@@ -14,8 +14,8 @@ params ["_unit","_killer","_instigator","_useEffects"];
 if (!isNil {_unit getVariable "UVO_unitIsDead"}) exitWith {};
 _unit setVariable ["UVO_unitIsDead", true];
 
-// Play death shout effect - check if underwater
-if !(eyePos _unit # 2 < 0) then {
+// Play death shout effect - check if underwater - 90% chance voice will be used
+if !(eyePos _unit # 2 < 0 && random 1 < 0.9) then {
 	playSound3D [selectRandom (missionNamespace getVariable "UVO_deathShout"), _unit, false, getPosASL _unit, UVO_option_deathShoutsVolume, 1, UVO_option_deathShoutsDiameter];
 };
 
@@ -59,12 +59,12 @@ if !(_nearFriendlies isEqualTo []) then
 
 // ACE3 Compatibility
 if (UVO_ACE3Loaded) then {
-	_instigator = _unit getVariable "ace_medical_lastDamageSource";
+	_instigator = _unit getVariable ["ace_medical_lastDamageSource",objNull];
 };
 
 // Chance for kill confirm
 private _isPlayer = isPlayer _instigator;
-if (isNil "_instigator" || (!_isPlayer && UVO_option_killConfirmChanceAI <= random 1) || (_isPlayer && UVO_option_killConfirmChancePlayer <= random 1)) exitWith {};
+if (isNull _instigator || (!_isPlayer && UVO_option_killConfirmChanceAI <= random 1) || (_isPlayer && UVO_option_killConfirmChancePlayer <= random 1)) exitWith {};
 
 // Stop if the kill was by friendly fire
 if ((side group _unit) getFriend (side group _instigator) >= 0.6) exitWith {};
