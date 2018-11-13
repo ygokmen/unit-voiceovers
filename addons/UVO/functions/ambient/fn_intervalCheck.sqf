@@ -12,7 +12,7 @@ params ["_item"];
 
 private _interval = _item getVariable "UVO_ambInterval";
 
-if (isNil "_interval") exitWith {_item setVariable ['UVO_ambInterval',(diag_tickTime + (random 30 + random 30))]; false};
-if (diag_tickTime < _interval) exitWith {false};
+if (isNil "_interval") exitWith {_item setVariable ['UVO_ambInterval',(CBA_missionTime + (random 30 + random 30))]; false};
+if (CBA_missionTime < _interval) exitWith {false};
 
 true
