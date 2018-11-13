@@ -32,7 +32,7 @@ params ["_projectile","_throwerSide"];
 		if (_nearEnemies isEqualTo []) exitwith {};
 
 		// Get enemies that can say shit
-		_nearEnemies = _nearEnemies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x};
+		_nearEnemies = _nearEnemies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x && !(_unit getVariable ["ACE_isUnconscious",false])};
 
 		// Stop if no units were available to use
 		if (_nearEnemies isEqualTo []) exitwith {};

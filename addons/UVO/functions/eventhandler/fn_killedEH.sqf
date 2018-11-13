@@ -34,7 +34,7 @@ if !(_nearFriendlies isEqualTo []) then
 	if (_nearFriendlies isEqualTo []) exitWith {};
 
 	// Select friendly unit that can say shit
-	private _friendlyUnit = selectRandom (_nearFriendlies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x});
+	private _friendlyUnit = selectRandom (_nearFriendlies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x && !(_unit getVariable ["ACE_isUnconscious",false])});
 	
 	// Stop if no units are available to use
 	if (isNil "_friendlyUnit") exitWith {};
