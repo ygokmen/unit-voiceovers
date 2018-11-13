@@ -13,7 +13,7 @@ Nothing
 Example:
 See Template
 ----------------------------------------------------------*/
-params [["_nationality","",[""]],["_factions","",[[]]],["_definitions","",[[]]]];
+params [["_nationality","",[""]],["_factions",[],[[]]],["_definitions",[],[[]]]];
 
 if ((_nationality isEqualTo "") || (_factions isEqualTo []) || (_definitionFile isEqualTo [])) exitWith {
 	diag_log "UVO ERROR: UVO_fnc_createNationality: MISSING PARAMETERS";
