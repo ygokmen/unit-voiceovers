@@ -10,12 +10,23 @@ Return Value:
 ----------------------------------------------------------*/
 params ["_unit"];
 
-if ((isPlayer _unit && !UVO_option_clientEnabled) || !isNull objectParent _unit) exitWith {false};
+if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {false};
+
+// Check if unit is not alive/unconscious or in a vehicle
+if (!alive _unit || (_unit getVariable ["ACE_isUnconscious",false])) exitWith {false};
+
+// Stop if unit is inside a vechicle, except if its a static weapon
+if (!(isNull objectParent _unit) && !((vehicle _unit) isKindOf "StaticWeapon")) exitWith {false};
+
+// Prevent spam
+if (diag_tickTime < (_unit getVariable ["UVO_unitLastCalloutTime",0]) + 2.5) exitWith {true};
+_unit setVariable ["UVO_unitLastCalloutTime",diag_tickTime];
 
 private _targetIsFriendly = (side group _unit) getFriend (side group cursorTarget) >= 0.6;
 private _isWeaponLauncher = currentWeapon _unit == secondaryWeapon _unit;
 if (!alive cursorTarget || _targetIsFriendly || !("ItemCompass" in (assignedItems _unit)) || _isWeaponLauncher) exitWith {false};
 
+// Determine callout direction
 private _azimuth = getDir _unit;
 private _calloutDir = switch (true) do {
 	case (_azimuth < 17) : {0};
@@ -30,6 +41,6 @@ private _calloutDir = switch (true) do {
 };
 
 private _unitNationality = _unit getVariable "UVO_unitNationality";
-[_unit,selectRandom ((missionNamespace getVariable (format["UVO_callouts_%1",_unitNationality])) # _calloutDir)] call UVO_fnc_globalSay3d;
+[_unit,selectRandom ((missionNamespace getVariable (format["UVO_callouts_%1",_unitNationality])) # _calloutDir)] call UVO_fnc_globalSay3D;
 
 true
