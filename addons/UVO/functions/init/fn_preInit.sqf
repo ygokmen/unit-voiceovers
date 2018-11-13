@@ -2,8 +2,6 @@
 Authors: Sceptre
 preInit function
 ----------------------------------------------------------*/
-if (is3DEN) exitWith {};
-
 // ACE Medical compat
 if (isClass (configFile >> "CfgPatches" >> "ace_main")) then {
 	UVO_ACE3Loaded = true;
