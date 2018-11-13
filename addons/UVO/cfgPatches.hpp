@@ -7,9 +7,12 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"cba_common",
-			"cba_settings"
+			"cba_keybinding",
+			"cba_settings",
+			"cba_statemachine",
+			"cba_xeh"
 		};
-		version="1.0";
-		author="gokmen, 654wak654, Sceptre";
+		version="1.4";
+		author="Gokmen, 654wak654, Sceptre";
 	};
 };

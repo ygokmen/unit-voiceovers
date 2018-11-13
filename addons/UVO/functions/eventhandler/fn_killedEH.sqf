@@ -53,7 +53,7 @@ if !(_nearFriendlies isEqualTo []) then
 			};
 		},
 		[_friendlyUnit],
-		(1.5 + random 1.5)
+		(1.8 + random 1.2)
 	] call CBA_fnc_waitAndExecute;
 };
 
