@@ -1,3 +1,6 @@
+Dynamic, randomized 3D positional sound samples for units in Arma.
+Using NWI's [url=https://newworldinteractive.com/#insurgency]Insurgency[/url] sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
+
 [B]Current Version:[/B] 1.46 "Imbroglio"
 [B]Authors:[/B] 654wak654, Gokmen 'the0utsider', Sceptre
 [B]MP compatible:[/B] Yes [i]*Has to be loaded on both server and client[/i]
@@ -8,11 +11,6 @@ Website: https://github.com/the0utsider/unit-voiceovers
 Wiki: https://github.com/the0utsider/unit-voiceovers/wiki
 [url=https://forums.bohemia.net/forums/topic/215191-unit-voiceovers/]Bohemia Interactive forums[/url]
 [url=https://github.com/the0utsider/unit-voiceovers/blob/master/changelog.txt]Changelog[/url]
-
-[h1]Description[/h1]
-Dynamic, randomized 3D positional sound samples for units in Arma.
-
-Using NWI's [url=https://newworldinteractive.com/#insurgency]Insurgency[/url] sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
 
 [h1]Features[/h1]
 [list]
