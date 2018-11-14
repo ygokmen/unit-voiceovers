@@ -9,12 +9,18 @@ Return Value:
 Nothing
 ----------------------------------------------------------*/
 params ["_unit"];
-private _cursorObject = cursorObject;
+private _target = cursorTarget;
 
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 
 // Try to prevent spam
 if (diag_tickTime < (_unit getVariable ["UVO_unitLastCalloutTime",0]) + 2) exitWith {};
+
+// Stop if target is not a valid, alive, enemy entity
+if (isNull _target || {!alive _target || {(side _unit) getFriend (side _target) >= 0.6}}) exitWith {};
+
+// Reveal target (probably not needed, but already annoyed with cursorTarget. It's Arma afterall)
+_unit reveal _target;
 
 // Stop if unit is not alive/unconscious OR doesnt have compass
 if (!alive _unit || {(_unit getVariable ["ACE_isUnconscious",false]) || {!("ItemCompass" in (assignedItems _unit))}}) exitWith {};
@@ -24,12 +30,6 @@ if (!(isNull objectParent _unit) && {!((objectParent _unit) isKindOf "StaticWeap
 
 // Stop if unit is using launcher (don't want callouts when locking onto something)
 if (currentWeapon _unit == secondaryWeapon _unit) exitWith {};
-
-// Stop if cursor object is not a valid, alive, enemy entity
-if (isNull _cursorObject || {!(getObjectType _cursorObject isEqualTo 8) || {!alive _cursorObject || {(side _unit) getFriend (side _cursorObject) >= 0.6}}}) exitWith {};
-
-// Reveal cursor object
-_unit reveal _cursorObject;
 
 // Determine callout direction
 private _azimuth = getDir _unit;
