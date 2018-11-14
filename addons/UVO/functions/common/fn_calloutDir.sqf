@@ -28,11 +28,8 @@ if (currentWeapon _unit == secondaryWeapon _unit) exitWith {};
 // Stop if cursor object is not a valid, alive, enemy entity
 if (isNull _cursorObject || {!(getObjectType _cursorObject isEqualTo 8) || {!alive _cursorObject || {(side _unit) getFriend (side _cursorObject) >= 0.6}}}) exitWith {};
 
-// Stop if unit does not 'know about' cursor object
-//if (_unit knowsAbout _cursorObject isEqualTo 0) exitWith {};
-
 // Reveal cursor object
-//_unit reveal _cursorObject;
+_unit reveal _cursorObject;
 
 // Determine callout direction
 private _azimuth = getDir _unit;
