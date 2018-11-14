@@ -24,7 +24,7 @@ params ["_projectile","_throwerSide"];
 		if (_nearEnemies isEqualTo []) exitwith {};
 		
 		// If players aren't supposed to use UVO then remove them from selection
-		if (!UVO_option_clientEnabled && {(_nearEnemies findIf {isPlayer _x}) != -1}) then {
+		if (!UVO_option_clientEnabled && (_nearEnemies findIf {isPlayer _x}) != -1) then {
 			_nearEnemies = _nearEnemies - (_nearEnemies select {isPlayer _x});
 		};
 

@@ -22,7 +22,7 @@ switch (UVO_option_ambientRadioSetting) do {
 		private _units = units _group;
 
 		// If players aren't supposed to use UVO then removed them from selection
-		if (!UVO_option_clientEnabled && {(_units findIf {isPlayer _x}) != -1}) then {
+		if (!UVO_option_clientEnabled && (_units findIf {isPlayer _x}) != -1) then {
 			_units = _units - (_units select {isPlayer _x});
 		};
 

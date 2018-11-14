@@ -25,32 +25,34 @@ private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) se
 // If there are friendlies around, make them say 'friendly down'
 if !(_nearFriendlies isEqualTo []) then
 {
-	// Do this after a small delay for realism
+	// If players aren't supposed to use UVO then removed them from selection
+	if (!UVO_option_clientEnabled && (_nearFriendlies findIf {isPlayer _x}) != -1) then {
+		_nearFriendlies = _nearFriendlies - (_nearFriendlies select {isPlayer _x});
+	};
+
+	// Stop if there are no nearby friendlies to use
+	if (_nearFriendlies isEqualTo []) exitWith {};
+
+	// Select friendly unit that can say shit
+	private _friendlyUnit = selectRandom (_nearFriendlies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x && !(_unit getVariable ["ACE_isUnconscious",false])});
+	
+	// Stop if no units are available to use
+	if (isNil "_friendlyUnit") exitWith {};
+
+	// Do the rest after small delay for realism
 	[
 		{
-			params ["_nearFriendlies"];
+			params ["_friendlyUnit"];
 
-			// If players aren't supposed to use UVO then removed them from selection
-			if (!UVO_option_clientEnabled && {(_nearFriendlies findIf {isPlayer _x}) != -1}) then {
-				_nearFriendlies = _nearFriendlies - (_nearFriendlies select {isPlayer _x});
+			if (alive _friendlyUnit) then {
+				// Get friendly unit's nationality
+				private _unitNationality = _friendlyUnit getVariable "UVO_unitNationality";
+
+				// "Man down!"
+				[_friendlyUnit,(selectRandom (missionNamespace getVariable (format["UVO_allyDown_%1",_unitNationality])))] call UVO_fnc_globalSay3D;
 			};
-
-			// Stop if there are no nearby friendlies to use
-			if (_nearFriendlies isEqualTo []) exitWith {};
-
-			// Select friendly unit that can say shit
-			private _friendlyUnit = selectRandom (_nearFriendlies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x && !(_unit getVariable ["ACE_isUnconscious",false])});
-			
-			// Stop if no units are available to use
-			if (isNil "_friendlyUnit") exitWith {};
-
-			// Get friendly unit's nationality
-			private _unitNationality = _friendlyUnit getVariable "UVO_unitNationality";
-
-			// "Man down!"
-			[_friendlyUnit,selectRandom (missionNamespace getVariable (format["UVO_allyDown_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 		},
-		[_nearFriendlies],
+		[_friendlyUnit],
 		(1.8 + random 1.2)
 	] call CBA_fnc_waitAndExecute;
 };

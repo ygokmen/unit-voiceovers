@@ -30,7 +30,7 @@ if (currentweapon _unit != secondaryweapon _unit) then {
 	[_unit,selectRandom (missionNamespace getVariable (format ["UVO_ammoLow_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 } else {
 	// If players aren't supposed to use UVO then removed them from selection
-	if (!UVO_option_clientEnabled && {(_nearFriendlies findIf {isPlayer _x}) != -1}) then {
+	if (!UVO_option_clientEnabled && (_nearFriendlies findIf {isPlayer _x}) != -1) then {
 		_nearFriendlies = _nearFriendlies - (_nearFriendlies select {isPlayer _x});
 	};
 
