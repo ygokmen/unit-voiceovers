@@ -3,7 +3,7 @@ class CfgPatches
 	class UVO
 	{
 		name = "Unit Voice-overs";
-		version="1.45";
+		version="1.46";
 		author="UVO Team";
 		units[] = {};
 		weapons[]={};

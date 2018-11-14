@@ -1,3 +1,6 @@
+v1.46 - 11/14/2017 - "Imbroglio":
+ - Fixed: Callout bug
+
 v1.45 - 11/13/2018 - "Exiguous":
  - Added: 'UVO_fnc_setNationality' function to set array of factions to already existing nationality
  - Fixed: CBA Settings now appear in the eden editor.
