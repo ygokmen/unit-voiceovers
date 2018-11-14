@@ -1,16 +1,13 @@
-[B]Current Version:[/B] 1.45 "Exiguous"
-
+[B]Current Version:[/B] 1.46 "Imbroglio"
 [B]Authors:[/B] 654wak654, Gokmen 'the0utsider', Sceptre
+[B]MP compatible:[/B] Yes [i]*Has to be loaded on both server and client[/i]
+[B]Requirements:[/B] CBA
+[B]Signed:[/B] Yes
 
 Website: https://github.com/the0utsider/unit-voiceovers
 Wiki: https://github.com/the0utsider/unit-voiceovers/wiki
 [url=https://forums.bohemia.net/forums/topic/215191-unit-voiceovers/]Bohemia Interactive forums[/url]
 [url=https://github.com/the0utsider/unit-voiceovers/blob/master/changelog.txt]Changelog[/url]
-
-[B]MP compatible:[/B] Yes [i]*Has to be loaded on both server and client[/i]
-[B]Requirements:[/B] CBA
-[B]Version:[/B] v1.4 [i] "Petrichor" [/i]
-[B]Signed:[/B] Yes
 
 [h1]Description[/h1]
 Dynamic, randomized 3D positional sound samples for units in Arma.
@@ -29,7 +26,7 @@ Using NWI's [url=https://newworldinteractive.com/#insurgency]Insurgency[/url] so
 	[*] Supports transferring unit locality
 	[*] Works independent from 'enableSentences false' setting
 [/list]
-[i]Unit has to have friendlies nearby (40 meters) in order to emit feedback voices. A solo/alone unit won't emit Voice-overs.[/i]
+[i]Units only emit certain phrases when friendlies are nearby (40 meters).[/i]
 
 For more information on features and customizability, [url=https://github.com/the0utsider/unit-voiceovers/blob/master/README.md]please see our github readme[/url]
 
