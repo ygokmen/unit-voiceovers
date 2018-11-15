@@ -2,7 +2,7 @@
 
 **Current Version:** 1.46 "Imbroglio"
 
-[Wiki](https://github.com/the0utsider/unit-voiceovers/wiki)
+See our Wiki for more documentation: https://github.com/the0utsider/unit-voiceovers/wiki
 
 **Authors**
 
