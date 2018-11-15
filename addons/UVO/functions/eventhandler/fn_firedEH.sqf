@@ -16,7 +16,7 @@ if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 private _unitNationality = _unit getVariable "UVO_unitNationality";
 
 // Did the unit throw a grenade/plant charge or fire his weapon
-if (_weapon in ["Throw", "Put"]) then {
+if (_weapon in ["Throw","Put"]) then {
 	// Find nearby friendlies in 40 meter radius, only run if there are any
 	private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 	if (_nearFriendlies isEqualTo []) exitWith {};

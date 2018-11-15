@@ -16,7 +16,7 @@ _unit setVariable ["UVO_unitIsDead", true];
 
 // Play death shout effect - check if underwater
 if !(eyePos _unit # 2 < 0) then {
-	playSound3D [selectRandom (missionNamespace getVariable "UVO_deathShout"), _unit, false, getPosASL _unit, UVO_option_deathShoutsVolume, 1, UVO_option_deathShoutsDiameter];
+	playSound3D [selectRandom (missionNamespace getVariable "UVO_deathShout"),_unit,false,getPosASL _unit,UVO_option_deathShoutsVolume,1,UVO_option_deathShoutsDiameter];
 };
 
 // Find nearby friendlies in 40 meter radius
@@ -54,5 +54,5 @@ if (_visibility isEqualTo 0) then {
 // Stop if there's no clear line of sight
 if (_visibility < 0.03) exitWith{};
 
-// Make the instigator confirm the kill if possible (executed where instigator is local because of randomLip)
+// Make the instigator confirm the kill if possible (executed where instigator is local)
 [_instigator,_unit] remoteExec ["UVO_fnc_confirmKill",_instigator];
