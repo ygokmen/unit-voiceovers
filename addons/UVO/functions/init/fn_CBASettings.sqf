@@ -17,7 +17,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_enableSentences",
 	"CHECKBOX",
-	["enableSentences (Default Arma chatter)","Forces default arma chatter to be enabled or disabled. Recommended off. (Default: FALSE)"],
+	["enableSentences (Default Arma chatter)","Forces default arma chatter to be enabled or disabled. Recommended off. Mission restart may be required. (Default: FALSE)"],
 	"Unit Voice-Over Options",
 	false,
 	true,
@@ -28,7 +28,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_clientEnabled",
 	"CHECKBOX",
-	["Enabled for players","Choose whether voice-overs are used with players. (DEFAULT: TRUE)"],
+	["Enabled for players","Choose whether voice-overs are used with players. Mission restart may be required. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
 	true
@@ -36,7 +36,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_ambientGenericEnabled",
 	"CHECKBOX",
-	["Ambient generic sounds","When enabled, units will cough/sniff. (DEFAULT: TRUE)"],
+	["Ambient generic sounds","When enabled, units will cough/sniff. Mission restart required. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
 	true
@@ -44,7 +44,7 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_ambientRadioEnabled",
 	"CHECKBOX",
-	["Ambient radio transmissions","When enabled, random radio transmissions can be heard on units. Runs on a per group basis. (DEFAULT: TRUE)"],
+	["Ambient radio transmissions","When enabled, random radio transmissions can be heard on units. Runs on a per group basis. Mission restart required. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
 	true
