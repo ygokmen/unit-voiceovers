@@ -35,6 +35,9 @@ switch (UVO_option_ambientRadioSetting) do {
 		// Stop if no units were available to use
 		if (isNil "_radioOperator") exitWith {};
 
+		// Stop if unit is in stealth mode
+		if (behaviour _radioOperator == "STEALTH") exitWith {};
+
 		// ROGERDODGERLEMONSQUASHER
 		[_radioOperator,[selectRandom (missionNamespace getVariable "UVO_ambientRadio"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 	};
@@ -46,6 +49,9 @@ switch (UVO_option_ambientRadioSetting) do {
 		
 		// Stop if no units were available to use
 		if (isNil "_radioOperator") exitWith {};
+
+		// Stop if unit is in stealth mode
+		if (behaviour _radioOperator == "STEALTH") exitWith {};
 
 		// ROGERDODGERLEMONSQUASHER
 		[_radioOperator,[selectRandom (missionNamespace getVariable "UVO_ambientRadio"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
@@ -59,6 +65,9 @@ switch (UVO_option_ambientRadioSetting) do {
 		// Stop if unit isn't usable
 		if (isNil {_leader getVariable "UVO_unitNationality"} || !alive _leader) exitWith {};
 
+		// Stop if unit is in stealth mode
+		if (behaviour _leader == "STEALTH") exitWith {};
+
 		[_leader,[selectRandom (missionNamespace getVariable "UVO_ambientRadio"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 	};
 	case 3 : {
@@ -69,6 +78,9 @@ switch (UVO_option_ambientRadioSetting) do {
 
 		// Stop if unit isn't usable
 		if (isNil {_leader getVariable "UVO_unitNationality"} || !alive _leader) exitWith {};
+
+		// Stop if unit is in stealth mode
+		if (behaviour _leader == "STEALTH") exitWith {};
 
 		[_leader,[selectRandom (missionNamespace getVariable "UVO_ambientRadio"),UVO_option_soundsDiameter,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
 	};

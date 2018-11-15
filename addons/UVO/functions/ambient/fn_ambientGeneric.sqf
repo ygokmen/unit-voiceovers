@@ -12,6 +12,9 @@ params ["_unit"];
 
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 
+// Stop if unit is in stealth mode
+if (behaviour _unit == "STEALTH") exitWith {};
+
 if (local _unit) then {
 	// Chance for cough scales with damage
 	private _damage = getDammage _unit;
