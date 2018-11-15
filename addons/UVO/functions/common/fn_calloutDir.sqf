@@ -26,7 +26,7 @@ _unit reveal _target;
 if (!alive _unit || {(_unit getVariable ["ACE_isUnconscious",false]) || {!("ItemCompass" in (assignedItems _unit))}}) exitWith {};
 
 // Stop if unit is inside a vehicle, except if its a static weapon
-if (!(isNull objectParent _unit) && {!((objectParent _unit) isKindOf "StaticWeapon")}) exitWith {};
+if (!(_unit in _unit) && {!((objectParent _unit) isKindOf "StaticWeapon")}) exitWith {};
 
 // Stop if unit is using launcher (don't want callouts when locking onto something)
 if (currentWeapon _unit == secondaryWeapon _unit) exitWith {};
