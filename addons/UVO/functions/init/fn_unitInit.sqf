@@ -36,7 +36,7 @@ if (local _unit) then {
 	};
 	
 	// Make it so unit can talk with UVO_fnc_globalSay3D
-	_unit setVariable ["UVO_unitRandomLip",false];
+	_unit setVariable ["UVO_unitTalking",false];
 
 	// Add necessary Event Handlers
 	private _firedEHID = _unit addeventhandler ["Fired",{_this call UVO_fnc_firedEH}];

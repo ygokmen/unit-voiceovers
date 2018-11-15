@@ -26,7 +26,7 @@ if (local _unit) then {
 		_unit removeEventHandler ["Local",_localEHID];
 		_unit removeEventHandler ["Reloaded",_reloadedEHID];
 		_unit setVariable ["UVO_unitEHIDs",nil];
-		_unit setVariable ["UVO_unitRandomLip",nil];
+		_unit setVariable ["UVO_unitTalking",nil];
 		_unit setVariable ["UVO_unitNationality",nil,true];
 
 		diag_log format["UVO INFO: UVO_fnc_disableUVO: %1 REMOVED FROM UVO FRAMEWORK",_unit];
