@@ -13,6 +13,7 @@ class CfgFunctions
 		class common
 		{
 			file = "UVO\functions\common";
+			class allyDown {};
 			class calloutDir {};
 			class confirmKill {};
 			class disableUVO {};

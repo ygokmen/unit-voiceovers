@@ -1,6 +1,8 @@
 # Unit Voice-overs
 
-**Current Version:** 1.46 "Imbroglio"
+**Current Version:** 1.47 "Impetus"
+
+See our Wiki for more documentation: https://github.com/the0utsider/unit-voiceovers/wiki
 
 **Authors**
 
@@ -27,6 +29,7 @@ Using NWI's 'Insurgency' sound samples, this mod was created to improve the over
 
 **Customization**
 - CBA Settings support
+- 'enableSentences' CBA setting
 - Toggle voice-overs for players
 - Toggle ambient sounds
 - Ambient radio sound settings
@@ -45,9 +48,10 @@ Using NWI's 'Insurgency' sound samples, this mod was created to improve the over
 - Player spots enemy (via 'Callout' key)
 - Using throw-able or plant-able items
 - Low on ammo
-- A hostile frag is thrown nearby
+- A hostile frag grenade is thrown nearby
 - A nearby friendly is killed
 - Ambient sounds at random intervals
+- Units will be quiet when in stealth mode
 
 # Installation
 

@@ -19,12 +19,12 @@ params ["_projectile","_throwerSide"];
 	{
 		params ["_projectile","_throwerSide"];
 
-		// Find nearby enemies in 15 meter radius
-		private _nearEnemies = (_projectile nearEntities [["CAManBase"],15]) select {_throwerSide getFriend (side group _x) < 0.6};
+		// Find nearby enemies in 10 meter radius, stop if there are none
+		private _nearEnemies = (_projectile nearEntities [["CAManBase"],10]) select {_throwerSide getFriend (side group _x) < 0.6};
 		if (_nearEnemies isEqualTo []) exitwith {};
 		
 		// If players aren't supposed to use UVO then remove them from selection
-		if (!UVO_option_clientEnabled && (_nearEnemies findIf {isPlayer _x}) != -1) then {
+		if (!UVO_option_clientEnabled && {(_nearEnemies findIf {isPlayer _x}) != -1}) then {
 			_nearEnemies = _nearEnemies - (_nearEnemies select {isPlayer _x});
 		};
 
@@ -32,7 +32,7 @@ params ["_projectile","_throwerSide"];
 		if (_nearEnemies isEqualTo []) exitwith {};
 
 		// Get enemies that can say shit
-		_nearEnemies = _nearEnemies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x && !(_unit getVariable ["ACE_isUnconscious",false])};
+		_nearEnemies = _nearEnemies select {alive _x && !(_x getVariable ["ACE_isUnconscious",false]) && !isNil {_x getVariable "UVO_unitNationality"}};
 
 		// Stop if no units were available to use
 		if (_nearEnemies isEqualTo []) exitwith {};

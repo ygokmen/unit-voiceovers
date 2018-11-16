@@ -36,17 +36,21 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 [
 	"UVO_option_ambientGenericEnabled",
 	"CHECKBOX",
-	["Ambient generic sounds","When enabled, units will cough/sniff. (DEFAULT: TRUE)"],
+	["Ambient generic sounds","When enabled, units will cough/sniff. Mission restart required. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
+	true,
+	{},
 	true
 ] call CBA_Settings_fnc_init;
 [
 	"UVO_option_ambientRadioEnabled",
 	"CHECKBOX",
-	["Ambient radio transmissions","When enabled, random radio transmissions can be heard on units. Runs on a per group basis. (DEFAULT: TRUE)"],
+	["Ambient radio transmissions","When enabled, random radio transmissions can be heard on units. Runs on a per group basis. Mission restart required. (DEFAULT: TRUE)"],
 	"Unit Voice-Over Options",
 	true,
+	true,
+	{},
 	true
 ] call CBA_Settings_fnc_init;
 [

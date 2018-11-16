@@ -14,6 +14,9 @@ params ["_unit","_sound"];
 // Don't let dead or unconscious units talk
 if (!alive _unit || (_unit getVariable ["ACE_isUnconscious",false])) exitWith {};
 
+// Stop if unit is in stealth mode (until we have whisper sound samples)
+if (behaviour _unit == "STEALTH") exitWith {};
+
 // Don't let the unit talk over himself
 if ((_unit getVariable "UVO_unitTalking") || inputAction "pushToTalk" > 0) exitWith {};
 _unit setVariable ["UVO_unitTalking",true];

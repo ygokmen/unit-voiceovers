@@ -9,9 +9,13 @@ Return Value:
 Nothing
 ----------------------------------------------------------*/
 params ["_unit"];
-private _target = cursorTarget;
 
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
+
+// Attempt to force unit to 'know about' object (cursorTarget may not work on first key press or until target is 'known')
+_unit reveal cursorObject;
+
+private _target = cursorTarget;
 
 // Try to prevent spam
 if (diag_tickTime < (_unit getVariable ["UVO_unitLastCalloutTime",0]) + 2) exitWith {};
@@ -19,14 +23,11 @@ if (diag_tickTime < (_unit getVariable ["UVO_unitLastCalloutTime",0]) + 2) exitW
 // Stop if target is not a valid, alive, enemy entity
 if (isNull _target || {!alive _target || {(side _unit) getFriend (side _target) >= 0.6}}) exitWith {};
 
-// Reveal target (probably not needed, but already annoyed with cursorTarget. It's Arma afterall)
-_unit reveal _target;
-
 // Stop if unit is not alive/unconscious OR doesnt have compass
 if (!alive _unit || {(_unit getVariable ["ACE_isUnconscious",false]) || {!("ItemCompass" in (assignedItems _unit))}}) exitWith {};
 
 // Stop if unit is inside a vehicle, except if its a static weapon
-if (!(isNull objectParent _unit) && {!((objectParent _unit) isKindOf "StaticWeapon")}) exitWith {};
+if (!(_unit in _unit) && {!((objectParent _unit) isKindOf "StaticWeapon")}) exitWith {};
 
 // Stop if unit is using launcher (don't want callouts when locking onto something)
 if (currentWeapon _unit == secondaryWeapon _unit) exitWith {};

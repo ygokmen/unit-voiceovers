@@ -8,11 +8,7 @@ Parameters:
 Return Value:
 <BOOL>
 ----------------------------------------------------------*/
-params ["_item"];
-
-private _interval = _item getVariable "UVO_ambInterval";
-
-if (isNil "_interval") exitWith {_item setVariable ['UVO_ambInterval',(CBA_missionTime + (random 30 + random 30))]; false};
+private _interval = _this getVariable ["UVO_ambInterval",(CBA_missionTime + (30 + random 60))];
 if (CBA_missionTime < _interval) exitWith {false};
 
 true

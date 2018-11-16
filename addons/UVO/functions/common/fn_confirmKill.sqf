@@ -31,7 +31,7 @@ private _distance = _unit distance _victim;
 			[_unit,selectRandom (missionNamespace getVariable (format["UVO_targDownLo_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 		} else {
 			// Dramatic kill confirm at close range
-			[_unit,selectRandom (missionNamespace getVariable (format["UVO_targDownHi_%1",_unitNationality]))] call UVO_fnc_globalSay3d;
+			[_unit,selectRandom (missionNamespace getVariable (format["UVO_targDownHi_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 		};
 	},
 	[_unit,_distance],

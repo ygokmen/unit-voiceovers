@@ -30,7 +30,7 @@ if (currentweapon _unit != secondaryweapon _unit) then {
 	[_unit,selectRandom (missionNamespace getVariable (format ["UVO_ammoLow_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 } else {
 	// If players aren't supposed to use UVO then removed them from selection
-	if (!UVO_option_clientEnabled && (_nearFriendlies findIf {isPlayer _x}) != -1) then {
+	if (!UVO_option_clientEnabled && {(_nearFriendlies findIf {isPlayer _x}) != -1}) then {
 		_nearFriendlies = _nearFriendlies - (_nearFriendlies select {isPlayer _x});
 	};
 
@@ -38,7 +38,7 @@ if (currentweapon _unit != secondaryweapon _unit) then {
 	if (_nearFriendlies isEqualTo []) exitWith {};
 
 	// Select friendly unit that can say shit
-	private _friendlyUnit = selectRandom (_nearFriendlies select {!isNil {_x getVariable "UVO_unitNationality"} && alive _x && !(_unit getVariable ["ACE_isUnconscious",false])});
+	private _friendlyUnit = selectRandom (_nearFriendlies select {alive _x && !(_x getVariable ["ACE_isUnconscious",false]) && !isNil {_x getVariable "UVO_unitNationality"}});
 	
 	// Stop if no units were available to use
 	if (isNil "_friendlyUnit") exitWith {};
