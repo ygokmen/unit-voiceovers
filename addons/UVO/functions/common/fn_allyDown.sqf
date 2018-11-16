@@ -27,9 +27,9 @@ private _friendlyUnit = selectRandom (_nearFriendlies select {
 if (isNil "_friendlyUnit") exitWith {};
 
 // If multiple guys die close together (like an explosion), we don't want a bunch of guys calling 'ally down' in unison
-// Set a 1 sec 'spam filter' variable on near friendlies. 85% chance filter is applied, so it's still possible more than 1 guy will comment on the loss of men
+// Set a 1 sec 'spam filter' variable on near friendlies. 90% chance filter is applied, so it's still possible more than 1 guy will comment on the loss of men
 {
-	if (random 1 < 0.85) then {
+	if (random 1 < 0.9) then {
 		_x setVariable ["UVO_allyDownSpamFilter",true];
 	};
 	true
