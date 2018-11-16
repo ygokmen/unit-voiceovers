@@ -17,29 +17,29 @@ private _unitNationality = _unit getVariable "UVO_unitNationality";
 
 // Did the unit throw a grenade/plant charge or fire his weapon
 if (_weapon in ["Throw","Put"]) then {
+	// Determine what type of grenade/charge and say appropriate phrase
+	private _type = switch (true) do {
+		case (_magazine in UVO_fragTypes) : {
+			// Make enemies spot the frag if it lands next to them
+			[{_this call UVO_fnc_thrownFrag;},[_projectile,side (group _unit)],0.5] call CBA_fnc_waitAndExecute;
+			"frag"
+		};
+		case (_magazine in UVO_smokeTypes) : {"smoke"};
+		case (_magazine in UVO_flashTypes) : {"flash"};
+		case (_magazine in UVO_incendiaryTypes) : {"incendiary"};
+		case (_magazine in UVO_explosiveTypes) : {"explosive"};
+		default {""};
+	};
+
+	// Stop if type couldn't be established
+	if (_type isEqualTo "") exitWith {};
+
 	// Find nearby friendlies in 40 meter radius, only run if there are any
 	private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 	if (_nearFriendlies isEqualTo []) exitWith {};
 
-	// Determine what type of grenade/charge and say appropriate phrase
-	switch (true) do {
-		case (_magazine in UVO_fragTypes) : {
-			[_unit,selectRandom (missionNamespace getVariable (format ["UVO_frag_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
-			[{_this call UVO_fnc_thrownFrag;},[_projectile,side group _unit],0.5] call CBA_fnc_waitAndExecute;
-		};
-		case (_magazine in UVO_smokeTypes) : {
-			[_unit,selectRandom (missionNamespace getVariable (format ["UVO_smoke_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
-		};
-		case (_magazine in UVO_flashTypes) : {
-			[_unit,selectRandom (missionNamespace getVariable (format ["UVO_flash_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
-		};
-		case (_magazine in UVO_incendiaryTypes) : {
-			[_unit,selectRandom (missionNamespace getVariable (format ["UVO_incendiary_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
-		};
-		case (_magazine in UVO_explosiveTypes) : {
-			[_unit,selectRandom (missionNamespace getVariable (format ["UVO_explosive_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
-		};
-	};
+	// Say appropriate phrase depending on _type
+	[_unit,selectRandom (missionNamespace getVariable (format ["UVO_%1_%2",_type,_unitNationality]))] call UVO_fnc_globalSay3D;
 } else {
 	// Stop if the magazine still has ammo in the mag
 	if !(_weapon isEqualTo _muzzle && (_unit ammo _muzzle) isEqualTo 0) exitWith {};
