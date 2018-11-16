@@ -15,9 +15,6 @@ if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 // Attempt to force unit to 'know about' object (cursorTarget may not work on first key press or until target is 'known')
 _unit reveal cursorObject;
 
-// Stop if unit is in stealth mode (until we have whisper sound samples)
-if (behaviour _unit == "STEALTH") exitWith {};
-
 private _target = cursorTarget;
 
 // Try to prevent spam
