@@ -3,6 +3,8 @@ v1.47 - 11/15/2018 - "Impetus":
  - Improved: Added 'Stealth' behavior check. Units will now be quiet when in stealth mode (whisper sound samples not available). This applies to ambient sounds as well.
  - Improved: Extra info on CBA Settings
  - Changed: Attempt to make callout action more responsive
+ - Changed: Decreased area detection size for grenade spotting function
+ - Fixed: When alone/solo units threw frags, enemies would not spot the grenade
  - Fixed: ACE unconscious checks
 
 v1.46 - 11/14/2018 - "Imbroglio":
