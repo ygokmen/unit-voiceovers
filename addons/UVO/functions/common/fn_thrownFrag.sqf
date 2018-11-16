@@ -19,8 +19,8 @@ params ["_projectile","_throwerSide"];
 	{
 		params ["_projectile","_throwerSide"];
 
-		// Find nearby enemies in 15 meter radius, stop if there are none
-		private _nearEnemies = (_projectile nearEntities [["CAManBase"],15]) select {_throwerSide getFriend (side group _x) < 0.6};
+		// Find nearby enemies in 10 meter radius, stop if there are none
+		private _nearEnemies = (_projectile nearEntities [["CAManBase"],10]) select {_throwerSide getFriend (side group _x) < 0.6};
 		if (_nearEnemies isEqualTo []) exitwith {};
 		
 		// If players aren't supposed to use UVO then remove them from selection
