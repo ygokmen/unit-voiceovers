@@ -2,7 +2,6 @@
 Authors: Sceptre
 postInit function
 ----------------------------------------------------------*/
-// Server only
 if (isServer) then {
 	if (UVO_option_ambientGenericEnabled) then {
 		UVO_ambientGenericStateMachine = [configFile >> "UVO_ambientGenericStateMachine"] call CBA_statemachine_fnc_createFromConfig;
@@ -13,7 +12,6 @@ if (isServer) then {
 	};
 };
 
-// Player only
 if (hasInterface) then {
 	[
 		"Unit Voice-Overs",

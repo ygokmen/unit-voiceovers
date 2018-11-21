@@ -19,7 +19,6 @@ if (local _unit) then {
 	if (!isNil "_unitEHIDs") then {
 		_unitEHIDs params ["_firedEHID","_hitEHID","_killedEHID","_localEHID","_reloadedEHID"];
 
-		// Remove local EH
 		_unit removeEventHandler ["Fired",_firedEHID];
 		_unit removeEventHandler ["Hit",_hitEHID];
 		_unit removeEventHandler ["Killed",_killedEHID];

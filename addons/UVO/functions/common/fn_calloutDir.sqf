@@ -12,7 +12,7 @@ params ["_unit"];
 
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 
-// Attempt to force unit to 'know about' object (cursorTarget may not work on first key press or until target is 'known')
+// Attempt to force unit to 'know about' object
 _unit reveal cursorObject;
 
 private _target = cursorTarget;
@@ -29,7 +29,7 @@ if (!alive _unit || {(_unit getVariable ["ACE_isUnconscious",false]) || {!("Item
 // Stop if unit is inside a vehicle, except if its a static weapon
 if (!(_unit in _unit) && {!((objectParent _unit) isKindOf "StaticWeapon")}) exitWith {};
 
-// Stop if unit is using launcher (don't want callouts when locking onto something)
+// Stop if unit is using launcher
 if (currentWeapon _unit == secondaryWeapon _unit) exitWith {};
 
 // Determine callout direction

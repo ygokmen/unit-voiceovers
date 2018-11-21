@@ -12,7 +12,6 @@ params ["_unit","_source","_damage","_instigator"];
 
 if ((isPlayer _unit && !UVO_option_clientEnabled) || _damage < 0.1) exitWith {};
 
-// Get unit's nationality
 private _unitNationality = _unit getVariable "UVO_unitNationality";
 
 // Check if friend/foe

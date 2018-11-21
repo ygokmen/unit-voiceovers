@@ -15,15 +15,12 @@ params ["_unit","_victim"];
 private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 if (_nearFriendlies isEqualTo []) exitWith {};
 
-// How far away is the killer from the victim?
 private _distance = _unit distance _victim;
 
-// Do the rest after a small delay for realism
 [
 	{
 		params ["_unit","_distance"];
 
-		// Get unit's nationality
 		private _unitNationality = _unit getVariable "UVO_unitNationality";
 
 		if (_distance > 200) then {		

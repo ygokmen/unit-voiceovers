@@ -12,10 +12,8 @@ params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_
 
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 
-// Get unit's nationality
 private _unitNationality = _unit getVariable "UVO_unitNationality";
 
-// Did the unit throw a grenade/plant charge or fire his weapon
 if (_weapon in ["Throw","Put"]) then {
 	// Determine what type of grenade/charge and say appropriate phrase
 	private _type = switch (true) do {
@@ -31,7 +29,6 @@ if (_weapon in ["Throw","Put"]) then {
 		default {""};
 	};
 
-	// Stop if type couldn't be established
 	if (_type isEqualTo "") exitWith {};
 
 	// Find nearby friendlies in 40 meter radius, only run if there are any

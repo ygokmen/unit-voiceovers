@@ -28,24 +28,19 @@ params ["_projectile","_throwerSide"];
 			_nearEnemies = _nearEnemies - (_nearEnemies select {isPlayer _x});
 		};
 
-		// Stop if there are no nearby enemies to use
 		if (_nearEnemies isEqualTo []) exitwith {};
 
 		// Get enemies that can say shit
 		_nearEnemies = _nearEnemies select {alive _x && !(_x getVariable ["ACE_isUnconscious",false]) && !isNil {_x getVariable "UVO_unitNationality"}};
-
-		// Stop if no units were available to use
 		if (_nearEnemies isEqualTo []) exitwith {};
 
-		// Get nearest usable enemy
+		// Get nearest enemy
 		_nearEnemies = _nearEnemies apply {[_x distance _projectile, _x]};
 		_nearEnemies sort true;
 		private _nearestEnemy = _nearEnemies # 0 # 1;
 		
-		// Get the enemy unit's nationality
+		// Finish up
 		private _unitNationality = _nearestEnemy getVariable "UVO_unitNationality";
-
-		// "Grenade!"
 		[_nearestEnemy,selectRandom (missionNamespace getVariable (format ["UVO_spotNade_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 	},
 	[_projectile,_throwerSide],

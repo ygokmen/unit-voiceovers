@@ -22,10 +22,9 @@ if !(eyePos _unit # 2 < 0) then {
 // Find nearby friendlies in 40 meter radius
 private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 
-// If there are friendlies around, make them say 'friendly down'
 if !(_nearFriendlies isEqualTo []) then
 {
-	// Call allyDown function after a small delay for realism
+	// Have a nearby friendly call out 'friendly down' after a small delay
 	[{_this call UVO_fnc_allyDown;},[_nearFriendlies],(2 + random 1)] call CBA_fnc_waitAndExecute;
 };
 
@@ -50,9 +49,7 @@ private _visibility = [_instigator,"VIEW",_unit] checkVisibility [eyePos _instig
 if (_visibility isEqualTo 0) then {
 	_visibility = [_instigator,"VIEW",_unit] checkVisibility [eyePos _instigator,AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Head"))];
 };
-
-// Stop if there's no clear line of sight
 if (_visibility < 0.03) exitWith{};
 
-// Make the instigator confirm the kill if possible (executed where instigator is local)
+// Make the instigator confirm the kill (executed where instigator is local)
 [_instigator,_unit] remoteExec ["UVO_fnc_confirmKill",_instigator];

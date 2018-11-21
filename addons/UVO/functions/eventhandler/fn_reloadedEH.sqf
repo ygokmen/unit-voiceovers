@@ -21,31 +21,21 @@ if (_nearFriendlies isEqualTo []) exitWith {};
 
 // If primary weapon, say ammo low. If it's a launcher, have a friendly say he's covering.
 if (currentweapon _unit != secondaryweapon _unit) then {
-
 	if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 
-	// Get unit's nationality
 	private _unitNationality = _unit getVariable "UVO_unitNationality";
-
 	[_unit,selectRandom (missionNamespace getVariable (format ["UVO_ammoLow_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 } else {
 	// If players aren't supposed to use UVO then removed them from selection
 	if (!UVO_option_clientEnabled && {(_nearFriendlies findIf {isPlayer _x}) != -1}) then {
 		_nearFriendlies = _nearFriendlies - (_nearFriendlies select {isPlayer _x});
 	};
-
-	// Stop if there are no nearby friendlies to use
 	if (_nearFriendlies isEqualTo []) exitWith {};
 
 	// Select friendly unit that can say shit
 	private _friendlyUnit = selectRandom (_nearFriendlies select {alive _x && !(_x getVariable ["ACE_isUnconscious",false]) && !isNil {_x getVariable "UVO_unitNationality"}});
-	
-	// Stop if no units were available to use
 	if (isNil "_friendlyUnit") exitWith {};
 
-	// Get friendly unit's nationality
 	private _unitNationality = _friendlyUnit getVariable "UVO_unitNationality";
-	
-	// "I'll cover you!"
 	[_friendlyUnit,selectRandom (missionNamespace getVariable (format ["UVO_cover_%1",_unitNationality]))] call UVO_fnc_globalSay3D;
 };
