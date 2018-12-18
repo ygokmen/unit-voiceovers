@@ -27,6 +27,7 @@ if (local _unit) then {
 		_unit setVariable ["UVO_unitEHIDs",nil];
 		_unit setVariable ["UVO_unitTalking",nil];
 		_unit setVariable ["UVO_unitNationality",nil,true];
+		_unit setVariable ["UVO_unitDefaultVoice",nil,true];
 
 		diag_log format["UVO INFO: UVO_fnc_disableUVO: %1 REMOVED FROM UVO FRAMEWORK",_unit];
 	} else {

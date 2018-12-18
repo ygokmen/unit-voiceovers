@@ -19,6 +19,7 @@ class CfgFunctions
 			class disableUVO {};
 			class globalsay3D {};
 			class reinitialize {};
+			class setVoice {};
 			class thrownFrag {};
 		};
 		class definitions
@@ -46,6 +47,7 @@ class CfgFunctions
 			class postInit {};
 			class preInit {preInit = 1;};
 			class unitInit {};
+			class unitInitPost {};
 		};
 	};
 };

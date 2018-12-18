@@ -2,7 +2,6 @@
 Authors: Gokmen, Sceptre
 CBA Settings function called via XEH preInit
 ----------------------------------------------------------*/
-UVO_option_enableSentences = profileNamespace getVariable ["UVO_option_enableSentences",false];
 UVO_option_clientEnabled = profileNamespace getVariable ["UVO_option_clientEnabled",true];
 UVO_option_ambientGenericEnabled = profileNamespace getVariable ["UVO_option_ambientGenericEnabled",true];
 UVO_option_ambientRadioEnabled = profileNamespace getVariable ["UVO_option_ambientRadioEnabled",true];
@@ -13,18 +12,13 @@ UVO_option_soundsDiameter = profileNamespace getVariable ["UVO_option_soundsDiam
 UVO_option_soundsSamplePitch = profileNamespace getVariable ["UVO_option_soundsSamplePitch",1];
 UVO_option_deathShoutsVolume = profileNamespace getVariable ["UVO_option_deathShoutsVolume",2.9];
 UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_deathShoutsDiameter",300];
+UVO_option_enableSentencesEast = profileNamespace getVariable ["UVO_option_enableSentencesEast",false];
+UVO_option_enableSentencesGuer = profileNamespace getVariable ["UVO_option_enableSentencesGuer",false];
+UVO_option_enableSentencesWest = profileNamespace getVariable ["UVO_option_enableSentencesWest",false];
+UVO_option_enableUVOEast = profileNamespace getVariable ["UVO_option_enableUVOEast",true];
+UVO_option_enableUVOGuer = profileNamespace getVariable ["UVO_option_enableUVOGuer",true];
+UVO_option_enableUVOWest = profileNamespace getVariable ["UVO_option_enableUVOWest",true];
 
-[
-	"UVO_option_enableSentences",
-	"CHECKBOX",
-	["enableSentences (Default Arma chatter)","Forces default arma chatter to be enabled or disabled. Recommended off. (Default: FALSE)"],
-	"Unit Voice-Over Options",
-	false,
-	true,
-	{
-		[_this] remoteExec ["enableSentences",0,true];
-	}
-] call CBA_Settings_fnc_init;
 [
 	"UVO_option_clientEnabled",
 	"CHECKBOX",
@@ -115,5 +109,65 @@ UVO_option_deathShoutsDiameter = profileNamespace getVariable ["UVO_option_death
 	["Death shout travel diameter","Represents a sound fade-out diameter with unit at center. (DEFAULT: 300)"],
 	"Unit Voice-Over Options",
 	[100,500,300,0],
+	true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_enableSentencesEast",
+	"CHECKBOX",
+	["EAST - Default chatter","Allows default Arma voices for specified side (inherits from SoldierEB class). (Default: FALSE)"],
+	"Unit Voice-Over Options",
+	false,
+	true,
+	{},
+	true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_enableSentencesGuer",
+	"CHECKBOX",
+	["GUER - Default chatter","Allows default Arma voices for specified side (inherits from SoldierGB class). (Default: FALSE)"],
+	"Unit Voice-Over Options",
+	false,
+	true,
+	{},
+	true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_enableSentencesWest",
+	"CHECKBOX",
+	["WEST - Default chatter","Allows default Arma voices for specified side (inherits from SoldierWB class). (Default: FALSE)"],
+	"Unit Voice-Over Options",
+	false,
+	true,
+	{},
+	true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_enableUVOEast",
+	"CHECKBOX",
+	["EAST - Enable UVO","Enables unit voice-overs for specified side (inherits from SoldierEB class). (Default: TRUE)"],
+	"Unit Voice-Over Options",
+	true,
+	true,
+	{},
+	true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_enableUVOGuer",
+	"CHECKBOX",
+	["GUER - Enable UVO","Enables unit voice-overs for specified side (inherits from SoldierGB class). (Default: TRUE)"],
+	"Unit Voice-Over Options",
+	true,
+	true,
+	{},
+	true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_enableUVOWest",
+	"CHECKBOX",
+	["WEST - Enable UVO","Enables unit voice-overs for specified side (inherits from SoldierWB class). (Default: TRUE)"],
+	"Unit Voice-Over Options",
+	true,
+	true,
+	{},
 	true
 ] call CBA_Settings_fnc_init;
