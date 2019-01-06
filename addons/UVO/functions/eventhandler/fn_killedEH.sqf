@@ -12,7 +12,7 @@ params ["_unit","_killer","_instigator","_useEffects"];
 
 // Prevent EH from firing twice
 if (!isNil {_unit getVariable "UVO_unitIsDead"}) exitWith {};
-_unit setVariable ["UVO_unitIsDead", true];
+_unit setVariable ["UVO_unitIsDead",true];
 
 // Play death shout effect - check if underwater
 if !(eyePos _unit # 2 < 0) then {

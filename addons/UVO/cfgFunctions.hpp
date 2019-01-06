@@ -1,17 +1,13 @@
-class CfgFunctions
-{
-	class UVO
-	{
+class CfgFunctions {
+	class UVO {
 		tag = "UVO";
-		class ambient
-		{
+		class ambient {
 			file = "UVO\functions\ambient";
 			class ambientGeneric {};
 			class ambientRadio {};
 			class intervalCheck {};
 		};
-		class common
-		{
+		class common {
 			file = "UVO\functions\common";
 			class allyDown {};
 			class calloutDir {};
@@ -22,8 +18,7 @@ class CfgFunctions
 			class setVoice {};
 			class thrownFrag {};
 		};
-		class definitions
-		{
+		class definitions {
 			file = "UVO\functions\definitions";
 			class createNationality {};
 			class createNationalityFromConfig {};
@@ -31,8 +26,7 @@ class CfgFunctions
 			class setNationality {};
 			class throwableDefinitions {preInit = 1;};
 		};
-		class eventhandler
-		{
+		class eventhandler {
 			file = "UVO\functions\eventhandler";
 			class firedEH {};
 			class hitEH {};
@@ -40,8 +34,7 @@ class CfgFunctions
 			class localEH {};
 			class reloadedEH {};
 		};
-		class init
-		{
+		class init {
 			file = "UVO\functions\init";
 			class CBASettings {};
 			class postInit {};

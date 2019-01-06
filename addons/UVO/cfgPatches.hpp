@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class UVO
-	{
+class CfgPatches {
+	class UVO {
 		name = "Unit Voice-overs";
 		version="1.47";
 		author="UVO Team";
