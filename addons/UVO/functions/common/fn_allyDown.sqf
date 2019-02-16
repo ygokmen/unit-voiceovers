@@ -18,27 +18,26 @@ if (_nearFriendlies isEqualTo []) exitWith {};
 
 // Select friendly unit that can say shit -- also checks for 'spam filter'
 private _friendlyUnit = selectRandom (_nearFriendlies select {
-	alive _x && !(_x getVariable ["ACE_isUnconscious",false]) && {!isNil {_x getVariable "UVO_unitNationality"} && !(_x getVariable ["UVO_allyDownSpamFilter",false])}
-});
+	alive _x && 
+	!(_x getVariable ["ACE_isUnconscious",false]) && {
+	!isNil {_x getVariable "UVO_nationality"} && 
+	!(_x getVariable ["UVO_allyDownSpamFilter",false])
+}});
 if (isNil "_friendlyUnit") exitWith {};
 
-// 90% chance to set a 1 sec 'spam filter' variable on near friendlies.
+// 90% chance to set a 1 sec 'spam filter' variable on near friendlies
 {
-	if (random 1 < 0.9) then {
-		_x setVariable ["UVO_allyDownSpamFilter",true];
-	};
-	true
+	if (random 1 < 0.9) then {_x setVariable ["UVO_allyDownSpamFilter",true];};
+	false
 } count _nearFriendlies;
 
-[
+[{
 	{
-		{
-			_x setVariable ["UVO_allyDownSpamFilter",nil];
-			true
-		} count _this;
-	},_nearFriendlies,1
-] call CBA_fnc_waitAndExecute;
+		_x setVariable ["UVO_allyDownSpamFilter",nil];
+		true
+	} count _this;
+},_nearFriendlies,1] call CBA_fnc_waitAndExecute;
 
 // Finish up
-private _unitNationality = _friendlyUnit getVariable "UVO_unitNationality";
-[_friendlyUnit,(selectRandom (missionNamespace getVariable (format["UVO_allyDown_%1",_unitNationality])))] call UVO_fnc_globalSay3D;
+private _nationality = _friendlyUnit getVariable "UVO_nationality";
+[_friendlyUnit,selectRandom (missionNamespace getVariable format["UVO_allyDown_%1",_nationality])] call UVO_fnc_globalSay3D;

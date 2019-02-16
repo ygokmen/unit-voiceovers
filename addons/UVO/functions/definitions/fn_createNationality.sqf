@@ -44,18 +44,16 @@ _definitions params [
 	"_reloading"
 ];
 
-missionNamespace setVariable [format["UVO_callouts_%1",_nationality],
-	[
-	    _calloutsN,
-	    _calloutsNE,
-	    _calloutsE,
-	    _calloutsSE,
-	    _calloutsS,
-	    _calloutsSW,
-	    _calloutsW,
-	    _calloutsNW
-	]
-];
+missionNamespace setVariable [format["UVO_callouts_%1",_nationality],[
+	_calloutsN,
+	_calloutsNE,
+	_calloutsE,
+	_calloutsSE,
+	_calloutsS,
+	_calloutsSW,
+	_calloutsW,
+	_calloutsNW
+]];
 missionNamespace setVariable [format["UVO_explosive_%1",_nationality],_explosive];
 missionNamespace setVariable [format["UVO_flash_%1",_nationality],_flash];
 missionNamespace setVariable [format["UVO_frag_%1",_nationality],_frag];

@@ -10,14 +10,18 @@ Nothing
 ----------------------------------------------------------*/
 params ["_unit","_isLocal"];
 
-(_unit getVariable "UVO_unitEHIDs") params ["_firedEHID","_hitEHID","_killedEHID","_localEHID","_reloadedEHID"];
+_unit removeEventHandler ["Killed",_unit getVariable "UVO_killedEHID"];
+_unit setVariable ["UVO_killedEHID",nil];
 
-_unit removeEventHandler ["Fired",_firedEHID];
-_unit removeEventHandler ["Hit",_hitEHID];
-_unit removeEventHandler ["Killed",_killedEHID];
-_unit removeEventHandler ["Local",_localEHID];
-_unit removeEventHandler ["Reloaded",_reloadedEHID];
-_unit setVariable ["UVO_unitEHIDs",nil];
+private _EHIDs = _unit getVariable "UVO_EHIDs";
+if (!isNil "_EHIDs") then {
+	_EHIDs params ["_firedEHID","_hitEHID","_reloadedEHID","_localEHID"];
+	_unit removeEventHandler ["Fired",_firedEHID];
+	_unit removeEventHandler ["Hit",_hitEHID];
+	_unit removeEventHandler ["Reloaded",_reloadedEHID];
+	_unit removeEventHandler ["Local",_localEHID];
+	_unit setVariable ["UVO_EHIDs",nil];
+};
 
 // Reinitialize unit on remote machine
 [_unit] remoteExec ["UVO_fnc_reinitialize",_unit];

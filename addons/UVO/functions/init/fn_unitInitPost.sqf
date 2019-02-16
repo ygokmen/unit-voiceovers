@@ -1,6 +1,7 @@
 /*--------------------------------------------------------
 Authors: Sceptre
-Class based initPost event handler script
+Unit initPost function
+(Disables sentences if set in CBA settings)
 
 Parameters:
 0: Unit <OBJECT>
@@ -11,9 +12,9 @@ Nothing
 params ["_unit"];
 
 if (local _unit) then {
-	_unit setVariable ["UVO_unitDefaultVoice",(speaker _unit),true];
+	_unit setVariable ["UVO_defaultVoice",speaker _unit,true];
 
-	if ((!UVO_option_enableSentencesEast && _unit isKindOf "SoldierEB") || {(!UVO_option_enableSentencesGuer && _unit isKindOf "SoldierGB") || {(!UVO_option_enableSentencesWest && _unit isKindOf "SoldierWB")}}) then {
-		[false,_unit] remoteExec ["UVO_fnc_setVoice",2];
+	if (!UVO_option_enableSentencesEast && _unit isKindOf "SoldierEB" || !UVO_option_enableSentencesGuer && _unit isKindOf "SoldierGB" || !UVO_option_enableSentencesWest && _unit isKindOf "SoldierWB") then {
+		[_unit,false] remoteExec ["UVO_fnc_enableSentences",2];
 	};
 };

@@ -15,7 +15,7 @@ Example:
 ----------------------------------------------------------*/
 params [["_nationality","",[""]],["_factions",[],[[]]]];
 
-if ((_nationality isEqualTo "") || (_factions isEqualTo [])) exitWith {
+if (_nationality isEqualTo "" || _factions isEqualTo []) exitWith {
 	diag_log "UVO ERROR: UVO_fnc_setNationality: NATIONALITY OR FACTIONS ARE MISSING";
 };
 
