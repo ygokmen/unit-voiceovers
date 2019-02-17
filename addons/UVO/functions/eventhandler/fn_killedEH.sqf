@@ -16,7 +16,7 @@ _unit setVariable ["UVO_isDead",true];
 
 // Play death shout effect
 if ((eyePos _unit # 2) > 0) then {
-	playSound3D [selectRandom UVO_deathShouts,_unit,false,getPosASL _unit,UVO_option_deathShoutsVolume,1,UVO_option_deathShoutsDiameter];
+	playSound3D [selectRandom UVO_deathShouts,_unit,false,getPosASL _unit,UVO_option_deathShoutsVolume,1,UVO_option_maxDistDeathShouts];
 };
 
 // Have a nearby friendly call out 'friendly down' after a small delay

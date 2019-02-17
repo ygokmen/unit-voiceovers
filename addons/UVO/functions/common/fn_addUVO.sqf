@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
 Authors: Gokmen, Sceptre
-Class based init event handler function
+Adds unit voice-overs to a unit with a defined nationality
 
 Parameters:
 0: The spawned unit <OBJECT>
