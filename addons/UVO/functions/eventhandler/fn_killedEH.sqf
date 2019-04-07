@@ -26,9 +26,7 @@ if !(_nearFriendlies isEqualTo []) then {
 };
 
 // ACE Medical Compatibility
-if (UVO_ACEMedicalLoaded) then {
-	_instigator = _unit getVariable ["ace_medical_lastDamageSource",objNull];
-};
+if (UVO_ACEMedicalLoaded) then {_instigator = _unit getVariable ["ace_medical_lastDamageSource",objNull];};
 
 // Chance for kill confirm
 if (isNull _instigator || !isPlayer _instigator && UVO_option_killConfirmChanceAI <= random 1 || isPlayer _instigator && UVO_option_killConfirmChancePlayer <= random 1) exitWith {};
