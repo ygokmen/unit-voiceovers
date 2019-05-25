@@ -46,37 +46,37 @@ PreInit CBA Settings function
 ] call CBA_Settings_fnc_init;
 [
 	"UVO_option_enableSentencesEast","CHECKBOX",
-	["EAST - Default chatter","Allows default Arma voices for specified nationality (inherits from SoldierEB class). (Default: TRUE)"],
+	["EAST - Default chatter/voices","Allows default Arma voices for specified nationality (inherits from SoldierEB class). (Default: TRUE)"],
 	["Unit Voice-Over Options","Nationality/Side Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
 [
 	"UVO_option_enableSentencesGuer","CHECKBOX",
-	["GUER - Default chatter","Allows default Arma voices for specified nationality (inherits from SoldierGB class). (Default: TRUE)"],
-	"Unit Voice-Over Options",
+	["GUER - Default chatter/voices","Allows default Arma voices for specified nationality (inherits from SoldierGB class). (Default: TRUE)"],
+	["Unit Voice-Over Options","Nationality/Side Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
 [
 	"UVO_option_enableSentencesWest","CHECKBOX",
-	["WEST - Default chatter","Allows default Arma voices for specified nationality (inherits from SoldierWB class). (Default: TRUE)"],
-	"Unit Voice-Over Options",
+	["WEST - Default chatter/voices","Allows default Arma voices for specified nationality (inherits from SoldierWB class). (Default: TRUE)"],
+	["Unit Voice-Over Options","Nationality/Side Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
 [
 	"UVO_option_enableUVOEast","CHECKBOX",
 	["EAST - Enable UVO","Enables unit voice-overs for specified nationality (inherits from SoldierEB class). (Default: TRUE)"],
-	"Unit Voice-Over Options",
+	["Unit Voice-Over Options","Nationality/Side Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
 [
 	"UVO_option_enableUVOGuer","CHECKBOX",
 	["GUER - Enable UVO","Enables unit voice-overs for specified nationality (inherits from SoldierGB class). (Default: TRUE)"],
-	"Unit Voice-Over Options",
+	["Unit Voice-Over Options","Nationality/Side Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
 [
 	"UVO_option_enableUVOWest","CHECKBOX",
 	["WEST - Enable UVO","Enables unit voice-overs for specified nationality (inherits from SoldierWB class). (Default: TRUE)"],
-	"Unit Voice-Over Options",
+	["Unit Voice-Over Options","Nationality/Side Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
