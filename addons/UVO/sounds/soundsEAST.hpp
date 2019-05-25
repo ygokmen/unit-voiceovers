@@ -1409,26 +1409,26 @@
 	};
 	class UVO_reloading35_EAST {
 		name = "UVO_reloading35_EAST";
-		sound[] = {"UVO\sounds\east\reloading35.ogg",VOL,PITCH,DIST};
+		sound[] = {"UVO\sounds\east\reload\reloading35.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
 	class UVO_reloading36_EAST {
 		name = "UVO_reloading36_EAST";
-		sound[] = {"UVO\sounds\east\reloading36.ogg",VOL,PITCH,DIST};
+		sound[] = {"UVO\sounds\east\reload\reloading36.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
 	class UVO_reloading37_EAST {
 		name = "UVO_reloading37_EAST";
-		sound[] = {"UVO\sounds\east\reloading37.ogg",VOL,PITCH,DIST};
+		sound[] = {"UVO\sounds\east\reload\reloading37.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
 	class UVO_reloading38_EAST {
 		name = "UVO_reloading38_EAST";
-		sound[] = {"UVO\sounds\east\reloading38.ogg",VOL,PITCH,DIST};
+		sound[] = {"UVO\sounds\east\reload\reloading38.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
 	class UVO_reloading39_EAST {
 		name = "UVO_reloading39_EAST";
-		sound[] = {"UVO\sounds\east\reloading39.ogg",VOL,PITCH,DIST};
+		sound[] = {"UVO\sounds\east\reload\reloading39.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
