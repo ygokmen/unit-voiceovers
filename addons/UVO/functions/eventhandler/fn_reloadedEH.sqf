@@ -13,7 +13,7 @@ params ["_unit","_weapon","_muzzle","_newMagazine","_oldMagazine"];
 if (_weapon != _muzzle || !isNil "ace_arsenal_camera" || !isNil "RSCDisplayArsenal") exitWith {};
 
 // Stop if unit still has mags for current weapon
-if !((getArray(configfile >> "CfgWeapons" >> _muzzle >> "magazines") arrayIntersect magazines _unit) isEqualTo []) exitWith {};
+if !((_weapon call CBA_fnc_compatibleMagazines) arrayIntersect (magazines _unit) isEqualTo []) exitWith {};
 
 // Only run if there are friendlies in 40 meter radius
 private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
