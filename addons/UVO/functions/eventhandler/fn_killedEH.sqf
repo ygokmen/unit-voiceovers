@@ -29,7 +29,12 @@ if !(_nearFriendlies isEqualTo []) then {
 if (UVO_ACEMedicalLoaded) then {_instigator = _unit getVariable ["ace_medical_lastDamageSource",objNull];};
 
 // Chance for kill confirm
-if (isNull _instigator || !isPlayer _instigator && UVO_option_killConfirmChanceAI <= random 1 || isPlayer _instigator && UVO_option_killConfirmChancePlayer <= random 1) exitWith {};
+if (isNull _instigator 
+		|| 
+	!isPlayer _instigator && {UVO_option_killConfirmChanceAI <= random 1}
+		||
+	isPlayer _instigator && {!UVO_option_clientEnabled || UVO_option_killConfirmChancePlayer <= random 1}) 
+exitWith {};
 
 // Stop if the kill was by friendly fire
 if ((side group _unit) getFriend (side group _instigator) >= 0.6) exitWith {};
