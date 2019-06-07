@@ -25,7 +25,7 @@ CBA Settings function
 ] call CBA_settings_fnc_init;
 [
 	"UAS_option_minIntervalRadio","SLIDER",
-	["Radio - Min Interval","Mininum interval time in seconds. (DEFAULT: 30)"],
+	["Radio - Min Interval","Mininum interval time in seconds. (DEFAULT: 20)"],
 	["Unit Ambient SFX Options","Ambient Radio"],
 	[15,300,20,0],true
 ] call CBA_settings_fnc_init;
