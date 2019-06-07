@@ -1,6 +1,6 @@
 # Unit Voice-overs
 
-**Current Version:** 1.47 "Impetus"
+**Current Version:** 1.5
 
 See our Wiki for more documentation: https://github.com/the0utsider/unit-voiceovers/wiki
 
