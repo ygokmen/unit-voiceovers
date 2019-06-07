@@ -1,3 +1,11 @@
+v1.5 - 6/6/2019:
+ - Improved: Refactored Unit Ambient SFX (UAS) into separate PBO
+ - Added: More CBA Settings for UAS (Found under its own category)
+ - Added: CBA Settings to toggle default Arma voices per side
+ - Added: CBA Settings to toggle UVO per side
+ - Fixed: Wrong file paths for CfgSounds
+ * NOTE: Some CBA Setting variable names have been modified, please update your options if necessary.
+
 v1.47 - 11/15/2018 - "Impetus":
  - Improved: Reduced possible "friendly fire" spam
  - Improved: Added 'Stealth' behavior check. Units will now be quiet when in stealth mode (whisper sound samples not available). This applies to ambient sounds as well.
@@ -37,15 +45,15 @@ V1.31 - 10-23-2018 "happy harvest" release:
  - Added: new mechanic detects if you have friendlies nearby, enable calls auto (50meters range)
  - *New*: visibility checks: building, wall, bush, trees etc. now affect kill confirms
  - Fixed: many, many fixes. Mod now works as I wanted the first time.
- 
+
 V1.30 - 05-01-2018:
  - Fixed: Half of the sounds were missing (no idea how that happened)
  - Fixed: reload effects now only trigger when you actually start reload action
- - *New*: Now mod uses class based system (soldierEB, WB, GB config tree) instead of sides 
+ - *New*: Now mod uses class based system (soldierEB, WB, GB config tree) instead of sides
  - Added: RHS support
- - Added: New 'compatibility' options, use this to make it compatible with any scenario/faction (available via cba)	
+ - Added: New 'compatibility' options, use this to make it compatible with any scenario/faction (available via cba)
  - Code performance: updated some junk check commands with new and better code which %60 faster
- 
+
 V1.29 - 04-20-2018	"happy grow season" - 4/20 update v2:
  - Fixed: SP/Campaign East Wind compatibility: FIA and AAF now use different EH faction code
  - Fixed: selectRandom issue, was picking dead unit from array
@@ -63,7 +71,7 @@ V1.29 - 04-20-2018	"happy grow season" - 4/20 update v2:
  - Added: Default Key can be re-binded using CBA (optional). "esc" > "controls" > "add-on options" select 'goko unit Vo' to bind the key you want.
  - Added: new sound samples for calling out directions to Indep, Blufor, Opfor; 96 samples total
  - Code Performance: code using 'nearestObjects' command rewritten with more lightweight 'nearEntities'
-		
+
 V1.24 - 04-14-2018 "happy grow season - 4/20 tribute" update:
   General bug fixes
   - Fixed: feedback issue when using UNIT_VO with ACE (thanks for support @Sceptre)
@@ -79,13 +87,13 @@ V1.24 - 04-14-2018 "happy grow season - 4/20 tribute" update:
   - Added: New reloading function mechanics (surprise)
   - Added: New reload feedback for launchers
   - Added: 56 new sound samples for new features
-  
+
  V1.17 - 03-03-2018:
   - Fixed: some script errors, missing function name on WEST faction
   - Added 42 voiceover samples for ACE m14, m84 grenade types for factions
   - Added customization for samples' volume, max. range, pitch, enable/disable checkbox for player (CBA required to enable settings)
   - Code improvements and optimizations (nearestObjects), volume levels equialized in cfgSounds.hpp
-  
+
  V1.14 - 01-25-2018:
   - Fixed: new reloaded eventhandler functions (now you shouldn't hear "reloading" or "low on ammo" with throwables or in arsenal)
   - Added magazine ID check to make sure waituntil loop doesn't stack
