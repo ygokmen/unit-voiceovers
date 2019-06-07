@@ -4,35 +4,38 @@ Disable voice-overs for a unit. Should be called via remoteExec.
 
 Parameters:
 0: Unit to disable UVO on <OBJECT>
+1: Remove killed EH (removes kill confirmation) <BOOL>
 
 Return Value:
 Nothing
 
 Example:
-[_myUnit] remoteExec ["UVO_fnc_disableUVO",_myUnit];
+[_unit] remoteExec ["UVO_fnc_disableUVO",_unit,_unit];
 ----------------------------------------------------------*/
-params ["_unit"];
+params [["_unit",objNull,[objNull]],["_removeKilledEH",false,[false]]];
 
 if (local _unit) then {
-	private _unitEHIDs = _unit getVariable "UVO_unitEHIDs";
-
+	if (_removeKilledEH) then {
+		_unit removeEventHandler ["Killed",_unit getVariable "UVO_killedEHID"];
+		_unit setVariable ["UVO_killedEHID",nil];
+	};
+	
+	private _EHIDs = _unit getVariable "UVO_EHIDs";
 	if (!isNil "_unitEHIDs") then {
-		_unitEHIDs params ["_firedEHID","_hitEHID","_killedEHID","_localEHID","_reloadedEHID"];
-
-		// Remove local EH
+		_EHIDs params ["_firedEHID","_hitEHID","_reloadedEHID","_localEHID"];
 		_unit removeEventHandler ["Fired",_firedEHID];
 		_unit removeEventHandler ["Hit",_hitEHID];
-		_unit removeEventHandler ["Killed",_killedEHID];
-		_unit removeEventHandler ["Local",_localEHID];
 		_unit removeEventHandler ["Reloaded",_reloadedEHID];
-		_unit setVariable ["UVO_unitEHIDs",nil];
-		_unit setVariable ["UVO_unitTalking",nil];
-		_unit setVariable ["UVO_unitNationality",nil,true];
+		_unit removeEventHandler ["Local",_localEHID];
+		_unit setVariable ["UVO_EHIDs",nil];
+		_unit setVariable ["UVO_talking",nil];
+		_unit setVariable ["UVO_nationality",nil,true];
+		_unit setVariable ["UVO_defaultVoice",nil,true];
 
 		diag_log format["UVO INFO: UVO_fnc_disableUVO: %1 REMOVED FROM UVO FRAMEWORK",_unit];
 	} else {
 		diag_log format["UVO INFO: UVO_fnc_disableUVO: %1 SHOULD ALREADY BE REMOVED FROM UVO FRAMEWORK",_unit];
 	};
 } else {
-	diag_log format["UVO ERROR: UVO_fnc_disableUVO: %1 NOT LOCAL - FUNCTION SHOULD BE CALLED VIA REMOTEXEC WITH UNIT AS TARGET",_unit];
+	diag_log format["UVO ERROR: UVO_fnc_disableUVO: %1 NOT LOCAL",_unit];
 };

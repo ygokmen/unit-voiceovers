@@ -1,37 +1,27 @@
-class CfgFunctions
-{
-	class UVO
-	{
+class CfgFunctions {
+	class UVO {
 		tag = "UVO";
-		class ambient
-		{
-			file = "UVO\functions\ambient";
-			class ambientGeneric {};
-			class ambientRadio {};
-			class intervalCheck {};
-		};
-		class common
-		{
+		class common {
 			file = "UVO\functions\common";
+			class addUVO {};
 			class allyDown {};
 			class calloutDir {};
 			class confirmKill {};
 			class disableUVO {};
+			class enableSentences {};
 			class globalsay3D {};
 			class reinitialize {};
 			class thrownFrag {};
 		};
-		class definitions
-		{
+		class definitions {
 			file = "UVO\functions\definitions";
 			class createNationality {};
 			class createNationalityFromConfig {};
-			class defaultDefinitions {preInit = 1;};
+			class defaultNationalities {};
+			class defaultDefinitions {};
 			class setNationality {};
-			class throwableDefinitions {preInit = 1;};
 		};
-		class eventhandler
-		{
+		class eventhandler {
 			file = "UVO\functions\eventhandler";
 			class firedEH {};
 			class hitEH {};
@@ -39,13 +29,12 @@ class CfgFunctions
 			class localEH {};
 			class reloadedEH {};
 		};
-		class init
-		{
+		class init {
 			file = "UVO\functions\init";
 			class CBASettings {};
 			class postInit {};
-			class preInit {preInit = 1;};
-			class unitInit {};
+			class preInit {};
+			class unitInitPost {};
 		};
 	};
 };

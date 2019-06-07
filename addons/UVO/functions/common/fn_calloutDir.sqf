@@ -12,24 +12,21 @@ params ["_unit"];
 
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 
-// Attempt to force unit to 'know about' object (cursorTarget may not work on first key press or until target is 'known')
 _unit reveal cursorObject;
-
 private _target = cursorTarget;
 
-// Try to prevent spam
-if (diag_tickTime < (_unit getVariable ["UVO_unitLastCalloutTime",0]) + 2) exitWith {};
+// Prevent spam
+if (diag_tickTime < (_unit getVariable ["UVO_lastCalloutTime",0]) + 2) exitWith {};
 
-// Stop if target is not a valid, alive, enemy entity
-if (isNull _target || {!alive _target || {(side _unit) getFriend (side _target) >= 0.6}}) exitWith {};
+if (!alive _target || {(side _unit) getFriend (side _target) >= 0.6}) exitWith {};
 
 // Stop if unit is not alive/unconscious OR doesnt have compass
-if (!alive _unit || {(_unit getVariable ["ACE_isUnconscious",false]) || {!("ItemCompass" in (assignedItems _unit))}}) exitWith {};
+if (!alive _unit || (_unit getVariable ["ACE_isUnconscious",false]) || {!("ItemCompass" in (assignedItems _unit))}) exitWith {};
 
 // Stop if unit is inside a vehicle, except if its a static weapon
 if (!(_unit in _unit) && {!((objectParent _unit) isKindOf "StaticWeapon")}) exitWith {};
 
-// Stop if unit is using launcher (don't want callouts when locking onto something)
+// Stop if unit is using launcher
 if (currentWeapon _unit == secondaryWeapon _unit) exitWith {};
 
 // Determine callout direction
@@ -46,7 +43,6 @@ private _calloutDir = switch (true) do {
 	default {0};
 };
 
-// Finish up
-_unit setVariable ["UVO_unitLastCalloutTime",diag_tickTime];
-private _unitNationality = _unit getVariable "UVO_unitNationality";
-[_unit,selectRandom ((missionNamespace getVariable (format["UVO_callouts_%1",_unitNationality])) # _calloutDir)] call UVO_fnc_globalSay3D;
+_unit setVariable ["UVO_lastCalloutTime",diag_tickTime];
+private _nationality = _unit getVariable "UVO_nationality";
+[_unit,selectRandom ((missionNamespace getVariable format["UVO_callouts_%1",_nationality]) # _calloutDir)] call UVO_fnc_globalSay3D;

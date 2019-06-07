@@ -1,5 +1,4 @@
-class CfgSounds
-{
+class CfgSounds {
 	sounds[] = {};
 	#include "sounds\soundsCommon.hpp"
 	#include "sounds\soundsEAST.hpp"
