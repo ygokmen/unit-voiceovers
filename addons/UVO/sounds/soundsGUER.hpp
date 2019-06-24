@@ -746,99 +746,226 @@
 		sound[] = {"UVO\sounds\guer\hit\wounded40.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded41_GUER {
-		name = "UVO_wounded41_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded41.ogg",VOL,PITCH,DIST};
+//rocket suppression
+	class UVO_rocketSuppression01_GUER {
+		name = "UVO_rocketSuppression01_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg1.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded42_GUER {
-		name = "UVO_wounded42_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded42.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression02_GUER {
+		name = "UVO_rocketSuppression02_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg2.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded43_GUER {
-		name = "UVO_wounded43_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded43.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression03_GUER {
+		name = "UVO_rocketSuppression03_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg3.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded44_GUER {
-		name = "UVO_wounded44_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded44.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression04_GUER {
+		name = "UVO_rocketSuppression04_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg4.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded45_GUER {
-		name = "UVO_wounded45_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded45.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression05_GUER {
+		name = "UVO_rocketSuppression05_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg5.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded46_GUER {
-		name = "UVO_wounded46_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded46.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression06_GUER {
+		name = "UVO_rocketSuppression06_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg6.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded47_GUER {
-		name = "UVO_wounded47_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded47.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression07_GUER {
+		name = "UVO_rocketSuppression07_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg7.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded48_GUER {
-		name = "UVO_wounded48_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded48.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression08_GUER {
+		name = "UVO_rocketSuppression08_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg8.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded49_GUER {
-		name = "UVO_wounded49_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded49.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression09_GUER {
+		name = "UVO_rocketSuppression09_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\rpg9.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded50_GUER {
-		name = "UVO_wounded50_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded50.ogg",VOL,PITCH,DIST};
+//bullet suppression
+	class UVO_bulletSuppression01_GUER {
+		name = "UVO_bulletSuppression01_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed1.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded51_GUER {
-		name = "UVO_wounded51_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded51.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression02_GUER {
+		name = "UVO_bulletSuppression02_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed2.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded52_GUER {
-		name = "UVO_wounded52_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded52.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression03_GUER {
+		name = "UVO_bulletSuppression03_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed3.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded53_GUER {
-		name = "UVO_wounded53_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded53.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression04_GUER {
+		name = "UVO_bulletSuppression04_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed4.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded54_GUER {
-		name = "UVO_wounded54_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded54.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression05_GUER {
+		name = "UVO_bulletSuppression05_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed5.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded55_GUER {
-		name = "UVO_wounded55_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded55.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression06_GUER {
+		name = "UVO_bulletSuppression06_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed6.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded56_GUER {
-		name = "UVO_wounded56_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded56.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression07_GUER {
+		name = "UVO_bulletSuppression07_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed7.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded57_GUER {
-		name = "UVO_wounded57_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded57.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression08_GUER {
+		name = "UVO_bulletSuppression08_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed8.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded58_GUER {
-		name = "UVO_wounded58_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded58.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression09_GUER {
+		name = "UVO_bulletSuppression09_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed9.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded59_GUER {
-		name = "UVO_wounded59_GUER";
-		sound[] = {"UVO\sounds\guer\hit\wounded59.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression10_GUER {
+		name = "UVO_bulletSuppression10_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed10.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression11_GUER {
+		name = "UVO_bulletSuppression11_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed11.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression12_GUER {
+		name = "UVO_bulletSuppression12_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed12.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression13_GUER {
+		name = "UVO_bulletSuppression13_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed13.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression14_GUER {
+		name = "UVO_bulletSuppression14_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed14.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression15_GUER {
+		name = "UVO_bulletSuppression15_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed15.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression16_GUER {
+		name = "UVO_bulletSuppression16_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed16.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression17_GUER {
+		name = "UVO_bulletSuppression17_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed17.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression18_GUER {
+		name = "UVO_bulletSuppression18_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed18.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression19_GUER {
+		name = "UVO_bulletSuppression19_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed19.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression20_GUER {
+		name = "UVO_bulletSuppression20_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed20.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression21_GUER {
+		name = "UVO_bulletSuppression21_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed21.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression22_GUER {
+		name = "UVO_bulletSuppression22_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed22.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression23_GUER {
+		name = "UVO_bulletSuppression23_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed23.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression24_GUER {
+		name = "UVO_bulletSuppression24_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed24.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression25_GUER {
+		name = "UVO_bulletSuppression25_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed25.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression26_GUER {
+		name = "UVO_bulletSuppression26_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed26.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression27_GUER {
+		name = "UVO_bulletSuppression27_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed27.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression28_GUER {
+		name = "UVO_bulletSuppression28_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed28.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression29_GUER {
+		name = "UVO_bulletSuppression29_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed29.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression30_GUER {
+		name = "UVO_bulletSuppression30_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed30.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression31_GUER {
+		name = "UVO_bulletSuppression31_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed31.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression32_GUER {
+		name = "UVO_bulletSuppression32_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed32.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression33_GUER {
+		name = "UVO_bulletSuppression33_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed33.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression34_GUER {
+		name = "UVO_bulletSuppression34_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed34.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression35_GUER {
+		name = "UVO_bulletSuppression35_GUER";
+		sound[] = {"UVO\sounds\guer\suppressed\suppressed35.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
 //allyDown
