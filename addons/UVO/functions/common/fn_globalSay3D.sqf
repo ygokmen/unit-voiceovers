@@ -19,7 +19,7 @@ if (behaviour _unit == "STEALTH") exitWith {};
 if (_unit getVariable ["UVO_talking",false] || inputAction "pushToTalk" > 0) exitWith {};
 _unit setVariable ["UVO_talking",true];
 
-[_unit,[_sound,UVO_option_maxDistVoices,UVO_option_soundsSamplePitch]] remoteExec ["say3D",0];
+[_unit,[_sound,UVO_option_maxDistVoices,UVO_option_soundsSamplePitch,true]] remoteExec ["say3D",0];
 
 // Give some lip movement and let the unit talk again
 [_unit,true] remoteExec ["setRandomLip",0];
