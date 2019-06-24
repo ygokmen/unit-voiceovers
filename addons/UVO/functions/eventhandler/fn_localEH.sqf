@@ -15,11 +15,12 @@ _unit setVariable ["UVO_killedEHID",nil];
 
 private _EHIDs = _unit getVariable "UVO_EHIDs";
 if (!isNil "_EHIDs") then {
-	_EHIDs params ["_firedEHID","_hitEHID","_reloadedEHID","_localEHID"];
+	_EHIDs params ["_firedEHID","_hitEHID","_reloadedEHID","_localEHID","_FiredManEHID"];
 	_unit removeEventHandler ["Fired",_firedEHID];
 	_unit removeEventHandler ["Hit",_hitEHID];
 	_unit removeEventHandler ["Reloaded",_reloadedEHID];
 	_unit removeEventHandler ["Local",_localEHID];
+	_unit removeEventHandler ["FiredMan",_FiredManEHID];
 	_unit setVariable ["UVO_EHIDs",nil];
 };
 

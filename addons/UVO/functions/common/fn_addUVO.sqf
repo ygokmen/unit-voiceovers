@@ -20,7 +20,13 @@ if (!isNull _unit && {local _unit}) then {
 	};
 
 	// Stop here if default nationality is disabled
-	private _allowed = UVO_option_enableUVOEast && _unit isKindOf "SoldierEB" || UVO_option_enableUVOGuer && _unit isKindOf "SoldierGB" || UVO_option_enableUVOWest && _unit isKindOf "SoldierWB";
+	private _allowed = 
+		UVO_option_enableUVOEast && _unit isKindOf "SoldierEB"
+			||
+		UVO_option_enableUVOGuer && _unit isKindOf "SoldierGB"
+			||
+		UVO_option_enableUVOWest && _unit isKindOf "SoldierWB";
+		
 	if ((toUpper _nationality) in ["EAST","GUER","WEST"] && !_allowed) exitWith {};
 	
 	if (isNil {_unit getVariable "UVO_EHIDs"}) then {
@@ -42,6 +48,9 @@ if (!isNull _unit && {local _unit}) then {
 		private _hitEHID = _unit addEventHandler ["Hit",{_this call UVO_fnc_hitEH;}];
 		private _reloadedEHID = _unit addEventhandler ["Reloaded",{_this call UVO_fnc_reloadedEH;}];
 		private _localEHID = _unit addEventhandler ["Local",{_this call UVO_fnc_localEH;}];
-		_unit setVariable ["UVO_EHIDs",[_firedEHID,_hitEHID,_reloadedEHID,_localEHID]];
+		private _firedManEHID = _unit addEventhandler ["FiredMan",{_this call UVO_fnc_firedManEH;}];
+		_unit setVariable ["UVO_EHIDs",[_firedEHID,_hitEHID,_reloadedEHID,_localEHID,_firedManEHID]];
+		_unit setVariable ["UVO_suppressTimer", 0];
+		_unit setVariable ["UVO_suppressedTimer", 0];
 	};
 };

@@ -12,6 +12,7 @@ class CfgFunctions {
 			class globalsay3D {};
 			class reinitialize {};
 			class thrownFrag {};
+			class suppressed {};
 		};
 		class definitions {
 			file = "UVO\functions\definitions";
@@ -28,6 +29,7 @@ class CfgFunctions {
 			class killedEH {};
 			class localEH {};
 			class reloadedEH {};
+			class firedManEH {};
 		};
 		class init {
 			file = "UVO\functions\init";
