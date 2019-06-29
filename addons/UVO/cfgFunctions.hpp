@@ -25,11 +25,11 @@ class CfgFunctions {
 		class eventhandler {
 			file = "UVO\functions\eventhandler";
 			class firedEH {};
+			class firedManEH {};
 			class hitEH {};
 			class killedEH {};
 			class localEH {};
 			class reloadedEH {};
-			class firedManEH {};
 		};
 		class init {
 			file = "UVO\functions\init";

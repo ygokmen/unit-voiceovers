@@ -8,37 +8,30 @@ See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#FiredMan)
 
 Return Value: -
 ----------------------------------------------------------*/
-params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];
 
-private _objFiredUpon = "";
-if (isPlayer _unit) then { _objFiredUpon = cursorTarget;
-	} else { _objFiredUpon = assignedTarget _unit; };
+private _objFiredUpon = [assignedTarget _unit,cursorTarget] select (isPlayer _unit);
 
-if (cba_missiontime < _unit getVariable "UVO_suppressTimer"
-		||
-	{!alive _objFiredUpon}
-		||
-	{!(_objFiredUpon iskindof "land")}
-		||
-	{_weapon in ["Put", "Throw", ""]}
-) exitWith {};
+if (CBA_MissionTime < _unit getVariable "UVO_suppressTimer" || {
+	!alive _objFiredUpon || {
+	!(_objFiredUpon isKindOf "Land") || {
+	_weapon in ["Put","Throw",""]
+}}}) exitWith {};
 
-if (_objFiredUpon iskindof "car") then {
+if (_objFiredUpon isKindOf "Car") then {
 	private _aliveCrewMember = (crew vehicle _objFiredUpon) findIf {alive _x};
 	if (_aliveCrewMember != -1)	then {
 		_objFiredUpon = (crew vehicle _objFiredUpon) select _aliveCrewMember;
 	} else {
-		private _lookForNearbyCrew = _objFiredUpon nearEntities ["camanbase", 20];
+		private _lookForNearbyCrew = _objFiredUpon nearEntities ["CAManBase",20];
 		_objFiredUpon = selectRandom _lookForNearbyCrew;
 	};
 };
 
-if (isNil "_objFiredUpon"
-		|| 
-	{cba_missiontime < _objFiredUpon getVariable "UVO_suppressedTimer"}
-		||
-	{side _objFiredUpon isEqualTo side _unit}
-) exitWith {_unit setVariable ["UVO_suppressTimer", cba_missiontime + 10]}; 
+if (isNil "_objFiredUpon" || {
+	CBA_MissionTime < _objFiredUpon getVariable "UVO_suppressedTimer" || {
+	side _objFiredUpon isEqualTo side _unit
+}}) exitWith {_unit setVariable ["UVO_suppressTimer",CBA_MissionTime + 10]};
 
-[_unit, _objFiredUpon, _weapon, _ammo] call UVO_fnc_suppressed;
-_unit setVariable ["UVO_suppressTimer", cba_missiontime + random 10 + random 10];
+[_unit,_objFiredUpon,_weapon,_ammo] call UVO_fnc_suppressed;
+_unit setVariable ["UVO_suppressTimer",CBA_MissionTime + random 10 + random 10];

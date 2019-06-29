@@ -15,7 +15,7 @@ _unit setVariable ["UVO_killedEHID",nil];
 
 private _EHIDs = _unit getVariable "UVO_EHIDs";
 if (!isNil "_EHIDs") then {
-	_EHIDs params ["_firedEHID","_hitEHID","_reloadedEHID","_localEHID","_FiredManEHID"];
+	_EHIDs params ["_firedEHID","_hitEHID","_reloadedEHID","_localEHID","_firedManEHID"];
 	_unit removeEventHandler ["Fired",_firedEHID];
 	_unit removeEventHandler ["Hit",_hitEHID];
 	_unit removeEventHandler ["Reloaded",_reloadedEHID];
