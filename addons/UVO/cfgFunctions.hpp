@@ -12,7 +12,6 @@ class CfgFunctions {
 			class globalsay3D {};
 			class reinitialize {};
 			class thrownFrag {};
-			class suppressed {};
 		};
 		class definitions {
 			file = "UVO\functions\definitions";
@@ -38,5 +37,13 @@ class CfgFunctions {
 			class preInit {};
 			class unitInitPost {};
 		};
+		class suppressed {
+			file = "UVO\functions\suppressed";
+			class playerLoop {};
+			class shooterIsAI {};
+			class shooterIsPlayer {};
+			class targetIsAI {};
+			class targetIsPlayer {};
+		}
 	};
 };
