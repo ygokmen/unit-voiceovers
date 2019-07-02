@@ -31,7 +31,7 @@ waitUntil {
 	_handle ppEffectAdjust [getSuppression _target / 64, getSuppression _target / 64, true];
 	_handle ppEffectCommit 0.5;
 
-	_target setSuppression ((getSuppression _target min 1) - 0.05); //limit end value to 0.95
+	_target setSuppression ((getSuppression _target min 0.99) - 0.05);
 	
 	systemchat format ["difference: %1 -- currentValue: %2", (getSuppression _target - _saved), getSuppression _target];
 	sleep 0.5;

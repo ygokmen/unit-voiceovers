@@ -12,15 +12,16 @@ params 	["_shooter", "_target", "_weapon", "_ammo"];
  time tick was < cba_missionTime -or- getSuppression value was altered;
  which should be 0 by default for client has interface. so lets run another check...
  if it is not 0, we increment it. leave the rest for our loop. if there's no loop to
- set it to default 0 value, no worries, this value is affects AI FSM's anyway. */
+ set it to default 0 value, no worries, this value affects AI FSM's anyway. */
 
 private _currentSuppression = getSuppression _target;
 //if that is the case, we want to increment loop's inner suppress values (not too much tho)
 if (_currentSuppression > 0 && {_currentSuppression < 1} ) then {
 	//increment it
-	_target setSuppression ((_currentSuppression min 0.85) + 0.1);
+	_target setSuppression ((_currentSuppression min 0.86) + 0.13);
 } else {
-
+	//reinitialize if suppression value goes out of range somehow or stuck
+	if !(getSuppression _target isEqualTo 0) exitWith { _target setSuppression 0; };
 	private _munition = switch true do {
 		case (_weapon isKindOf ["LauncherCore", configFile >> "CfgWeapons"]) : {["rocket", 0.9]};
 		default {["bullet", 0.50]};
