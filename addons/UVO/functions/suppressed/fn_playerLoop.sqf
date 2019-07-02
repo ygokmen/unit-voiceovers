@@ -1,7 +1,8 @@
 /*--------------------------------------------------------
 Author: Gökmen
-Simple loop with PP effect synched with current suppression of player. Suppression will be 
-forced reset to 0 when player is in vehicle's gunner or driver seat (engine behavior).
+Simple loop with PP effect synched with current suppression of player.
+* Suppression will be forced reset to 0 when player is in vehicle's gunner or driver seat (engine behavior).
+* Destroyed vehicle will set player suppress value to 1 (when on passenger seat)
 
 Parameters:
 ["_name", "_priority", "_effect", "_target", "_munition # 1", "_handle"];
