@@ -26,7 +26,7 @@ _handle ppEffectCommit 0.5;
 waitUntil {
 	private _saved = getSuppression _target;
 
-	if ((getSuppression _target) <= 0) exitWith { true; };
+	if ((getSuppression _target) < 0.05) exitWith { true; };
 	_handle ppEffectAdjust [getSuppression _target / 64, getSuppression _target / 64, true];
 	_handle ppEffectCommit 0.5;
 

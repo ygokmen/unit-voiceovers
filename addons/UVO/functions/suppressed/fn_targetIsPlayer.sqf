@@ -16,9 +16,9 @@ params 	["_shooter", "_target", "_weapon", "_ammo"];
 
 private _currentSuppression = getSuppression _target;
 //if that is the case, we want to increment loop's inner suppress values (not too much tho)
-if (_currentSuppression > 0 && {_currentSuppression <= 1} ) then {
+if (_currentSuppression > 0 && {_currentSuppression < 1} ) then {
 	//increment it
-	_target setSuppression ((_currentSuppression min 0.9) + 0.1);
+	_target setSuppression ((_currentSuppression min 0.85) + 0.1);
 } else {
 
 	private _munition = switch true do {
