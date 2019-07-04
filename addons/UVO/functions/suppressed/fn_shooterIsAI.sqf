@@ -27,7 +27,7 @@ if (isPlayer _target) then {
 	getsuppression return 0 on players. Will be using this check later on
 	while incrementing supression on player artificially with the PP effect. */
 	if (cba_missiontime < _target getVariable "UVO_suppressedTimer" 
-		&& {getSuppression _target isEqualTo 0}) exitWith {};
+	&& {getSuppression _target isEqualTo 0}) exitWith {};
 	[
 		_shooter,
 		_target,
