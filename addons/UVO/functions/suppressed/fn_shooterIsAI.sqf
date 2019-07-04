@@ -16,11 +16,9 @@ if (_target iskindof "LandVehicle") then {
 	} else { _target = selectRandom (crew vehicle _target); };
 };
 
-if (isNil{_target getVariable "UVO_suppressedTimer"}
-		||
-	{_weapon in ["Put", "Throw", ""]
-		||
-	{!alive _target}}
+if (isNil{_target getVariable "UVO_suppressedTimer"} 
+	|| {_weapon in ["Put", "Throw", ""] 
+	|| {!alive _target}} 
 ) exitWith { _shooter setVariable ["UVO_suppressTimer", cba_missiontime + 10]; };
 
 if (isPlayer _target) then {
@@ -28,8 +26,8 @@ if (isPlayer _target) then {
 	/* entry point for mod compatibility (visual post-process efx):
 	getsuppression return 0 on players. Will be using this check later on
 	while incrementing supression on player artificially with the PP effect. */
-	if (cba_missiontime < _target getVariable "UVO_suppressedTimer" &&
-	{getSuppression _target isEqualTo 0}) exitWith {};
+	if (cba_missiontime < _target getVariable "UVO_suppressedTimer" 
+		&& {getSuppression _target isEqualTo 0}) exitWith {};
 	[
 		_shooter,
 		_target,
