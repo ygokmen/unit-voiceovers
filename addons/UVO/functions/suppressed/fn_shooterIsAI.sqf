@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
 Author: Gökmen
-Modified FiredMan EH function for 'lazy suppression' (clean version)
+Modified FiredMan EH function for 'lazy suppression' (UVO version)
 
 Parameters:
 ["_shooter", "_target", "_weapon", "_ammo"];
@@ -24,13 +24,13 @@ if (isNil{_target getVariable "UVO_suppressedTimer"}
 ) exitWith { _shooter setVariable ["UVO_suppressTimer", cba_missiontime + 10]; };
 
 if (isPlayer _target) then {
+	private _optimizeTick = if (UVO_GLSLoaded) then {1} else {10};
 	/* entry point for mod compatibility (visual post-process efx):
 	getsuppression return 0 on players. Will be using this check later on
 	while incrementing supression on player artificially with the PP effect. */
-	if (cba_missiontime < _target getVariable "UVO_suppressedTimer"
-		&&
-	{getSuppression _target isEqualTo 0}) exitWith { systemchat "exit trace1"; };
-	_shooter setVariable ["UVO_suppressTimer", cba_missiontime + 1];
+	if (cba_missiontime < _target getVariable "UVO_suppressedTimer" &&
+	{getSuppression _target isEqualTo 0}) exitWith {};
+	_shooter setVariable ["UVO_suppressTimer", cba_missiontime + _optimizeTick];
 	[
 		_shooter,
 		_target,
