@@ -16,9 +16,9 @@ if (_target iskindof "LandVehicle") then {
 	} else { _target = selectRandom (crew vehicle _target); };
 };
 
-if (isNil{_target getVariable "UVO_suppressedTimer"} 
-	|| {_weapon in ["Put", "Throw", ""] 
-	|| {!alive _target}} 
+if (isNil{_target getVariable "UVO_suppressedTimer"} ||
+	{_weapon in ["Put", "Throw", ""] ||
+	{!alive _target}} 
 ) exitWith { _shooter setVariable ["UVO_suppressTimer", cba_missiontime + 10]; };
 
 if (isPlayer _target) then {
