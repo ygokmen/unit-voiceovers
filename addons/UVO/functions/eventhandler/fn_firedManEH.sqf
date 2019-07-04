@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
 Author: Gökmen
-FiredMan EH function for 'lazy suppression' (clean version)
+FiredMan EH function for 'lazy suppression' (UVO version)
 
 Parameters:
 See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#FiredMan)
