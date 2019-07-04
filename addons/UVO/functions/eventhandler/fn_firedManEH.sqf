@@ -19,7 +19,6 @@ if (isPlayer _shooter) then {
 		_weapon,
 		_ammo
 	] call uvo_fnc_shooterIsPlayer;
-
 } else { 
 	private _target = assignedTarget _shooter;
 	[

@@ -16,7 +16,7 @@ private _currentSuppression = getSuppression _target;
 if (_currentSuppression > 0 && {_currentSuppression < 1} ) then {
 	_target setSuppression ((_currentSuppression min 0.75) + 0.14 + random 0.1);
 } else {
-	//reinitialize if suppression value goes out of range somehow or stuck (happens in vehicles&no loop running)
+	//reinitialize if suppression value goes out of range somehow or stuck (happens in vehicles)
 	if !(getSuppression _target isEqualTo 0) exitWith { _target setSuppression 0; };
 		
 	private _munition = switch true do {
