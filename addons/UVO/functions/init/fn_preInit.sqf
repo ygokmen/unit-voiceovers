@@ -13,6 +13,9 @@ call UVO_fnc_defaultDefinitions;
 // ACE Medical Compatibility
 UVO_ACEMedicalLoaded = [false,true] select (isClass (configFile >> "CfgPatches" >> "ace_medical"));
 
+// Lazy suppression Compatibility
+UVO_GLSLoaded = [false,true] select (isClass (configFile >> "CfgPatches" >> "gls_visuals"));
+
 // Soldier init event handlers
 ["SoldierEB","init",{[_this # 0,"EAST"] call UVO_fnc_addUVO;}] call CBA_fnc_addClassEventHandler;
 ["SoldierGB","init",{[_this # 0,"GUER"] call UVO_fnc_addUVO;}] call CBA_fnc_addClassEventHandler;
