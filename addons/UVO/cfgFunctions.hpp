@@ -39,7 +39,6 @@ class CfgFunctions {
 		};
 		class suppressed {
 			file = "UVO\functions\suppressed";
-			class playerLoop {};
 			class shooterIsAI {};
 			class shooterIsPlayer {};
 			class targetIsAI {};
