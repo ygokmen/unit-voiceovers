@@ -43,12 +43,13 @@ if (!isNull _unit && {local _unit}) then {
 
 		// Add necessary event handlers
 		private _firedEHID = _unit addeventhandler ["Fired",{_this call UVO_fnc_firedEH;}];
+		private _firedManEHID = _unit addEventhandler ["FiredMan",{_this call UVO_fnc_firedManEH;}];
 		private _hitEHID = _unit addEventHandler ["Hit",{_this call UVO_fnc_hitEH;}];
 		private _reloadedEHID = _unit addEventhandler ["Reloaded",{_this call UVO_fnc_reloadedEH;}];
 		private _localEHID = _unit addEventhandler ["Local",{_this call UVO_fnc_localEH;}];
-		private _firedManEHID = _unit addEventhandler ["FiredMan",{_this call UVO_fnc_firedManEH;}];
-		_unit setVariable ["UVO_EHIDs",[_firedEHID,_hitEHID,_reloadedEHID,_localEHID,_firedManEHID]];
-		_unit setVariable ["UVO_suppressTimer", 0];
-		_unit setVariable ["UVO_suppressedTimer", 0];
+		// Initialize variables
+		_unit setVariable ["UVO_EHIDs",[_firedEHID,_firedManEHID,_hitEHID,_reloadedEHID,_localEHID]];
+		_unit setVariable ["UVO_suppressTimer",0];
+		_unit setVariable ["UVO_suppressedTimer",0];
 	};
 };
