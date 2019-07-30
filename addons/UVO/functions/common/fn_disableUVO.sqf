@@ -19,9 +19,9 @@ if (local _unit) then {
 		_unit removeEventHandler ["Killed",_unit getVariable "UVO_killedEHID"];
 		_unit setVariable ["UVO_killedEHID",nil];
 	};
-	
+
 	private _EHIDs = _unit getVariable "UVO_EHIDs";
-	if (!isNil "_unitEHIDs") then {
+	if (!isNil "_EHIDs") then {
 		_EHIDs params ["_firedEHID","_firedManEHID","_hitEHID","_reloadedEHID","_localEHID"];
 		_unit removeEventHandler ["Fired",_firedEHID];
 		_unit removeEventHandler ["FiredMan",_firedManEHID];
