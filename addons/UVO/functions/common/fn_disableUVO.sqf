@@ -1,6 +1,7 @@
 /*--------------------------------------------------------
 Authors: Sceptre
-Disable voice-overs for a unit. Should be called via remoteExec.
+Disable voice-overs for a unit. Should be called post-init,
+and where unit is local.
 
 Parameters:
 0: Unit to disable UVO on <OBJECT>
@@ -9,8 +10,9 @@ Parameters:
 Return Value:
 Nothing
 
-Example:
+Examples:
 [_unit] remoteExec ["UVO_fnc_disableUVO",_unit,_unit];
+["SoldierWB","initPost",{[_this # 0] call UVO_fnc_disableUVO}] call CBA_fnc_addClassEventHandler;
 ----------------------------------------------------------*/
 params [["_unit",objNull,[objNull]],["_removeKilledEH",false,[false]]];
 
@@ -42,3 +44,5 @@ if (local _unit) then {
 } else {
 	diag_log format["UVO ERROR: UVO_fnc_disableUVO: %1 NOT LOCAL",_unit];
 };
+
+nil
