@@ -51,5 +51,6 @@ if (!isNull _unit && {local _unit}) then {
 		_unit setVariable ["UVO_EHIDs",[_firedEHID,_firedManEHID,_hitEHID,_reloadedEHID,_localEHID]];
 		_unit setVariable ["UVO_suppressTimer",0];
 		_unit setVariable ["UVO_suppressedTimer",0];
+		_unit setVariable ["UVO_allowDeathShouts",true,true];
 	};
 };

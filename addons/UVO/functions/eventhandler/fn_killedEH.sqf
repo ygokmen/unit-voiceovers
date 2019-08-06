@@ -15,7 +15,7 @@ if (!isNil {_unit getVariable "UVO_isDead"}) exitWith {};
 _unit setVariable ["UVO_isDead",true];
 
 // Play death shout effect
-if ((eyePos _unit # 2) > 0) then {
+if ((eyePos _unit # 2) > 0 && _unit getVariable ["UVO_allowDeathShouts",true]) then {
 	playSound3D [selectRandom UVO_deathShouts,_unit,false,getPosASL _unit,UVO_option_deathShoutsVolume,1,UVO_option_maxDistDeathShouts];
 };
 
