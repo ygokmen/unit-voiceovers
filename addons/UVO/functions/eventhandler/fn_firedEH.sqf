@@ -46,11 +46,11 @@ if (_weapon in ["Throw","Put"]) then {
 	if (_nearFriendlies isEqualTo []) exitWith {};
 
 	if (isPlayer _unit)	then {
-		// If unit is a player, Creat PFH to check when player reloads or changes weapon.
+		// If unit is a player, Create PFH to check when player reloads or changes weapon.
 		[{
 			params ["_args","_PFHID"];
 			_args params ["_unit","_muzzle","_nationality"];
-			
+
 			if (inputAction "reloadMagazine" > 0) exitwith {
 				_PFHID call CBA_fnc_removePerFrameHandler;
 				[_unit,selectRandom (missionNamespace getVariable format ["UVO_reloading_%1",_nationality])] call UVO_fnc_globalSay3D;
