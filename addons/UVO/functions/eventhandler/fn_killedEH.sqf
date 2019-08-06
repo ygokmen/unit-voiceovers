@@ -28,17 +28,14 @@ if !(_nearFriendlies isEqualTo []) then {
 // ACE Medical Compatibility
 if (UVO_ACEMedicalLoaded) then {_instigator = _unit getVariable ["ace_medical_lastDamageSource",objNull];};
 
-// Chance for kill confirm
-if (isNull _instigator ||
+// Verify instigator and roll the dice for kill confirm
+if (!alive _instigator || isNil {_instigator getVariable "UVO_nationality"}
 	!isPlayer _instigator && {UVO_option_killConfirmChanceAI <= random 1} ||
 	isPlayer _instigator && {!UVO_option_clientEnabled || UVO_option_killConfirmChancePlayer <= random 1}
 ) exitWith {};
 
 // Stop if the kill was by friendly fire
 if ((side group _unit) getFriend (side group _instigator) >= 0.6) exitWith {};
-
-// Stop if instigator is dead or no nationality is defined
-if (!alive _instigator || isNil {_instigator getVariable "UVO_nationality"}) exitWith {};
 
 // Check if the killer can see victim fully
 private _visibility = [_instigator,"VIEW",_unit] checkVisibility [eyePos _instigator,AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine3"))];
