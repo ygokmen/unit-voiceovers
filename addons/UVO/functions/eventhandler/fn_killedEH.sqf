@@ -29,7 +29,7 @@ if !(_nearFriendlies isEqualTo []) then {
 if (UVO_ACEMedicalLoaded) then {_instigator = _unit getVariable ["ace_medical_lastDamageSource",objNull];};
 
 // Verify instigator and roll the dice for kill confirm
-if (!alive _instigator || isNil {_instigator getVariable "UVO_nationality"}
+if (!alive _instigator || isNil {_instigator getVariable "UVO_nationality"} ||
 	!isPlayer _instigator && {UVO_option_killConfirmChanceAI <= random 1} ||
 	isPlayer _instigator && {!UVO_option_clientEnabled || UVO_option_killConfirmChancePlayer <= random 1}
 ) exitWith {};
