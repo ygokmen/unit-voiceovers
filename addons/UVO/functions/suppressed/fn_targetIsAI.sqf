@@ -7,28 +7,26 @@ Parameters:
 
 Return Value: -
 ----------------------------------------------------------*/
-params 	["_shooter", "_target", "_weapon", "_ammo"];
+params ["_shooter","_target","_weapon","_ammo"];
 
 private _munition = switch true do {
-	case (_weapon isKindOf ["LauncherCore", configFile >> "CfgWeapons"]) : {"rocket"};
+	case (_weapon isKindOf ["LauncherCore",configFile >> "CfgWeapons"]) : {"rocket"};
 	default {"bullet"};
 };
 private _suppressionType = _munition + "Suppression";
 private _nationality = _target getVariable "UVO_nationality";
-private _calculatedImpactTime = ceil ( (_target distance _shooter) / 
-	(getNumber(configfile >> "CfgAmmo" >> _ammo >> "typicalSpeed")) * 10) * 0.1;
+private _calculatedImpactTime = ceil ((_target distance _shooter) / (getNumber (configfile >> "CfgAmmo" >> _ammo >> "typicalSpeed")) * 10) * 0.1;
 
-//run code immediately if distance/bulletspeed have small ratio (CQB), else simulate delay 
+// Run code immediately if distance/bulletspeed have small ratio (CQB), else simulate delay
 if (_calculatedImpactTime > 0.1) then {
-	[{ params ["_target","_suppressionType","_nationality"];
-		[_target, selectRandom (
-			missionNamespace getVariable format ["UVO_%1_%2", _suppressionType, _nationality]
-		)] call UVO_fnc_globalSay3D;
-	},[_target,_suppressionType,_nationality], _calculatedImpactTime] call CBA_fnc_waitAndExecute;
+	[{
+		params ["_target","_suppressionType","_nationality"];
+
+		[_target,selectRandom (missionNamespace getVariable format ["UVO_%1_%2",_suppressionType,_nationality])] call UVO_fnc_globalSay3D;
+	},[_target,_suppressionType,_nationality],_calculatedImpactTime] call CBA_fnc_waitAndExecute;
 } else {
-	[_target, selectRandom (
-		missionNamespace getVariable format ["UVO_%1_%2", _suppressionType, _nationality]
-	)] call UVO_fnc_globalSay3D;
+	[_target,selectRandom (missionNamespace getVariable format ["UVO_%1_%2",_suppressionType,_nationality])] call UVO_fnc_globalSay3D;
 };
-//update suppressed unit's tick
-_target setVariable ["UVO_suppressedTimer", cba_missiontime + 10];
+
+// Update suppressed unit's tick
+_target setVariable ["UVO_suppressedTimer",CBA_missionTime + 10];

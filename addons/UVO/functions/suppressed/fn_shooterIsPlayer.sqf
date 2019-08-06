@@ -7,27 +7,29 @@ Parameters:
 
 Return Value: -
 ----------------------------------------------------------*/
-params 	["_shooter", "_target", "_weapon", "_ammo"];
+params ["_shooter","_target","_weapon","_ammo"];
 
-if (_target iskindof "LandVehicle") then {
-	private _dudesNearby = _target nearEntities ["CAManBase", 20];
-	if !(_dudesNearby isEqualTo []) then {
+if (_target isKindOf "LandVehicle") then {
+	private _dudesNearby = _target nearEntities ["CAManBase",20];
+	if (_dudesNearby isEqualTo []) then {
+		_target = selectRandom (crew vehicle _target);
+	} else {
 		_target = selectRandom _dudesNearby;
-	} else { _target = selectRandom (crew vehicle _target); };
+	};
 };
 
-if (isNil{_target getVariable "UVO_suppressedTimer"} ||
-	{_weapon in ["Put", "Throw", ""] ||
-	{!alive _target ||
-	{side _target isEqualTo side _shooter}}} //extra check for player
-) exitWith { _shooter setVariable ["UVO_suppressTimer", cba_missiontime + 10]; };
+if (isNil {_target getVariable "UVO_suppressedTimer"} || {
+	_weapon in ["Put","Throw",""] || {
+	!alive _target || {
+	side _target isEqualTo side _shooter //extra check for player
+}}}) exitWith {_shooter setVariable ["UVO_suppressTimer",CBA_missionTime + 10];};
 
 if (isPlayer _target) then {
 	private _optimizeTick = if (UVO_GLSLoaded) then {1} else {10};
 	/* entry point for mod compatibility (visual post-process efx):
 	getsuppression return 0 on players. Will be using this check later on
 	while incrementing supression on player artificially with the PP effect. */
-	if (cba_missiontime < _target getVariable "UVO_suppressedTimer"	
+	if (cba_missiontime < _target getVariable "UVO_suppressedTimer"
 	&& {getSuppression _target isEqualTo 0}) exitWith {};
 	[
 		_shooter,
