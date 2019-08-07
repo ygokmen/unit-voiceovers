@@ -415,4 +415,42 @@ class CfgSounds
 		sound[] = {"sounds\custom\reload\reloading03.ogg",2.6,1,100};
 		titles[] = {};
 	};
+//CUSTOM rocketSuppression
+	class UVO_rocketSuppression01_CUSTOM
+	{
+		name = "UVO_rocketSuppression01_CUSTOM";
+		sound[] = {"sounds\custom\suppression\rocketSuppression01.ogg",2.6,1,100};
+		titles[] = {};
+	};
+	class UVO_rocketSuppression02_CUSTOM
+	{
+		name = "UVO_rocketSuppression02_CUSTOM";
+		sound[] = {"sounds\custom\suppression\rocketSuppression02.ogg",2.6,1,100};
+		titles[] = {};
+	};
+	class UVO_rocketSuppression03_CUSTOM
+	{
+		name = "UVO_rocketSuppression03_CUSTOM";
+		sound[] = {"sounds\custom\suppression\rocketSuppression03.ogg",2.6,1,100};
+		titles[] = {};
+	};
+//CUSTOM bulletSuppression
+	class UVO_bulletSuppression01_CUSTOM
+	{
+		name = "UVO_bulletSuppression01_CUSTOM";
+		sound[] = {"sounds\custom\suppression\bulletSuppression01.ogg",2.6,1,100};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression02_CUSTOM
+	{
+		name = "UVO_bulletSuppression02_CUSTOM";
+		sound[] = {"sounds\custom\suppression\bulletSuppression02.ogg",2.6,1,100};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression03_CUSTOM
+	{
+		name = "UVO_bulletSuppression03_CUSTOM";
+		sound[] = {"sounds\custom\suppression\bulletSuppression03.ogg",2.6,1,100};
+		titles[] = {};
+	};
 };

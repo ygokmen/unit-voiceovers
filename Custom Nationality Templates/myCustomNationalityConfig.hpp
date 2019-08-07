@@ -116,5 +116,15 @@ class UVO_myCustomNationalityConfig {
 			"UVO_reloading02_CUSTOM",
 			"UVO_reloading03_CUSTOM"
 		};
+		rocketSuppression[] = {
+			"UVO_rocketSuppression01_CUSTOM",
+			"UVO_rocketSuppression02_CUSTOM",
+			"UVO_rocketSuppression03_CUSTOM"
+		};
+		bulletSuppression[] = {
+			"UVO_bulletSuppression01_CUSTOM",
+			"UVO_bulletSuppression02_CUSTOM",
+			"UVO_bulletSuppression03_CUSTOM"
+		};
 	};
 };

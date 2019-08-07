@@ -1,3 +1,4 @@
+// Note that arrays must be in order
 [
 	"CUSTOM",	// Nationality name/suffix
 	[	// Array of factions nationality is applied to
@@ -114,6 +115,16 @@
 			"UVO_reloading01_CUSTOM",
 			"UVO_reloading02_CUSTOM",
 			"UVO_reloading03_CUSTOM"
+		],
+		[	// rocketSuppression
+			"UVO_rocketSuppression01_CUSTOM",
+			"UVO_rocketSuppression02_CUSTOM",
+			"UVO_rocketSuppression03_CUSTOM"
+		],
+		[	// bulletSuppression
+			"UVO_bulletSuppression01_CUSTOM",
+			"UVO_bulletSuppression02_CUSTOM",
+			"UVO_bulletSuppression03_CUSTOM"
 		]
 	]
 ] call UVO_fnc_createNationality;
