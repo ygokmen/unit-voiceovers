@@ -25,39 +25,34 @@ if (_nationality isEqualTo "" || _factions isEqualTo [] || _definitionFile isEqu
 };
 
 _definitions params [
-	"_calloutsN",
-	"_calloutsNE",
-	"_calloutsE",
-	"_calloutsSE",
-	"_calloutsS",
-	"_calloutsSW",
-	"_calloutsW",
-	"_calloutsNW",
-	"_explosive",
-	"_flash",
-	"_frag",
-	"_incendiary",
-	"_smoke",
-	"_spotNade",
-	"_friendlyFire",
-	"_wounded",
-	"_allyDown",
-	"_targDownHi",
-	"_targDownLo",
-	"_cover",
-	"_ammoLow",
-	"_reloading"
+	["_calloutsN",[],[[]]],
+	["_calloutsNE",[],[[]]],
+	["_calloutsE",[],[[]]],
+	["_calloutsSE",[],[[]]],
+	["_calloutsS",[],[[]]],
+	["_calloutsSW",[],[[]]],
+	["_calloutsW",[],[[]]],
+	["_calloutsNW",[],[[]]],
+	["_explosive",[],[[]]],
+	["_flash",[],[[]]],
+	["_frag",[],[[]]],
+	["_incendiary",[],[[]]],
+	["_smoke",[],[[]]],
+	["_spotNade",[],[[]]],
+	["_friendlyFire",[],[[]]],
+	["_wounded",[],[[]]],
+	["_allyDown",[],[[]]],
+	["_targDownHi",[],[[]]],
+	["_targDownLo",[],[[]]],
+	["_cover",[],[[]]],
+	["_ammoLow",[],[[]]],
+	["_reloading",[],[[]]],
+	["_rocketSuppression",[],[[]]],
+	["_bulletSuppression",[],[[]]]
 ];
 
 missionNamespace setVariable [format["UVO_callouts_%1",_nationality],[
-	_calloutsN,
-	_calloutsNE,
-	_calloutsE,
-	_calloutsSE,
-	_calloutsS,
-	_calloutsSW,
-	_calloutsW,
-	_calloutsNW
+	_calloutsN,_calloutsNE,_calloutsE,_calloutsSE,_calloutsS,_calloutsSW,_calloutsW,_calloutsNW
 ]];
 missionNamespace setVariable [format["UVO_explosive_%1",_nationality],_explosive];
 missionNamespace setVariable [format["UVO_flash_%1",_nationality],_flash];
@@ -73,6 +68,8 @@ missionNamespace setVariable [format["UVO_targDownLo_%1",_nationality],_targDown
 missionNamespace setVariable [format["UVO_cover_%1",_nationality],_cover];
 missionNamespace setVariable [format["UVO_ammoLow_%1",_nationality],_ammoLow];
 missionNamespace setVariable [format["UVO_reloading_%1",_nationality],_reloading];
+missionNamespace setVariable [format["UVO_rocketSuppression_%1",_nationality],_rocketSuppression];
+missionNamespace setVariable [format["UVO_bulletSuppression_%1",_nationality],_bulletSuppression];
 
 diag_log format["UVO INFO: NATIONALITY %1 CREATED",_nationality];
 
@@ -83,5 +80,4 @@ if (isNil "UVO_customNationalities") then {
 {
 	UVO_customNationalities pushBack [_x,_nationality];
 	diag_log format["UVO INFO: FACTION %1 SET WITH NATIONALITY %2",_x,_nationality];
-	false
-} count _factions;
+} forEach _factions;

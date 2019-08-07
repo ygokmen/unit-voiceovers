@@ -30,41 +30,61 @@ private _factions =  getArray (_config >> "factions");
 
 // Get definitions
 private _defConfig = (_config >> "definitions");
-private _calloutsN = getArray (_defConfig >> "calloutsN");
-private _calloutsNE = getArray (_defConfig >> "calloutsNE");
-private _calloutsE = getArray (_defConfig >> "calloutsE");
-private _calloutsSE = getArray (_defConfig >> "calloutsSE");
-private _calloutsS = getArray (_defConfig >> "calloutsS");
-private _calloutsSW = getArray (_defConfig >> "calloutsSW");
-private _calloutsW = getArray (_defConfig >> "calloutsW");
-private _calloutsNW = getArray (_defConfig >> "calloutsNW");
-private _explosive = getArray (_defConfig >> "explosive");
-private _flash = getArray (_defConfig >> "flash");
-private _frag = getArray (_defConfig >> "frag");
-private _incendiary = getArray (_defConfig >> "incendiary");
-private _smoke = getArray (_defConfig >> "smoke");
-private _spotNade = getArray (_defConfig >> "spotNade");
-private _friendlyFire = getArray (_defConfig >> "friendlyFire");
-private _wounded = getArray (_defConfig >> "wounded");
-private _allyDown = getArray (_defConfig >> "allyDown");
-private _targDownHi = getArray (_defConfig >> "targDownHi");
-private _targDownLo = getArray (_defConfig >> "targDownLo");
-private _cover = getArray (_defConfig >> "cover");
-private _ammoLow = getArray (_defConfig >> "ammoLow");
-private _reloading = getArray (_defConfig >> "reloading");
-
-missionNamespace setVariable [format["UVO_callouts_%1",_nationality],
-    [
-        _calloutsN,
-        _calloutsNE,
-        _calloutsE,
-        _calloutsSE,
-        _calloutsS,
-        _calloutsSW,
-        _calloutsW,
-        _calloutsNW
-    ]
+[
+	getArray (_defConfig >> "calloutsN"),
+	getArray (_defConfig >> "calloutsNE"),
+	getArray (_defConfig >> "calloutsE"),
+	getArray (_defConfig >> "calloutsSE"),
+	getArray (_defConfig >> "calloutsS"),
+	getArray (_defConfig >> "calloutsSW"),
+	getArray (_defConfig >> "calloutsW"),
+	getArray (_defConfig >> "calloutsNW"),
+	getArray (_defConfig >> "explosive"),
+	getArray (_defConfig >> "flash"),
+	getArray (_defConfig >> "frag"),
+	getArray (_defConfig >> "incendiary"),
+	getArray (_defConfig >> "smoke"),
+	getArray (_defConfig >> "spotNade"),
+	getArray (_defConfig >> "friendlyFire"),
+	getArray (_defConfig >> "wounded"),
+	getArray (_defConfig >> "allyDown"),
+	getArray (_defConfig >> "targDownHi"),
+	getArray (_defConfig >> "targDownLo"),
+	getArray (_defConfig >> "cover"),
+	getArray (_defConfig >> "ammoLow"),
+	getArray (_defConfig >> "reloading"),
+	getArray (_defConfig >> "rocketSuppression"),
+	getArray (_defConfig >> "bulletSuppression")
+] params [
+	["_calloutsN",[],[[]]],
+	["_calloutsNE",[],[[]]],
+	["_calloutsE",[],[[]]],
+	["_calloutsSE",[],[[]]],
+	["_calloutsS",[],[[]]],
+	["_calloutsSW",[],[[]]],
+	["_calloutsW",[],[[]]],
+	["_calloutsNW",[],[[]]],
+	["_explosive",[],[[]]],
+	["_flash",[],[[]]],
+	["_frag",[],[[]]],
+	["_incendiary",[],[[]]],
+	["_smoke",[],[[]]],
+	["_spotNade",[],[[]]],
+	["_friendlyFire",[],[[]]],
+	["_wounded",[],[[]]],
+	["_allyDown",[],[[]]],
+	["_targDownHi",[],[[]]],
+	["_targDownLo",[],[[]]],
+	["_cover",[],[[]]],
+	["_ammoLow",[],[[]]],
+	["_reloading",[],[[]]],
+	["_rocketSuppression",[],[[]]],
+	["_bulletSuppression",[],[[]]]
 ];
+
+missionNamespace setVariable [format["UVO_callouts_%1",_nationality],[
+	_calloutsN,_calloutsNE,_calloutsE,_calloutsSE,_calloutsS,_calloutsSW,_calloutsW,_calloutsNW
+]];
 missionNamespace setVariable [format["UVO_explosive_%1",_nationality],_explosive];
 missionNamespace setVariable [format["UVO_flash_%1",_nationality],_flash];
 missionNamespace setVariable [format["UVO_frag_%1",_nationality],_frag];
@@ -79,6 +99,8 @@ missionNamespace setVariable [format["UVO_targDownLo_%1",_nationality],_targDown
 missionNamespace setVariable [format["UVO_cover_%1",_nationality],_cover];
 missionNamespace setVariable [format["UVO_ammoLow_%1",_nationality],_ammoLow];
 missionNamespace setVariable [format["UVO_reloading_%1",_nationality],_reloading];
+missionNamespace setVariable [format["UVO_rocketSuppression_%1",_nationality],_rocketSuppression];
+missionNamespace setVariable [format["UVO_bulletSuppression_%1",_nationality],_bulletSuppression];
 
 diag_log format["UVO INFO: NATIONALITY %1 CREATED",_nationality];
 
