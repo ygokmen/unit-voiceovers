@@ -6,10 +6,12 @@ class CfgFunctions {
 			class addUVO {};
 			class allyDown {};
 			class calloutDir {};
+			class CBASettings {};
 			class confirmKill {};
 			class disableUVO {};
 			class enableSentences {};
-			class globalsay3D {};
+			class globalSay3D {};
+			class initPost {};
 			class reinitialize {};
 			class thrownFrag {};
 		};
@@ -29,11 +31,6 @@ class CfgFunctions {
 			class killedEH {};
 			class localEH {};
 			class reloadedEH {};
-		};
-		class init {
-			file = "UVO\functions\init";
-			class CBASettings {};
-			class unitInitPost {};
 		};
 		class suppressed {
 			file = "UVO\functions\suppressed";

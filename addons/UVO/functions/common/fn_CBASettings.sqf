@@ -1,6 +1,6 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-PreInit CBA Settings function
+Authors: Gökmen, Sceptre
+CBA Settings
 ----------------------------------------------------------*/
 [
 	"UVO_option_clientEnabled","CHECKBOX",
