@@ -14,6 +14,7 @@ class CfgFunctions {
 			class init {};
 			class initPost {};
 			class reinitialize {};
+			class suppressed {};
 			class thrownFrag {};
 		};
 		class definitions {
@@ -33,10 +34,5 @@ class CfgFunctions {
 			class localEH {};
 			class reloadedEH {};
 		};
-		class suppressed {
-			file = "UVO\functions\suppressed";
-			class targetIsAI {};
-			class targetIsPlayer {};
-		}
 	};
 };
