@@ -39,7 +39,7 @@ if (!isNull _unit && {local _unit}) then {
 		case "EAST" : {UVO_option_enableUVOEast};
 		case "GUER" : {UVO_option_enableUVOGuer};
 		case "WEST" : {UVO_option_enableUVOWest};
-		default {true};
+		default {missionNamespace getVariable [format ["UVO_option_enableUVOCustom_%1",_nationality],true]};
 	};
 
 	if (_enabled) then {

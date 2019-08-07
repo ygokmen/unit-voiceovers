@@ -18,10 +18,15 @@ params ["_unit"];
 if (local _unit) then {
 	_unit setVariable ["UVO_defaultVoice",speaker _unit,true];
 
-	if (!UVO_option_enableSentencesEast && _unit isKindOf "SoldierEB" ||
-		!UVO_option_enableSentencesGuer && _unit isKindOf "SoldierGB" ||
-		!UVO_option_enableSentencesWest && _unit isKindOf "SoldierWB"
-	) then {
+	private _nationality = _unit getVariable "UVO_nationality";
+	private _enabled = switch (_nationality) do {
+		case "EAST" : {UVO_option_enableSentencesEast};
+		case "GUER" : {UVO_option_enableSentencesGuer};
+		case "WEST" : {UVO_option_enableSentencesWest};
+		default {missionNamespace getVariable [format ["UVO_option_enableSentencesCustom_%1",_nationality],true]};
+	};
+
+	if (!_enabled) then {
 		[_unit,false] remoteExec ["UVO_fnc_enableSentences",2];
 	};
 };
