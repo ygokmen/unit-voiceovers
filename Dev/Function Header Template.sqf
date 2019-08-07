@@ -1,15 +1,13 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Function Description
+UVO_fnc_myFunction
+Authors: Gökmen, Sceptre
+
+Function description
 
 Parameters:
-0: The first argument <STRING>
-1: The second argument <OBJECT>
-2: Multiple input types <STRING|ARRAY|CODE>
-3: Optional input <BOOL> (DEFAULT: TRUE)
-4: Optional input with multiple types <CODE|STRING> (DEFAULT: {TRUE})
-5: Not mandatory input <STRING> (DEFAULT: NIL)
+0: The first argument <STRING> (Default: "default")
+2: Multiple input types <SCALAR|ARRAY|BOOL|CODE>
 
 Return Value:
-The return value <BOOL>
+True/False <BOOL>
 ----------------------------------------------------------*/
