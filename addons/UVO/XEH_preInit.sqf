@@ -1,5 +1,5 @@
 // CBA Settings
-call UVO_fnc_CBASettings;
+call compile preprocessFileLineNumbers "CBA_Settings.sqf";
 if (is3DEN) exitWith {};
 
 // Declare default nationalities and other definitions

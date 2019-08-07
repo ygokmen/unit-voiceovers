@@ -6,7 +6,6 @@ class CfgFunctions {
 			class addUVO {};
 			class allyDown {};
 			class calloutDir {};
-			class CBASettings {};
 			class confirmKill {};
 			class disableUVO {};
 			class enableSentences {};

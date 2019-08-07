@@ -51,26 +51,26 @@ CBA Settings
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
 [
-	"UVO_option_enableSentencesGuer","CHECKBOX",
-	["GUER - Default chatter/voices","Allows default Arma voices for specified nationality (inherits from SoldierGB class). (Default: TRUE)"],
-	["Unit Voice-Over Options","Nationality/Side Settings"],
-	true,true,{},true
-] call CBA_Settings_fnc_init;
-[
-	"UVO_option_enableSentencesWest","CHECKBOX",
-	["WEST - Default chatter/voices","Allows default Arma voices for specified nationality (inherits from SoldierWB class). (Default: TRUE)"],
-	["Unit Voice-Over Options","Nationality/Side Settings"],
-	true,true,{},true
-] call CBA_Settings_fnc_init;
-[
 	"UVO_option_enableUVOEast","CHECKBOX",
 	["EAST - Enable UVO init","Enables initializing unit voice-overs for specified nationality (inherits from SoldierEB class). (Default: TRUE)"],
 	["Unit Voice-Over Options","Nationality/Side Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
 [
+	"UVO_option_enableSentencesGuer","CHECKBOX",
+	["GUER - Default chatter/voices","Allows default Arma voices for specified nationality (inherits from SoldierGB class). (Default: TRUE)"],
+	["Unit Voice-Over Options","Nationality/Side Settings"],
+	true,true,{},true
+] call CBA_Settings_fnc_init;
+[
 	"UVO_option_enableUVOGuer","CHECKBOX",
 	["GUER - Enable UVO init","Enables initializing unit voice-overs for specified nationality (inherits from SoldierGB class). (Default: TRUE)"],
+	["Unit Voice-Over Options","Nationality/Side Settings"],
+	true,true,{},true
+] call CBA_Settings_fnc_init;
+[
+	"UVO_option_enableSentencesWest","CHECKBOX",
+	["WEST - Default chatter/voices","Allows default Arma voices for specified nationality (inherits from SoldierWB class). (Default: TRUE)"],
 	["Unit Voice-Over Options","Nationality/Side Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
