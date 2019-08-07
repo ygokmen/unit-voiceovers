@@ -11,9 +11,7 @@ Nothing
 ----------------------------------------------------------*/
 params ["_unit","_sound"];
 
-if (!alive _unit || (_unit getVariable ["ACE_isUnconscious",false])) exitWith {};
-
-if (behaviour _unit == "STEALTH") exitWith {};
+if (isNil "_sound" || {!alive _unit || _unit getVariable ["ACE_isUnconscious",false] || {behaviour _unit == "STEALTH"}}) exitWith {};
 
 // Don't let the unit talk over himself
 if (_unit getVariable ["UVO_talking",false] || inputAction "pushToTalk" > 0) exitWith {};
