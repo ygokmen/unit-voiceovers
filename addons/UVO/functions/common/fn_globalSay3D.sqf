@@ -1,10 +1,15 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
+UVO_fnc_globalSay3D
+Authors: Gökmen, Sceptre
+
 Globally executes say3D with lip movement functionality
 
 Parameters:
 0: Talking unit <OBJECT>
 1: Sound class <STRING>
+
+Public:
+No
 
 Return Value:
 Nothing

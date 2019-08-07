@@ -1,9 +1,15 @@
 /*--------------------------------------------------------
+UVO_fnc_localEH
 Authors: Sceptre
-Removes local event handlers and calls for reinitialization on remote machine when unit's locality changed.
+
+Removes event handlers and calls for reinitialization on
+remote machine when unit locality has changed.
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Local)
+(https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Local)
+
+Public:
+No
 
 Return Value:
 Nothing

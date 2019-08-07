@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
+UVO_fnc_reinitialize
 Authors: Sceptre
-Reinitializes certain UVO functions on a unit that had its locality changed
+
+Reinitializes UVO on a unit that had its locality changed
 
 Parameters:
 0: Unit <OBJECT>
+
+Public:
+No
 
 Return Value:
 Nothing

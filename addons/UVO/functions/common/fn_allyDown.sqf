@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Selects valid nearby friendly from an array of nearby friendlies and makes him say "friendly down."
+UVO_fnc_allyDown
+Authors: Gökmen, Sceptre
+
+Has a nearby friendly call out 'ally down' phrase
 
 Parameters:
-0: Array of nearby friendlies <ARRAY>
+0: Nearby friendly units <ARRAY>
+
+Public:
+No
 
 Return Value:
 Nothing

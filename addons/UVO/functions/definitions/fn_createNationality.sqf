@@ -1,11 +1,16 @@
 /*--------------------------------------------------------
+UVO_fnc_createNationality
 Authors: Sceptre
+
 Creates a custom nationality via script and sets assigned factions to the nationality
 
 Parameters:
 0: Nationality name/suffix <STRING>
 1: Array of faction class strings <ARRAY>
 2: Definitions array <ARRAY>
+
+Public:
+Yes
 
 Return Value:
 Nothing

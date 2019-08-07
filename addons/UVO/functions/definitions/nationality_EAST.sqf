@@ -1,5 +1,5 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
+Authors: Gökmen, Sceptre
 Default "EAST" nationality sound definitions
 ----------------------------------------------------------*/
 // callouts [N,NE,E,SE,S,SW,W,NW]

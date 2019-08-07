@@ -1,11 +1,16 @@
 /*--------------------------------------------------------
+UVO_fnc_setNationality
 Authors: Sceptre
+
 Sets given factions to an already created nationality.
 Use for compatibility of factions with bad class inheritance.
 
 Parameters:
-0: Nationality name (Available Default Options: "EAST","GUER","WEST") <STRING>
+0: Nationality name (Available Defaults: "EAST","GUER","WEST") <STRING>
 1: Array of faction class strings <ARRAY>
+
+Public:
+Yes
 
 Return Value:
 Nothing

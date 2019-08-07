@@ -1,5 +1,5 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
+Authors: Gökmen, Sceptre
 Defines default nationality sounds
 ----------------------------------------------------------*/
 #include "nationality_EAST.sqf"

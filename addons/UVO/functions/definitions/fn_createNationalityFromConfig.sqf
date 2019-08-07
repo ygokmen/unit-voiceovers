@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
+UVO_fnc_createNationalityFromConfig
 Authors: Sceptre
+
 Creates a custom nationality via config file and sets assigned factions to the nationality
 
 Parameters:
 0: Nationality config <CONFIG>
+
+Public:
+Yes
 
 Return Value:
 Nothing

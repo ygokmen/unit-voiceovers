@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Fired event handler script. Calls grenade, charge and reloading phrases
+UVO_fnc_firedEH
+Authors: Gökmen, Sceptre
+
+Calls grenade, charge, and reloading phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Fired)
+(https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Fired)
+
+Public:
+No
 
 Return Value:
 Nothing

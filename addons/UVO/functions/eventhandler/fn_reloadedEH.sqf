@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Reloaded event handler script. Calls ammo low and cover phrases
+UVO_fnc_reloadedEH
+Authors: Gökmen, Sceptre
+
+Calls ammo low and cover phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Reloaded)
+(https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Reloaded)
+
+Public:
+No
 
 Return Value:
 Nothing

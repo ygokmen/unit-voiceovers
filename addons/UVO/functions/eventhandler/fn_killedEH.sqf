@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Killed event handler script. Calls death shouts, 'allyDown', and kill confirm phrases
+UVO_fnc_killedEH
+Authors: Gökmen, Sceptre
+
+Calls death shouts, 'ally down', and kill confirm phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Killed)
+(https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Killed)
+
+Public:
+No
 
 Return Value:
 Nothing

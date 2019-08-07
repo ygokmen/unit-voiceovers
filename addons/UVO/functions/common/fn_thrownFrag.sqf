@@ -1,10 +1,15 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Plays grenade alert phrase to nearby units when grenade has landed.
+UVO_fnc_thrownFrag
+Authors: Gökmen, Sceptre
+
+Calls grenade alert phrase to nearby units
 
 Parameters:
 0: Grenade <OBJECT>
 1: Grenade thrower's side <STRING>
+
+Public:
+No
 
 Return Value:
 Nothing

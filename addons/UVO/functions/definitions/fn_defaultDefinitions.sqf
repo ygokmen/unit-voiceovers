@@ -1,5 +1,5 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
+Authors: Gökmen, Sceptre
 Defines various sounds and throwable types to be used with UVO_fnc_firedEH.
 Update for compatibility as needed.
 ----------------------------------------------------------*/

@@ -1,10 +1,15 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Makes a killer call a confirmation phrase if possible
+UVO_fnc_confirmKill
+Authors: Gökmen, Sceptre
+
+Calls kill confirmation phrases
 
 Parameters:
 0: Killer unit <OBJECT>
 1: Victim unit <OBJECT>
+
+Public:
+No
 
 Return Value:
 Nothing
