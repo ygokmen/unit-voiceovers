@@ -1,3 +1,10 @@
+v1.6 - 8/6/2019 - "Suppression Update":
+ - Added: New suppression mechanic and phrases
+ - Improved: Support for suppression phrases with custom nationalities
+ - Fixed: Death shouts would play on units that had UVO disabled
+ - Fixed: Disable functionality was broken
+ - Fixed: Unit initialization and adding UVO was inconsistent with design goals
+
 v1.5 - 6/6/2019:
  - Improved: Refactored Unit Ambient SFX (UAS) into separate PBO
  - Added: More CBA Settings for UAS (Found under its own category)

@@ -1,7 +1,7 @@
 Dynamic, randomized 3D positional sound samples for units in Arma.
 Using NWI's [url=https://newworldinteractive.com/#insurgency]Insurgency[/url] sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
 
-[B]Current Version:[/B] 1.5
+[B]Current Version:[/B] 1.6
 [B]Authors:[/B] 654wak654, Gokmen 'the0utsider', Sceptre
 [B]MP compatible:[/B] Yes [i]*Has to be loaded on both server and client[/i]
 [B]Requirements:[/B] CBA
