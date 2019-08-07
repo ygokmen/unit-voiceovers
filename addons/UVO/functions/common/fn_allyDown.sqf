@@ -23,14 +23,14 @@ if (_nearFriendlies isEqualTo []) exitWith {};
 
 // Select friendly unit that can say shit -- also checks for 'spam filter'
 private _friendlyUnit = selectRandom (_nearFriendlies select {
-	alive _x && 
+	alive _x &&
 	!(_x getVariable ["ACE_isUnconscious",false]) && {
-	!isNil {_x getVariable "UVO_nationality"} && 
+	!isNil {_x getVariable "UVO_nationality"} &&
 	!(_x getVariable ["UVO_allyDownSpamFilter",false])
 }});
 if (isNil "_friendlyUnit") exitWith {};
 
-// 90% chance to set a 1 sec 'spam filter' variable on near friendlies
+// 90% chance to set a 'spam filter' on near friendlies
 {
 	if (random 1 < 0.9) then {_x setVariable ["UVO_allyDownSpamFilter",true];};
 	false
