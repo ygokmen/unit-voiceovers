@@ -11,6 +11,7 @@ class CfgFunctions {
 			class disableUVO {};
 			class enableSentences {};
 			class globalSay3D {};
+			class init {};
 			class initPost {};
 			class reinitialize {};
 			class thrownFrag {};
