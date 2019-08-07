@@ -33,8 +33,6 @@ class CfgFunctions {
 		class init {
 			file = "UVO\functions\init";
 			class CBASettings {};
-			class postInit {};
-			class preInit {};
 			class unitInitPost {};
 		};
 		class suppressed {

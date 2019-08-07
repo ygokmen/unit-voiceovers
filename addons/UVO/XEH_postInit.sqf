@@ -1,7 +1,3 @@
-/*--------------------------------------------------------
-Authors: Sceptre
-PostInit function
-----------------------------------------------------------*/
 if (hasInterface) then {
 	[
 		"Unit Voice-Overs",
