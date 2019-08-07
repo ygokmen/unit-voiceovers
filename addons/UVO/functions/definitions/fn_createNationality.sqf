@@ -86,12 +86,12 @@ if (isNil "UVO_customNationalities") then {
 [
 	format ["UVO_option_enableSentencesCustom_%1",_nationality],"CHECKBOX",
 	[format ["%1 - Default chatter/voices",toUpper _nationality],"Allows default Arma voices for specified (custom) nationality. (Default: TRUE)"],
-	["Unit Voice-Over Options","Nationality/Side Settings"],
+	["Unit Voice-Over Options","Nationality Init Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
 [
 	format ["UVO_option_enableUVOCustom_%1",_nationality],"CHECKBOX",
 	[format ["%1 - Enable UVO init",toUpper _nationality],"Enables initializing unit voice-overs for specified (custom) nationality. (Default: TRUE)"],
-	["Unit Voice-Over Options","Nationality/Side Settings"],
+	["Unit Voice-Over Options","Nationality Init Settings"],
 	true,true,{},true
 ] call CBA_Settings_fnc_init;
