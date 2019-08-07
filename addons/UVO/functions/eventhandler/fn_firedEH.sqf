@@ -17,8 +17,6 @@ params ["_unit","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile"];
 
 if (isPlayer _unit && !UVO_option_clientEnabled) exitWith {};
 
-private _nationality = _unit getVariable "UVO_nationality";
-
 if (_weapon in ["Throw","Put"]) then {
 	private _type = switch true do {
 		case (_magazine in UVO_fragTypes) : {
@@ -38,7 +36,7 @@ if (_weapon in ["Throw","Put"]) then {
 	if (_nearFriendlies isEqualTo []) exitWith {};
 
 	// Say appropriate phrase depending on _type
-	[_unit,selectRandom (missionNamespace getVariable format ["UVO_%1_%2",_type,_nationality])] call UVO_fnc_globalSay3D;
+	[_unit,selectRandom (missionNamespace getVariable format ["UVO_%1_%2",_type,_unit getVariable "UVO_nationality"])] call UVO_fnc_globalSay3D;
 } else {
 	// Stop if the magazine still has ammo in the mag
 	if (_weapon isEqualTo _muzzle && _unit ammo _muzzle != 0) exitWith {};
@@ -50,6 +48,7 @@ if (_weapon in ["Throw","Put"]) then {
 	private _nearFriendlies = ((_unit nearEntities [["CAManBase"],25]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 	if (_nearFriendlies isEqualTo []) exitWith {};
 
+	private _nationality = _unit getVariable "UVO_nationality";
 	if (isPlayer _unit)	then {
 		// If unit is a player, Create PFH to check when player reloads or changes weapon.
 		[{
