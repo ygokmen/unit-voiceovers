@@ -25,7 +25,7 @@ params ["_projectile","_throwerSide"];
 	// Stop if there are no enemies in 12 meter radius
 	private _nearEnemies = (_projectile nearEntities [["CAManBase"],12]) select {_throwerSide getFriend (side group _x) < 0.6};
 	if (_nearEnemies isEqualTo []) exitwith {};
-	
+
 	// If players aren't supposed to use UVO then remove them from selection
 	if (!UVO_option_clientEnabled && {(_nearEnemies findIf {isPlayer _x}) != -1}) then {
 		_nearEnemies = _nearEnemies - (_nearEnemies select {isPlayer _x});
@@ -38,7 +38,7 @@ params ["_projectile","_throwerSide"];
 	_nearEnemies = _nearEnemies apply {[_x distance _projectile, _x]};
 	_nearEnemies sort true;
 	private _nearestEnemy = _nearEnemies # 0 # 1;
-	
+
 	// Finish up
 	private _nationality = _nearestEnemy getVariable "UVO_nationality";
 	[_nearestEnemy,selectRandom (missionNamespace getVariable format ["UVO_spotNade_%1",_nationality])] call UVO_fnc_globalSay3D;

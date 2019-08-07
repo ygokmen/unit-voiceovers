@@ -27,7 +27,7 @@ if ((eyePos _unit # 2) > 0 && _unit getVariable ["UVO_allowDeathShouts",true]) t
 // Have a nearby friendly call out 'friendly down' after a small delay
 private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 if !(_nearFriendlies isEqualTo []) then {
-	[{_this call UVO_fnc_allyDown;},[_nearFriendlies],2 + round random 2] call CBA_fnc_waitAndExecute;
+	[{_this call UVO_fnc_allyDown;},[_nearFriendlies],2 + random 4] call CBA_fnc_waitAndExecute;
 };
 
 // ACE Medical Compatibility

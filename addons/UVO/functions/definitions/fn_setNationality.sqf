@@ -41,5 +41,4 @@ if (isNil "UVO_customNationalities") then {
 			diag_log format["UVO ERROR: UVO_fnc_setNationality: NATIONALITY '%1' DOES NOT EXIST",_nationality];
 		};
 	};
-	false
-} count _factions;
+} forEach _factions;

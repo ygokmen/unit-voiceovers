@@ -16,10 +16,10 @@ Nothing
 Example:
 [configFile >> "UVO_myCustomNationalityConfig"] call UVO_fnc_createNationalityFromConfig
 ----------------------------------------------------------*/
-params [["_config", configNull, [configNull]]];
+params [["_config",configNull,[configNull]]];
 
 if (isNull _config) exitWith {
-    diag_log "UVO ERROR: UVO_fnc_createNationalityFromConfig: CUSTOM CONFIG DOES NOT EXIST";
+	diag_log "UVO ERROR: UVO_fnc_createNationalityFromConfig: CONFIG DOES NOT EXIST";
 };
 
 // Get nationality name/suffix
@@ -89,5 +89,4 @@ if (isNil "UVO_customNationalities") then {
 {
 	UVO_customNationalities pushBack [_x,_nationality];
 	diag_log format["UVO INFO: FACTION %1 SET WITH NATIONALITY %2",_x,_nationality];
-	false
-} count _factions;
+} forEach _factions;
