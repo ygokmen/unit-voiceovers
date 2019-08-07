@@ -27,6 +27,14 @@ if (!isNull _unit && {local _unit}) then {
 		_unit setVariable ["UVO_suppressedBuffer",0];
 	};
 
+	if (!isNil "UVO_customNationalities") then {
+		private _validNationalities = UVO_customNationalities select {(_x # 0) == faction _unit};
+
+		if !(_validNationalities isEqualTo []) then {
+			_nationality = _validNationalities # 0 # 1;
+		};
+	};
+
 	private _enabled = switch (_nationality) do {
 		case "EAST" : {UVO_option_enableUVOEast};
 		case "GUER" : {UVO_option_enableUVOGuer};
@@ -35,15 +43,14 @@ if (!isNull _unit && {local _unit}) then {
 	};
 
 	if (_enabled) then {
-		_unit setVariable ["UVO_allowDeathShouts",true,true];
 		_unit setVariable ["UVO_nationality",_nationality,true];
+		_unit setVariable ["UVO_allowDeathShouts",true,true];
 
 		if (isNil {_unit getVariable "UVO_EHIDs"}) then {
 			private _firedEHID = _unit addeventhandler ["Fired",{_this call UVO_fnc_firedEH;}];
 			private _hitEHID = _unit addEventHandler ["Hit",{_this call UVO_fnc_hitEH;}];
 			private _reloadedEHID = _unit addEventhandler ["Reloaded",{_this call UVO_fnc_reloadedEH;}];
 			_unit setVariable ["UVO_EHIDs",[_firedEHID,_hitEHID,_reloadedEHID]];
-			_unit setVariable ["UVO_allowDeathShouts",true,true];
 		};
 	} else {
 		_unit setVariable ["UVO_allowDeathShouts",false,true];

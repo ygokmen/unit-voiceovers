@@ -34,22 +34,23 @@ if (!isNull _unit && {local _unit}) then {
 		_unit setVariable ["UVO_nationality",_nationality,true];
 	} else {
 		if (!isNil "UVO_customNationalities") then {
-			private _customNationality = UVO_customNationalities select {(_x # 0) == faction _unit};
+			private _validNationalities = UVO_customNationalities select {(_x # 0) == faction _unit};
 
-			if !(_customNationality isEqualTo []) then {
-				_unit setVariable ["UVO_nationality",_customNationality # 0 # 1,true];
+			if !(_validNationalities isEqualTo []) then {
+				_unit setVariable ["UVO_nationality",_validNationalities # 0 # 1,true];
 			} else {
 				_unit setVariable ["UVO_nationality",_nationality,true];
 			};
 		};
 	};
 
+	_unit setVariable ["UVO_allowDeathShouts",true,true];
+
 	if (isNil {_unit getVariable "UVO_EHIDs"} && !isNil {_unit getVariable "UVO_nationality"}) then {
 		private _firedEHID = _unit addeventhandler ["Fired",{_this call UVO_fnc_firedEH;}];
 		private _hitEHID = _unit addEventHandler ["Hit",{_this call UVO_fnc_hitEH;}];
 		private _reloadedEHID = _unit addEventhandler ["Reloaded",{_this call UVO_fnc_reloadedEH;}];
 		_unit setVariable ["UVO_EHIDs",[_firedEHID,_hitEHID,_reloadedEHID]];
-		_unit setVariable ["UVO_allowDeathShouts",true,true];
 	};
 };
 
