@@ -19,7 +19,9 @@ if (_weapon in ["Put","Throw",""] || CBA_missionTime < _shooter getVariable "UVO
 _shooter setVariable ["UVO_suppressingBuffer",CBA_missionTime + 10];
 
 private _target = if (isPlayer _shooter) then {cursorTarget} else {assignedTarget _shooter};
-if (_target isKindOf "LandVehicle") then {
+private _projectileType = ["bullet","rocket"] select (_weapon isKindOf ["LauncherCore",configFile >> "CfgWeapons"]);
+
+if (_projectileType isEqualTo "rocket" && {_target isKindOf "LandVehicle"}) then {
 	private _dudesNearby = _target nearEntities ["CAManBase",20];
 	if (_dudesNearby isEqualTo []) then {
 		_target = selectRandom (crew vehicle _target);
@@ -30,4 +32,4 @@ if (_target isKindOf "LandVehicle") then {
 
 if (!alive _target || {isNil {_target getVariable "UVO_nationality"}}) exitWith {};
 
-[_shooter,_target,_weapon,_ammo] remoteExec ["UVO_fnc_suppressed",_target];
+[_shooter,_target,_projectileType,_ammo] remoteExecCall ["UVO_fnc_suppressed",_target];

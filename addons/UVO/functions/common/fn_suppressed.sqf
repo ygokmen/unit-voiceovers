@@ -16,7 +16,7 @@ No
 Return Value:
 Nothing
 ----------------------------------------------------------*/
-params ["_shooter","_target","_weapon","_ammo"];
+params ["_shooter","_target","_projectileType","_ammo"];
 
 if (isPlayer _target && {!UVO_option_clientEnabled}) exitWith {};
 
@@ -32,11 +32,10 @@ if (isPlayer _target) then {
 	};
 };
 
-private _munition = ["bullet","rocket"] select (_weapon isKindOf ["LauncherCore",configFile >> "CfgWeapons"]);
-if (_suppression isEqualTo 0 && _munition isEqualTo "bullet") exitWith {};
+if (_suppression isEqualTo 0 && _projectileType isEqualTo "bullet") exitWith {};
 
 private _calculatedImpactTime = ceil ((_target distance _shooter) / (getNumber (configfile >> "CfgAmmo" >> _ammo >> "typicalSpeed")) * 10) * 0.1;
-private _sound = selectRandom (missionNamespace getVariable format ["UVO_%1_%2",format ["%1Suppression",_munition],_target getVariable "UVO_nationality"]);
+private _sound = selectRandom (missionNamespace getVariable format ["UVO_%1_%2",format ["%1Suppression",_projectileType],_target getVariable "UVO_nationality"]);
 
 if (_calculatedImpactTime > 0.1) then {
 	[{_this call UVO_fnc_globalSay3D;},[_target,_sound],_calculatedImpactTime] call CBA_fnc_waitAndExecute;
