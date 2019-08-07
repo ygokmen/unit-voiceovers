@@ -23,18 +23,15 @@ params [["_unit",objNull,[objNull]]];
 if (local _unit) then {
 	private _EHIDs = _unit getVariable "UVO_EHIDs";
 	if (!isNil "_EHIDs") then {
-		_EHIDs params ["_firedEHID","_firedManEHID","_hitEHID","_reloadedEHID","_localEHID"];
+		_EHIDs params ["_firedEHID","_hitEHID","_reloadedEHID"];
+
 		_unit removeEventHandler ["Fired",_firedEHID];
-		_unit removeEventHandler ["FiredMan",_firedManEHID];
 		_unit removeEventHandler ["Hit",_hitEHID];
 		_unit removeEventHandler ["Reloaded",_reloadedEHID];
-		_unit removeEventHandler ["Local",_localEHID];
 		_unit setVariable ["UVO_EHIDs",nil];
 		_unit setVariable ["UVO_talking",nil];
 		_unit setVariable ["UVO_nationality",nil,true];
 		_unit setVariable ["UVO_defaultVoice",nil,true];
-		_unit setVariable ["UVO_suppressTimer",nil];
-		_unit setVariable ["UVO_suppressedTimer",nil];
 		_unit setVariable ["UVO_allowDeathShouts",false,true]; // Disable death shouts
 
 		diag_log format["UVO INFO: UVO_fnc_disableUVO: %1 REMOVED FROM UVO FRAMEWORK",_unit];
