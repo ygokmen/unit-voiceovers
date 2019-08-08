@@ -35,7 +35,7 @@ UVO_projectileIndex = 0;
 	if (_isRocket) then {
 		if (CBA_missionTime < _buffer) exitWith {};
 		private _dir = getDir _projectile;
-		private _units = ((_projectile getPos [100,_dir] nearEntities ["CAManBase",25]) + (_projectile getPos [60,_dir] nearEntities ["CAManBase",30])) select {!isNil {_x getVariable "UVO_nationality"}};
+		private _units = ((_projectile getPos [115,_dir] nearEntities ["CAManBase",30]) + (_projectile getPos [65,_dir] nearEntities ["CAManBase",30])) select {!isNil {_x getVariable "UVO_nationality"}};
 		if (_units isEqualTo []) exitWith {};
 		(UVO_projectileList select _index) set [2,CBA_missionTime + 0.6 + random 0.1];
 		private _target = selectRandom _units;
