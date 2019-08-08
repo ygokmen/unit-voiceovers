@@ -37,14 +37,14 @@ UVO_projectileIndex = 0;
 		private _dir = getDir _projectile;
 		private _units = ((_projectile getPos [100,_dir] nearEntities ["CAManBase",25]) + (_projectile getPos [60,_dir] nearEntities ["CAManBase",30])) select {!isNil {_x getVariable "UVO_nationality"}};
 		if (_units isEqualTo []) exitWith {};
-		(UVO_projectileList select _index) set [2,CBA_missionTime + random 0.08];
+		(UVO_projectileList select _index) set [2,CBA_missionTime + 0.08 + random 0.1];
 		private _target = selectRandom _units;
 		[_target,"rocket"] remoteExec ["UVO_fnc_suppressed",_target];
 	} else {
 		if (CBA_missionTime < _buffer) exitWith {};
 		private _units = (_projectile getPos [10,getDir _projectile] nearEntities ["CAManBase",6]) select {!isNil {_x getVariable "UVO_nationality"}};
 		if (_units isEqualTo []) exitWith {};
-		(UVO_projectileList select _index) set [2,CBA_missionTime + random 0.1];
+		(UVO_projectileList select _index) set [2,CBA_missionTime + 0.02 + random 0.1];
 		private _target = selectRandom _units;
 		[_target,"bullet"] remoteExec ["UVO_fnc_suppressed",_target];
 	};
