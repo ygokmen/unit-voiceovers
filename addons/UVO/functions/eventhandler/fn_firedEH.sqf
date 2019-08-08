@@ -42,7 +42,7 @@ if (_weapon in ["Throw","Put"]) then {
 	if (_weapon isEqualTo _muzzle && _unit ammo _muzzle != 0) exitWith {};
 
 	// Stop if UGL or out of mags for current weapon
-	if (_muzzle isKindOf ["UGL_F",configFile >> "CfgWeapons"] || (_weapon call CBA_fnc_compatibleMagazines) arrayIntersect (magazines _unit) isEqualTo []) exitWith {};
+	if (_muzzle isKindOf ["UGL_F",configFile >> "CfgWeapons" >> _weapon] || (_weapon call CBA_fnc_compatibleMagazines) arrayIntersect (magazines _unit) isEqualTo []) exitWith {};
 
 	// Only run if there are friendlies in 25 meter radius
 	private _nearFriendlies = ((_unit nearEntities [["CAManBase"],25]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
