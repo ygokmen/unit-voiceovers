@@ -1,10 +1,11 @@
-v1.6 - 8/6/2019 - "Suppression Update":
- - Added: New suppression mechanic and phrases
- - Improved: Support for suppression phrases with custom nationalities
- - Improved: Custom nationalities now get their own CBA settings
+v1.6 - 8/13/2019 - "Suppression Update":
+ - Added: Implemented suppression mechanic and phrases (includes 'incoming RPG' callouts) - Let us know if you encounter performance issues, or any other problems. Feedback is always appreciated.
+ - Improved: Support for suppression phrases with custom nationalities (See templates for more info)
+ - Improved: Custom nationalities now get their own 'toggle' CBA settings
  - Changed: Reordered nationality CBA settings
- - Fixed: Death shouts would still play on units that had UVO disabled
- - Fixed: Disable functionality was broken
+ - Changed: Reloading underbarrel GLs no longer trigger reloading phrases
+ - Fixed: Death shouts would still trigger on units that had UVO disabled (To enable death shouts on any unit
+ - Fixed: `UVO_fnc_disableUVO` was broken
  - Fixed: Unit initialization and adding UVO was inconsistent with design goals
 
 v1.5 - 6/6/2019:
