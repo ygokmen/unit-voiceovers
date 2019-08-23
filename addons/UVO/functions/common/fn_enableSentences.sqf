@@ -1,10 +1,15 @@
 /*--------------------------------------------------------
+UVO_fnc_enableSentences
 Authors: Sceptre
+
 Enables/Disables default voice
 
 Parameters:
 0: Unit <OBJECT>
-1: Add/remove default voice <BOOL>
+1: Enable/disable default voice <BOOL>
+
+Public:
+No
 
 Return Value:
 Nothing

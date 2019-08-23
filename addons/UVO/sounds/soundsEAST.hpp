@@ -786,99 +786,231 @@
 		sound[] = {"UVO\sounds\east\hit\wounded40.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded41_EAST {
-		name = "UVO_wounded41_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded41.ogg",VOL,PITCH,DIST};
+//rocket suppression
+	class UVO_rocketSuppression01_EAST {
+		name = "UVO_rocketSuppression01_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg1.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded42_EAST {
-		name = "UVO_wounded42_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded42.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression02_EAST {
+		name = "UVO_rocketSuppression02_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg2.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded43_EAST {
-		name = "UVO_wounded43_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded43.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression03_EAST {
+		name = "UVO_rocketSuppression03_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg3.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded44_EAST {
-		name = "UVO_wounded44_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded44.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression04_EAST {
+		name = "UVO_rocketSuppression04_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg4.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded45_EAST {
-		name = "UVO_wounded45_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded45.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression05_EAST {
+		name = "UVO_rocketSuppression05_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg5.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded46_EAST {
-		name = "UVO_wounded46_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded46.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression06_EAST {
+		name = "UVO_rocketSuppression06_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg6.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded47_EAST {
-		name = "UVO_wounded47_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded47.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression07_EAST {
+		name = "UVO_rocketSuppression07_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg7.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded48_EAST {
-		name = "UVO_wounded48_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded48.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression08_EAST {
+		name = "UVO_rocketSuppression08_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg8.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded49_EAST {
-		name = "UVO_wounded49_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded49.ogg",VOL,PITCH,DIST};
+	class UVO_rocketSuppression09_EAST {
+		name = "UVO_rocketSuppression09_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\rpg9.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded50_EAST {
-		name = "UVO_wounded50_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded50.ogg",VOL,PITCH,DIST};
+//bullet suppression
+	class UVO_bulletSuppression01_EAST {
+		name = "UVO_bulletSuppression01_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed1.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded51_EAST {
-		name = "UVO_wounded51_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded51.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression02_EAST {
+		name = "UVO_bulletSuppression02_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed2.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded52_EAST {
-		name = "UVO_wounded52_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded52.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression03_EAST {
+		name = "UVO_bulletSuppression03_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed3.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded53_EAST {
-		name = "UVO_wounded53_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded53.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression04_EAST {
+		name = "UVO_bulletSuppression04_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed4.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded54_EAST {
-		name = "UVO_wounded54_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded54.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression05_EAST {
+		name = "UVO_bulletSuppression05_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed5.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded55_EAST {
-		name = "UVO_wounded55_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded55.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression06_EAST {
+		name = "UVO_bulletSuppression06_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed6.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded56_EAST {
-		name = "UVO_wounded56_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded56.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression07_EAST {
+		name = "UVO_bulletSuppression07_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed7.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded57_EAST {
-		name = "UVO_wounded57_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded57.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression08_EAST {
+		name = "UVO_bulletSuppression08_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed8.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded58_EAST {
-		name = "UVO_wounded58_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded58.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression09_EAST {
+		name = "UVO_bulletSuppression09_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed9.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
-	class UVO_wounded59_EAST {
-		name = "UVO_wounded59_EAST";
-		sound[] = {"UVO\sounds\east\hit\wounded59.ogg",VOL,PITCH,DIST};
+	class UVO_bulletSuppression10_EAST {
+		name = "UVO_bulletSuppression10_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed10.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression11_EAST {
+		name = "UVO_bulletSuppression11_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed11.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression12_EAST {
+		name = "UVO_bulletSuppression12_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed12.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression13_EAST {
+		name = "UVO_bulletSuppression13_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed13.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression14_EAST {
+		name = "UVO_bulletSuppression14_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed14.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression15_EAST {
+		name = "UVO_bulletSuppression15_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed15.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression16_EAST {
+		name = "UVO_bulletSuppression16_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed16.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression17_EAST {
+		name = "UVO_bulletSuppression17_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed17.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression18_EAST {
+		name = "UVO_bulletSuppression18_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed18.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression19_EAST {
+		name = "UVO_bulletSuppression19_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed19.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression20_EAST {
+		name = "UVO_bulletSuppression20_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed20.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression21_EAST {
+		name = "UVO_bulletSuppression21_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed21.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression22_EAST {
+		name = "UVO_bulletSuppression22_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed22.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression23_EAST {
+		name = "UVO_bulletSuppression23_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed23.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression24_EAST {
+		name = "UVO_bulletSuppression24_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed24.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression25_EAST {
+		name = "UVO_bulletSuppression25_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed25.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression26_EAST {
+		name = "UVO_bulletSuppression26_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed26.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression27_EAST {
+		name = "UVO_bulletSuppression27_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed27.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression28_EAST {
+		name = "UVO_bulletSuppression28_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed28.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression29_EAST {
+		name = "UVO_bulletSuppression29_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed29.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression30_EAST {
+		name = "UVO_bulletSuppression30_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed30.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression31_EAST {
+		name = "UVO_bulletSuppression31_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed31.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression32_EAST {
+		name = "UVO_bulletSuppression32_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed32.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression33_EAST {
+		name = "UVO_bulletSuppression33_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed33.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression34_EAST {
+		name = "UVO_bulletSuppression34_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed34.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression35_EAST {
+		name = "UVO_bulletSuppression35_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed35.ogg",VOL,PITCH,DIST};
+		titles[] = {};
+	};
+	class UVO_bulletSuppression36_EAST {
+		name = "UVO_bulletSuppression36_EAST";
+		sound[] = {"UVO\sounds\east\suppressed\suppressed36.ogg",VOL,PITCH,DIST};
 		titles[] = {};
 	};
 //allyDown

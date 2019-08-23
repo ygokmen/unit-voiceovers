@@ -1,6 +1,6 @@
 # Unit Voice-overs
 
-**Current Version:** 1.5
+**Current Version:** 1.6 "Suppression Update"
 
 See our Wiki for more documentation: https://github.com/the0utsider/unit-voiceovers/wiki
 
@@ -17,7 +17,7 @@ Dynamic, randomized 3D positional sound fx for units in Arma.
 Using NWI's 'Insurgency' sound samples, this mod was created to improve the overall experience and bring dynamism to the in-game voices in Arma 3.
 
 **Features**
-- Complete overhaul for default Arma unit voice-overs
+- A whole new set of voices for various actions in Arma 3
 - Opfor, independent, and blufor sides use different sets of voices
 - Randomized samples for each action
 - Spot enemy / callout targets direction (Default key 'T')

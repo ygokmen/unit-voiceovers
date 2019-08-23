@@ -1,5 +1,5 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
+Authors: Gökmen, Sceptre
 Default "WEST" nationality sound definitions
 ----------------------------------------------------------*/
 // callouts [N,NE,E,SE,S,SW,W,NW]
@@ -212,29 +212,55 @@ UVO_wounded_WEST = [
 	"UVO_wounded27_WEST",
 	"UVO_wounded28_WEST",
 	"UVO_wounded29_WEST",
-	"UVO_wounded30_WEST",
-	"UVO_wounded31_WEST",
-	"UVO_wounded32_WEST",
-	"UVO_wounded33_WEST",
-	"UVO_wounded34_WEST",
-	"UVO_wounded35_WEST",
-	"UVO_wounded36_WEST",
-	"UVO_wounded37_WEST",
-	"UVO_wounded38_WEST",
-	"UVO_wounded39_WEST",
-	"UVO_wounded40_WEST",
-	"UVO_wounded41_WEST",
-	"UVO_wounded42_WEST",
-	"UVO_wounded43_WEST",
-	"UVO_wounded44_WEST",
-	"UVO_wounded45_WEST",
-	"UVO_wounded46_WEST",
-	"UVO_wounded47_WEST",
-	"UVO_wounded48_WEST",
-	"UVO_wounded49_WEST",
-	"UVO_wounded50_WEST",
-	"UVO_wounded51_WEST",
-	"UVO_wounded52_WEST"
+	"UVO_wounded30_WEST"
+];
+
+// suppression
+
+UVO_rocketSuppression_WEST = [
+	"UVO_rocketSuppression01_WEST",
+	"UVO_rocketSuppression02_WEST",
+	"UVO_rocketSuppression03_WEST",
+	"UVO_rocketSuppression04_WEST",
+	"UVO_rocketSuppression05_WEST",
+	"UVO_rocketSuppression06_WEST",
+	"UVO_rocketSuppression07_WEST",
+	"UVO_rocketSuppression08_WEST",
+	"UVO_rocketSuppression09_WEST"
+];
+
+UVO_bulletSuppression_WEST = [
+	"UVO_bulletSuppression01_WEST",
+	"UVO_bulletSuppression02_WEST",
+	"UVO_bulletSuppression03_WEST",
+	"UVO_bulletSuppression04_WEST",
+	"UVO_bulletSuppression05_WEST",
+	"UVO_bulletSuppression06_WEST",
+	"UVO_bulletSuppression07_WEST",
+	"UVO_bulletSuppression08_WEST",
+	"UVO_bulletSuppression09_WEST",
+	"UVO_bulletSuppression10_WEST",
+	"UVO_bulletSuppression11_WEST",
+	"UVO_bulletSuppression12_WEST",
+	"UVO_bulletSuppression13_WEST",
+	"UVO_bulletSuppression14_WEST",
+	"UVO_bulletSuppression15_WEST",
+	"UVO_bulletSuppression16_WEST",
+	"UVO_bulletSuppression17_WEST",
+	"UVO_bulletSuppression18_WEST",
+	"UVO_bulletSuppression19_WEST",
+	"UVO_bulletSuppression20_WEST",
+	"UVO_bulletSuppression21_WEST",
+	"UVO_bulletSuppression22_WEST",
+	"UVO_bulletSuppression23_WEST",
+	"UVO_bulletSuppression25_WEST",
+	"UVO_bulletSuppression26_WEST",
+	"UVO_bulletSuppression27_WEST",
+	"UVO_bulletSuppression28_WEST",
+	"UVO_bulletSuppression29_WEST",
+	"UVO_bulletSuppression30_WEST",
+	"UVO_bulletSuppression31_WEST",
+	"UVO_bulletSuppression32_WEST"
 ];
 
 // killed

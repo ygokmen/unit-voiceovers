@@ -1,10 +1,8 @@
-#define VERSION "1.5"
-#define REQUIRED_VERSION 1.88
+#include "script_component.hpp"
 
 class CfgPatches {
 	class UVO {
 		name = "Unit Voice-overs";
-		version = VERSION;
 		author = "UVO Team";
 		authors[] = {"Gokmen","Sceptre"};
 		url = "https://github.com/the0utsider/unit-voiceovers";
@@ -12,6 +10,7 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;
 		requiredAddons[] = {
+			"cba_main",
 			"cba_common",
 			"cba_events",
 			"cba_keybinding",
@@ -19,6 +18,7 @@ class CfgPatches {
 			"cba_statemachine",
 			"cba_xeh"
 		};
+		VERSION_CONFIG;
 	};
 };
 

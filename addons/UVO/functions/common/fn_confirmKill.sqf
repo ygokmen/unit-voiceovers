@@ -1,10 +1,15 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Makes a killer call a confirmation phrase if possible
+UVO_fnc_confirmKill
+Authors: Gökmen, Sceptre
+
+Calls kill confirmation phrases
 
 Parameters:
 0: Killer unit <OBJECT>
 1: Victim unit <OBJECT>
+
+Public:
+No
 
 Return Value:
 Nothing
@@ -22,7 +27,7 @@ private _distance = _unit distance _victim;
 
 	private _nationality = _unit getVariable "UVO_nationality";
 
-	if (_distance > 200) then {		
+	if (_distance > 200) then {
 		// Calm kill confirm beyond 200m range
 		[_unit,selectRandom (missionNamespace getVariable (format["UVO_targDownLo_%1",_nationality]))] call UVO_fnc_globalSay3D;
 	} else {

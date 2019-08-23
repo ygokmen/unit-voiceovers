@@ -13,19 +13,19 @@ if (UAS_option_enableCough || UAS_option_enableSigh || UAS_option_enableWhistle)
 	// Standby transitions
 	if (UAS_option_enableCough) then {
 		[_unitStateMachine,"Standby","Manifest",{
-			[false,true] select (CBA_missionTime > (_this getVariable ["UAS_intervalCough",CBA_missionTime + 1]))
+			CBA_missionTime > (_this getVariable ["UAS_intervalCough",CBA_missionTime + 1])
 		},{_this setVariable ['UAS_manifest',0];},"Cough"] call CBA_statemachine_fnc_addTransition;
 	};
 
 	if (UAS_option_enableSigh) then {
 		[_unitStateMachine,"Standby","Manifest",{
-			[false,true] select (CBA_missionTime > (_this getVariable ["UAS_intervalSigh",CBA_missionTime + 1]))
+			CBA_missionTime > (_this getVariable ["UAS_intervalSigh",CBA_missionTime + 1])
 		},{_this setVariable ['UAS_manifest',1];},"Sigh"] call CBA_statemachine_fnc_addTransition;
 	};
 
 	if (UAS_option_enableWhistle) then {
 		[_unitStateMachine,"Standby","Manifest",{
-			[false,true] select (CBA_missionTime > (_this getVariable ["UAS_intervalWhistle",CBA_missionTime + 1]))
+			CBA_missionTime > (_this getVariable ["UAS_intervalWhistle",CBA_missionTime + 1])
 		},{_this setVariable ['UAS_manifest',2];},"Whistle"] call CBA_statemachine_fnc_addTransition;
 	};
 
@@ -41,7 +41,7 @@ if (UAS_option_enableRadio) then {
 
 	// Standby transitions
 	[_groupStateMachine,"Standby","Manifest",{
-		[false,true] select (CBA_missionTime > (_this getVariable ["UAS_intervalRadio",CBA_missionTime + 1]))
+		CBA_missionTime > (_this getVariable ["UAS_intervalRadio",CBA_missionTime + 1])
 	},{_this setVariable ['UAS_manifest',0];},"Radio"] call CBA_statemachine_fnc_addTransition;
 
 	// Manifest transitions

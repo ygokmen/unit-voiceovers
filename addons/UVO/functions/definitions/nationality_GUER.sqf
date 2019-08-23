@@ -1,5 +1,5 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
+Authors: Gökmen, Sceptre
 Default "GUER" nationality sound definitions
 ----------------------------------------------------------*/
 // callouts [N,NE,E,SE,S,SW,W,NW]
@@ -195,26 +195,59 @@ UVO_wounded_GUER = [
 	"UVO_wounded37_GUER",
 	"UVO_wounded38_GUER",
 	"UVO_wounded39_GUER",
-	"UVO_wounded40_GUER",
-	"UVO_wounded41_GUER",
-	"UVO_wounded42_GUER",
-	"UVO_wounded43_GUER",
-	"UVO_wounded44_GUER",
-	"UVO_wounded45_GUER",
-	"UVO_wounded46_GUER",
-	"UVO_wounded47_EAST",
-	"UVO_wounded48_EAST",
-	"UVO_wounded49_EAST",
-	"UVO_wounded50_EAST",
-	"UVO_wounded51_EAST",
-	"UVO_wounded52_EAST",
-	"UVO_wounded53_EAST",
-	"UVO_wounded54_EAST",
-	"UVO_wounded55_EAST",
-	"UVO_wounded56_EAST",
-	"UVO_wounded57_EAST",
-	"UVO_wounded58_EAST",
-	"UVO_wounded59_EAST"
+	"UVO_wounded40_GUER"
+];
+
+// suppression
+
+UVO_rocketSuppression_GUER = [
+	"UVO_rocketSuppression01_GUER",
+	"UVO_rocketSuppression02_GUER",
+	"UVO_rocketSuppression03_GUER",
+	"UVO_rocketSuppression04_GUER",
+	"UVO_rocketSuppression05_GUER",
+	"UVO_rocketSuppression06_GUER",
+	"UVO_rocketSuppression07_GUER",
+	"UVO_rocketSuppression08_GUER",
+	"UVO_rocketSuppression09_GUER"
+];
+
+UVO_bulletSuppression_GUER = [
+	"UVO_bulletSuppression01_GUER",
+	"UVO_bulletSuppression02_GUER",
+	"UVO_bulletSuppression03_GUER",
+	"UVO_bulletSuppression04_GUER",
+	"UVO_bulletSuppression05_GUER",
+	"UVO_bulletSuppression06_GUER",
+	"UVO_bulletSuppression07_GUER",
+	"UVO_bulletSuppression08_GUER",
+	"UVO_bulletSuppression09_GUER",
+	"UVO_bulletSuppression10_GUER",
+	"UVO_bulletSuppression11_GUER",
+	"UVO_bulletSuppression12_GUER",
+	"UVO_bulletSuppression13_GUER",
+	"UVO_bulletSuppression14_GUER",
+	"UVO_bulletSuppression15_GUER",
+	"UVO_bulletSuppression16_GUER",
+	"UVO_bulletSuppression17_GUER",
+	"UVO_bulletSuppression18_GUER",
+	"UVO_bulletSuppression19_GUER",
+	"UVO_bulletSuppression20_GUER",
+	"UVO_bulletSuppression21_GUER",
+	"UVO_bulletSuppression22_GUER",
+	"UVO_bulletSuppression23_GUER",
+	"UVO_bulletSuppression24_GUER",
+	"UVO_bulletSuppression25_GUER",
+	"UVO_bulletSuppression26_GUER",
+	"UVO_bulletSuppression27_GUER",
+	"UVO_bulletSuppression28_GUER",
+	"UVO_bulletSuppression29_GUER",
+	"UVO_bulletSuppression30_GUER",
+	"UVO_bulletSuppression31_GUER",
+	"UVO_bulletSuppression32_GUER",
+	"UVO_bulletSuppression33_GUER",
+	"UVO_bulletSuppression34_GUER",
+	"UVO_bulletSuppression35_GUER"
 ];
 
 // killed

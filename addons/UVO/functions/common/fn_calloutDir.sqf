@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Calls directional callout phrases
+UVO_fnc_calloutDir
+Authors: Gökmen, Sceptre
+
+Calls directional phrases
 
 Parameters:
 0: Unit that initiates callout (player) <OBJECT>
+
+Public:
+No
 
 Return Value:
 Nothing

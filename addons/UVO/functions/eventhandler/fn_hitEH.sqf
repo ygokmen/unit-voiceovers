@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Hit event handler script. Calls friendly fire and wounded phrases
+UVO_fnc_hitEH
+Authors: Gökmen, Sceptre
+
+Calls friendly fire and wounded phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Hit)
+(https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Hit)
+
+Public:
+No
 
 Return Value:
 Nothing

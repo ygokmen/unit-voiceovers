@@ -9,8 +9,11 @@ class CfgFunctions {
 			class confirmKill {};
 			class disableUVO {};
 			class enableSentences {};
-			class globalsay3D {};
+			class globalSay3D {};
+			class init {};
+			class initPost {};
 			class reinitialize {};
+			class suppressed {};
 			class thrownFrag {};
 		};
 		class definitions {
@@ -24,17 +27,11 @@ class CfgFunctions {
 		class eventhandler {
 			file = "UVO\functions\eventhandler";
 			class firedEH {};
+			class firedManEH {};
 			class hitEH {};
 			class killedEH {};
 			class localEH {};
 			class reloadedEH {};
-		};
-		class init {
-			file = "UVO\functions\init";
-			class CBASettings {};
-			class postInit {};
-			class preInit {};
-			class unitInitPost {};
 		};
 	};
 };

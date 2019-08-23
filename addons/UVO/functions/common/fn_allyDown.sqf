@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Selects valid nearby friendly from an array of nearby friendlies and makes him say "friendly down."
+UVO_fnc_allyDown
+Authors: Gökmen, Sceptre
+
+Has a nearby friendly call out 'ally down' phrase
 
 Parameters:
-0: Array of nearby friendlies <ARRAY>
+0: Nearby friendly units <ARRAY>
+
+Public:
+No
 
 Return Value:
 Nothing
@@ -18,14 +23,14 @@ if (_nearFriendlies isEqualTo []) exitWith {};
 
 // Select friendly unit that can say shit -- also checks for 'spam filter'
 private _friendlyUnit = selectRandom (_nearFriendlies select {
-	alive _x && 
+	alive _x &&
 	!(_x getVariable ["ACE_isUnconscious",false]) && {
-	!isNil {_x getVariable "UVO_nationality"} && 
+	!isNil {_x getVariable "UVO_nationality"} &&
 	!(_x getVariable ["UVO_allyDownSpamFilter",false])
 }});
 if (isNil "_friendlyUnit") exitWith {};
 
-// 90% chance to set a 1 sec 'spam filter' variable on near friendlies
+// 90% chance to set a 'spam filter' on near friendlies
 {
 	if (random 1 < 0.9) then {_x setVariable ["UVO_allyDownSpamFilter",true];};
 	false

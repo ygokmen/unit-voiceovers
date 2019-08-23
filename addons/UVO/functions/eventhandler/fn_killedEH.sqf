@@ -1,9 +1,14 @@
 /*--------------------------------------------------------
-Authors: Gokmen, Sceptre
-Killed event handler script. Calls death shouts, 'allyDown', and kill confirm phrases
+UVO_fnc_killedEH
+Authors: Gökmen, Sceptre
+
+Calls death shouts, 'ally down', and kill confirm phrases
 
 Parameters:
-See (https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Killed)
+(https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Killed)
+
+Public:
+No
 
 Return Value:
 Nothing
@@ -15,32 +20,27 @@ if (!isNil {_unit getVariable "UVO_isDead"}) exitWith {};
 _unit setVariable ["UVO_isDead",true];
 
 // Play death shout effect
-if ((eyePos _unit # 2) > 0) then {
+if ((eyePos _unit # 2) > 0 && _unit getVariable ["UVO_allowDeathShouts",true]) then {
 	playSound3D [selectRandom UVO_deathShouts,_unit,false,getPosASL _unit,UVO_option_deathShoutsVolume,1,UVO_option_maxDistDeathShouts];
 };
 
 // Have a nearby friendly call out 'friendly down' after a small delay
 private _nearFriendlies = ((_unit nearEntities [["CAManBase"],40]) - [_unit]) select {(side group _unit) getFriend (side group _x) >= 0.6};
 if !(_nearFriendlies isEqualTo []) then {
-	[{_this call UVO_fnc_allyDown;},[_nearFriendlies],2 + round random 2] call CBA_fnc_waitAndExecute;
+	[{_this call UVO_fnc_allyDown;},[_nearFriendlies],2 + random 4] call CBA_fnc_waitAndExecute;
 };
 
 // ACE Medical Compatibility
 if (UVO_ACEMedicalLoaded) then {_instigator = _unit getVariable ["ace_medical_lastDamageSource",objNull];};
 
-// Chance for kill confirm
-if (isNull _instigator 
-		|| 
-	!isPlayer _instigator && {UVO_option_killConfirmChanceAI <= random 1}
-		||
-	isPlayer _instigator && {!UVO_option_clientEnabled || UVO_option_killConfirmChancePlayer <= random 1}) 
-exitWith {};
+// Verify instigator and roll the dice for kill confirm
+if (!alive _instigator || isNil {_instigator getVariable "UVO_nationality"} ||
+	!isPlayer _instigator && {UVO_option_killConfirmChanceAI <= random 1} ||
+	isPlayer _instigator && {!UVO_option_clientEnabled || UVO_option_killConfirmChancePlayer <= random 1}
+) exitWith {};
 
 // Stop if the kill was by friendly fire
 if ((side group _unit) getFriend (side group _instigator) >= 0.6) exitWith {};
-
-// Stop if instigator is dead or no nationality is defined
-if (!alive _instigator || isNil {_instigator getVariable "UVO_nationality"}) exitWith {};
 
 // Check if the killer can see victim fully
 private _visibility = [_instigator,"VIEW",_unit] checkVisibility [eyePos _instigator,AGLToASL (_unit modelToWorldVisual (_unit selectionPosition "Spine3"))];
