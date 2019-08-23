@@ -10,6 +10,7 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;
 		requiredAddons[] = {
+			"cba_main",
 			"cba_common",
 			"cba_events",
 			"cba_keybinding",
