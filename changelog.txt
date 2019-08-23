@@ -1,4 +1,7 @@
-v1.6 - 8/13/2019 - "Suppression Update":
+v1.61 - Hotfix
+ - Fixed: Removed leftover test logging from projectile tracking
+
+v1.6 - 8/22/2019 - "Suppression Update":
  - Added: Implemented suppression mechanic and phrases (includes 'incoming RPG' callouts) - Let us know if you encounter performance issues, or any other problems. Feedback is always appreciated.
  - Improved: Support for suppression phrases with custom nationalities (See templates for more info)
  - Improved: Custom nationalities now get their own 'toggle' CBA settings
