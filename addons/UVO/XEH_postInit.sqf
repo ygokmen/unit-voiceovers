@@ -40,9 +40,6 @@ UVO_projectileIndex = 0;
 		(UVO_projectileList select _index) set [2,CBA_missionTime + 0.6 + random 0.1];
 		private _target = selectRandom _units;
 		[_target,"rocket"] remoteExec ["UVO_fnc_suppressed",_target];
-		diag_log format ["time: %1",CBA_missionTime];
-		diag_log format ["nextBuffer: %1",UVO_projectileList # _index # 2];
-		diag_log format ["_target: %1",_target];
 	} else {
 		if (CBA_missionTime < _buffer) exitWith {};
 		private _units = (_projectile getPos [10,getDir _projectile] nearEntities ["CAManBase",6]) select {!isNil {_x getVariable "UVO_nationality"}};
