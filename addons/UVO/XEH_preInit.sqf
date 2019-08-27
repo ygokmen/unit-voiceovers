@@ -15,6 +15,6 @@ UVO_ACEMedicalLoaded = isClass (configFile >> "CfgPatches" >> "ace_medical");
 ["SoldierWB","init",{[_this # 0,"WEST"] call UVO_fnc_init;}] call CBA_fnc_addClassEventHandler;
 
 // Soldier initPost event handlers for enableSentences
-["SoldierEB","init",{(_this # 0) call UVO_fnc_initPost;}] call CBA_fnc_addClassEventHandler;
-["SoldierGB","init",{(_this # 0) call UVO_fnc_initPost;}] call CBA_fnc_addClassEventHandler;
-["SoldierWB","init",{(_this # 0) call UVO_fnc_initPost;}] call CBA_fnc_addClassEventHandler;
+["SoldierEB","initPost",{(_this # 0) call UVO_fnc_initPost;}] call CBA_fnc_addClassEventHandler;
+["SoldierGB","initPost",{(_this # 0) call UVO_fnc_initPost;}] call CBA_fnc_addClassEventHandler;
+["SoldierWB","initPost",{(_this # 0) call UVO_fnc_initPost;}] call CBA_fnc_addClassEventHandler;
