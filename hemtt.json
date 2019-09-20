@@ -1,0 +1,12 @@
+{
+	"name": "Unit VoiceOvers",
+	"prefix": "UVO",
+	"author": "UVO Team",
+	"files": [
+		"mod.cpp",
+		"uvo.paa",
+		"README.md",
+		"changelog.txt"
+	],
+	"sigversion": 3
+}

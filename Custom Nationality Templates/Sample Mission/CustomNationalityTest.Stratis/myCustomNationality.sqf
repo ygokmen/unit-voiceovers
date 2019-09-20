@@ -127,4 +127,4 @@
 			"UVO_bulletSuppression03_EAST"
 		]
 	]
-] call UVO_fnc_createNationality;
+] call UVO_main_fnc_createNationality;

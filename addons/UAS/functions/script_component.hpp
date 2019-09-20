@@ -1,0 +1,1 @@
+#include "\z\UVO\addons\uas\script_component.hpp"
