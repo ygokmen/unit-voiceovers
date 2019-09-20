@@ -127,4 +127,4 @@
 			"UVO_bulletSuppression03_CUSTOM"
 		]
 	]
-] call UVO_fnc_createNationality;
+] call UVO_main_fnc_createNationality;
